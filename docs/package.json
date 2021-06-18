@@ -1,0 +1,30 @@
+{
+  "name": "vuepress",
+  "version": "0.0.1",
+  "description": "vuepress demo",
+  "main": "index.js",
+  "authors": {
+    "name": "johnnywang",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnywang1994/book.git"
+  },
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
+    "deploy": "gh-pages -d src/.vuepress/dist"
+  },
+  "bugs": {
+    "url": "https://github.com/johnnywang1994/book/issues"
+  },
+  "homepage": "https://github.com/johnnywang1994/book#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
