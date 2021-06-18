@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Safari 使用 animation 時動態產生 rem 的坑 | Johnny Wang Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="vuepress demo">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/book/assets/css/0.styles.c567690f.css" as="style"><link rel="preload" href="/book/assets/js/app.a68c7b0f.js" as="script"><link rel="preload" href="/book/assets/js/2.80876f92.js" as="script"><link rel="preload" href="/book/assets/js/11.7e26c8c0.js" as="script"><link rel="prefetch" href="/book/assets/js/10.5a7851a5.js"><link rel="prefetch" href="/book/assets/js/12.228cd22a.js"><link rel="prefetch" href="/book/assets/js/13.e58c81d3.js"><link rel="prefetch" href="/book/assets/js/14.ab3baa56.js"><link rel="prefetch" href="/book/assets/js/15.66edd788.js"><link rel="prefetch" href="/book/assets/js/16.9118fb7e.js"><link rel="prefetch" href="/book/assets/js/17.7c81cfa2.js"><link rel="prefetch" href="/book/assets/js/18.99f3e094.js"><link rel="prefetch" href="/book/assets/js/19.1484462f.js"><link rel="prefetch" href="/book/assets/js/20.701204f0.js"><link rel="prefetch" href="/book/assets/js/21.8e9ce2ab.js"><link rel="prefetch" href="/book/assets/js/22.c55b915f.js"><link rel="prefetch" href="/book/assets/js/23.fa70bf02.js"><link rel="prefetch" href="/book/assets/js/24.fd76481f.js"><link rel="prefetch" href="/book/assets/js/25.f8849f04.js"><link rel="prefetch" href="/book/assets/js/26.daca280a.js"><link rel="prefetch" href="/book/assets/js/27.11cf283d.js"><link rel="prefetch" href="/book/assets/js/28.bb812025.js"><link rel="prefetch" href="/book/assets/js/29.72c75021.js"><link rel="prefetch" href="/book/assets/js/3.f22d6683.js"><link rel="prefetch" href="/book/assets/js/30.5520f6d0.js"><link rel="prefetch" href="/book/assets/js/31.effc854d.js"><link rel="prefetch" href="/book/assets/js/32.07b58df8.js"><link rel="prefetch" href="/book/assets/js/33.b1e1b210.js"><link rel="prefetch" href="/book/assets/js/34.09e42ee7.js"><link rel="prefetch" href="/book/assets/js/35.c961488b.js"><link rel="prefetch" href="/book/assets/js/36.6d20ef48.js"><link rel="prefetch" href="/book/assets/js/37.49864537.js"><link rel="prefetch" href="/book/assets/js/38.3b504693.js"><link rel="prefetch" href="/book/assets/js/39.f09a9d69.js"><link rel="prefetch" href="/book/assets/js/4.63c77aa4.js"><link rel="prefetch" href="/book/assets/js/40.4a641d1c.js"><link rel="prefetch" href="/book/assets/js/41.a1231857.js"><link rel="prefetch" href="/book/assets/js/42.297e2692.js"><link rel="prefetch" href="/book/assets/js/43.130be015.js"><link rel="prefetch" href="/book/assets/js/44.ed94dab8.js"><link rel="prefetch" href="/book/assets/js/45.9694b35d.js"><link rel="prefetch" href="/book/assets/js/46.6a8222f8.js"><link rel="prefetch" href="/book/assets/js/5.d2e39c96.js"><link rel="prefetch" href="/book/assets/js/6.7af320bb.js"><link rel="prefetch" href="/book/assets/js/7.abce3285.js"><link rel="prefetch" href="/book/assets/js/8.1b3b9378.js"><link rel="prefetch" href="/book/assets/js/9.bebe1dc6.js">
+    <link rel="stylesheet" href="/book/assets/css/0.styles.c567690f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/book/" class="home-link router-link-active"><!----> <span class="site-name">Johnny Wang Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/book/articles/" class="nav-link router-link-active">
+  Articles
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/book/articles/" class="nav-link router-link-active">
+  Articles
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>About Me</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/book/articles/" aria-current="page" class="sidebar-link">關於 Johnny</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>CSS &amp; Sass</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/book/articles/css/parent-selector.html" class="sidebar-link">SCSS Parent Selector</a></li><li><a href="/book/articles/css/landscape-fix-scroll.html" class="sidebar-link">CSS 畫面鎖橫屏時，滾動的問題！！</a></li><li><a href="/book/articles/css/animation-rem.html" aria-current="page" class="active sidebar-link">Safari 使用 animation 時動態產生 rem 的坑</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/articles/css/animation-rem.html#方法一" class="sidebar-link">方法一</a></li><li class="sidebar-sub-header"><a href="/book/articles/css/animation-rem.html#方法二" class="sidebar-link">方法二</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git Learning</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Docker</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Google api</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Facebook api</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="safari-使用-animation-時動態產生-rem-的坑"><a href="#safari-使用-animation-時動態產生-rem-的坑" class="header-anchor">#</a> Safari 使用 animation 時動態產生 rem 的坑</h1> <p>本篇誕生於同事日常開發動畫時遇到的問題，覺得是個不錯的主題，記錄下來：</p> <p>主要需求很簡單，就只是使用 <code>@keyframes</code> 對元素進行上下懸浮的效果。並且浮動的長度單位使用的是動態生成的 rem。</p> <blockquote><p>動態生成 rem 的意思是，使用 js 並根據畫面螢幕尺寸變化，動態調整 <code>html</code> 的 <code>font-size</code> 大小，並在內部都使用 rem 來作為大小長度等尺寸依賴，藉此達到整體畫面文字圖片比例的自適應。</p></blockquote> <h2 id="方法一"><a href="#方法一" class="header-anchor">#</a> 方法一</h2> <p>第一種作法如下：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>demo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>元素<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// 假設當前畫面 html font-size 是 100px，並且會隨著畫面放大縮小而變大變小</span>
+<span class="token selector">html </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#id </span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 0.3rem<span class="token punctuation">;</span>
+  <span class="token property">animation</span><span class="token punctuation">:</span> floating 1s linear infinite<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@keyframes</span> floating</span> <span class="token punctuation">{</span>
+  <span class="token keyword">from</span> <span class="token punctuation">{</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0.28rem<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">to </span><span class="token punctuation">{</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> 0.32rem<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我們預期元素會在 0.28 ~ 0.32rem 的範圍內上下浮動。實際開啟瀏覽器也確實沒有問題。</p> <p>但是！！，如果只是這麼簡單就不用這篇記錄了，當使用 <code>Safari</code> 瀏覽器開啟時，會發現只有一開始進入畫面時會是正確的位置，之後不論畫面放大縮小，懸浮位置似乎不會隨著畫面放大或縮小而調整。</p> <p>照理來說，流程應該像下面這樣：</p> <blockquote><p>畫面 resize -&gt; rem 動態變大或變小 -&gt; animation 計算變化 -&gt; 元素位置修正</p></blockquote> <p>但事與願違，他就是跑到一個很怪。</p> <p><strong>發生原因</strong></p> <p>經測試後了解發生原因是因為 <code>Safari</code> 會將靜態 CSS 的尺寸快取起來，頁面第一次載入後，為了提升效能，<code>Safari</code> 把一些靜態 CSS 快取起來，加快下次載入的速度，而所謂的 <code>靜態 CSS</code> 究竟包括了哪些？對，這就是本篇重點！！對於 CSS 來說，哪些是動態資源、哪些是靜態資源必須特別加以分辨。</p> <p>上面的 <code>top</code> 屬性在 CSS 中，就屬於靜態資源，只會經過一次的瀏覽器計算，並且被快取起來，但製作動畫時，我們希望的是在每次畫面調整後，都能自動適應，並且維持最佳效能的東西，當今天只要定位元素時，就是使用靜態資源的時機; 但製作動畫時，如果使用靜態資源，會造成整個 CSS 的整個重新畫面渲染，這又牽涉到了 CSS 渲染重繪的分層 layout 概念。</p> <blockquote><p>段落大意：動畫使用動態資源，定位使用靜態資源。</p></blockquote> <h2 id="方法二"><a href="#方法二" class="header-anchor">#</a> 方法二</h2> <p>方法二就是使用 CSS <code>transform</code> 來進行，當使用 <code>transform</code> 時，我們會利用 scale, translate, rotate 等等 CSS <strong><code>函數</code></strong> 來計算動畫屬性，而這個函數，在 CSS 中會動態求值，也因此可以解決這個快取問題。</p> <p>改寫如下：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token atrule"><span class="token rule">@keyframes</span> floating</span> <span class="token punctuation">{</span>
+  <span class="token keyword">from</span> <span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-0.02rem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">to </span><span class="token punctuation">{</span>
+    <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>0.02rem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>使用一樣的 rem 來設定，但這次不論畫面怎麼 resize，瀏覽器都能完美的呈現動畫該有的效果尺寸。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/book/articles/css/landscape-fix-scroll.html" class="prev">
+        CSS 畫面鎖橫屏時，滾動的問題！！
+      </a></span> <span class="next"><a href="/book/articles/git/what-is-git.html">
+        Git 版本控制
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/book/assets/js/app.a68c7b0f.js" defer></script><script src="/book/assets/js/2.80876f92.js" defer></script><script src="/book/assets/js/11.7e26c8c0.js" defer></script>
+  </body>
+</html>

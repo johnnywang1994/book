@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SCSS Parent Selector | Johnny Wang Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="vuepress demo">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/book/assets/css/0.styles.c567690f.css" as="style"><link rel="preload" href="/book/assets/js/app.a68c7b0f.js" as="script"><link rel="preload" href="/book/assets/js/2.80876f92.js" as="script"><link rel="preload" href="/book/assets/js/13.e58c81d3.js" as="script"><link rel="prefetch" href="/book/assets/js/10.5a7851a5.js"><link rel="prefetch" href="/book/assets/js/11.7e26c8c0.js"><link rel="prefetch" href="/book/assets/js/12.228cd22a.js"><link rel="prefetch" href="/book/assets/js/14.ab3baa56.js"><link rel="prefetch" href="/book/assets/js/15.66edd788.js"><link rel="prefetch" href="/book/assets/js/16.9118fb7e.js"><link rel="prefetch" href="/book/assets/js/17.7c81cfa2.js"><link rel="prefetch" href="/book/assets/js/18.99f3e094.js"><link rel="prefetch" href="/book/assets/js/19.1484462f.js"><link rel="prefetch" href="/book/assets/js/20.701204f0.js"><link rel="prefetch" href="/book/assets/js/21.8e9ce2ab.js"><link rel="prefetch" href="/book/assets/js/22.c55b915f.js"><link rel="prefetch" href="/book/assets/js/23.fa70bf02.js"><link rel="prefetch" href="/book/assets/js/24.fd76481f.js"><link rel="prefetch" href="/book/assets/js/25.f8849f04.js"><link rel="prefetch" href="/book/assets/js/26.daca280a.js"><link rel="prefetch" href="/book/assets/js/27.11cf283d.js"><link rel="prefetch" href="/book/assets/js/28.bb812025.js"><link rel="prefetch" href="/book/assets/js/29.72c75021.js"><link rel="prefetch" href="/book/assets/js/3.f22d6683.js"><link rel="prefetch" href="/book/assets/js/30.5520f6d0.js"><link rel="prefetch" href="/book/assets/js/31.effc854d.js"><link rel="prefetch" href="/book/assets/js/32.07b58df8.js"><link rel="prefetch" href="/book/assets/js/33.b1e1b210.js"><link rel="prefetch" href="/book/assets/js/34.09e42ee7.js"><link rel="prefetch" href="/book/assets/js/35.c961488b.js"><link rel="prefetch" href="/book/assets/js/36.6d20ef48.js"><link rel="prefetch" href="/book/assets/js/37.49864537.js"><link rel="prefetch" href="/book/assets/js/38.3b504693.js"><link rel="prefetch" href="/book/assets/js/39.f09a9d69.js"><link rel="prefetch" href="/book/assets/js/4.63c77aa4.js"><link rel="prefetch" href="/book/assets/js/40.4a641d1c.js"><link rel="prefetch" href="/book/assets/js/41.a1231857.js"><link rel="prefetch" href="/book/assets/js/42.297e2692.js"><link rel="prefetch" href="/book/assets/js/43.130be015.js"><link rel="prefetch" href="/book/assets/js/44.ed94dab8.js"><link rel="prefetch" href="/book/assets/js/45.9694b35d.js"><link rel="prefetch" href="/book/assets/js/46.6a8222f8.js"><link rel="prefetch" href="/book/assets/js/5.d2e39c96.js"><link rel="prefetch" href="/book/assets/js/6.7af320bb.js"><link rel="prefetch" href="/book/assets/js/7.abce3285.js"><link rel="prefetch" href="/book/assets/js/8.1b3b9378.js"><link rel="prefetch" href="/book/assets/js/9.bebe1dc6.js">
+    <link rel="stylesheet" href="/book/assets/css/0.styles.c567690f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/book/" class="home-link router-link-active"><!----> <span class="site-name">Johnny Wang Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/book/articles/" class="nav-link router-link-active">
+  Articles
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/book/articles/" class="nav-link router-link-active">
+  Articles
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>About Me</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/book/articles/" aria-current="page" class="sidebar-link">關於 Johnny</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>CSS &amp; Sass</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/book/articles/css/parent-selector.html" aria-current="page" class="active sidebar-link">SCSS Parent Selector</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/book/articles/css/parent-selector.html#作法" class="sidebar-link">作法</a></li><li class="sidebar-sub-header"><a href="/book/articles/css/parent-selector.html#conclusion" class="sidebar-link">Conclusion</a></li></ul></li><li><a href="/book/articles/css/landscape-fix-scroll.html" class="sidebar-link">CSS 畫面鎖橫屏時，滾動的問題！！</a></li><li><a href="/book/articles/css/animation-rem.html" class="sidebar-link">Safari 使用 animation 時動態產生 rem 的坑</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git Learning</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Docker</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Google api</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Facebook api</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="scss-parent-selector"><a href="#scss-parent-selector" class="header-anchor">#</a> SCSS Parent Selector</h1> <h5 id="updated-at-2021-03-17"><a href="#updated-at-2021-03-17" class="header-anchor">#</a> updated at: 2021-03-17</h5> <h6 id="tag-css-scss-parent-selector-at-root"><a href="#tag-css-scss-parent-selector-at-root" class="header-anchor">#</a> tag <code>css</code>, <code>scss</code>, <code>parent-selector</code>, <code>@at-root</code></h6> <p>前端工程師對以下需求一定很熟悉：</p> <p>當添加 <code>bold</code> class 給 <code>parent</code> 時，該如何添加 styles 給 <code>Hello World</code></p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- normal --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>parent<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>child<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Hello World<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- bold --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>parent bold<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>child<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Hello World<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="作法"><a href="#作法" class="header-anchor">#</a> 作法</h2> <h3 id="添加獨立的-css"><a href="#添加獨立的-css" class="header-anchor">#</a> 添加獨立的 css</h3> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.parent .child span</span> <span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/* 分開寫 */</span>
+<span class="token selector">.parent.bold .child span</span> <span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>這個做法雖然可以，但長遠來看，我們必須將相同對象的 style 分開寫，並不利於長期維護</p> <h3 id="使用-scss-封裝"><a href="#使用-scss-封裝" class="header-anchor">#</a> 使用 scss 封裝</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.parent </span><span class="token punctuation">{</span>
+  <span class="token selector">.child span </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">/* 雖然較好，但還是分開寫 */</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>.bold .child span </span><span class="token punctuation">{</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>此方法雖然看起來封裝了，也比前一個利於維護，但對於目標 <code>span</code> 而言還是分開寫的</p> <h3 id="使用-scss-at-root-規則"><a href="#使用-scss-at-root-規則" class="header-anchor">#</a> 使用 scss @at-root 規則</h3> <p>scss 的 <code>@at-root</code> 規則會將當前指標指向 root 環境，詳細使用方式可見<a href="https://sass-lang.com/documentation/at-rules/at-root" target="_blank" rel="noopener noreferrer">scss @at-root<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，如以下範例：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.parent </span><span class="token punctuation">{</span>
+  <span class="token selector">.child </span><span class="token punctuation">{</span>
+    <span class="token comment">// 1. 後方不接 selector，開放 root</span>
+    <span class="token atrule"><span class="token rule">@at-root</span></span> <span class="token punctuation">{</span>
+      <span class="token selector">span </span><span class="token punctuation">{</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 2. 後方接 selector</span>
+    <span class="token atrule"><span class="token rule">@at-root</span> span</span> <span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// compile to</span>
+<span class="token selector">span </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>但這種方式如果要做上面的需求，我們必須 hardcore，雖然做到了想要的效果（放在一起），但每次都必須手動把整個 path 寫一遍是一件危險的事情。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.parent </span><span class="token punctuation">{</span>
+  <span class="token selector">.child </span><span class="token punctuation">{</span>
+    <span class="token selector">span </span><span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+      <span class="token comment">// 一起寫，但使用不方便</span>
+      <span class="token atrule"><span class="token rule">@at-root</span> .parent.bold .child span</span> <span class="token punctuation">{</span>
+        <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="mixin-解法"><a href="#mixin-解法" class="header-anchor">#</a> mixin 解法</h3> <p>我們使用 scss 的 <a href="https://sass-lang.com/documentation/style-rules/parent-selector" target="_blank" rel="noopener noreferrer">Parent Selector<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 來幫助我們上面 hardcore 的部分</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">attach-root</span><span class="token punctuation">(</span><span class="token variable">$new-class</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property"><span class="token variable">$current-selector</span></span><span class="token punctuation">:</span> &amp;<span class="token punctuation">;</span> <span class="token comment">// array</span>
+  <span class="token property"><span class="token variable">$new-selector</span></span><span class="token punctuation">:</span> []<span class="token punctuation">;</span> <span class="token comment">// new array</span>
+
+  <span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$item</span> in <span class="token variable">$current-selector</span> </span><span class="token punctuation">{</span>
+    <span class="token property"><span class="token variable">$first-node</span></span><span class="token punctuation">:</span> <span class="token function">nth</span><span class="token punctuation">(</span><span class="token variable">$item</span><span class="token punctuation">,</span> 1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$appended-node</span></span><span class="token punctuation">:</span> <span class="token variable">$first-node</span> <span class="token operator">+</span> <span class="token variable">$new-class</span><span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$new-item</span></span><span class="token punctuation">:</span> <span class="token function">set-nth</span><span class="token punctuation">(</span><span class="token variable">$item</span><span class="token punctuation">,</span> 1<span class="token punctuation">,</span> <span class="token variable">$appended-node</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// replace target node</span>
+    <span class="token property"><span class="token variable">$new-selector</span></span><span class="token punctuation">:</span> <span class="token function">append</span><span class="token punctuation">(</span><span class="token variable">$new-item</span><span class="token punctuation">,</span> <span class="token variable">$new-selector</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token atrule"><span class="token rule">@at-root</span> <span class="token variable">#{$new-selector}</span></span> <span class="token punctuation">{</span>
+    <span class="token keyword">@content</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>上面主要是將 parent selector <code>&amp;</code>儲存為變數，並替換第一個 node selector，加上指定 class 後再重新組回去，最後再用 <code>@at-root</code> 重新放回原位置。</p> <p>使用如下：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.parent </span><span class="token punctuation">{</span>
+  <span class="token selector">.child </span><span class="token punctuation">{</span>
+    <span class="token selector">span </span><span class="token punctuation">{</span>
+      <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+      <span class="token comment">// 一起寫，好用</span>
+      <span class="token keyword">@include</span> <span class="token function">attach-root</span><span class="token punctuation">(</span><span class="token string">'.bold'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// compile to</span>
+<span class="token selector">.parent .child span </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.parent.bold .child span </span><span class="token punctuation">{</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="conclusion"><a href="#conclusion" class="header-anchor">#</a> Conclusion</h2> <p>本篇主要講到兩個 scss 蠻特別的規則 <code>@at-root</code>, <code>parent-selector</code>，這兩個東西雖然看似不知道可以幹嘛，但實際上非常有用～，上面的 mixin 只要稍作修改就能夠變成更萬能的工具摟～（這部分留給讀者自行嘗試拉～）</p> <p>以上感謝大家觀看，下次見</p> <h5 id="文章參考自-add-class-to-the-most-outer-selector-using-sass-mixin"><a href="#文章參考自-add-class-to-the-most-outer-selector-using-sass-mixin" class="header-anchor">#</a> 文章參考自：<a href="https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/" target="_blank" rel="noopener noreferrer">Add class to the most outer selector using Sass mixin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h5></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/book/articles/js/mvvm-practice.html" class="prev">
+        MVVM 簡單模擬框架實作
+      </a></span> <span class="next"><a href="/book/articles/css/landscape-fix-scroll.html">
+        CSS 畫面鎖橫屏時，滾動的問題！！
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/book/assets/js/app.a68c7b0f.js" defer></script><script src="/book/assets/js/2.80876f92.js" defer></script><script src="/book/assets/js/13.e58c81d3.js" defer></script>
+  </body>
+</html>
