@@ -98,6 +98,18 @@ let tom: Person = {
 tom.id = 4069;
 ```
 
+也可以定義函數的 interface 或是子屬性為函數
+
+```ts
+interface MyFunction {
+  (a: number): void;
+}
+
+interface MyObject {
+  jump: (a: number) => void;
+}
+```
+
 
 ## 陣列的類型
 
@@ -128,6 +140,8 @@ function sum() {
   let args: IArguments = arguments;
 }
 ```
+
+關於其他內建物件[可查看這](https://willh.gitbook.io/typescript-tutorial/basics/built-in-objects)。
 
 
 ## 函數的類型
@@ -207,10 +221,10 @@ function reverse(x: number | string): number | string {
   1. 使用聯合類型時，有時必須在還不確定類型時訪問特定類型屬性
     - 使用時必須小心，避免在斷言後直接調用屬性，因編譯時會通過，但運行時會掛
   2. 父類別繼承關係斷言
-  3. "XXX as any" 是解決 TS 類型問題的最後手段，非必要盡量少用
-  4. 斷言補強（對於返回 any 類型的舊代碼，可以在調用返回後明確斷言他的類型）
-  5. 類型斷言只會在編譯時有效，對實際編譯後的代碼不具任何影響
-  6. 類型聲明比類型斷言更加嚴格，盡量都先使用聲明式
+  3. "XXX as any" 是解決 TS 類型問題的`最後手段，非必要盡量少用`
+  4. `斷言補強`（對於返回 any 類型的舊代碼，可以在調用返回後明確斷言他的類型）
+  5. 類型斷言`只會在編譯時有效`，對實際編譯後的代碼不具任何影響
+  6. 類型聲明比類型斷言更加嚴格，`盡量都先使用聲明式`
 
 ```ts
 // 1.
@@ -295,5 +309,16 @@ declare const jQuery: (selector: string) => any;
 declare namespace Vue {
   function component(name: string, data: any): any;
   function mixin(data: any): void;
+}
+```
+
+### 宣告合併
+
+以 jQuery 舉例，他既是一個函式，可以直接被呼叫，又是一個物件，擁有子屬性，那麼我們可以組合多個宣告語句，它們會不衝突的合併起來。
+
+```ts
+declare function jQuery(selector: string): any;
+declare namespace jQuery {
+  function ajax(url: string, settings?: any): void;
 }
 ```
