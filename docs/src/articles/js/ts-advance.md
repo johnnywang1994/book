@@ -340,3 +340,167 @@ createArray(3, 'x');
 ```
 
 
+## 常用技巧
+
+### 提取變數型別
+
+使用 `typeof` 提取變數型別
+
+```ts
+let a = 123;
+let b = { x: 0, y: 1 };
+
+type A = typeof a; // number
+type B = typeof b; // { x: number, y: number }
+```
+
+
+### 綁定函數 this 指標
+綁定函數 `this` 在第一個參數上，[詳見參考](https://www.typescriptlang.org/docs/handbook/functions.html#this)
+
+> 此僅在編譯階段檢查，實際編譯後並不會綁定
+
+```ts
+const obj = {
+  say(name: string) {
+    console.log('Hello: ', name);
+  },
+};
+
+function test(this: typeof obj, str: string) {
+  console.log(this.say(str));
+}
+```
+
+
+### 索引變數
+
+```ts
+interface A {
+  [key: string]: any;
+}
+
+// in 表示遍歷，子屬性可包含 'a', 'b', 'c'，型別為: string
+type B = {
+  [key in 'a' | 'b' | 'c']: string;
+}
+```
+
+
+### 內建類型
+Typescript 有內建許多好用的類型供開發者直接使用
+
+#### Record
+產生一個 key: K, value: T 型別的對象類型
+
+```ts
+// keyof any 包含: string | number | symbol
+type Record<K extends keyof any, T> = {
+  [P in K]: T
+}
+
+const foo: Record<string, boolean> = {
+  a: true
+};
+
+const bar: Record<'x' | 'y', number> = {
+  x: 1,
+  y: 2
+};
+```
+
+#### Partial
+使 T 的所有屬性為可選
+
+```ts
+type Partial<T> = {
+  [P in keyof T]?: T[P]
+}
+
+interface Foo {
+  a: string;
+  b: number;
+}
+
+const foo: Partial<Foo> = {
+  b: 2 // `a` 非必要
+}
+```
+
+
+#### Required
+與 Partial 相反，將所有 T 的屬性變為必要
+
+#### Readonly
+使 T 所有屬性變為只讀
+
+#### Pick
+從 T 中選擇一些屬性使用，該屬性來自於 K
+
+```ts
+type Pick<T, K extends keyof T> = {
+  [P in K]: T[P]
+}
+
+interface Foo {
+  a: string;
+  b: number;
+  c: boolean;
+}
+
+const foo: Pick<Foo, 'b' | 'c'> = {
+  b: 1,
+  c: false
+};
+```
+
+#### Exclude
+排除掉 T 中包含在 U 裡的類型
+
+```ts
+// 如果 T 是 U 的子類型，返回 never, 否則返回 T
+type Exclude<T, U> = T extends U ? never : T
+
+// 只能為 a, c
+let foo: Exclude<'a' | 'b' | 'c', 'b'> = 'a'
+foo = 'c'
+```
+
+#### Extract
+與 Exclude 相反，提取 T 中能赋值给 U 的類型
+
+```ts
+// 如果 T 是 U 的子類型，返回 T，否則返回 never
+type Extract<T, U> = T extends U ? never : T
+
+// 只能為 b
+let foo: Extract<'a' | 'b' | 'c', 'b'> = 'b'
+```
+
+
+#### Parameters
+根據函數的參數返回對應的 Tuple 類型
+
+```ts
+type Parameters<T extends (...args: any) => any> =
+  T extends (...args: infer P) => any ? P : never
+
+type Foo = (a: string, b: number) => void
+const a: Parameters<Foo> = ['a', 1] // [string, number]
+```
+
+#### ReturnType
+
+```ts
+type ReturnType<T extends (...args: any) => any> =
+  T extends (...args:any) => infer R ? R : any
+
+type Foo = () => boolean
+const a: ReturnType<Foo> = true // 返回 boolean 型別
+```
+
+
+## 參考文章
+
+1. [TypeScript 新手指南](https://willh.gitbook.io/typescript-tutorial/)
+2. [TypeScript 實踐與技巧](https://juejin.cn/post/6873080212675166215#heading-15)
