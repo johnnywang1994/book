@@ -82,6 +82,7 @@ module.exports = {
             'css/parent-selector.md',
             'css/landscape-fix-scroll.md',
             'css/animation-rem.md',
+            'css/scss-basic.md',
           ]
         },
         {
