@@ -22,6 +22,8 @@
   "homepage": "https://github.com/johnnywang1994/book#readme",
   "license": "MIT",
   "devDependencies": {
+    "node-sass": "^4.0.0",
+    "sass-loader": "10.1.1",
     "vuepress": "^1.5.3"
   },
   "dependencies": {
