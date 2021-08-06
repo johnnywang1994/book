@@ -1,0 +1,243 @@
+<template>
+  <main class="project-page">
+    <h1>Project</h1>
+    <div class="demo-list">
+      <div
+        v-for="(demo, index) in creations"
+        :key="`demo_${demo.id || index}`"
+        class="demo-item"
+      >
+        <a :href="demo.link" :title="demo.name" target="_blank" ontouchstart="">
+          <div class="photo-wrap">
+            <div class="photofix">
+              <img :src="demo.image" />
+            </div>
+          </div>
+          <div class="demo-content">
+            <h3>{{ demo.name }}</h3>
+            <p class="des">{{ demo.des }}</p>
+            <p class="tech">{{ demo.tech }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+</template>
+
+<script>
+const cdn = (path) => `https://johnnywang1994.github.io/assets/myblog${path}`;
+
+export default {
+  name: 'MyProject',
+  data() {
+    return {
+      creations: [{
+        "des" : "在職期間所製作的專案，天涯明月刀預登頁",
+        "id" : "garena-mbm-preregist",
+        "image" : cdn("/websites/mbm-preregist.png"),
+        "link" : "https://mbm.garena.tw/",
+        "name" : "Garena MBM Preregister Website",
+        "tech" : "Nuxt.js, Axios, Swiper, SSR"
+      }, {
+        "des" : "在職期間所製作的專案，魔導少年官網，歡迎各位下載遊戲一起玩喔～",
+        "id" : "garena-fairy-tail",
+        "image" : cdn("/websites/fairy-tail-web.png"),
+        "link" : "https://ftm.garena.tw/",
+        "name" : "Garena Fairy Tail Official Website",
+        "tech" : "Nuxt.js, Axios, Swiper, SSR"
+      }, {
+        "des" : "在職期間所製作的專案，上聯國際展覽公司的官網，歡迎各位參觀逛逛~",
+        "id" : "toplink-official",
+        "image" : cdn("/websites/toplinkofficial.jpg"),
+        "link" : "https://www.top-link.com.tw/",
+        "name" : "TopLink Official Website",
+        "tech" : "Vue-Cli 3.0, PHP, Bootstrap4-grid, Axios, ld+json"
+      }, {
+        "des" : "用 vue, p5js 製作的小遊戲",
+        "id" : "vue-p5-game",
+        "image" : cdn("/websites/vue-p5-game.png"),
+        "link" : "https://johnnywang1994.github.io/p5-game/",
+        "name" : "Vue P5js Game",
+        "tech" : "Vue.js3.x, P5js, Canvas"
+      }, {
+        "des" : "用 vue, canvas 製作的簡單畫布功能",
+        "id" : "vue-paint-board",
+        "image" : cdn("/websites/vue-paint-board.png"),
+        "link" : "https://johnnywang1994.github.io/paint-board/",
+        "name" : "Vue Canvas Paint Board",
+        "tech" : "Vue.js, Canvas, Color Selector"
+      }, {
+        "des" : "用 vue, 原生 js 製作的消方塊！來玩看看啊！",
+        "id" : "vue-crush-puzzle",
+        "image" : cdn("/websites/vue-crush-puzzle.png"),
+        "link" : "https://johnnywang1994.github.io/crush-puzzle/",
+        "name" : "Vue Crush Puzzle",
+        "tech" : "Vue.js, JavaScript"
+      }, {
+        "des" : "用 vue, 原生 js 製作的滑動拼圖！來玩看看啊！",
+        "id" : "vue-slide-puzzle",
+        "image" : cdn("/websites/vue-slide-puzzle.png"),
+        "link" : "https://johnnywang1994.github.io/slide-puzzle/",
+        "name" : "Vue Slide Puzzle",
+        "tech" : "Vue.js, JavaScript"
+      }, {
+        "des" : "簡易匯率換算功能的單頁應用，可以換算現金匯率及即時匯率，資料來源為台灣銀行的官方匯率",
+        "id" : "nodejs-rate",
+        "image" : cdn("/websites/noderate.jpg"),
+        "link" : "https://nodejs-rate.herokuapp.com/#/rate",
+        "name" : "Taiwan Bank Dollar Rate",
+        "tech" : "Node.js, Express.js"
+      }, {
+        "des" : "空閒時做的單頁聊天室窗，暱稱隨便取，開始來聊天八~",
+        "id" : "nodejs-chatter",
+        "image" : cdn("/websites/nodechatter.jpg"),
+        "link" : "https://nodejs-chatter.herokuapp.com/",
+        "name" : "Single Page Chatroom",
+        "tech" : "Node.js, Express.js, Socket.io, BootStrap4"
+      }, {
+        "des" : "台灣股市即時交易資訊爬蟲查詢小工具",
+        "id" : "nodejs-stock",
+        "image" : cdn("/websites/nodestock.png"),
+        "link" : "https://nodejs-rate.herokuapp.com/#/stock",
+        "name" : "Taiwan Stock Tool",
+        "tech" : "Vue.js, Express.js, Axios"
+      }, {
+        "des" : "經濟日報即時新聞爬蟲瀏覽小工具",
+        "id" : "nodejs-news",
+        "image" : cdn("/websites/nodenews.png"),
+        "link" : "https://nodejs-rate.herokuapp.com/#/money-news",
+        "name" : "Taiwan Money News",
+        "tech" : "Vue.js, Express.js, Phantom, Cheerio"
+      }, {
+        "des" : "一個簡單的QRcode讀取器，掃描QRcode...",
+        "id" : "qrcode-reader",
+        "image" : cdn("/websites/qrcodereader.jpg"),
+        "link" : "https://johnnywang1994.github.io/qrcode-reader/",
+        "name" : "QRcode Reader",
+        "tech" : "Instascan, Vue.js"
+      }],
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+$border-color: #eaecef;
+@mixin card-hover {
+  transform: translateY(-6px) translateZ(10px);
+  box-shadow: 2px 2px 6px #888;
+  transition: all 0.2s;
+}
+
+@mixin ellipsis($line: 1) {
+  overflow: hidden;
+  @if ($line >= 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  } @else {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.project-page {
+  padding: 4.6rem 2rem 0;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: block;
+
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .demo-list {
+    display: flex;
+    flex-wrap: wrap;
+    .demo-item {
+      position: relative;
+      padding: 20px;
+      width: 25%;
+      box-sizing: border-box;
+      @media (max-width: 1170px) {
+        width: 33.33334%;
+      }
+      @media (max-width: 951px) {
+        width: 50%;
+      }
+      @media (max-width: 719px) {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 12px;
+      }
+      > a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #fff;
+        transform: translateZ(0);
+        transition: all 0.4s;
+        @media (min-width: 720px) {
+          &:hover {
+            @include card-hover;
+          }
+        }
+        @media (max-width: 719px) {
+          &:active {
+            @include card-hover;
+          }
+        }
+      }
+      .photo-wrap {
+        height: 180px;
+        border-bottom: 1px solid $border-color;
+        > .photofix {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          > img {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      .demo-content {
+        padding: 0.6em 1em;
+        h3 {
+          font-size: 1rem;
+          margin: 0.4em 0;
+          @include ellipsis(1);
+        }
+        p {
+          font-size: 14px;
+          &.des {
+            line-height: 1.3;
+            letter-spacing: 1.4px;
+            height: 3.9em;
+            @include ellipsis(3);
+          }
+          &.tech {
+            line-height: 1.3;
+            padding-top: 0.2em;
+            height: 2.8em;
+            color: #aaa;
+            border-top: 1px solid $border-color;
+          }
+        }
+      }
+    }
+  }
+}
+</style>

@@ -1,0 +1,6 @@
+---
+layout: DefaultLayout
+---
+
+<MyProject />
+

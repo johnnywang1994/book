@@ -38,10 +38,10 @@ module.exports = {
         text: 'Articles',
         link: '/articles/',
       },
-      // {
-      //   text: 'VuePress',
-      //   link: 'https://v1.vuepress.vuejs.org'
-      // }
+      {
+        text: 'Project',
+        link: '/project/',
+      }
     ],
     sidebar: {
       '/articles/': [
@@ -122,7 +122,9 @@ module.exports = {
           ],
         },
       ],
-    }
+      '/project/': '/project'
+    },
+    lastUpdated: true,
   },
 
   /**
