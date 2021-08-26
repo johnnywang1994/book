@@ -83,7 +83,8 @@ module.exports = {
             'css/landscape-fix-scroll.md',
             'css/animation-rem.md',
             'css/scss-basic.md',
-          ]
+            'css/mix-blend-mode.md',
+          ],
         },
         {
           title: 'Git Learning',

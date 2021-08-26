@@ -1,6 +1,4 @@
 # SCSS Parent Selector
-
-##### updated at: 2021-03-17
 ###### tag `css`, `scss`, `parent-selector`, `@at-root`
 
 
