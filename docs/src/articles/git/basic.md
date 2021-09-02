@@ -1,6 +1,6 @@
-## Git 基礎使用 - init, clone, add, commit, status, log
+# Git 基礎使用 - init, clone, add, commit, status, log
 
-### 建立 local 倉庫
+## 建立 local 倉庫
 
 `git init` 將會建立一個名為 `.git` 的子資料夾，其中包含 Git 所有必需的倉儲檔案，
 
@@ -11,7 +11,7 @@ $ git init
 ```
 
 
-### clone 現有倉庫
+## clone 現有倉庫
 
 `git clone` 這指令將會建立名為「test_1」的資料夾，並在這個資料夾下初始化一個 `.git` 資料夾，從遠端倉儲拉取所有資料，
 
@@ -22,7 +22,7 @@ $ git clone https://github.com/example/test_1
 ```
 
 
-### 檢查檔案狀態
+## 檢查檔案狀態
 
 `git status` 用來偵測哪些檔案處在什麼樣的狀態下的主要工具
 
@@ -35,7 +35,7 @@ $ git status
 未追蹤的新檔案在開頭被標示為 ??、被加入預存區的新檔案被標為 A、已修改檔案則是 M 等等。
 
 
-### 開始追蹤、預存檔案
+## 開始追蹤、預存檔案
 
 `git add` 是一個多重用途的指令——用來「開始追蹤」檔案、「預存」檔案以及做一些其它的事，
 
@@ -52,7 +52,7 @@ $ git add [filename]
 切記！如果你在 git add 後修改檔案，你必需再次執行 git add 來預存最新版的檔案。
 
 
-### 忽略不需要的檔案
+## 忽略不需要的檔案
 
 通常你會有一類檔案不想讓 Git 自動加入，也不希望它們被顯示為未追蹤，這些通常是自動產生的檔案，
 
@@ -67,7 +67,7 @@ dist
 ```
 
 
-### 提交修改
+## 提交修改
 
 現在你的預存區已被建構成你想要的，你可以開始提交你的變更；記住：任何未預暫存的檔案——新增的、已修改的，
 
@@ -92,7 +92,7 @@ $ git commit -a -m "Init repo"
 ```
 
 
-### 檢視提交的歷史記錄
+## 檢視提交的歷史記錄
 
 專案目錄內執行 `git log` 將以反向的時間順序列出版本庫的提交歷史記錄——也就是說最新的提交會先被列出來。
 
@@ -108,22 +108,4 @@ $ git commit -a -m "Init repo"
 
 ```bash
 $ git log --color --decorate --oneline --graph
-```
-
-
-## Alias 別名
-
-如果你懶得輸入完整的 Git 指令，你可以輕易的使用 git config 來替指令設定別名。
-
-```bash
-$ git config --global alias.co checkout
-$ git config --global alias.br branch
-$ git config --global alias.ci commit
-$ git config --global alias.st status
-```
-
-能用來創造一些你覺得應該存在的指令。 舉例來說，為了提高查看 log graph 的方便性，你可以加入你自己的 graph 別名：
-
-```bash
-$ git config --global alias.graph 'log --oneline --graph'
 ```

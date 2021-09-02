@@ -1,6 +1,6 @@
-## Git 基礎復原指令 - restore
+# Git 基礎復原指令 - restore
 
-### git commit --amend
+## git commit --amend
 
 此操作通常發生在當你太早提交（commit），接著才發現忘了加入某些檔案，或者寫錯了提交訊息； 
 
@@ -27,7 +27,7 @@ $ git commit --amend
 最終只會得到一個提交——第二次的提交取代了第一次提交的結果。
 
 
-### git restore [filename]
+## git restore [filename]
 
 此操作將已修改檔案的修改內容完全重置，注意！是未預存的已修改檔案，謹慎使用！
 
@@ -38,7 +38,7 @@ git restore index.html
   - `--staged`：此後綴加入後針對已預存檔案，移出預存區。
 
 
-### git reset [commit Hash]
+## git reset [commit Hash]
 
 回溯到指定的提交位置，但在該提交後所做的所有變更，仍然會存在，只是會變為 unstaged 狀態。
 

@@ -1,6 +1,6 @@
-## Remote 遠端協同工作 - remote, fetch, pull, push
+# Remote 遠端協同工作 - remote, fetch, pull, push
 
-### 顯示你的遠端
+## 顯示你的遠端
 
 `git remote` 命令可以檢視你已經設定好的遠端版本庫， 它會列出每個遠端版本庫的「簡稱」。
 
@@ -15,7 +15,7 @@ origin	https://github.com/schacon/ticgit (fetch)
 origin	https://github.com/schacon/ticgit (push)
 ```
 
-### 新增遠端版本庫
+## 新增遠端版本庫
 
 使用 `git remote add <簡稱> <url>` 來新增遠端版本庫。
 
@@ -27,7 +27,7 @@ $ git push -u origin master
 ```
 
 
-### 遠端獲取或拉取
+## 遠端獲取或拉取
 
 `git fetch` 這個命令會連到遠端專案，然後從遠端專案中將你還沒有的資料全部拉下來；
 
@@ -42,7 +42,7 @@ $ git fetch [remote-name]
 實際上 `git pull` 就是同時執行了 fetch 跟 merge。
 
 
-### 推送到你的遠端
+## 推送到你的遠端
 
 `git push` 只有在你對克隆來源的伺服器有寫入權限，並且在這個當下還沒有其它人推送過，這個命令才會成功；
 

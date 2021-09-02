@@ -97,6 +97,7 @@ module.exports = {
             'git/recover.md',
             'git/remote.md',
             'git/tag.md',
+            'git/config.md',
           ],
         },
         {
