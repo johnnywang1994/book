@@ -48,33 +48,45 @@
 
 ## 個人小專案
 
+### Vue3 Game - 2048
+
+  - [Link](https://johnnywang1994.github.io/vue-2048/)
+  - [Source Code](https://github.com/johnnywang1994/vue-2048/blob/master/src/components/Vue2048.vue)
+  - Vue3.x, scss
+  - created at: 2021-09
+
 ### Bounce Ball
 
   - [Link](https://johnnywang1994.github.io/p5-game/#/bounce-ball)
+  - [Source Code](https://github.com/johnnywang1994/p5-game/blob/master/src/views/BounceBall.vue)
   - Vue3.x, P5js, Canvas
   - created at: 2021-03
 
 ### Shooting Virus
 
   - [Link](https://johnnywang1994.github.io/p5-game/#/shoot-virus)
+  - [Source Code](https://github.com/johnnywang1994/p5-game/blob/master/src/views/ShootVirus.vue)
   - Vue3.x, P5js, Canvas
   - created at: 2021-03
 
 ### Painting Board
 
   - [Link](https://johnnywang1994.github.io/paint-board/)
+  - [Source Code](https://github.com/johnnywang1994/paint-board/blob/master/src/components/PaintBoard.vue)
   - Vue3.x, Canvas
   - created at: 2020-10
 
 ### Crush Puzzle
 
   - [Link](https://johnnywang1994.github.io/crush-puzzle/)
+  - [Source Code](https://github.com/johnnywang1994/crush-puzzle/blob/master/src/components/CrushPuzzle.vue)
   - Vue2.x
   - created at: 2020-08
 
 ### Slide Puzzle
 
   - [Link](https://johnnywang1994.github.io/slide-puzzle/)
+  - [Source Code](https://github.com/johnnywang1994/vue-slide-puzzle/blob/master/src/components/SlidePuzzle.vue)
   - Vue2.x
   - created at: 2020-08
 

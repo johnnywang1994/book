@@ -32,26 +32,33 @@ export default {
   data() {
     return {
       creations: [{
-        "des" : "在職期間所製作的專案，天涯明月刀預登頁",
+        "des" : "天涯明月刀預登頁~",
         "id" : "garena-mbm-preregist",
         "image" : cdn("/websites/mbm-preregist.png"),
         "link" : "https://mbm.garena.tw/",
         "name" : "Garena MBM Preregister Website",
         "tech" : "Nuxt.js, Axios, Swiper, SSR"
       }, {
-        "des" : "在職期間所製作的專案，魔導少年官網，歡迎各位下載遊戲一起玩喔～",
+        "des" : "魔導少年官網，歡迎各位下載遊戲一起玩喔～",
         "id" : "garena-fairy-tail",
         "image" : cdn("/websites/fairy-tail-web.png"),
         "link" : "https://ftm.garena.tw/",
         "name" : "Garena Fairy Tail Official Website",
         "tech" : "Nuxt.js, Axios, Swiper, SSR"
       }, {
-        "des" : "在職期間所製作的專案，上聯國際展覽公司的官網，歡迎各位參觀逛逛~",
+        "des" : "上聯國際展覽公司的官網，歡迎各位參觀逛逛~",
         "id" : "toplink-official",
         "image" : cdn("/websites/toplinkofficial.jpg"),
         "link" : "https://www.top-link.com.tw/",
         "name" : "TopLink Official Website",
         "tech" : "Vue-Cli 3.0, PHP, Bootstrap4-grid, Axios, ld+json"
+      }, {
+        "des" : "用 vue3 製作的小遊戲",
+        "id" : "vue-2048",
+        "image" : cdn("/websites/vue-2048.png"),
+        "link" : "https://johnnywang1994.github.io/vue-2048/",
+        "name" : "Vue Game 2048",
+        "tech" : "Vue.js3.x"
       }, {
         "des" : "用 vue, p5js 製作的小遊戲",
         "id" : "vue-p5-game",
