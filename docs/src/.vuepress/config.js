@@ -98,6 +98,7 @@ module.exports = {
             'git/remote.md',
             'git/tag.md',
             'git/config.md',
+            'git/subtree.md',
           ],
         },
         {

@@ -3,6 +3,11 @@
 紀錄學習 git 的筆記跟一些使用想法。
 
 
+## 推薦學習資源
+- [GitHub-Getting started with Git](https://docs.github.com/en/get-started/getting-started-with-git)
+- [GitHub-Using Git](https://docs.github.com/en/get-started/using-git)
+
+
 
 ## 基礎概念 - unstaged, staged
 
@@ -12,7 +17,6 @@
 
 
 ### 三種狀態
-
 Git 會把你的檔案標記為三種主要的狀態：已提交（committed）、已修改（modified）及已預存（staged）
 
   - 已提交：代表這檔案己安全地存在你的本地端資料庫。

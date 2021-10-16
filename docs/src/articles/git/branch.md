@@ -65,3 +65,12 @@ $ git checkout testing
 ```bash
 $ git checkout -b testing
 ```
+
+
+## 以某遠端倉庫位置建立新分支
+
+假如當前 git 中包含 remote - origin, test，可以透過如下指令切換建立一個 remote test 的分支內容
+
+```bash
+$ git checkout -b [branch-name] [remote/branch]
+```

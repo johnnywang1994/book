@@ -26,6 +26,14 @@ $ git remote add origin https://github.com/example/test-repo.git
 $ git push -u origin master
 ```
 
+## 刪除遠端版本庫
+
+使用 `git remote rm <簡稱>` 來刪除。刪除前建議先確認目標的位置，避免誤刪
+
+```bash
+$ git remote rm test-origin
+```
+
 
 ## 遠端獲取或拉取
 
