@@ -79,6 +79,7 @@ module.exports = {
           title: 'CSS & Sass',
           collapsable: true,
           children: [
+            'css/scss-built-in-modules.md',
             'css/parent-selector.md',
             'css/landscape-fix-scroll.md',
             'css/animation-rem.md',
