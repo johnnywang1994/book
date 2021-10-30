@@ -82,14 +82,14 @@ p {
 
 
 ### List
-1. append($content, $list, $separator: auto)  
+1. append($list, $val, $separator: auto)  
 將指定內容加入指定 list 中
 
 $separator: `comma`, `space`
 
 ```scss
-$list: 10px;
-$new-list: append(20px 30px, $list);
+$list: 10px 20px;
+$new-list: append($list, 30px);
 // 10px 20px 30px
 ```
 
