@@ -89,6 +89,14 @@ module.exports = {
           ],
         },
         {
+          title: 'Daily',
+          collapsable: true,
+          children: [
+            'daily/2021/review-as-frontend.md',
+            'daily/front-end-interview.md'
+          ],
+        },
+        {
           title: 'Git Learning',
           collapsable: true,
           children: [
@@ -124,13 +132,6 @@ module.exports = {
           collapsable: true,
           children: [
             'fb/fb-api-basic.md',
-          ],
-        },
-        {
-          title: 'Interview',
-          collapsable: true,
-          children: [
-            'interview/front-end.md',
           ],
         },
       ],
