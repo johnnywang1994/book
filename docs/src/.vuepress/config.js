@@ -56,6 +56,7 @@ module.exports = {
           title: 'Javascript',
           collapsable: true,
           children: [
+            'js/node-ftp-cli.md',
             'js/regexp.md',
             'js/vue3-ssr.md',
             'js/event-loop.md',
