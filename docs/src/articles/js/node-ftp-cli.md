@@ -2,7 +2,7 @@
 
 懶得每次上傳東西到 ftp server 都要打開 filezilla 工具嗎？一起來動手做個簡單的 ftp command line tool 吧！
 
-今天這篇主要是紀錄使用 npm package [ftp](https://www.npmjs.com/package/ftp) 製作的 command line tool，結合之前學到的 minisist 解析 process.argv 處理指令列命令
+今天這篇主要是紀錄使用 npm package [ftp](https://www.npmjs.com/package/ftp) 製作的 command line tool，結合之前學到的 minimist 解析 process.argv 處理指令列命令
 
 那就開始動手摟！
 
