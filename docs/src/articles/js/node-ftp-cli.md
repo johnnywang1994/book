@@ -223,7 +223,7 @@ $ myftp --list /htdocs
 
 ## 結論
 
-這篇誕生於參考自網路大大文章以及自己的一些修修改改，做點小工具幫助日常開發，詳細完整源碼已開源在 npm 上摟[node-cli-ftp](https://www.npmjs.com/package/node-ftp-cli)，希望本文也能讓大家對一些指令列工具更熟悉摟～我是 Johnny，我們下篇分享見～^_^
+這篇誕生於參考自網路大大文章以及自己的一些修修改改，做點小工具幫助日常開發，詳細完整源碼已開源在 npm 上摟[node-ftp-cli](https://www.npmjs.com/package/node-ftp-cli)，希望本文也能讓大家對一些指令列工具更熟悉摟～我是 Johnny，我們下篇分享見～^_^
 
 
 
