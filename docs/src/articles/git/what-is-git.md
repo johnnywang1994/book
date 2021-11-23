@@ -6,7 +6,7 @@
 ## 推薦學習資源
 - [GitHub-Getting started with Git](https://docs.github.com/en/get-started/getting-started-with-git)
 - [GitHub-Using Git](https://docs.github.com/en/get-started/using-git)
-
+- [Learn-Git-in-30-days](https://github.com/doggy8088/Learn-Git-in-30-days)
 
 
 ## 基礎概念 - unstaged, staged

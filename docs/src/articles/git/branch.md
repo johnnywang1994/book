@@ -66,6 +66,12 @@ $ git checkout testing
 $ git checkout -b testing
 ```
 
+還原指定檔案版本，例如誤刪或是改壞某個特定檔案，又不想把整個紀錄 reset 回去時，可以執行如下動作，這段指令的意思是把 master 分支中最新版的 test.js 給還原
+
+```bash
+$ git checkout master test.js
+```
+
 
 ## 以某遠端倉庫位置建立新分支
 
