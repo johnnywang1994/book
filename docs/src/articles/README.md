@@ -101,6 +101,10 @@
   - [Link](https://nodejs-chatter.herokuapp.com/)
   - Nodejs, ExpressJs, Socket.io, Bootstrap4
   - created at: 2019-01
+  - Public account:
+    - account: public
+    - password: 0000
+    - fastcode: 0000
 
 ### Taiwan Stock Tool
 
