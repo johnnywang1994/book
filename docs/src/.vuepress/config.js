@@ -56,6 +56,7 @@ module.exports = {
           title: 'Javascript',
           collapsable: true,
           children: [
+            'js/pinia-intro.md',
             'js/node-ftp-cli.md',
             'js/regexp.md',
             'js/vue3-ssr.md',
