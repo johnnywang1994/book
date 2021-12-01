@@ -36,6 +36,7 @@ export default {
             'Nuxtjs 2+years',
             'Reactjs 1+years',
             'JavaScript 3+years',
+            'TypeScript 2+years',
             'Webpack 3+years',
             'SCSS 3+years',
           ],
@@ -56,6 +57,10 @@ export default {
             {
               content: '[NPM] jspdf-html2canvas',
               href: 'https://www.npmjs.com/package/jspdf-html2canvas',
+            },
+            {
+              content: '[NPM] node-ftp-cli',
+              href: 'https://www.npmjs.com/package/node-ftp-cli',
             },
             {
               content: '[NPM] remockjs',

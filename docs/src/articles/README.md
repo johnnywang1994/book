@@ -54,6 +54,13 @@
 
 ## 個人小專案
 
+### Vue3 Angry Bird
+
+  - [Link](https://johnnywang1994.github.io/p5-game/#/angry-bird)
+  - [Source Code](https://github.com/johnnywang1994/p5-game/blob/master/src/views/AngryBird.vue)
+  - Vue3.x, Matterjs
+  - created at: 2021-11
+
 ### Vue3 Game - 2048
 
   - [Link](https://johnnywang1994.github.io/vue-2048/)
