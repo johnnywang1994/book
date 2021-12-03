@@ -1,5 +1,7 @@
 # Pinia - Vuex 的後繼者
 
+<SocialBlock />
+
 大家好，今天要來介紹一款 Vue 的 State Management 套件 - [Pinia](https://pinia.esm.dev/)，即將在不久的將來（或是已經）能夠取代 Vuex，為何這麼說呢？
 
 ## Pinia vs. Vuex
@@ -477,3 +479,4 @@ const useB = defineStore('b', () => {
 
 下次見拉～=V=
 
+<SocialBlock />
