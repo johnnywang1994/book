@@ -1,5 +1,7 @@
 # Vuejs 依賴追蹤 2020 版
 
+<SocialBlock hashtags="vue" />
+
 過了一年，使用了下最新 vue-next 後覺得很神奇，剛好看到大神的實踐文章，動手實作後又有了新的想法，本篇是參考新版 Vue3 所製作，並以舊的 Vue2 `defineProperty` 來練習實作相似功能。原文出處是使用新的 Proxy 實作。（概念十分類似）
 
 
@@ -454,3 +456,5 @@ setTimeout(() => {
 
 文章參考：
 1. [帶你了解 vue-next（Vue 3.0）之 爐火純青](https://juejin.im/post/6850418105500303367)
+
+<SocialBlock hashtags="vue" />

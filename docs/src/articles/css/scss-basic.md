@@ -1,6 +1,7 @@
 # Sass, SCSS 基礎筆記
 ###### tag `css`, `scss`, `basic`
 
+<SocialBlock hashtags="css,scss,basic" />
 
 ## Usage
 
@@ -260,3 +261,5 @@ $sizes: ('sm': 40px, 'md': 50px, 'lg': 80px);
   color: red;
 }
 ```
+
+<SocialBlock hashtags="css,scss,basic" />

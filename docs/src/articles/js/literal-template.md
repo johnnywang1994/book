@@ -1,5 +1,7 @@
 # Js literal 模板編譯
 
+<SocialBlock hashtags="javascript,text" />
+
 編譯的工作是用來簡化書寫過程，或是進行一些常用功能的封裝，以利開發者使用。
 
 模板編譯主要是讓我們能夠在字串內，進行一些變數替換、判斷的運作，實作上常用正則表達式去進行比對處理，而比對後的處理就是我們本篇的關注重點。
@@ -144,3 +146,5 @@ render('Hello {{ name }}', { name: 'Johnny' });
 }
 */
 ```
+
+<SocialBlock hashtags="javascript,text" />

@@ -1,6 +1,7 @@
 # SCSS Parent Selector
 ###### tag `css`, `scss`, `parent-selector`, `@at-root`
 
+<SocialBlock hashtags="css,scss" />
 
 前端工程師對以下需求一定很熟悉：
 
@@ -149,3 +150,5 @@ span {
 以上感謝大家觀看，下次見
 
 ##### 文章參考自：[Add class to the most outer selector using Sass mixin](https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/)
+
+<SocialBlock hashtags="css,scss" />

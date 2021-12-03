@@ -1,5 +1,7 @@
 # TypeScript 進階篇
 
+<SocialBlock hashtags="typescript,advance" />
+
 此篇文章為看完阮一封前輩的教學後隨手筆記，供日後快速複習使用。
 
 
@@ -504,3 +506,5 @@ const a: ReturnType<Foo> = true // 返回 boolean 型別
 
 1. [TypeScript 新手指南](https://willh.gitbook.io/typescript-tutorial/)
 2. [TypeScript 實踐與技巧](https://juejin.cn/post/6873080212675166215#heading-15)
+
+<SocialBlock hashtags="typescript,advance" />

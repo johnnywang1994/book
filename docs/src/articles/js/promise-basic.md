@@ -1,5 +1,7 @@
 # Promise 相關知識
 
+<SocialBlock hashtags="javascript,promise" />
+
 紀錄 Promise 相關學習基礎與進階應用注意事項。
 
 Promise 是一個異步(非同步)的原生 WEB API，提供開發者控制非同步操作的需求，基礎概念很簡單，但實際用的時候，卻會常常遇到許多問題，本篇紀錄一些底層理解跟常見問題。
@@ -113,3 +115,5 @@ p1().then(function() { return p2() }).then(function() { return p3() }).then(res 
 ```
 
 到這邊會發現，如果我們有很多非同步函數需要依序執行時，使用 promise 將非常的肥大且複雜，彈性也被限制住，故一般不建議使用 promise 進行多個非同步動作的控制排序等，而會使用 es7 的 async/await 來取代這部分，promise 主要應用於針對非同步內部執行邏輯的細節去進行設定，而不是用在控制流程上。
+
+<SocialBlock hashtags="javascript,promise" />

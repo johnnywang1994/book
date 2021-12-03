@@ -1,5 +1,7 @@
 # Date.now() 與 new Date()
 
+<SocialBlock hashtags="javascript,date" />
+
 本篇探討一些前端的時間戳記理解，提供給大家參考：
 
 大家都知道 `Date.now` 就是一個 Date 物件的方法，可以快速拿到當下的時間，但究竟拿到的是什麼呢？
@@ -48,3 +50,5 @@ Date.now() 與 new Date() 不難理解，但如果是 `new Date('2020-03-18T00:0
 > when setting a date object without specific timezone, it set the date with the browser timezone.(different UTC time in different zone)
 
 所以當瀏覽器時區跟使用者時區不同，而你又一定要進行 set Date 物件的動作時，那就是要進行換算的時候了。
+
+<SocialBlock hashtags="javascript,date" />

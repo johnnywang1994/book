@@ -1,6 +1,8 @@
 # Sass, SCSS Built-In-Modules 內建模組與函數
 ###### tag `css`, `scss`, `build-in-modules`, `map`, `list`
 
+<SocialBlock hashtags="css,scss,module" />
+
 scss 函數就像其他語言一樣可以將一段邏輯抽象提出，並回傳一個值（list, map, string...），本篇主要紀錄當前最新版本的 scss 相關內建操作函數作為個人閱讀文檔的筆記
 
 建議讀者閱讀如果要測試時，請確認您的 scss 版本是否須更新～感恩
@@ -306,3 +308,5 @@ $font-weights: ("regular": 400, "medium": 500, "bold": 700);
 
 ## Reference
   - [sass- Built-In Modules](https://sass-lang.com/documentation/modules)
+
+<SocialBlock hashtags="css,scss,module" />

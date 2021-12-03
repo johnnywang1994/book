@@ -1,7 +1,7 @@
 # MVVM 簡單模擬框架實作
 ###### tags: `JavaScript`, `Vuejs`, `MVVM`
 
-
+<SocialBlock hashtags="javascript,vuejs,mvvm" />
 
 ### 背景
 
@@ -602,3 +602,5 @@ const vm = new MVVM({
   - [剖析Vue实现原理 - 如何实现双向绑定mvvm](https://github.com/DMQ/mvvm)
 
   - [js 模板编译的实现](https://www.yukapril.com/2017/01/09/js-template-compile.html)
+
+<SocialBlock hashtags="javascript,vuejs,mvvm" />

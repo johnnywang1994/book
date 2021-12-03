@@ -1,5 +1,7 @@
 # JS 實戰開發特殊小技巧
 
+<SocialBlock hashtags="javascript" />
+
 本篇主要記錄一些開發 js 時的一些小技巧筆記～
 
 
@@ -73,4 +75,4 @@ console.log(myFruit); // ['apple', 'banana']
 <p oncopy="return false" oncut="return false">Content cant be copy</p>
 ```
 
-
+<SocialBlock hashtags="javascript" />

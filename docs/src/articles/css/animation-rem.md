@@ -1,6 +1,8 @@
 # Safari 使用 animation 時動態產生 rem 的坑
 ###### tags: `CSS` `rem` `animation`
 
+<SocialBlock hashtags="css,rem,animation" />
+
 本篇誕生於同事日常開發動畫時遇到的問題，覺得是個不錯的主題，記錄下來：
 
 主要需求很簡單，就只是使用 `@keyframes` 對元素進行上下懸浮的效果。並且浮動的長度單位使用的是動態生成的 rem。
@@ -74,4 +76,4 @@ html {
 
 使用一樣的 rem 來設定，但這次不論畫面怎麼 resize，瀏覽器都能完美的呈現動畫該有的效果尺寸。
 
-<SocialBlock />
+<SocialBlock hashtags="css,rem,animation" />

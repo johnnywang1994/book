@@ -1,5 +1,7 @@
 # Rxjs 學習筆記
 
+<SocialBlock hashtags="javascript,rxjs" />
+
 本篇紀錄學習 Rxjs 的相關筆記內容，供日後複習使用，主要以基礎知識開始。
 
 
@@ -125,3 +127,5 @@ setTimeout(() => {
   subscription.unsubscribe();
 }, 1000);
 ```
+
+<SocialBlock hashtags="javascript,rxjs" />

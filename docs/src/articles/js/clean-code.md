@@ -1,5 +1,7 @@
 # Clean Code Javascript 學習
 
+<SocialBlock hashtags="javascript" />
+
 本篇記錄學習 clean code 的一些注意要點，屬於我個人需要注意的地方，本身已經會使用的寫法就不另外贅述。
 
 
@@ -128,3 +130,5 @@ if (inValid) {}
 ## 參考文章
 
 [代碼整潔的 Javascript](https://github.com/beginor/clean-code-javascript)
+
+<SocialBlock hashtags="javascript" />

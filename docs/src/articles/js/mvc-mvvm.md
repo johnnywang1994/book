@@ -1,5 +1,7 @@
 # MVC, MVVM, MVI 軟體設計架構
 
+<SocialBlock hashtags="javascript,mvc,mvvm" />
+
 本篇是個人學習這些不同軟體架構模式後的一些心得理解筆記，內容並無將所有情況都包含進去，僅加深個人理解使用，請各位大神多多包涵。
 
 
@@ -28,3 +30,4 @@ MVC 主要由 Model, View, Controller 三部分所構成，各司其職，將不
 
 MVVM 主要由 Model, View, ViewModel 組成，Model 與 View 跟 MVC 架構一樣不直接溝通，但溝通橋樑 Controller 由 ViewModel 取代，基本上 ViewModel 與 Controller 的定義和職責幾乎相同，唯一的差別在於，ViewModel 對 View 的黏著度更高，就像是 View 的代理程式，藉由例如 Events 或 Data Binding 等等機制，讓 View 透過 ViewModel 來對 Model 進行資料拿取、儲存或修改的動作。相反的，MVC 的 Controller 對 View 則沒有這麼大的黏著度，我們可以在 Controller 定義相關和 View 層無關的業務邏輯，也因此，相比於 MVVM，MVC 架構可以更容易的進行業務邏輯的擴充與系統擴展，當然，複雜度也比 MVVM 會來得高。
 
+<SocialBlock hashtags="javascript,mvc,mvvm" />

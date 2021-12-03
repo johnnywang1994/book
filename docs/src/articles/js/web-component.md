@@ -1,5 +1,7 @@
 # Web Component 學習筆記
 
+<SocialBlock hashtags="javascript,webcomponent" />
+
 Web component 不是一個框架，只是一種新的瀏覽器底層 API，允許使用者創造可重用的自定義組件。
 
 
@@ -143,3 +145,5 @@ customElements.define('my-text', MyText);
 ```html
 <my-text hide="true"></my-text>
 ```
+
+<SocialBlock hashtags="javascript,webcomponent" />

@@ -1,5 +1,7 @@
 # 用 JavaScript 鎖定用戶調整畫面比例
 
+<SocialBlock hashtags="javascript,layout" />
+
 ##### updated at: 2021-04-20
 ###### tag `js`, `lock resize`, `event`
 
@@ -112,3 +114,5 @@
 雖然阻止用戶調整畫面比例不是一個推薦的作法，最好的方法還是將 rwd 做到極致，而不是添加一些強制措施，另外這種做法也只能阻止用戶在你的網頁調整，他還是可以在其他頁面裡調整完再去你的頁面啊ＸＤＤ～～
 
 好拉，主要是介紹一些實作功能的小技巧跟知識，實用度不是很高ＸＤ，我們下次見拉～
+
+<SocialBlock hashtags="javascript,layout" />

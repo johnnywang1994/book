@@ -1,5 +1,7 @@
 # Babel7 基本介紹與使用
 
+<SocialBlock hashtags="javascript,babel" />
+
 本篇主要紀錄 Babel 7 的實際安裝，設置等過程，會一路從早期的開始說起。如果你懶得看一堆歷史，也是可以到最下方查看最新配置使用。
 
 
@@ -169,3 +171,5 @@ $ npm install @babel/runtime-corejs3
   ]
 }
 ```
+
+<SocialBlock hashtags="javascript,babel" />

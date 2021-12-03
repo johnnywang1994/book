@@ -1,5 +1,7 @@
 # 你真的懂 Event Loop 嗎
 
+<SocialBlock hashtags="javascript,eventloop" />
+
 ##### updated at: 2021-03-26
 ###### tag `js`, `event loop`, `vanilla js`
 
@@ -239,3 +241,6 @@ promise 建立時內部的回調會立即調用，這邊要注意的是 resolve 
 
   - [MDN 並行模型和事件循環](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/EventLoop)
   - [MDN Microtask & Task](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide)
+
+
+<SocialBlock hashtags="javascript,eventloop" />

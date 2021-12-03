@@ -2,11 +2,10 @@
   <div class="social-share-block">
     <p>Share On:</p>
     <div class="btn-wrapper">
-      <SocialLink />
-      <SocialLink network="line" />
-      <SocialLink network="messenger" />
-      <SocialLink network="telegram" />
-      <SocialLink network="baidu" />
+      <SocialLink :url="url" :title="title" :description="description" :quote="quote" :hashtags="hashtags" />
+      <SocialLink :url="url" :title="title" :description="description" :quote="quote" :hashtags="hashtags" network="line" />
+      <SocialLink :url="url" :title="title" :description="description" :quote="quote" :hashtags="hashtags" network="messenger" />
+      <SocialLink :url="url" :title="title" :description="description" :quote="quote" :hashtags="hashtags" network="telegram" />
     </div>
   </div>
 </template>

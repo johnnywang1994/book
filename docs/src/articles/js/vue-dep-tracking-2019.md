@@ -1,5 +1,7 @@
 # Vuejs 依賴追蹤 2019 版
 
+<SocialBlock hashtags="vue" />
+
 本篇主要實現 Vue.js 中的關鍵核心 - 依賴追蹤，將其單獨進行實踐，簡化其他 dom 操作的部分，實際核心代碼中會將其他 dom 的操作指令（directives）一併加入追蹤，這邊先忽略該部分，僅實踐資料面的處理。
 
 我們將從最初步的資料追蹤開始，一步步往下延伸探索，並將 computed, watch 等機制實現
@@ -199,3 +201,5 @@ person.$data.age = 1000; // watched! Kevin 1000
 以上，算是自己簡單實踐的一個版本，僅供學習理解參考，實際 Vue.js 實現上考量到的眾多機制並不是這樣簡單幾行程式碼能完成的。
 
 如果覺得有幫助到你的話，歡迎分享文章喔～
+
+<SocialBlock hashtags="vue" />

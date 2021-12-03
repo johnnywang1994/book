@@ -1,5 +1,7 @@
 # Vue/Vitejs 部分源碼解析
 
+<SocialBlock hashtags="vuejs,vite,sourcecode" />
+
 本篇是作為自己閱讀 Vite 部分源碼後的一點筆記，並且簡單實現一個基於 ESM 的模組解析 server。
 
 因為小弟本人只會用 express...，所以本篇是以 express 來搭建，Vite 官方是使用 Koa 實現。但應該概念上是差不多的。
@@ -997,3 +999,5 @@ module.exports = checkVuePath;
 2. [Vite 怎麼能那麼快？從 ES modules 開始談起](https://blog.techbridge.cc/2020/08/07/vite-and-esmodules-snowpack/)
 2. [Vuejs/Vitejs](https://github.com/vitejs/vite)
 3. [Vuejs/Vue-Loader](https://github.com/vuejs/vue-loader)
+
+<SocialBlock hashtags="vuejs,vite,sourcecode" />

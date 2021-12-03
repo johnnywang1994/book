@@ -1,5 +1,7 @@
 # 用 Nodejs 寫個 FTP command line 工具
 
+<SocialBlock hashtags="javascript,nodejs,ftp" />
+
 懶得每次上傳東西到 ftp server 都要打開 filezilla 工具嗎？一起來動手做個簡單的 ftp command line tool 吧！
 
 今天這篇主要是紀錄使用 npm package [ftp](https://www.npmjs.com/package/ftp) 製作的 command line tool，結合之前學到的 minimist 解析 process.argv 處理指令列命令
@@ -230,3 +232,5 @@ $ myftp --list /htdocs
 ## Reference
   - [npm ftp](https://www.npmjs.com/package/ftp)
   - [使用nodejs連接ftp上傳下載](https://juejin.cn/post/6844903907001368583)
+
+<SocialBlock hashtags="javascript,nodejs,ftp" />

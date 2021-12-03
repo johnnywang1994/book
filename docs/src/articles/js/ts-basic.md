@@ -1,5 +1,7 @@
 # TypeScript 基礎篇
 
+<SocialBlock hashtags="typescript,basic" />
+
 此篇文章為看完阮一封前輩的教學後隨手筆記，供日後快速複習使用。
 
 
@@ -322,3 +324,5 @@ declare namespace jQuery {
   function ajax(url: string, settings?: any): void;
 }
 ```
+
+<SocialBlock hashtags="typescript,basic" />
