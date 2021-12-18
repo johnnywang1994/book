@@ -140,7 +140,7 @@ export default {
 
       new Ground(canvasConfig.width / 2, -10, canvasConfig.height, 20);
 
-      new Ground(800+10, canvasConfig.height/2, 20, canvasConfig.height);
+      new Ground(canvasConfig.width+10, canvasConfig.height/2, 20, canvasConfig.height);
 
       new Ground(-10, canvasConfig.height/2, 20, canvasConfig.height);
 
