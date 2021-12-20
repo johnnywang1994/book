@@ -1,6 +1,8 @@
 # 轉職前端工程師 3 年多的回顧
 ###### tags: `網頁前端` `回顧`
 
+<SocialBlock hashtags="review,frontend" />
+
 今年 `2021-10-21` 是我入職台灣 Garena 前端團隊的第二年整，回想起來時間真的過得好快，一眨眼就過了...，剛好看到好多跟我差不多時期的前輩、同輩們都在分享入行的過程，我也來簡單總結分享一下這 3 年的成長點滴看看，希望對大家有幫助
 
 
@@ -60,3 +62,5 @@
 
 這是我的 [Github](https://github.com/johnnywang1994) 歡迎一起討論技術喔=V=
 
+
+<SocialBlock hashtags="review,frontend" />
