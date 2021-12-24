@@ -102,7 +102,7 @@ export default {
         "name" : "Taiwan Bank Dollar Rate",
         "tech" : "Node.js, Express.js"
       }, {
-        "des" : "空閒時做的單頁聊天室窗，暱稱隨便取，開始來聊天八~",
+        "des" : "空閒時做的單頁聊天室窗，暱稱隨便取，開始來聊天八~帳號:public，密碼:0000",
         "id" : "nodejs-chatter",
         "image" : cdn("/websites/nodechatter.jpg"),
         "link" : "https://nodejs-chatter.herokuapp.com/",
