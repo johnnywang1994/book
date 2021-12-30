@@ -5,6 +5,7 @@
  */
 import VueSocialSharing from 'vue-social-sharing';
 import setGtag from './gtag';
+import setAdsense from './adsense';
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -17,5 +18,6 @@ export default ({
 
   if (typeof exports !== 'object') {
     setGtag();
+    setAdsense();
   }
 }
