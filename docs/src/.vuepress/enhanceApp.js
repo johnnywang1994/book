@@ -4,6 +4,7 @@
  * https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
  */
 import VueSocialSharing from 'vue-social-sharing';
+import setGtag from './gtag';
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
@@ -13,4 +14,8 @@ export default ({
 }) => {
   // ...apply enhancements for the site.
   Vue.use(VueSocialSharing);
+
+  if (typeof exports !== 'object') {
+    setGtag();
+  }
 }
