@@ -51,6 +51,23 @@ const pinia = createPinia();
 export default pinia;
 ```
 
+> 另外如果你的 Vue2 底層是使用 webpack 的話，需要在 module 的 rules 裏添加如下規則，否則會出現 esmodule 引入的錯誤，詳細可[參考這邊討論](https://github.com/polkadot-js/extension/issues/621#issuecomment-759341776)
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      // FIX: Can’t import the named export 'XXX' from non EcmaScript module
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: 'javascript/auto',
+      },
+    ]
+  }
+}
+```
+
 **main.js**
 ```js
 import { createApp } from 'vue';
