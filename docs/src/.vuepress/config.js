@@ -19,7 +19,11 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    // gtag.js
+    ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-B1QJSJW3P3' }],
+    // google adsense
+    ['script', { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5050343387449103', crossorigin: 'anonymous' }]
   ],
 
   /**
@@ -56,6 +60,7 @@ module.exports = {
           title: 'Javascript',
           collapsable: true,
           children: [
+            'js/jsdoc.md',
             'js/pinia-intro.md',
             'js/node-ftp-cli.md',
             'js/regexp.md',
@@ -82,6 +87,7 @@ module.exports = {
           title: 'CSS & Sass',
           collapsable: true,
           children: [
+            'css/2021-css-report.md',
             'css/scss-built-in-modules.md',
             'css/parent-selector.md',
             'css/landscape-fix-scroll.md',
@@ -95,6 +101,7 @@ module.exports = {
           collapsable: true,
           children: [
             'daily/2021/review-as-frontend.md',
+            'daily/2021/iterm2-zsh.md',
             'daily/front-end-interview.md'
           ],
         },
