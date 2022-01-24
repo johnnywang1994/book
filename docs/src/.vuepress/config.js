@@ -82,6 +82,8 @@ module.exports = {
             'js/ts-advance.md',
             'js/mvc-mvvm.md',
             'js/mvvm-practice.md',
+            'js/gulp-basic.md',
+            'js/vuex-basic.md'
           ]
         },
         {
