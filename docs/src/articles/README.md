@@ -140,4 +140,4 @@
   - Vue2.x, Instascan
   - created at: 2018-12
 
-[紅藥丸](http://jw-mashu.ezyro.com/red-pill.html)
+<RedPill />
