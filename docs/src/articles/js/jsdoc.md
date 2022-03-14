@@ -1,4 +1,4 @@
-# JSDoc 
+# 原生 Javascript 的類型標註工具 JSDoc 
 ###### tags: `JS` `JSDoc` `Typescript` `Type Check`
 
 <SocialBlock hashtags="javascript,jsdoc,typescript" />

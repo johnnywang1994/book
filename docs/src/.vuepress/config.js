@@ -60,6 +60,7 @@ module.exports = {
           title: 'Javascript',
           collapsable: true,
           children: [
+            'js/most-easy-webpack-basic-intro.md',
             'js/delay-promise.md',
             'js/express-vs-koa.md',
             'js/matter-mario.md',
