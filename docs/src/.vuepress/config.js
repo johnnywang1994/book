@@ -120,6 +120,7 @@ module.exports = {
             'git/basic.md',
             'git/branch.md',
             'git/merge.md',
+            'git/stash.md',
             'git/recover.md',
             'git/remote.md',
             'git/tag.md',

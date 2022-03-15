@@ -14,6 +14,8 @@
 
 使用 `git merge` 時盡量不要出現未 commit 的文件，如果逼不得已必須先暫存的話，可以使用 `git stash` 將這些未 commit 文件保存，待處理完 conflick 後，使用 `git stash pop` 還原出來即可。
 
+詳細的 `git stash` 指令可以[參考這邊](https://johnnywang1994.github.io/book/articles/git/stash.html)
+
 
 ## 分支的基本用法
 

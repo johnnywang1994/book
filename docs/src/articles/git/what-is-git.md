@@ -7,7 +7,7 @@
 - [GitHub-Getting started with Git](https://docs.github.com/en/get-started/getting-started-with-git)
 - [GitHub-Using Git](https://docs.github.com/en/get-started/using-git)
 - [Learn-Git-in-30-days](https://github.com/doggy8088/Learn-Git-in-30-days)
-
+- [Stash-CherryPick](https://juejin.cn/post/7071780876501123085)
 
 ## 基礎概念 - unstaged, staged
 
