@@ -1,5 +1,7 @@
 # 在瀏覽器中直接 import Vue SFC 開發起來
 
+<SocialBlock hashtags="javascript,esmodule,import,vue" />
+
 今天這篇是一個看到大佬文章後的研究文，主題是有關於如何在同一份 html 內使用 import 來引入同一份文件下的其他模組，看完真的是跪了，真的是非常騷的操作，本篇會簡單說明大綱並加上一些我自己的實現，原文詳細內容[請見這邊](https://juejin.cn/post/7070339012933713956)
 
 
@@ -142,29 +144,35 @@ function getBlobURL(content, type = 'text/javascript') {
 }
 
 function setupInlineModule() {
+  // 取得所有 inline-module
   const modules = document.querySelectorAll('script[type="inline-module"]');
   let importMap = {};
 
   [...modules].forEach((module) => {
     const { id } = module;
-    if(id) {
+    if (id) {
+      // 取得所有 inline-module 的 blobUrl 並儲存
       importMap[id] = getBlobURL(module.innerHTML);
     }
   })
 
+  // 檢查是否已存在 importmap
   const importMapEl = document.querySelector('script[type="importmap"]');
   if (importMapEl) {
     throw Error('importmap already defined');
   }
 
+  // 檢查是否有自定義的 importmap
   const externalMapEl = document.querySelector('script[type="inline-module-importmap"]');
   if (externalMapEl) {
     const externalMap = JSON.parse(externalMapEl.textContent);
     Object.assign(map.imports, externalMap.imports);
   }
 
+  // 合併提取出的所有 import url 到 map 當中
   Object.assign(map.imports, importMap);
 
+  // 將 importmap 動態插入 document
   const mapEl = document.createElement('script');
   mapEl.setAttribute('type', 'importmap');
   mapEl.textContent = JSON.stringify(map);
@@ -208,9 +216,11 @@ setupInlineModule();
 
 到此我們的主要事項已經達成，可以在瀏覽器內快樂調用我們的模組了，當然除此之外，我們其實可以把 `Blob` 發揮更淋漓盡致，直接把編譯搬到瀏覽器中都沒有問題了（千萬別用在正式產品，直接在客戶端編譯實際上是非常損耗效能的，這個技術主要只是拿來好玩用～）
 
-由於篇幅關係，剩餘的優化部分可以前往我的 [Source Code]() 內觀賞 XD，包含 Loader 機制實現、Vue SFC 編譯、React JSX 編譯、SCSS 編譯等等功能都在源碼中實現
+由於篇幅關係，剩餘的優化部分可以前往我的 [Source Code](https://github.com/johnnywang1994/script-custom-module) 內觀賞 XD，包含 Loader 機制實現、Vue SFC 編譯、React JSX 編譯、SCSS 編譯等等功能都在源碼中實現
 
-畢竟是花了我好多個夜晚的成果，歡迎有興趣看看的童鞋們前往點個讚瞜～謝謝大家
+最後還是要特別感謝原文的大佬講解非常仔細，讓我學習到非常多，也歡迎有興趣看看的童鞋們幫我前往點個讚瞜～謝謝大家=V=
+
+<SocialBlock hashtags="javascript,esmodule,import,vue" />
 
 
 ## 參考
