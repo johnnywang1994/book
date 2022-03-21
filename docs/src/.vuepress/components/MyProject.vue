@@ -32,6 +32,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "Javascript 打造 Pokemon Game 原型",
+        "id" : "vue-pokemon-game",
+        "image" : cdn("/websites/vue-pokemon-game.jpg"),
+        "link" : "https://johnnywang1994.github.io/vue-pokemon-game",
+        "name" : "Vue Pokemon Game",
+        "tech" : "Vue.js3.x, Javascript, Tiled Map Editor"
+      }, {
         "des" : "用 2D 物理引擎 Matterjs+Vue3 製作的馬力歐1-1",
         "id" : "vue-matter-mario",
         "image" : cdn("/websites/matter-mario.png"),
