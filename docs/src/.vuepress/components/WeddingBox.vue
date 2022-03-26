@@ -137,7 +137,7 @@ export default {
   position: relative;
   max-width: 800px;
   height: 600px;
-  background: #000 url('http://img.iwocool.com/allimg/2007/1-200H011260B43.jpg') center / cover no-repeat;
+  background: #000 url('https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/2022/03/wedding-bg.jpg') center / cover no-repeat;
   cursor: pointer;
 }
 
