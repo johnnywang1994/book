@@ -107,6 +107,7 @@ module.exports = {
           title: 'Daily',
           collapsable: true,
           children: [
+            'daily/2022/wedding.md',
             'daily/2021/review-as-frontend.md',
             'daily/2021/iterm2-zsh.md',
             'daily/front-end-interview.md'
