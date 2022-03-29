@@ -8,5 +8,7 @@ dist
 .DS_Store
 .nyc_output
 .basement
+.temp
+.cache
 config.local.js
 basement_dist

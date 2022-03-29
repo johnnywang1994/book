@@ -1,21 +1,12 @@
+const path = require('path')
 const { description } = require('../../package')
 
 module.exports = {
   base: '/book/',
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
+  lang: 'zh-TW',
   title: 'Johnny Wang Blog',
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
   description: description,
 
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -26,18 +17,15 @@ module.exports = {
     ['script', { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5050343387449103', crossorigin: 'anonymous' }]
   ],
 
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
+  theme: '@vuepress/theme-default',
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
-    nav: [
+    logo: 'https://vuejs.org/images/logo.png',
+    home: '/',
+    repo: 'johnnywang1994/book',
+    repoLabel: 'johnnywang/book',
+    editLink: false,
+    lastUpdated: true,
+    navbar: [
       {
         text: 'Articles',
         link: '/articles/',
@@ -50,15 +38,15 @@ module.exports = {
     sidebar: {
       '/articles/': [
         {
-          title: 'About Me',
-          collapsable: false,
+          text: 'About Me',
+          collapsible: true,
           children: [
             '',
           ]
         },
         {
-          title: 'Javascript',
-          collapsable: true,
+          text: 'Javascript',
+          collapsible: true,
           children: [
             'js/most-easy-webpack-basic-intro.md',
             'js/importmap-with-blob.md',
@@ -91,8 +79,8 @@ module.exports = {
           ]
         },
         {
-          title: 'CSS & Sass',
-          collapsable: true,
+          text: 'CSS & Sass',
+          collapsible: true,
           children: [
             'css/2021-css-report.md',
             'css/scss-built-in-modules.md',
@@ -104,8 +92,8 @@ module.exports = {
           ],
         },
         {
-          title: 'Daily',
-          collapsable: true,
+          text: 'Daily',
+          collapsible: true,
           children: [
             'daily/2021/review-as-frontend.md',
             'daily/2021/iterm2-zsh.md',
@@ -113,8 +101,8 @@ module.exports = {
           ],
         },
         {
-          title: 'Git Learning',
-          collapsable: true,
+          text: 'Git Learning',
+          collapsible: true,
           children: [
             'git/what-is-git.md',
             'git/basic.md',
@@ -130,8 +118,8 @@ module.exports = {
           ],
         },
         {
-          title: 'Docker',
-          collapsable: true,
+          text: 'Docker',
+          collapsible: true,
           children: [
             'docker/basic.md',
             'docker/dockerfile-demo.md',
@@ -139,15 +127,15 @@ module.exports = {
           ],
         },
         {
-          title: 'Google api',
-          collapsable: true,
+          text: 'Google api',
+          collapsible: true,
           children: [
             'google/youtube-data-api.md',
           ],
         },
         {
-          title: 'Facebook api',
-          collapsable: true,
+          text: 'Facebook api',
+          collapsible: true,
           children: [
             'fb/fb-api-basic.md',
           ],
@@ -155,14 +143,21 @@ module.exports = {
       ],
       '/project/': '/project'
     },
-    lastUpdated: true,
   },
 
   /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
+   * Apply plugins
+   *
+   * Ref：https://v2.vuepress.vuejs.org/reference/plugin/back-to-top.html#install
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
+    '@vuepress/back-to-top',
+    '@vuepress/medium-zoom',
+    [
+      '@vuepress/register-components',
+      {
+        componentsDir: path.resolve(__dirname, './components'),
+      }
+    ]
   ]
 }

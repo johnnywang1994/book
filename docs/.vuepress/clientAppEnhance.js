@@ -1,19 +1,18 @@
 /**
  * Client app enhancement file.
  *
- * https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
+ * https://v2.vuepress.vuejs.org/advanced/cookbook/usage-of-client-app-enhance.html
  */
 import VueSocialSharing from 'vue-social-sharing';
 import setGtag from './gtag';
 
 export default ({
-  Vue, // the version of Vue being used in the VuePress app
-  options, // the options for the root Vue instance
+  app, // the version of Vue being used in the VuePress app
   router, // the router instance for the app
   siteData // site metadata
 }) => {
   // ...apply enhancements for the site.
-  Vue.use(VueSocialSharing);
+  app.use(VueSocialSharing);
 
   if (typeof exports !== 'object') {
     setGtag();
