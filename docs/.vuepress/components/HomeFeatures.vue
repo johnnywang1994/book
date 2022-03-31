@@ -45,6 +45,7 @@ export default {
           title: 'Backend Development',
           details: [
             'Expressjs 3+years',
+            'Koajs 1+years',
             'Nodejs 2+years',
             'Docker 1+years',
             'Django 0.5+years',
@@ -57,6 +58,14 @@ export default {
             {
               content: '[NPM] jspdf-html2canvas',
               href: 'https://www.npmjs.com/package/jspdf-html2canvas',
+            },
+            {
+              content: '[NPM] script-custom-module',
+              href: 'https://www.npmjs.com/package/script-custom-module',
+            },
+            {
+              content: '[NPM] maju-ui',
+              href: 'https://www.npmjs.com/package/maju-ui',
             },
             {
               content: '[NPM] node-ftp-cli',

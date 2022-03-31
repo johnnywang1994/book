@@ -35,13 +35,14 @@ module.exports = {
         link: '/project/',
       }
     ],
+    sidebarDepth: 1,
     sidebar: {
       '/articles/': [
         {
           text: 'About Me',
           collapsible: true,
           children: [
-            '',
+            '/articles/README.md',
           ]
         },
         {
