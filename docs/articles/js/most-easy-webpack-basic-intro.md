@@ -31,8 +31,6 @@ $ npm install --save-dev webpack webpack-cli
 
 接著在專案目錄下新增一個 `webpack.config.js` 這個檔案名稱是 `webpack-cli` 預設會去搜索使用的，如果需要更改配置的路徑，可以使用 `--config` 這個參數指定
 
-
-
 安裝完成後來配置一下 `package.json`，`--watch` 參數會自動監聽我們的入口文件（包含依賴）變化重新再編譯一次內容
 
 ```json
@@ -88,8 +86,6 @@ module.exports = {
 
 一個 Webpack 編譯流程中可以有很多 plugins，而 plugin 能讓開發者在 Webpack 的整個編譯階段配置不同的操作，比如提前處理操作特定輸出 disk 的檔案或是配置一些實用的工具在編譯的過程中，值得一提的是，Webpack 本身整個編譯過程也是建立在同樣的這個 Plugin 系統架構底下，可以說 `Plugins` 是構成整個 Webpack 的骨幹要素
 
-
-
 底下是一個套用 `html-webpack-plugin` 的範例
 
 ```js
@@ -105,8 +101,6 @@ module.exports = {
 ## Loaders
 
 一個 Webpack 編譯流程中可以有很多 loaders，而每個 loader 是作為對不同模組進行客製化編譯流程的轉譯器，並且 loaders 彼此之前具有先後關係，對於同一類型的檔案可以套用多個 loaders，每一個 loader 編譯後會將結果送到下一個 loader 進行處理直到沒有下一個為止
-
-
 
 底下是一個套用 `css-loader`, `style-loader`的範例，範例中的編譯順序是由下而上，也就是從陣列的後方往前走
 
@@ -158,7 +152,83 @@ module.exports = {
 
 到此我們理解了 Webpack 中最核心的幾個概念了，現在就可以開始來實際動手來寫一些簡單的範例摟～
 
+## Webpack Modules
 
+那哪寫東西可以被 Webpack 視為一個 module 處理呢? 以下是一些常用的
+
+- ES2015 import
+- CJS require
+- AMD define & require
+- css @import
+- url() & img src
+
+## Module Resolution
+
+Webpack 使用 [enhanced-resolve](https://www.npmjs.com/package/enhanced-resolve) 來處理檔案路徑
+
+```js
+// Absolute path
+import '/local/home/abpath/file'
+import 'C:\\Users\\me'
+```
+
+```js
+// Relative path
+import '../local/home/repath/file'
+import './file'
+```
+
+```js
+// Module path
+import 'module'
+import 'module/lib/file'
+```
+
+## Tree Shaking
+
+所謂 tree-shaking 顧名思義就是將我們的樹上無用的葉片模組搖落、摘除得這麼一個機制，也稱作 `**dead-code elimination**`，大致的流程如下：
+
+1. 靜態解析：relies on the static structure of `ES2015` syntax(export, import)
+
+2. 標註：use optimization.usedExports to `mark dead code`
+
+3. 移除：use `TerserPlugin` to remove dead code(or UglifyPlugin…etc)
+
+標註前後對比如下圖
+
+![](https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/2022/04/tree-shaking-mechanism.JPG)
+
+而對於開發者來說，我們更需要專注在 1. 2 這兩個部分，盡量使用靜態解析的方式，讓工具能正確完成標註多餘程式碼的話，後續移除就交給相關套件去實現就行了，所以實作上我們更關注以下幾點：
+
+1. 避免不必要的變數附值
+   
+   ![](https://github.com/jwlearn1994/image-uploader/blob/main/2022/04/unused-value-assignment.JPG?raw=true)
+
+2. 注意使用 **@babel/preset-env modules** 設定，導致無法使用靜態解析
+   
+   ![](https://github.com/jwlearn1994/image-uploader/blob/main/2022/04/babel-mistake-modules.JPG?raw=true)
+
+3. 盡量避免使用 `export default`，這將導致所有 default 中的相關功能無法正確被摘除
+   
+   ![](https://github.com/jwlearn1994/image-uploader/blob/main/2022/04/export-default-mistake.JPG?raw=true)
+
+## Module Federation
+
+在 Webpack 5 中加入的新功能，大概定義如下
+
+- Multiple separate builds should form a single application
+- Separate builds should not have dependencies between each other, so they can be developed and deployed individually
+- This is often known as `Micro-Frontends`, but is not limited to that
+
+從定義可以知道是一種讓應用程式拆解遷移使用的一個技術，可以讓元件複用性大幅提升，觀念上會有 Host, Remote 兩個對象，使用如下方式在構建專案時就需要事先定義好各自的關係
+
+![](https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/2022/04/module-federation-demo.JPG)
+
+
+
+官網也有給不錯的範例可以直接觀看
+
+- [See Online Demo](https://stackblitz.com/github/webpack/webpack.js.org/tree/master/examples/module-federation?terminal=start&terminal=)
 
 ## 動手實踐
 
@@ -182,23 +252,26 @@ module.exports = {
 
 - Module Federation - 配置基礎 React, Vue 專案並實現 Module Federation 基本配置
 
+## 
+
+## 進階實踐
+
+如果你看完以上範例還是不過癮，歡迎看看進階實踐，動手實現一個簡易版本的 Bundler 試試吧~ 絕對成就感滿滿，毫無頭緒的話，也可以參考我的實現版本玩玩看喔!
+
+**[GitHub - jwlearn1994/tiny-bundler: A practice to create static module bundler](https://github.com/jwlearn1994/tiny-bundler)**
+
 
 
 ## 結論
 
 其實學習 Webpack 的過程中能夠學到非常多的知識，不論是 Nodejs 的使用或架構面的學習都對日常開發非常有幫助，學習 Webpack 的過程很艱辛，但一步一步學起來的成就感是很難用言語形容
 
-
-
 希望大家都能上手並愛上 Webpack，雖然相比於 Vite, Snowpack 等等又潮又香的 `ESModule` 新技術正在逐漸搶佔各大論壇版面，Webpack 的許多實踐與概念仍然是非常有參考價值的，在追隨潮流的同時，不仿回頭看看這個編譯界的老大哥吧～
-
-
 
 今天就分享到這邊摟，謝謝大家收看～我們下篇文章再見拉！=V=
 
-
 <SocialBlock hashtags="javascript,webpack,vue,react,module-federation" />
 
-
 ## 參考
+
 - [Webpack Documentation](https://webpack.js.org/)
