@@ -1,7 +1,7 @@
 {
-  "name": "vuepress",
+  "name": "johnnywang-blog",
   "version": "0.0.1",
-  "description": "vuepress demo",
+  "description": "Johnny Wang's Blog",
   "main": "index.js",
   "authors": {
     "name": "johnnywang",
@@ -12,9 +12,9 @@
     "url": "git+https://github.com/johnnywang1994/book.git"
   },
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "deploy": "gh-pages -d src/.vuepress/dist"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d docs/.vuepress/dist"
   },
   "bugs": {
     "url": "https://github.com/johnnywang1994/book/issues"
@@ -22,12 +22,13 @@
   "homepage": "https://github.com/johnnywang1994/book#readme",
   "license": "MIT",
   "devDependencies": {
-    "sass": "^1.49.9",
-    "sass-loader": "10.1.1",
-    "vuepress": "^1.5.3"
+    "@vuepress/plugin-back-to-top": "^2.0.0-beta.36",
+    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.36",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.36",
+    "vuepress": "^2.0.0-beta.36"
   },
   "dependencies": {
     "gh-pages": "^3.1.0",
-    "vue-social-sharing": "^3.0.8"
+    "vue-social-sharing": "^4.0.0-alpha4"
   }
 }

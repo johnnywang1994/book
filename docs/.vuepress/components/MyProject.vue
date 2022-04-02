@@ -151,9 +151,11 @@ export default {
 
 <style lang="scss">
 $border-color: #eaecef;
-@mixin card-hover {
+$dark-border-color: #777;
+
+@mixin card-hover($color) {
   transform: translateY(-6px) translateZ(10px);
-  box-shadow: 2px 2px 6px #888;
+  box-shadow: 2px 2px 6px $color;
   transition: all 0.2s;
 }
 
@@ -215,12 +217,12 @@ $border-color: #eaecef;
         transition: all 0.4s;
         @media (min-width: 720px) {
           &:hover {
-            @include card-hover;
+            @include card-hover(#888);
           }
         }
         @media (max-width: 719px) {
           &:active {
-            @include card-hover;
+            @include card-hover(#888);
           }
         }
       }
@@ -237,7 +239,7 @@ $border-color: #eaecef;
             display: block;
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
           }
         }
       }
@@ -265,6 +267,19 @@ $border-color: #eaecef;
           }
         }
       }
+    }
+  }
+}
+
+html.dark {
+  .project-page {
+    h1 {
+      border-color: $dark-border-color;
+    }
+
+    .demo-list .demo-item > a {
+      color: #eee;
+      background: #000;
     }
   }
 }

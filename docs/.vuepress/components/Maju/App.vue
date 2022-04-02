@@ -1,7 +1,7 @@
 <template>
   <div class="maju">
-    <MajuBody />
     <img class="mouse" src="./assets/maju-mouse.svg">
+    <MajuBody />
     <img class="hand left-hand" src="./assets/maju-hand.svg">
     <div class="hand right-hand">
       <img src="./assets/maju-hand.svg">

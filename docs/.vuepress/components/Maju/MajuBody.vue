@@ -39,9 +39,21 @@ export default {
 
 <style lang="scss">
 .maju-body {
+  position: relative;
   width: 100%;
   > svg {
     max-width: 100%;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    border-radius: 20%;
+    background: #fff;
   }
 }
 </style>
