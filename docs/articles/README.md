@@ -68,6 +68,13 @@
 
 ## 個人小專案
 
+### Fabric Image Composer
+
+  - [Link](https://johnnywang1994.github.io/p5-game/#/fabric-image-composer)
+  - [Source Code](https://github.com/johnnywang1994/p5-game/blob/master/src/views/FabricImageComposer.vue)
+  - Vue3.x, Javascript, Fabric.js
+  - created at: 2022-04
+
 ### Vue3 Pokemon Game
 
   - [Link](https://johnnywang1994.github.io/vue-pokemon-game)

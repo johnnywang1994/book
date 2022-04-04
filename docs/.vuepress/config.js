@@ -129,17 +129,14 @@ module.exports = {
           ],
         },
         {
-          text: 'Google api',
+          text: 'Memo',
           collapsible: true,
           children: [
-            '/articles/google/youtube-data-api.md',
-          ],
-        },
-        {
-          text: 'Facebook api',
-          collapsible: true,
-          children: [
-            '/articles/fb/fb-api-basic.md',
+            '/articles/memo/youtube-data-api.md',
+            '/articles/memo/fb-api-basic.md',
+            '/articles/memo/vscode-command.md',
+            '/articles/memo/learning.md',
+            '/articles/memo/tools.md'
           ],
         },
       ],
