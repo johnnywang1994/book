@@ -128,6 +128,12 @@
 - [用 JS 學習演算法](https://pjchender.blogspot.com/2017/09/fizz-buzz.html)
 - [Quick Sort](https://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html)
 
+## Leetcode
+- [Leetcode 题解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
+- [Leetcode 75 Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
+- [Leetcode 75 Questions Details](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
+- [Patterns](https://seanprashad.com/leetcode-patterns/)
+
 
 ## Terminal
 - [Command line tool 教學（zsh）](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f)
