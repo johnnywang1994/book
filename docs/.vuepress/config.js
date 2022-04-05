@@ -49,6 +49,7 @@ module.exports = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/js/canvas-draw-video.md',
             '/articles/js/most-easy-webpack-basic-intro.md',
             '/articles/js/importmap-with-blob.md',
             '/articles/js/delay-promise.md',

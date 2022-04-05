@@ -99,6 +99,7 @@
 
 ## Assets Editing
 - [線上圖片編輯 Photopea](https://www.photopea.com/)
+- [線上 Canvas 圖像編輯工具 MiniPaint](https://viliusle.github.io/miniPaint)
 - [思維導圖編輯](https://asciiflow.com/)
 - [Tinyjpg 線上壓縮圖](https://tinyjpg.com/)
 - [Remove Img Background](https://www.remove.bg/zh/)
