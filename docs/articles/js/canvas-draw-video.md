@@ -22,7 +22,7 @@ Hi 大家好，我是 Johnny，今天這篇來介紹個小玩意，如標題，�
 <div id="canvas-draw-video--wrapper">
   <button style="margin-right: 12px" @click="playVideo">Play</button>
   <button @click="pauseVideo">Pause</button>
-  <video ref="bgVideoRef" style="display: none" crossorigin="anonymous" loop>
+  <video ref="bgVideoRef" crossorigin="anonymous" loop>
     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
   </video>
   <div class="canvas-container">
@@ -86,6 +86,9 @@ export default {
 
 <style lang="scss">
 #canvas-draw-video--wrapper {
+  video {
+    display: none;
+  }
   .canvas-container {
     max-width: 100%;
     height: 50vh;
