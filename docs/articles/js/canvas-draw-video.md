@@ -15,13 +15,15 @@ Hi 大家好，我是 Johnny，今天這篇來介紹個小玩意，如標題，�
 
 本篇會以 Vue 來實作，不過不會涉及太複雜的使用，只需要大概懂基礎就好
 
-實作前，先實際展示 Canvas 影片效果給大家看~影片連結借用下 Garena MBM 遊戲官方網站的影片
+實作前，先實際展示 Canvas 影片效果給大家看~
 
 試著把手機打橫、放直看看效果吧!
 
 <div id="canvas-draw-video--wrapper">
+  <button style="margin-right: 12px" @click="playVideo">Play</button>
+  <button @click="pauseVideo">Pause</button>
   <video ref="bgVideoRef" style="display: none" crossorigin="anonymous" loop>
-    <source src="https://dlgarenanow-a.akamaihd.net/mgames/mbmtw/h5/20210512_official/tvc_landscape.mp4" type="video/mp4" />
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
   </video>
   <div class="canvas-container">
     <canvas ref="videoBg"></canvas>
@@ -31,6 +33,12 @@ Hi 大家好，我是 Johnny，今天這篇來介紹個小玩意，如標題，�
 <script>
 export default {
   methods: {
+    playVideo() {
+      this.$refs.bgVideoRef.play();
+    },
+    pauseVideo() {
+      this.$refs.bgVideoRef.pause();
+    },
     initCanvas() {
       const vm = this
       var canvas = this._canvas = this.$refs.videoBg;
@@ -54,8 +62,6 @@ export default {
         videoEl.style.display = _display;
         // create fabric image
         drawVideo();
-        // start
-        videoEl.play();
       });
 
       function drawVideo() {
@@ -100,7 +106,7 @@ export default {
 ```html
 <div id="app">
   <video loop>
-    <source src="https://dlgarenanow-a.akamaihd.net/mgames/mbmtw/h5/20210512_official/tvc_landscape.mp4" type="video/mp4" />
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
   </video>
 </div>
 ```
@@ -123,7 +129,7 @@ export default {
 ```html
 <div id="app">
   <video ref="bgVideoRef" crossorigin="anonymous" loop>
-    <source src="https://dlgarenanow-a.akamaihd.net/mgames/mbmtw/h5/20210512_official/tvc_landscape.mp4" type="video/mp4" />
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
   </video>
   <canvas ref="videoBg"></canvas>
 </div>
