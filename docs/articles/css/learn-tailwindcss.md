@@ -375,5 +375,22 @@ module.exports = {
 }
 ```
 
+如果我們一邊在用 sass 又需要使用 `screen` 這種功能的話，可以像下面這樣結合 sass mixin 處理
+
+```scss
+@mixin rwd($size) {
+  @media (min-width: theme('screens.#{$size}')) {
+    @content;
+  }
+}
+
+// 這樣我們就可以在 nested 結構下使用 tailwind 的變數了
+h1 {
+  @include rwd(sm) {
+    color: red;
+  }
+}
+```
+
 <SocialBlock hashtags="css,tailwindcss,2022" />
 
