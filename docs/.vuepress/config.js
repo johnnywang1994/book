@@ -84,6 +84,7 @@ module.exports = {
           text: 'CSS & Sass',
           collapsible: true,
           children: [
+            '/articles/css/learn-tailwindcss.md',
             '/articles/css/2021-css-report.md',
             '/articles/css/scss-built-in-modules.md',
             '/articles/css/parent-selector.md',

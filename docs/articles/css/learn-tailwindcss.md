@@ -1,3 +1,8 @@
+# 差點錯過的 Tailwindcss 入門學習筆記
+###### tags: `CSS` `tailwindcss` `2022`
+
+<SocialBlock hashtags="css,tailwindcss,2022" />
+
 本篇主要只記載一些我個人覺得比較特殊需要筆記的內容～並不是整份文件喔！
 
 ## Start
@@ -5,7 +10,7 @@
 ### Install
 
 ```bash
-$ npm install -D tailwindcss
+$ npm install -D tailwindcss postcss autoprefixer
 $ npx tailwindcss init
 ```
 
@@ -21,6 +26,16 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+}
+```
+
+```js
+// postcss.config
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 }
 ```
 
@@ -359,4 +374,6 @@ module.exports = {
   /* ... */
 }
 ```
+
+<SocialBlock hashtags="css,tailwindcss,2022" />
 
