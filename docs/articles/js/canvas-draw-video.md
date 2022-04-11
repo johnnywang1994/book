@@ -22,7 +22,7 @@ Hi 大家好，我是 Johnny，今天這篇來介紹個小玩意，如標題，�
 <div id="canvas-draw-video--wrapper">
   <button style="margin-right: 12px" @click="playVideo">Play</button>
   <button @click="pauseVideo">Pause</button>
-  <video ref="bgVideoRef" crossorigin="anonymous" loop>
+  <video ref="bgVideoRef" crossorigin="anonymous" playsinline loop>
     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" />
   </video>
   <div class="canvas-container">
@@ -108,7 +108,7 @@ export default {
 
 ```html
 <div id="app">
-  <video loop>
+  <video playsinline loop>
     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
   </video>
 </div>
@@ -131,7 +131,7 @@ export default {
 
 ```html
 <div id="app">
-  <video ref="bgVideoRef" crossorigin="anonymous" loop>
+  <video ref="bgVideoRef" crossorigin="anonymous" playsinline loop>
     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
   </video>
   <canvas ref="videoBg"></canvas>
