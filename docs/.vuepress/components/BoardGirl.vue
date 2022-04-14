@@ -31,7 +31,7 @@ function showOut() {
   const { onload, onbeforeunload, onresize } = window.Live2d({
     el: '#board-hiyori',
     size: 'auto',
-    resourcesPath: './Resources/',
+    resourcesPath: '/book/Resources/',
     modelDir: [assist.value],
     bindFullscreen: true
   })
