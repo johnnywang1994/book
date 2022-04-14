@@ -14,7 +14,11 @@ module.exports = {
     // gtag.js
     ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-B1QJSJW3P3' }],
     // google adsense
-    ['script', { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5050343387449103', crossorigin: 'anonymous' }]
+    ['script', { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5050343387449103', crossorigin: 'anonymous' }],
+    // live2d
+    ['script', { src: 'https://unpkg.com/core-js-bundle@3.6.1/minified.js' }],
+    ['script', { src: './live2dcubismcore.min.js' }],
+    ['script', { src: './live2d-bundle.js' }],
   ],
 
   theme: '@vuepress/theme-default',

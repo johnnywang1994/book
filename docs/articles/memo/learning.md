@@ -1,5 +1,7 @@
 # 學習資源
 
+<BoardGirl />
+
 ## Blog
 - [阮一峰的个人网站](http://www.ruanyifeng.com/home.html)
   - [TypeScript 使用指南](https://ts.xcatliu.com/)
@@ -37,6 +39,9 @@
 - [28款好用Canvas 庫](https://juejin.cn/post/7038267477121302542)
 - [p5, matterjs Examples](https://github.com/b-g/p5-matter-examples)
 - [requestAnimationFrame](https://juejin.cn/post/6844904126653202440)
+- [Live2D/CubismWebSamples](https://github.com/Live2D/CubismWebSamples)
+- [Live2d Helper](https://github.com/kooritea/live2d-helper)
+- [Live2d Widget](https://github.com/stevenjoezhang/live2d-widget)
 
 ### Scroll
 - [移動端滾動穿透問題](https://github.com/pod4g/tool/wiki/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98)
