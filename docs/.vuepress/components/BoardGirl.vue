@@ -1,5 +1,5 @@
 <template>
-  <div :class="['board-wrapper', assist]">
+  <div :style="`position: ${position}`" :class="['board-wrapper', assist]">
     <div class="panel" v-if="!open">
       <select v-model="assist">
         <option value="Hiyori">Hiyori</option>
@@ -15,6 +15,13 @@
 
 <script setup>
 import { onMounted, ref, nextTick } from 'vue'
+
+defineProps({
+  position: {
+    type: String,
+    default: 'fixed'
+  }
+})
 
 const open = ref(false)
 const assist = ref('Hiroyi')
@@ -45,7 +52,6 @@ function showOut() {
 
 <style scoped lang="scss">
 .board-wrapper {
-  position: fixed;
   right: 0;
   bottom: 0;
   &.Hiyori {

@@ -17,8 +17,8 @@ module.exports = {
     ['script', { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5050343387449103', crossorigin: 'anonymous' }],
     // live2d
     ['script', { src: 'https://unpkg.com/core-js-bundle@3.6.1/minified.js' }],
-    ['script', { src: './live2dcubismcore.min.js' }],
-    ['script', { src: './live2d-bundle.js' }],
+    ['script', { src: '/book/live2dcubismcore.min.js' }],
+    ['script', { src: '/book/live2d-bundle.js' }],
   ],
 
   theme: '@vuepress/theme-default',
@@ -53,6 +53,7 @@ module.exports = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/js/live2d-demo.md',
             '/articles/js/canvas-draw-video.md',
             '/articles/js/most-easy-webpack-basic-intro.md',
             '/articles/js/importmap-with-blob.md',
