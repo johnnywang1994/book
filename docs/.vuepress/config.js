@@ -157,6 +157,13 @@ module.exports = {
           ],
         },
         {
+          text: 'Frontend LearnMap',
+          collapsible: true,
+          children: [
+            '/articles/frontend-learnmap/README.md',
+          ],
+        },
+        {
           text: 'Daily',
           collapsible: true,
           children: [
