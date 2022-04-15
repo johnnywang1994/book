@@ -167,6 +167,7 @@ module.exports = {
           text: 'Daily',
           collapsible: true,
           children: [
+            '/articles/daily/2022/defi-learn.md',
             '/articles/daily/2022/wedding.md',
             '/articles/daily/2021/review-as-frontend.md',
             '/articles/daily/2021/iterm2-zsh.md',
