@@ -1,9 +1,19 @@
 <template>
-  <div :style="`position: ${position}`" :class="['board-wrapper', assist]">
-    <div class="panel" v-if="!open">
-      <select v-model="assist">
-        <option value="Hiyori">Hiyori</option>
-        <option value="Rice">Rice</option>
+  <div :style="`position: ${position}`" :class="['board-wrapper', state.assist]">
+    <div class="panel" v-if="!state.open">
+      <select v-model="state.project">
+        <option
+          v-for="project in state.projects"
+          :key="`project_${project}`"
+          :value="project"
+        >{{ project }}</option>
+      </select>
+      <select v-show="state.project" v-model="state.assist">
+        <option
+          v-for="assist in assistList"
+          :key="`assist_${assist}`"
+          :value="assist"
+        >{{ assist }}</option>
       </select>
       <div class="call-assist" @click="toggleOpen">
         呼叫助理
@@ -14,7 +24,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, nextTick } from 'vue'
+import { onMounted, reactive, nextTick, computed } from 'vue'
 
 defineProps({
   position: {
@@ -23,12 +33,25 @@ defineProps({
   }
 })
 
-const open = ref(false)
-const assist = ref('Hiroyi')
+const state = reactive({
+  open: false,
+  assist: '',
+  project: '',
+  assists: {
+    demo: ['Hiyori', 'Rice'],
+    'girls-frontline': ['97type', '97type_406', 'Aa12_2403', 'Ads_3601']
+  },
+  projects: [
+    'demo',
+    'girls-frontline',
+  ]
+})
+
+const assistList = computed(() => state.project ? state.assists[state.project] : [])
 
 async function toggleOpen() {
-  open.value = !open.value;
-  if (open.value) {
+  state.open = !state.open;
+  if (state.open) {
     await nextTick()
     showOut()
   }
@@ -38,8 +61,9 @@ function showOut() {
   const { onload, onbeforeunload, onresize } = window.Live2d({
     el: '#board-hiyori',
     size: 'auto',
-    resourcesPath: '/book/Resources/',
-    modelDir: [assist.value],
+    resourcesPath:
+      `https://johnnywang1994.github.io/assets/live2d/${state.project}/`,
+    modelDir: [state.assist],
     bindFullscreen: true
   })
 
@@ -66,7 +90,7 @@ function showOut() {
     position: absolute;
     right: 12px;
     bottom: 12px;
-    width: 250px;
+    min-width: 250px;
     > select {
       width: 80px;
       padding: 6px 0;
