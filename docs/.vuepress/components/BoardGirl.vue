@@ -19,7 +19,12 @@
         呼叫助理
       </div>
     </div>
-    <canvas v-else id="board-hiyori"></canvas>
+    <template v-else>
+      <canvas id="board-hiyori"></canvas>
+      <div class="call-assist" @click="onClear">
+        Clear
+      </div>
+    </template>
   </div>
 </template>
 
@@ -33,13 +38,93 @@ defineProps({
   }
 })
 
+const BASE_URL = process.env.NODE_ENV === 'production'
+  ? 'https://johnnywang1994.github.io/assets/live2d'
+  : '/book/Resources'
+
 const state = reactive({
   open: false,
   assist: '',
   project: '',
   assists: {
     demo: ['Hiyori', 'Rice'],
-    'girls-frontline': ['97type', '97type_406', 'Aa12_2403', 'Ads_3601']
+    'girls-frontline': [
+      "97type",
+      "97type_406",
+      "Aa12_2403",
+      "Ads_3601",
+      "Ak12_2402",
+      "Akalfa_4601",
+      "Ar15",
+      "Browninghp_4602",
+      "Carcano1891_2201",
+      "Carcano1891_2905",
+      "Carcano1938_2202",
+      "Carcano1938_2904",
+      "Cbjms_2205",
+      "Cbjms_3503",
+      "Contender_2302",
+      "Dsr50_2101",
+      "Fn57_2203",
+      "G11_4102",
+      "G11_9",
+      "G36_1904",
+      "G36c_1202",
+      "G36c_3103",
+      "G41",
+      "Generalliu_5101",
+      "Grizzly",
+      "Hk416_3401",
+      "Hk416_805",
+      "Hkcaws_4003",
+      "Js9mm_4702",
+      "K2_3301",
+      "Kord_5102",
+      "Kp31_1103",
+      "Kp31_310",
+      "Lewis_3502",
+      "Lewis_4001",
+      "Lewis_5501",
+      "LiveroiD_A-Y01",
+      "LiveroiD_A-Y02",
+      "M1891",
+      "M4Sopmod_ii_4507",
+      "M950a_4302",
+      "M99_3304",
+      "Mdr_2603",
+      "Mk1",
+      "Mk23_3105",
+      "Mk23_8",
+      "Ots14_3001",
+      "Ots14_4501",
+      "Ots14_5602",
+      "P22_3902",
+      "P90_2802",
+      "Pa15_3701",
+      "Pa15_4202",
+      "Pkp_1201",
+      "R5rgp_5302",
+      "R93_3501",
+      "R93_4904",
+      "Rfb_1601",
+      "Ro635_4504",
+      "Sat8_2601",
+      "Sl8_4704",
+      "Spitfire_1405",
+      "Sr3mp_3704",
+      "Tabuk_4906",
+      "Tac50_2602",
+      "Type64-ar_2901",
+      "Ump45_3403",
+      "Ump9_3404",
+      "Vector_1901",
+      "Wa2000_1108",
+      "Wa2000_306",
+      "Wa2000_6",
+      "Welrod_1401",
+      "Welrod_2103",
+      "Zb26_4703"
+    ]
   },
   projects: [
     'demo',
@@ -57,12 +142,15 @@ async function toggleOpen() {
   }
 }
 
+function onClear() {
+  window.location.reload()
+}
+
 function showOut() {
   const { onload, onbeforeunload, onresize } = window.Live2d({
     el: '#board-hiyori',
     size: 'auto',
-    resourcesPath:
-      `https://johnnywang1994.github.io/assets/live2d/${state.project}/`,
+    resourcesPath: `${BASE_URL}/${state.project}/`,
     modelDir: [state.assist],
     bindFullscreen: true
   })
@@ -78,6 +166,8 @@ function showOut() {
 .board-wrapper {
   right: 0;
   bottom: 0;
+  width: 500px;
+  height: 500px;
   &.Hiyori {
     width: 300px;
     height: 500px;
