@@ -193,6 +193,7 @@ function showOut() {
   const { onload, onbeforeunload, onresize } = window.Live2d({
     el: '#board-girl',
     size: props.size,
+    quality: 2,
     resourcesPath: `${BASE_URL}/${state.project}/`,
     modelDir: [state.assist],
     bindFullscreen: true
@@ -229,6 +230,10 @@ onMounted(() => {
     bottom: 0;
     width: 500px;
     height: 500px;
+  }
+  canvas {
+    width: 100%;
+    height: 100%;
   }
   .panel {
     position: absolute;
