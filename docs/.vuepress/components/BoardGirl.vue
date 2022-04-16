@@ -243,6 +243,7 @@ onMounted(() => {
       padding: 6px 0;
       margin-right: 12px;
       border-radius: 10px;
+      font-size: 20px;
       cursor: pointer;
       user-select: none;
     }
