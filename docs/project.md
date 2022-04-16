@@ -3,4 +3,3 @@ layout: DefaultLayout
 ---
 
 <MyProject />
-<BoardGirl />

@@ -1,5 +1,5 @@
 <template>
-  <div :style="`position: ${position}`" :class="['board-wrapper', state.assist]">
+  <div :style="`position: ${position}`" :class="['board-wrapper', position, state.assist]">
     <div class="panel" v-if="!state.open">
       <select v-model="state.project">
         <option
@@ -20,9 +20,11 @@
       </div>
     </div>
     <template v-else>
-      <canvas id="board-hiyori"></canvas>
-      <div class="call-assist" @click="onClear">
-        Clear
+      <canvas id="board-girl"></canvas>
+      <div class="panel">
+        <div class="call-assist" @click="onClear">
+          Clear
+        </div>
       </div>
     </template>
   </div>
@@ -30,13 +32,21 @@
 
 <script setup>
 import { onMounted, reactive, nextTick, computed } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
-defineProps({
+const props = defineProps({
   position: {
     type: String,
     default: 'fixed'
+  },
+  size: {
+    type: String,
+    default: 'auto'
   }
 })
+
+const router = useRouter()
+const route = useRoute()
 
 const BASE_URL = process.env.NODE_ENV === 'production'
   ? 'https://johnnywang1994.github.io/assets/live2d'
@@ -124,11 +134,36 @@ const state = reactive({
       "Welrod_1401",
       "Welrod_2103",
       "Zb26_4703"
+    ],
+    'azue-lane': [
+      "abeikelongbi_3",
+      "aidang_2",
+      "aierdeliqi_4",
+      "aierdeliqi_5",
+      "ailunsamuna_2_hx",
+      "aimierbeierding_2",
+      "aisaikesi_4",
+      "baerdimo_5",
+      "banrenma_2",
+      "beierfasite_2",
+      "beikaluolaina_2",
+      "biaoqiang_3",
+      "bisimai_2",
+      "boyixi_2",
+      "bulaimodun_2",
+      "bulaimodun_4",
+      "chaijun_3",
+      "chuixue_3",
+      "dafeng_2",
+      "dafeng_4",
+      "daofeng_4",
+      "dujiaoshou_4"
     ]
   },
   projects: [
     'demo',
     'girls-frontline',
+    'azue-lane'
   ]
 })
 
@@ -139,17 +174,25 @@ async function toggleOpen() {
   if (state.open) {
     await nextTick()
     showOut()
+    router.replace({
+      query: {
+        project: state.project,
+        assist: state.assist
+      }
+    })
   }
 }
 
-function onClear() {
+async function onClear() {
+  router.replace({ query: null })
+  window.history.replaceState(null, '', '/book' + route.fullPath.split('?')[0]);
   window.location.reload()
 }
 
 function showOut() {
   const { onload, onbeforeunload, onresize } = window.Live2d({
-    el: '#board-hiyori',
-    size: 'auto',
+    el: '#board-girl',
+    size: props.size,
     resourcesPath: `${BASE_URL}/${state.project}/`,
     modelDir: [state.assist],
     bindFullscreen: true
@@ -160,26 +203,40 @@ function showOut() {
   window.addEventListener('beforeunload', onbeforeunload)
   window.addEventListener('resize', onresize)
 }
+
+async function initFromQuery() {
+  const { project, assist } = route.query
+  if (state.assists[project] && state.assists[project].includes(assist)) {
+    state.project = project
+    state.assist = assist
+    await nextTick()
+    toggleOpen()
+  }
+}
+
+onMounted(() => {
+  initFromQuery()
+})
 </script>
 
 <style scoped lang="scss">
 .board-wrapper {
-  right: 0;
-  bottom: 0;
-  width: 500px;
-  height: 500px;
-  &.Hiyori {
-    width: 300px;
-    height: 500px;
-  }
-  &.Rice {
+  margin: 60px auto;
+  width: 100%;
+  min-height: 500px;
+  &.fixed {
+    right: 0;
+    bottom: 0;
     width: 500px;
     height: 500px;
   }
   .panel {
     position: absolute;
-    right: 12px;
+    right: 0;
+    left: 0;
     bottom: 12px;
+    margin: auto;
+    text-align: center;
     min-width: 250px;
     > select {
       width: 80px;
