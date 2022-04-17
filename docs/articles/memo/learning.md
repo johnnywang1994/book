@@ -1,9 +1,7 @@
 # 學習資源
 
-<BoardGirl />
-
 ## Blog
-- [阮一峰的个人网站](http://www.ruanyifeng.com/home.html)
+- [阮一峰的個人網站](http://www.ruanyifeng.com/home.html)
   - [TypeScript 使用指南](https://ts.xcatliu.com/)
 - [若川的博客](https://lxchuan12.gitee.io/)
 
@@ -115,6 +113,7 @@
 - [Vue Composition 練習](https://juejin.im/post/6888925879243079687)
 - [Vue3 ref 提案](https://juejin.cn/post/6997186627781001229)
 - [Vue3 12 種通訊方式](https://juejin.cn/post/6999687348120190983)
+- [教你使用 koa2 + vite + ts + vue3 + pinia 構建前端 SSR 基礎](https://juejin.cn/post/7086467466703929358)
 
 
 ## React
@@ -137,7 +136,7 @@
 - [Quick Sort](https://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html)
 
 ## Leetcode
-- [Leetcode 题解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
+- [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
 - [Leetcode 75 Questions](https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions)
 - [Leetcode 75 Questions Details](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
 - [Patterns](https://seanprashad.com/leetcode-patterns/)

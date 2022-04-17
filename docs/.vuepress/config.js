@@ -57,6 +57,7 @@ module.exports = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/js/koa-vite-ssr.md',
             '/articles/js/live2d-demo.md',
             '/articles/js/canvas-draw-video.md',
             '/articles/js/most-easy-webpack-basic-intro.md',
