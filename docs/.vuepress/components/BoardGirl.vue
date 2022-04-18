@@ -157,7 +157,16 @@ const state = reactive({
       "dafeng_2",
       "dafeng_4",
       "daofeng_4",
-      "dujiaoshou_4"
+      "dujiaoshou_4",
+      "dujiaoshou_6",
+      "dunkeerke_2",
+      "edu_3",
+      "edu_4",
+      "huonululu_5",
+      "jialisuoniye_3",
+      "jialisuoniye_4",
+      "junhe_5",
+      "lafei"
     ]
   },
   projects: [
