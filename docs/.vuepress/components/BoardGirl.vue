@@ -22,6 +22,8 @@
     <template v-else>
       <canvas id="board-girl"></canvas>
       <div class="panel">
+        Scale<input type="range" min="0.5" max="3.5" step="0.1" v-model="state.scale" />
+        <br>
         <div class="call-assist" @click="onClear">
           Clear
         </div>
@@ -31,7 +33,7 @@
 </template>
 
 <script setup>
-import { onMounted, reactive, nextTick, computed } from 'vue'
+import { onMounted, reactive, nextTick, computed, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 const props = defineProps({
@@ -54,6 +56,7 @@ const BASE_URL = process.env.NODE_ENV === 'production'
 
 const state = reactive({
   open: false,
+  scale: 1,
   assist: '',
   project: '',
   assists: {
@@ -194,12 +197,53 @@ const state = reactive({
       "z46_2",
       "z46_3",
       "z46_4"
+    ],
+    'sin': [
+      "xch001_01",
+      "xch001b_01",
+      "xch002_01",
+      "xch003_01",
+      "xch004_01",
+      "xch004a_01",
+      "xch006_01",
+      "xch007_01",
+      "xch009_01",
+      "xch011_01",
+      "xch013_01",
+      "xch014_01",
+      "xch015_01",
+      "xch016_01",
+      "xco005_01",
+      "xco005a_01",
+      "xco008_01",
+      "xco009_01",
+      "xco010_01",
+      "xco011_01",
+      "xco011a_01",
+      "xco012_01",
+      "xco013_01",
+      "xco013a_01",
+      "xco017_01",
+      "xco025_01",
+      "xco028_01",
+      "xco029_01",
+      "xco030_01",
+      "xco031_01",
+      "xco032_01",
+      "xco033_01",
+      "xco035_01",
+      "xco036_01",
+      "xco049_01",
+      "xco052_01",
+      "xco053_01",
+      "xco057_01"
     ]
   },
   projects: [
     'demo',
     'girls-frontline',
-    'azue-lane'
+    'azue-lane',
+    'sin'
   ]
 })
 
@@ -226,7 +270,7 @@ async function onClear() {
 }
 
 function showOut() {
-  const { onload, onbeforeunload, onresize } = window.Live2d({
+  const { onload, onbeforeunload, onresize, setScale } = window.Live2d({
     el: '#board-girl',
     size: props.size,
     quality: 2,
@@ -239,6 +283,9 @@ function showOut() {
 
   window.addEventListener('beforeunload', onbeforeunload)
   window.addEventListener('resize', onresize)
+  watch(() => state.scale, (newScale) => {
+    setScale(newScale)
+  })
 }
 
 async function initFromQuery() {
@@ -258,7 +305,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 .board-wrapper {
-  margin: 60px auto;
+  margin: 60px auto 80px;
   width: 100%;
   min-height: 500px;
   &.fixed {
@@ -275,10 +322,11 @@ onMounted(() => {
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 12px;
+    bottom: 0;
     margin: auto;
     text-align: center;
     min-width: 250px;
+    transform: translateY(100%);
     > select {
       width: 80px;
       padding: 6px 0;
