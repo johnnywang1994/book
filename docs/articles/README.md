@@ -96,6 +96,12 @@
   - Vue3.x, Matterjs
   - created at: 2021-11
 
+### Vue3 Web Editor
+
+  - [Link](https://maju-ide.herokuapp.com/)
+  - Vue3.x, Iframe
+  - created at: 2021-10
+
 ### Vue3 Game - 2048
 
   - [Link](https://johnnywang1994.github.io/vue-2048/)

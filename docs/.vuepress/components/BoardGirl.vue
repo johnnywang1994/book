@@ -138,6 +138,22 @@ const state = reactive({
       "Welrod_2103",
       "Zb26_4703"
     ],
+    'girls-cafe-gun': [
+      "0113upd__l2d_356.u",
+      "0113upd__l2d_358.u",
+      "0113upd__l2d_359.u",
+      "0202upd__l2d_345.u",
+      "0202upd__l2d_349.u",
+      "0202upd__l2d_351.u",
+      "0202upd__l2d_355.u",
+      "0202upd__l2d_379.u",
+      "0202upd__l2d_385.u",
+      "0629upd__l2d_362.u",
+      "0629upd__l2d_363.u",
+      "0828upd__l2d_380.u",
+      "0828upd__l2d_381.u",
+      "0828upd__l2d_391.u"
+    ],
     'azue-lane': [
       "abeikelongbi_3",
       "aidang_2",
@@ -198,6 +214,22 @@ const state = reactive({
       "z46_3",
       "z46_4"
     ],
+    'unknow-brige': [
+      "c_3012",
+      "c_3023",
+      "c_3033",
+      "c_3112",
+      "c_3123",
+      "c_3131",
+      "c_3223",
+      "c_3231",
+      "c_3312",
+      "c_3321",
+      "c_3323",
+      "c_3412",
+      "c_5021",
+      "c_5131"
+    ],
     'sin': [
       "xch001_01",
       "xch001b_01",
@@ -254,7 +286,9 @@ const state = reactive({
   projects: [
     'demo',
     'girls-frontline',
+    'girls-cafe-gun',
     'azue-lane',
+    'unknow-brige',
     'sin'
   ]
 })
