@@ -18,7 +18,7 @@ module.exports = {
     // live2d
     // ['script', { src: 'https://unpkg.com/core-js-bundle@3.6.1/minified.js' }],
     ['script', { src: '/book/live2dcubismcore.min.js' }],
-    ['script', { src: '/book/live2d-bundle.js' }],
+    ['script', { src: '/book/live2d-bundle-v1.0.js' }],
   ],
 
   theme: '@vuepress/theme-default',
