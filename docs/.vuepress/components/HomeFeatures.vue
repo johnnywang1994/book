@@ -77,7 +77,7 @@ export default {
             },
             {
               content: 'Virtual-Dom Implement',
-              href: 'https://github.com/johnnywang1994/tiny-vnode',
+              href: 'https://github.com/jwlearn1994/tiny-vnode',
             },
             {
               content: 'MVVM Implement',

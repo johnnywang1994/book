@@ -114,11 +114,14 @@
 - [Vue3 ref 提案](https://juejin.cn/post/6997186627781001229)
 - [Vue3 12 種通訊方式](https://juejin.cn/post/6999687348120190983)
 - [教你使用 koa2 + vite + ts + vue3 + pinia 構建前端 SSR 基礎](https://juejin.cn/post/7086467466703929358)
+- [解析 snabbdom 源碼](https://github.com/creeperyang/blog/issues/33)
 
 
 ## React
 - [React.js 性能快的真正原因](https://www.zhihu.com/question/31809713/answer/54833728)
 - [Next.js Styled-JSX Sass Plugin](https://www.npmjs.com/package/@styled-jsx/plugin-sass)
+- [「react進階」一文吃透react-hooks原理](https://juejin.cn/post/6944863057000529933)
+- [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
 
 
 ## Webpack

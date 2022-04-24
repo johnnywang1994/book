@@ -197,7 +197,20 @@ const state = reactive({
       "l2d4__l2d_182.u",
       "l2d5__l2d_139.u",
       "l2d6__l2d_184.u",
-      "l2d7__l2d_76.u"
+      "l2d7__l2d_76.u",
+      "newg01__l2d_296.u",
+      "swg02__l2d_292.u",
+      "swg03__l2d_293.u",
+      "tw75__l2d_233.u",
+      "tw75__l2d_234.u",
+      "xnl2d2__l2d_223.u",
+      "xnl2d3__l2d_224.u",
+      "ybxd0414__l2d_336.u",
+      "ybxd0414__l2d_338.u",
+      "ybxd0414__l2d_339.u",
+      "yhl2d1__l2d_271.u",
+      "zst0518__l2d_360.u",
+      "zst0518__l2d_361.u"
     ],
     'azue-lane': [
       "abeikelongbi_3",
