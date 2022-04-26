@@ -394,3 +394,25 @@ h1 {
 
 <SocialBlock hashtags="css,tailwindcss,2022" />
 
+
+
+## Customization
+
+### Content
+
+#### Safelist
+雖然最佳狀態下希望根據使用狀況引入所需的最小 bundle class，但某些內容可能是動態產生，以致於 tailwind 沒辦法在掃描時發現他們，這時可以利用 safelist 確保某些 class 被強制引入
+```js
+module.exports = {
+  content: [
+    './pages/**/*.{html,js}'
+    './components/**/*.{html,js}',
+  ],
+  safelist: [
+    'bg-red-500',
+    'text-3xl',
+    'lg:text-4xl',
+  ]
+  // ...
+}
+```
