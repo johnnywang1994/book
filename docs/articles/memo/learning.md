@@ -21,6 +21,7 @@
 - [js 36個手寫練習](https://juejin.cn/post/6946022649768181774#heading-5)
 - [js prototype, __proto__ 詳解](https://juejin.cn/post/7022281000038170631)
 - [正則表達式](https://juejin.cn/post/7021672733213720613)
+- [js 頭號難題之一 this](https://blog.techbridge.cc/2019/02/23/javascript-this/)
 
 ### Typescript
 - [TypeScript 教程](https://www.tutorialsteacher.com/typescript)
@@ -77,6 +78,7 @@
 
 ## CSS
 - [CSS Trick](https://css-tricks.com/)
+- [CSS Inspiration](https://csscoco.com/inspiration/#/)
 - [30個重要 CSS Selector](https://code.tutsplus.com/zh-hant/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 - [HTML table表格tr, td 的高度與寬度概念](https://www.cnblogs.com/siwy/p/5336385.html)
 - [CSS 曲線動畫製作教學解釋](https://tobiasahlin.com/blog/curved-path-animations-in-css/)
@@ -118,10 +120,12 @@
 
 
 ## React
+- [React VS Vue](https://www.readfog.com/a/1631554664759660544)
 - [React.js 性能快的真正原因](https://www.zhihu.com/question/31809713/answer/54833728)
 - [Next.js Styled-JSX Sass Plugin](https://www.npmjs.com/package/@styled-jsx/plugin-sass)
 - [「react進階」一文吃透react-hooks原理](https://juejin.cn/post/6944863057000529933)
 - [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
+- [React Diff 算法](https://iter01.com/514750.html)
 
 
 ## Webpack

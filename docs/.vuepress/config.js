@@ -11,6 +11,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+    ['meta', { name: 'og:image', content: 'https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/2022/04/learn-to-code.jpeg' }],
     // gtag.js
     ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-B1QJSJW3P3' }],
     // google adsense
@@ -172,6 +173,7 @@ module.exports = {
           text: 'Daily',
           collapsible: true,
           children: [
+            '/articles/daily/2022/life-in-garena.md',
             '/articles/daily/2022/defi-learn.md',
             '/articles/daily/2022/wedding.md',
             '/articles/daily/2021/review-as-frontend.md',

@@ -103,6 +103,7 @@
 - [思維導圖編輯](https://asciiflow.com/)
 - [Tinyjpg 線上壓縮圖](https://tinyjpg.com/)
 - [Remove Img Background](https://www.remove.bg/zh/)
+- [Background Remover](https://baseline.is/tools/background-remover/)
 - [Add music to video](https://www.fileconverto.com/add-music-to-video/)
 
 
