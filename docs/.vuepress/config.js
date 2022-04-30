@@ -118,6 +118,7 @@ module.exports = {
               text: 'Vue',
               collapsible: true,
               children: [
+                '/articles/memo/vue/vue-jest-memo.md',
                 '/articles/memo/vue/vuetify-memo.md',
                 '/articles/memo/vue/vuex-basic.md'
               ]

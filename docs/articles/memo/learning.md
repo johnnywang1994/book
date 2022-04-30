@@ -117,6 +117,7 @@
 - [Vue3 12 種通訊方式](https://juejin.cn/post/6999687348120190983)
 - [教你使用 koa2 + vite + ts + vue3 + pinia 構建前端 SSR 基礎](https://juejin.cn/post/7086467466703929358)
 - [解析 snabbdom 源碼](https://github.com/creeperyang/blog/issues/33)
+- [Vue Test Utils](https://ithelp.ithome.com.tw/articles/10275591)
 
 
 ## React
