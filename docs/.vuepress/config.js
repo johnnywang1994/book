@@ -107,6 +107,7 @@ module.exports = {
               text: 'Javascript',
               collapsible: true,
               children: [
+                '/articles/memo/js/jest-basic.md',
                 '/articles/memo/js/regexp.md',
                 '/articles/memo/js/rxjs-basic.md',
                 '/articles/memo/js/gulp-basic.md',

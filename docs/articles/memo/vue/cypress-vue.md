@@ -1,5 +1,7 @@
 # Cypress Vue
 
+<SocialBlock hashtags="javascript,test,end-to-end,cypress,vue" />
+
 本篇以 vite 為基底進行 cypress 測試安裝與範例筆記
 
 ## 安裝
@@ -42,3 +44,4 @@ module.exports = (on, config) => {
 > 若使用 [Windows WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) 安裝，需先確認 WSL 版本為 2，若為 1 則無法正確啟動，詳細安裝流程可參考[官網說明](https://docs.cypress.io/guides/getting-started/installing-cypress#Windows-Subsystem-for-Linux)
 
 
+<SocialBlock hashtags="javascript,test,end-to-end,cypress,vue" />

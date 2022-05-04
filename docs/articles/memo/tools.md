@@ -70,8 +70,11 @@
 - [Send Email Test](https://putsmail.com/tests/new)
 - [FB share debug](https://developers.facebook.com/tools/debug/)
 - [What the font?](https://www.myfonts.com/WhatTheFont/)
+- [Google Lighthouse](https://shawnlin0201.github.io/Optimization/Optimization-001-lighthouse/)
+
 
 ### CSS
+- [CSS Playground](https://css-playground.com/)
 - [CSS clip-path maker](https://bennettfeely.com/clippy/)
 - [CSS cubic bezier 加速度函數產生器](https://matthewlein.com/tools/ceaser)
 - [網頁設計配色表](https://www.ifreesite.com/color/html-color-code.htm)

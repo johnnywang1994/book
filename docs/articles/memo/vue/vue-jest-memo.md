@@ -1,5 +1,8 @@
 # Vue 單元測試學習筆記
 
+<SocialBlock hashtags="javascript,unit-test,vue-jest,vue,jest" />
+
+本篇是學習 vue unit test 的隨手筆記~
 
 ## 安裝
 
@@ -205,6 +208,7 @@ it('uses shallowMount', async () => {
 })
 ```
 
+<SocialBlock hashtags="javascript,unit-test,vue-jest,vue,jest" />
 
 ### Pinia Test
 
