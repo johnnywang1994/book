@@ -81,7 +81,7 @@
 - [色碼表、調色盤](https://www.toolskk.com/color)
 - [SVG Editor](http://vectorpaint.yaks.co.nz/)
 - [SVG Filter Effect](https://apike.ca/prog_svg_filter_feTurbulence.html)
-- [CSS Sprite Generator](https://products.aspose.app/html/css-sprite-generator)
+- [CSS Sprite Generator](https://www.toptal.com/developers/css/sprite-generator/)
 
 ### CDN
 - [CDNjs](https://cdnjs.com/)

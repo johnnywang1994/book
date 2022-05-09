@@ -58,6 +58,7 @@ module.exports = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/js/babel7-decorator-issue.md',
             '/articles/js/koa-vite-ssr.md',
             '/articles/js/live2d-demo.md',
             '/articles/js/canvas-draw-video.md',
@@ -123,6 +124,13 @@ module.exports = {
                 '/articles/memo/vue/vue-jest-memo.md',
                 '/articles/memo/vue/vuetify-memo.md',
                 '/articles/memo/vue/vuex-basic.md'
+              ]
+            },
+            {
+              text: 'React',
+              collapsible: true,
+              children: [
+                '/articles/memo/react/react18-concurrent-memo.md'
               ]
             },
             {

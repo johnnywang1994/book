@@ -26,6 +26,8 @@
 ### Typescript
 - [TypeScript 教程](https://www.tutorialsteacher.com/typescript)
 - [TypeScript 巢狀物件解構類型](https://medium.com/onedegree-tech-blog/%E9%87%8B%E6%94%BE%E5%B7%A2%E7%8B%80%E7%89%A9%E4%BB%B6%E7%9A%84%E5%9E%8B%E5%88%A5%E6%A8%99%E7%A4%BA%E5%90%A7-feat-typescript-conditional-types-4a47b4816ce2)
+- [Typescript Decorator](https://oldmo860617.medium.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B8%B6%E4%BD%A0%E4%BA%86%E8%A7%A3-typescript-decorator-48c2ae9e246d)
+- [基於Typescript 實現 IoC & DI](https://mp.weixin.qq.com/s/C4OQ9VK6Hu3KqpBVz8YrHg)
 
 ### Web API
 - [matchMedia 瀏覽器相容](https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent)
@@ -127,6 +129,7 @@
 - [「react進階」一文吃透react-hooks原理](https://juejin.cn/post/6944863057000529933)
 - [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
 - [React Diff 算法](https://iter01.com/514750.html)
+- [React 18](https://juejin.cn/post/7095185674151821348)
 
 
 ## Webpack
