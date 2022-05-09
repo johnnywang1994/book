@@ -7,6 +7,22 @@ Hi 各位朋友們大家好，我是 Johnny，最近在調整優化我的開源�
 ## 背景故事
 整個事件背景是：我在幫我的開源工具添加 Typescript loader 後，順便測試使用 Property Decorator 時，發現無論我怎麼在 Decorator 中使用 `defineProperty` 對 target 進行調整，最後都會作用到 prototype 中而不是我的 instance，參考如下範例
 
+### 相關配置
+
+- @babel/standalone: `v7.17.11`
+
+```js
+module.exports = {
+  presets: [availablePresets.typescript],
+  plugins: [
+    [availablePlugins['proposal-decorators'], {
+      version: 'legacy'
+    }],
+    availablePlugins['proposal-class-properties']
+  ]
+}
+```
+
 ### Property Decorator 範例
 ```ts
 // 首先定義一個 decorator
