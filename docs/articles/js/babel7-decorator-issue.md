@@ -101,7 +101,28 @@ function _defineProperty(obj, key, value) {
 }
 
 function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
-  // ...
+  var desc = {};
+  Object.keys(descriptor).forEach(function (key) {
+    desc[key] = descriptor[key];
+  });
+  desc.enumerable = !!desc.enumerable;
+  desc.configurable = !!desc.configurable;
+  if ('value' in desc || desc.initializer) {
+    desc.writable = true;
+  }
+  // 這邊會判斷 decorator 回傳的 descriptor，若有回傳則使用回傳的，若沒有則取到目前為止的，預設是由 babel 提供
+  desc = decorators.slice().reverse().reduce(function (desc, decorator) {
+    return decorator(target, property, desc) || desc;
+  }, desc);
+  if (context && desc.initializer !== void 0) {
+    desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
+    desc.initializer = undefined;
+  }
+  if (desc.initializer === void 0) {
+    Object.defineProperty(target, property, desc);
+    desc = null;
+  }
+  return desc;
 }
 
 function _initializerWarningHelper(descriptor, context) {
@@ -122,6 +143,7 @@ function logDec(target, propName) {
 let User = (_class = class User {
   constructor(name) {
     // 這邊被 Babel 包了一層 _initializerDefineProperty
+    // _descriptor 由 _applyDecoratedDescriptor 的 reduce 處理後獲得
     _initializerDefineProperty(this, "name", _descriptor, this);
 
     this.name = name;
@@ -139,7 +161,7 @@ console.log(johnny);
 
 在一般 ts 本地編譯環境似乎這麼寫沒有問題，而 Babel v7 以後，似乎 Babel 對 class constructor 內部的一些 property 進行了改寫重組，導致原本 Decorator 的 getter/setter 無法正確被調用
 
-我們在觀察 `_initializerDefineProperty` 的實現後發現，如果在我們的 decorator 函數中沒有返回任何 `descriptor`，那 Babel 就會自動協助產生一個 descriptor 來構建對應的 property，而我們的 decorator 將只作用在 prototype 上
+我們在觀察 `_initializerDefineProperty`, `_applyDecoratedDescriptor` 的實現後發現，如果在我們的 decorator 函數中沒有返回任何 `descriptor`，那 Babel 就會自動協助產生一個 descriptor 來構建對應的 property，而我們的 decorator 將只作用在 prototype 上
 
 以這個情況而言，就必須明確將我們的 `descriptor` 從 decorator 中返回，如此 Babel 在編譯時就會以我們返回的 `descriptor` 來進行構建，修改後如下
 
