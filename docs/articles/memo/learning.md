@@ -9,10 +9,12 @@
 ## Frontend
 - [Juejin 掘金](https://juejin.cn/)
 - [zoo.team 前端期刊](https://weekly.zoo.team/)
+- [書棧網](https://www.bookstack.cn/)
 
 
 ## Javascript
 - [JavaScript 教程](https://wangdoc.com/javascript/index.html)
+- [書棧網-阮一峰 ECMAScript 6 (ES6)標準入門第三版](https://www.bookstack.cn/books/es6-3rd)
 - [Dev to](https://dev.to/t/javascript)
 - [Learn-Git-in-30-days](https://github.com/doggy8088/Learn-Git-in-30-days)
 - [Javascript 事件迴圈](https://blog.huli.tw/2019/10/04/javascript-async-sync-and-callback/)
@@ -27,6 +29,7 @@
 - [TypeScript 教程](https://www.tutorialsteacher.com/typescript)
 - [TypeScript 巢狀物件解構類型](https://medium.com/onedegree-tech-blog/%E9%87%8B%E6%94%BE%E5%B7%A2%E7%8B%80%E7%89%A9%E4%BB%B6%E7%9A%84%E5%9E%8B%E5%88%A5%E6%A8%99%E7%A4%BA%E5%90%A7-feat-typescript-conditional-types-4a47b4816ce2)
 - [Typescript Decorator](https://oldmo860617.medium.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B8%B6%E4%BD%A0%E4%BA%86%E8%A7%A3-typescript-decorator-48c2ae9e246d)
+- [Typescript Decorators Demo](https://gist.github.com/remojansen/16c661a7afd68e22ac6e)
 - [基於Typescript 實現 IoC & DI](https://mp.weixin.qq.com/s/C4OQ9VK6Hu3KqpBVz8YrHg)
 
 ### Web API

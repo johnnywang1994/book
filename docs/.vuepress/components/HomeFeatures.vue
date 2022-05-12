@@ -32,13 +32,13 @@ export default {
         {
           title: 'Frontend Development',
           details: [
-            'Vuejs 3+years(major)',
+            'Vuejs 4+years(major)',
             'Nuxtjs 2+years',
-            'Reactjs 1+years',
-            'JavaScript 3+years',
+            'Reactjs 2+years',
+            'JavaScript 4+years',
             'TypeScript 2+years',
-            'Webpack 3+years',
-            'SCSS 3+years',
+            'Webpack 4+years',
+            'SCSS 4+years',
           ],
         },
         {
@@ -46,7 +46,7 @@ export default {
           details: [
             'Expressjs 3+years',
             'Koajs 1+years',
-            'Nodejs 2+years',
+            'Nodejs 3+years',
             'Docker 1+years',
             'Django 0.5+years',
             'MySQL 0.5+years',
@@ -58,6 +58,10 @@ export default {
             {
               content: '[NPM] jspdf-html2canvas',
               href: 'https://www.npmjs.com/package/jspdf-html2canvas',
+            },
+            {
+              content: '[NPM] maju-decorators',
+              href: 'https://www.npmjs.com/package/maju-decorators',
             },
             {
               content: '[NPM] script-custom-module',

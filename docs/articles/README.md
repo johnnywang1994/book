@@ -41,6 +41,12 @@
   - jspdf, html2canvas
   - created at: 2019-11
 
+### maju-decorators
+
+  - [Link](https://www.npmjs.com/package/maju-decorators)
+  - js decorators utils
+  - created at: 2022-05-11
+
 ### script-custom-module
 
   - [Link](https://www.npmjs.com/package/script-custom-module)
