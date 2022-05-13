@@ -60,6 +60,7 @@
 - [placehold 測試圖片](https://placeholder.com/)
 - [Picsum 測試相片](https://picsum.photos/)
 - [Snippet Generator](https://snippet-generator.app/)
+- [流行技術趨勢圖表](http://sotagtrends.com/)
 
 ### SEO & Test
 - [CanIUse](https://caniuse.com/)

@@ -132,6 +132,8 @@
 - [「react進階」一文吃透react-hooks原理](https://juejin.cn/post/6944863057000529933)
 - [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
 - [React Diff 算法](https://iter01.com/514750.html)
+- [React Life Cycle](https://pjchender.dev/react/react-life-cycle/)
+- [React useEffect 重複調用問題](https://juejin.cn/post/6844904117303934989)
 - [React 18](https://juejin.cn/post/7095185674151821348)
 
 

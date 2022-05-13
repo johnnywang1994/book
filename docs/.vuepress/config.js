@@ -130,7 +130,10 @@ module.exports = {
               text: 'React',
               collapsible: true,
               children: [
-                '/articles/memo/react/react18-concurrent-memo.md'
+                '/articles/memo/react/react18-concurrent-memo.md',
+                '/articles/memo/react/useEffect-lifecycle.md',
+                '/articles/memo/react/useContext-useReducer.md',
+                '/articles/memo/react/react-router-config.md',
               ]
             },
             {
