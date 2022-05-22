@@ -58,6 +58,7 @@ module.exports = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/js/react-use-async-state.md',
             '/articles/js/babel7-decorator-issue.md',
             '/articles/js/koa-vite-ssr.md',
             '/articles/js/live2d-demo.md',
@@ -108,6 +109,7 @@ module.exports = {
               text: 'Javascript',
               collapsible: true,
               children: [
+                '/articles/memo/js/test-implement-details.md',
                 '/articles/memo/js/jest-basic.md',
                 '/articles/memo/js/regexp.md',
                 '/articles/memo/js/rxjs-basic.md',
@@ -173,6 +175,7 @@ module.exports = {
             '/articles/memo/fb-api-basic.md',
             '/articles/memo/vscode-command.md',
             '/articles/memo/learning.md',
+            '/articles/memo/issues.md',
             '/articles/memo/tools.md'
           ],
         },

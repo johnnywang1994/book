@@ -48,9 +48,6 @@
 - [Live2d Widget](https://github.com/stevenjoezhang/live2d-widget)
 - [Live2d Model](https://github.com/Eikanya/Live2d-model)
 
-### Scroll
-- [移動端滾動穿透問題](https://github.com/pod4g/tool/wiki/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98)
-
 ### WebComponent
 - [Web Component 監聽屬性變化](https://alligator.io/web-components/attributes-properties/)
 
@@ -123,6 +120,7 @@
 - [教你使用 koa2 + vite + ts + vue3 + pinia 構建前端 SSR 基礎](https://juejin.cn/post/7086467466703929358)
 - [解析 snabbdom 源碼](https://github.com/creeperyang/blog/issues/33)
 - [Vue Test Utils](https://ithelp.ithome.com.tw/articles/10275591)
+- [Vue Test Hooks](https://github.com/vueuse/vueuse/blob/main/packages/.test/mount.ts)
 
 
 ## React
@@ -133,8 +131,10 @@
 - [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
 - [React Diff 算法](https://iter01.com/514750.html)
 - [React Life Cycle](https://pjchender.dev/react/react-life-cycle/)
-- [React useEffect 重複調用問題](https://juejin.cn/post/6844904117303934989)
+- [React useEffect 深入重複調用問題](https://juejin.cn/post/6844904117303934989)
 - [React 18](https://juejin.cn/post/7095185674151821348)
+- [React setState 最新值獲取](https://stackoverflow.com/a/65757628/10300120)
+- [為執行細節寫下測試-翻譯](https://medium.com/enjoy-life-enjoy-coding/react-unit-test-%E7%82%BA%E5%9F%B7%E8%A1%8C%E7%B4%B0%E7%AF%80%E5%AF%AB%E4%B8%8B%E6%B8%AC%E8%A9%A6-%E7%BF%BB%E8%AD%AF-7bec3bca4ee1)
 
 
 ## Webpack

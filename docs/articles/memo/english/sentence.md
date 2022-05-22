@@ -1,5 +1,12 @@
 # Sentences 筆記
 
+
+## 問候
+- Are you from the area?
+  - Yes, I grew up here.
+  - No, I moved here couple of years ago.
+- How do you like the area?
+
 ## I'm
 
 ### 狀態
@@ -41,3 +48,17 @@
 - I'm sorry to tell you
 - I'm afraid
 - I don't mean to bother you, but something's been on my mind
+
+### 認為
+- I think
+- I believe
+- I'm convinced that he is hiding something
+- I guess (不太有把握
+- I supposed (不太有把握
+- As far as I know 據我所知
+- As far as I can tell 據我了解
+- As far as I'm concerned 以我而言
+- To the best of my knowledge 據我所知
+- Based on my accessment 據我估計
+- I'd say (I would say) 我認為
+- In my opinion 我個人認為
