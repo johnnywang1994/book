@@ -1,4 +1,4 @@
-# React useAsyncState 取得最新值
+# React useState 取得最新值
 
 <SocialBlock hashtags="react,javascript,useState,setState,promise" />
 
