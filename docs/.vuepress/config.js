@@ -132,6 +132,8 @@ module.exports = {
               text: 'React',
               collapsible: true,
               children: [
+                '/articles/memo/react/react-emotion-basic.md',
+                '/articles/memo/react/react-styled-jsx.md',
                 '/articles/memo/react/react18-concurrent-memo.md',
                 '/articles/memo/react/useEffect-lifecycle.md',
                 '/articles/memo/react/useContext-useReducer.md',
