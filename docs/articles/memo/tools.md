@@ -72,6 +72,7 @@
 - [FB share debug](https://developers.facebook.com/tools/debug/)
 - [What the font?](https://www.myfonts.com/WhatTheFont/)
 - [Google Lighthouse](https://shawnlin0201.github.io/Optimization/Optimization-001-lighthouse/)
+- [Testing Playground](https://testing-playground.com/)
 
 
 ### CSS

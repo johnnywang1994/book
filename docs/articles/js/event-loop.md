@@ -17,7 +17,7 @@
 ## 執行環境 Runtime Concept
 在正式講到 Javascript 的 Event Loop 前，我們有必要先了解所謂的`執行環境`，下面圖片參考自 MDN，可以看到共可分為主要三個概念：`Stack`, `Heap`, `Queue`：
 
-![Image from MDN](https://developer.mozilla.org/files/4617/default.svg)
+![Image from MDN](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/EventLoop/the_javascript_runtime_environment_example.svg)
 
 ### Stack 堆疊（call stack）
 每次呼叫一個函式後，會產生一個包含該函式執行環境參數的 frame，每次呼叫一個新函式就會往 Stack 內疊加，而每當一個函式執行結束後，就會將該函式對應的 frame 從 Stack 中移除，這是作為單線程的 Javascript 的基本特性。

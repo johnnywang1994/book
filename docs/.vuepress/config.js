@@ -132,6 +132,8 @@ module.exports = {
               text: 'React',
               collapsible: true,
               children: [
+                '/articles/memo/react/react-testing-library.md',
+                '/articles/memo/react/react-unit-test.md',
                 '/articles/memo/react/react-emotion-basic.md',
                 '/articles/memo/react/react-styled-jsx.md',
                 '/articles/memo/react/react18-concurrent-memo.md',
@@ -192,6 +194,7 @@ module.exports = {
           text: 'Daily',
           collapsible: true,
           children: [
+            '/articles/daily/2022/leisure-memo.md',
             '/articles/daily/2022/life-in-garena.md',
             '/articles/daily/2022/defi-learn.md',
             '/articles/daily/2022/wedding.md',

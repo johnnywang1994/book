@@ -1,5 +1,9 @@
 # React Router Config 筆記
 
+> 更新：現在新版 `react-router-dom` 已經可以使用 `Outlet` 來寫入子路由，跟 Vue Router 的 `RouterView` 一樣可以很方便的定義子路由位置，詳細請看[官方文件](https://github.com/remix-run/react-router/blob/main/docs/getting-started/tutorial.md)
+
+------
+
 撇除 Next.js 這類內建 router 處理的框架，直接用 react router 的寫法真的太虐心，所以紀錄一下一個名為 [react-router-config](https://www.npmjs.com/package/react-router-config) 的用法，讓開發時多一個參考工具使用QQ
 
 

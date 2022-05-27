@@ -13,6 +13,10 @@ $ npm install --save-dev jest
 ```
 
 
+## 配置
+[配置官方文件](https://jestjs.io/docs/configuration)
+
+
 ## 使用範例
 一個測試最重要就幾個東西需準備
   - 測試對象(sum.js)
