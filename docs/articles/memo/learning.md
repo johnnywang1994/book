@@ -4,6 +4,7 @@
 - [阮一峰的個人網站](http://www.ruanyifeng.com/home.html)
   - [TypeScript 使用指南](https://ts.xcatliu.com/)
 - [若川的博客](https://lxchuan12.gitee.io/)
+- [Pjchender Dev](https://pjchender.dev/)
 
 
 ## Frontend
@@ -34,6 +35,7 @@
 
 ### Web API
 - [matchMedia 瀏覽器相容](https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent)
+- [Preload Prefetch Preconnect 效能優化手段](https://shubo.io/preload-prefetch-preconnect/)
 
 ### DOM
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
@@ -150,6 +152,7 @@
 - [資料結構與演算法](https://www.gushiciku.cn/pl/pbsY/zh-tw)
 - [用 JS 學習演算法](https://pjchender.blogspot.com/2017/09/fizz-buzz.html)
 - [Quick Sort](https://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html)
+- [密碼學中的三兄弟 — Encode、Encrypt 跟 Hash](https://medium.com/starbugs/what-are-encoding-encrypt-and-hashing-4b03d40e7b0c)
 
 ## Leetcode
 - [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)

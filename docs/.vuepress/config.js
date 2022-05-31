@@ -109,6 +109,7 @@ module.exports = {
               text: 'Javascript',
               collapsible: true,
               children: [
+                '/articles/memo/js/crypto-password.md',
                 '/articles/memo/js/test-implement-details.md',
                 '/articles/memo/js/jest-basic.md',
                 '/articles/memo/js/regexp.md',
@@ -132,8 +133,10 @@ module.exports = {
               text: 'React',
               collapsible: true,
               children: [
-                '/articles/memo/react/react-testing-library.md',
+                '/articles/memo/react/react-styled-components-basic.md',
+                '/articles/memo/react/react-styled-components-advanced.md',
                 '/articles/memo/react/react-unit-test.md',
+                '/articles/memo/react/react-testing-library.md',
                 '/articles/memo/react/react-emotion-basic.md',
                 '/articles/memo/react/react-styled-jsx.md',
                 '/articles/memo/react/react18-concurrent-memo.md',
