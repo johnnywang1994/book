@@ -153,6 +153,8 @@
 - [用 JS 學習演算法](https://pjchender.blogspot.com/2017/09/fizz-buzz.html)
 - [Quick Sort](https://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html)
 - [密碼學中的三兄弟 — Encode、Encrypt 跟 Hash](https://medium.com/starbugs/what-are-encoding-encrypt-and-hashing-4b03d40e7b0c)
+- [Signal 創始人：開發了兩個 dApps 後，我發現 Web3 可能是偽命題](https://zombit.info/founder-of-signal-i-found-that-web3-may-be-a-false-proposition/)
+- [IPFS 服務與工具](https://github.com/ipfs/awesome-ipfs)
 
 ## Leetcode
 - [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
@@ -160,6 +162,8 @@
 - [Leetcode 75 Questions Details](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
 - [Patterns](https://seanprashad.com/leetcode-patterns/)
 
+## Eslint/Prettier
+- [Prettier好用屬性介紹](https://juejin.cn/post/7091315307536465951)
 
 ## Terminal
 - [Command line tool 教學（zsh）](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f)

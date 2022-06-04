@@ -58,6 +58,7 @@ module.exports = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/js/react-web3-storage.md',
             '/articles/js/react-use-state.md',
             '/articles/js/babel7-decorator-issue.md',
             '/articles/js/koa-vite-ssr.md',

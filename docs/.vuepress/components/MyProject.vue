@@ -32,6 +32,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "React Web3Storage Web UI",
+        "id" : "react-web3-storage",
+        "image" : cdn("/websites/react-web3-storage.jpg"),
+        "link" : "https://react-web3-storage.herokuapp.com/",
+        "name" : "React Web3 Storage",
+        "tech" : "React.js18, Javascript, Web3 Storage Client API"
+      }, {
         "des" : "Javascript 打造 Pokemon Game 原型",
         "id" : "vue-pokemon-game",
         "image" : cdn("/websites/vue-pokemon-game.jpg"),
@@ -110,30 +117,30 @@ export default {
         "tech" : "Vue.js, JavaScript"
       }, {
         "des" : "簡易匯率換算功能的單頁應用，可以換算現金匯率及即時匯率，資料來源為台灣銀行的官方匯率",
-        "id" : "nodejs-rate",
+        "id" : "maju-rate",
         "image" : cdn("/websites/noderate.jpg"),
-        "link" : "https://nodejs-rate.herokuapp.com/#/rate",
+        "link" : "https://maju-rate.herokuapp.com/#/rate",
         "name" : "Taiwan Bank Dollar Rate",
         "tech" : "Node.js, Express.js"
       }, {
         "des" : "空閒時做的單頁聊天室窗，暱稱隨便取，開始來聊天八~帳號:public，密碼:0000",
-        "id" : "nodejs-chatter",
+        "id" : "maju-chatter",
         "image" : cdn("/websites/nodechatter.jpg"),
-        "link" : "https://nodejs-chatter.herokuapp.com/",
+        "link" : "https://maju-chatter.herokuapp.com/",
         "name" : "Single Page Chatroom",
         "tech" : "Node.js, Express.js, Socket.io, BootStrap4"
       }, {
         "des" : "台灣股市即時交易資訊爬蟲查詢小工具",
-        "id" : "nodejs-stock",
+        "id" : "maju-stock",
         "image" : cdn("/websites/nodestock.png"),
-        "link" : "https://nodejs-rate.herokuapp.com/#/stock",
+        "link" : "https://maju-rate.herokuapp.com/#/stock",
         "name" : "Taiwan Stock Tool",
         "tech" : "Vue.js, Express.js, Axios"
       }, {
         "des" : "經濟日報即時新聞爬蟲瀏覽小工具",
-        "id" : "nodejs-news",
+        "id" : "maju-news",
         "image" : cdn("/websites/nodenews.png"),
-        "link" : "https://nodejs-rate.herokuapp.com/#/money-news",
+        "link" : "https://maju-rate.herokuapp.com/#/money-news",
         "name" : "Taiwan Money News",
         "tech" : "Vue.js, Express.js, Phantom, Cheerio"
       }, {
