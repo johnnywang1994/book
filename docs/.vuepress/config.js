@@ -1,3 +1,8 @@
+const { defaultTheme } = require('vuepress')
+const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
+const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
+const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
+const { searchPlugin } = require('@vuepress/plugin-search')
 const path = require('path')
 const { description } = require('../../package')
 
@@ -22,8 +27,8 @@ module.exports = {
     ['script', { src: '/book/live2d-bundle-v1.0.js' }],
   ],
 
-  theme: '@vuepress/theme-default',
-  themeConfig: {
+  // theme: '@vuepress/theme-default',
+  theme: defaultTheme({
     logo: 'https://vuejs.org/images/logo.png',
     home: '/',
     repo: 'johnnywang1994/book',
@@ -210,7 +215,7 @@ module.exports = {
       ],
       '/project/': '/project'
     },
-  },
+  }),
 
   /**
    * Apply plugins
@@ -218,12 +223,12 @@ module.exports = {
    * Ref：https://v2.vuepress.vuejs.org/reference/plugin/back-to-top.html#install
    */
   plugins: [
-    '@vuepress/back-to-top',
-    '@vuepress/medium-zoom',
-    ['@vuepress/register-components', {
+    backToTopPlugin(),
+    mediumZoomPlugin(),
+    registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
-    }],
-    ['@vuepress/search', {
+    }),
+    searchPlugin({
       locales: {
         '/': {
           placeholder: 'Search',
@@ -231,6 +236,6 @@ module.exports = {
       },
       searchMaxSuggestions: 10,
       isSearchable: (page) => page.path !== '/',
-    }]
+    })
   ]
 }

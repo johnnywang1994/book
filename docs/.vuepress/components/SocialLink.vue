@@ -13,7 +13,12 @@
 </template>
 
 <script>
+import { ShareNetwork } from 'vue-social-sharing'
+
 export default {
+  components: {
+    ShareNetwork
+  },
   props: {
     network: {
       type: String,

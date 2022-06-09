@@ -12,3 +12,4 @@ dist
 .cache
 config.local.js
 basement_dist
+yarn.lock

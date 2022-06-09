@@ -79,6 +79,9 @@
 ### FTP
 - [nodejs連接ftp上傳下載](https://juejin.cn/post/6844903907001368583)
 
+### GraphQL
+- [GraphQL 教學系列](https://ithelp.ithome.com.tw/users/20111997/ironman/1878)
+
 
 ## CSS
 - [CSS Trick](https://css-tricks.com/)
@@ -99,6 +102,7 @@
 
 ## Git
 - [Git 教程](https://git-scm.com/book/zh-tw/v2/)
+- [客製化 Git hooks with Nodejs](https://dev.to/shaharkazaz/writing-custom-git-hooks-with-nodejs-3f8b)
 
 
 ## Markdown
