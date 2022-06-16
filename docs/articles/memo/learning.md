@@ -134,6 +134,7 @@
 - [React VS Vue](https://www.readfog.com/a/1631554664759660544)
 - [React.js 性能快的真正原因](https://www.zhihu.com/question/31809713/answer/54833728)
 - [Next.js Styled-JSX Sass Plugin](https://www.npmjs.com/package/@styled-jsx/plugin-sass)
+- [Import Svg into Next.js](https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f)
 - [「react進階」一文吃透react-hooks原理](https://juejin.cn/post/6944863057000529933)
 - [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
 - [React Diff 算法](https://iter01.com/514750.html)

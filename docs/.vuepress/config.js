@@ -152,6 +152,17 @@ module.exports = {
               ]
             },
             {
+              text: 'Parse',
+              collapsible: true,
+              children: [
+                '/articles/memo/parse/README.md',
+                '/articles/memo/parse/user.md',
+                '/articles/memo/parse/session.md',
+                '/articles/memo/parse/schema.md',
+                '/articles/memo/parse/cloud.md',
+              ]
+            },
+            {
               text: 'CSS',
               collapsible: true,
               children: [

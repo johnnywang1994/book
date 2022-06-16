@@ -109,3 +109,69 @@ const Icon = styled.svg`
   }
 `;
 ```
+
+## Server Rendering with Nextjs
+SSR 部分其實可以在不同框架下使用，詳細基本教學可以[參考官網](https://styled-components.com/docs/tooling#serverside-rendering)，這邊以 Nextjs 為範例，因為 `.babelrc` 的部分 Nextjs 有先做好基本設定，我們只需要在 `next.config.js` 中添加設定即可
+
+首先我們需要安裝 `babel-plugin-styled-components` 幫我們處理 server 端的編譯
+
+```
+$ npm install --save-dev babel-plugin-styled-components
+```
+
+接著修改 `next.config.js`，可參考 [Next官方說明](https://nextjs.org/docs/advanced-features/compiler#styled-components)
+
+```js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  compiler: {
+    // ssr and displayName are configured by default
+    styledComponents: true
+  }
+}
+
+module.exports = nextConfig
+```
+
+最後參考 [Styled-Components Nextjs範例](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components-babel) 添加 Custom `_document.tsx` 加入如下：
+
+```tsx
+// _document.tsx
+import Document, { DocumentContext, DocumentInitialProps } from 'next/document'
+import { ServerStyleSheet } from 'styled-components'
+
+export default class MyDocument extends Document {
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
+
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        })
+
+      const initialProps = await Document.getInitialProps(ctx)
+      return {
+        ...initialProps,
+        styles: [
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>,
+        ],
+      }
+    } finally {
+      sheet.seal()
+    }
+  }
+}
+```
+
+大功告成，接著就可以快樂的在 Next 中使用 Styled-Components 摟～
+
+> 那為何我們會需要這麼麻煩處理這些呢？可以參考官網說明如下：`By adding a unique identifier to every styled component, this plugin avoids checksum mismatches due to different class generation on the client and on the server. If you do not use this plugin and try to server-side render styled-components React will complain with an HTML attribute mismatch warning during rehydration.`，另一方面因為 Styled-Components 原本是動態在 Client Side 產生 stylesheet 並插入 head 套用，但在 Server 端渲染時沒有辦法插入到我們的 Document String 當中，也因此會跳出 Render not match 的 Error，所以我們在 `_document.tsx` 當中預先提取 `<App />` 底下的 stylesheets 並插入到 Props 當中，讓 Nextjs 把 styled-components 的樣式設定一併處理就可以瞜
