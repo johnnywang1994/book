@@ -152,6 +152,15 @@ module.exports = {
               ]
             },
             {
+              text: 'GraphQL',
+              collapsible: true,
+              children: [
+                '/articles/memo/graphql/basic.md',
+                '/articles/memo/graphql/advance.md',
+                '/articles/memo/graphql/memo.md'
+              ]
+            },
+            {
               text: 'Parse',
               collapsible: true,
               children: [

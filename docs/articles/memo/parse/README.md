@@ -2,8 +2,12 @@
 
 這是一系列閱讀 `Parse Javascript`, `Parse Cloud`, `Parse Server` 的一系列學習筆記，作為學習的紀錄與複習使用，也歡迎有興趣的朋友們看看摟，內容並不會包含所有文檔，主要都是我自己閱讀後認為最重要且必須的部分，剩下的文檔可以實際用到時再深入研究與探索
 
-- [Parse Javascript Guide](https://docs.parseplatform.org/js/guide)
+```bash
+$ npm install parse
+```
 
+- [Parse Javascript Guide](https://docs.parseplatform.org/js/guide)
+- [Parse Javascript API Docs](http://parseplatform.org/Parse-SDK-JS/api/3.4.2/)
 
 
 ## Objects

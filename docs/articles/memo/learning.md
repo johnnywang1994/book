@@ -72,6 +72,7 @@
 ### Express
 - [Express爬蟲](https://www.jianshu.com/p/b915732b7ddb)
 - [Express&Koa2 中間層實踐的差別](https://juejin.cn/post/6844903968041091080)
+- [Parse Server 後端快速開發框架-兼容 GraphQL](https://parseplatform.org/)
 
 ### Babel
 - [Babel 詳細入門解說](https://juejin.im/post/5e477139f265da574c566dda)
@@ -81,6 +82,10 @@
 
 ### GraphQL
 - [GraphQL 教學系列](https://ithelp.ithome.com.tw/users/20111997/ironman/1878)
+
+### Audio
+- [Libsvm-js vector machine (aka SVM) classification and regression](https://www.npmjs.com/package/libsvm-js)
+- [Meyda-JavaScript audio feature extraction library](https://meyda.js.org/)
 
 
 ## CSS

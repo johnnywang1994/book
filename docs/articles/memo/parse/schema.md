@@ -72,3 +72,56 @@ mySchema.get().then((result) => {
 ```js
 mySchema.purge();
 ```
+
+## Class Level Permission
+CLP 是一項安全功能，允許開發者以比基於 ACL(Access Control List) 權限控制提供更廣泛的方式限制訪問。
+
+```js
+// 修改內建 User schema
+const schema = new Parse.Schema('_User');
+await schema.get();
+
+schema
+  .addString('name')
+  // 設定 Schema 的 CLP
+  .setCLP({
+    get: { requiresAuthentication: true },
+    find: { requiresAuthentication: true },
+    create: { '*': true },
+  });
+
+await schema.update();
+```
+
+```js
+// 建立 Post Schema，綁定欄位到 _User
+const schema = new Parse.Schema('Post');
+
+schema
+  .addString('title')
+  .addString('body')
+  .addPointer('owner', '_User')
+
+  .setCLP({
+    find: {
+      pointerFields: ['owner'],
+    },
+    get: {
+      pointerFields: ['owner'],
+    },
+    count: {
+      pointerFields: ['owner'],
+    },
+    create: {
+      requiresAuthentication: true,
+    },
+    update: {
+      pointerFields: ['owner'],
+    },
+    delete: {
+      pointerFields: ['owner'],
+    },
+  });
+
+await schema.save();
+```
