@@ -17,3 +17,5 @@
 8. cmd + k, + z => 全螢幕編輯模式
 
 9. shift + cmd + l => 選中所有相同內容（加強版 cmd + d）
+
+10. options + cmd + . => auto-fix
