@@ -119,7 +119,7 @@ export default {
         "des" : "簡易匯率換算功能的單頁應用，可以換算現金匯率及即時匯率，資料來源為台灣銀行的官方匯率",
         "id" : "maju-rate",
         "image" : cdn("/websites/noderate.jpg"),
-        "link" : "https://maju-rate.herokuapp.com/#/rate",
+        "link" : "https://maju-express.herokuapp.com/rate/#/rate",
         "name" : "Taiwan Bank Dollar Rate",
         "tech" : "Node.js, Express.js"
       }, {
@@ -133,16 +133,9 @@ export default {
         "des" : "台灣股市即時交易資訊爬蟲查詢小工具",
         "id" : "maju-stock",
         "image" : cdn("/websites/nodestock.png"),
-        "link" : "https://maju-rate.herokuapp.com/#/stock",
+        "link" : "https://maju-express.herokuapp.com/rate/#/stock",
         "name" : "Taiwan Stock Tool",
         "tech" : "Vue.js, Express.js, Axios"
-      }, {
-        "des" : "經濟日報即時新聞爬蟲瀏覽小工具",
-        "id" : "maju-news",
-        "image" : cdn("/websites/nodenews.png"),
-        "link" : "https://maju-rate.herokuapp.com/#/money-news",
-        "name" : "Taiwan Money News",
-        "tech" : "Vue.js, Express.js, Phantom, Cheerio"
       }, {
         "des" : "一個簡單的QRcode讀取器，掃描QRcode...",
         "id" : "qrcode-reader",

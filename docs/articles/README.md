@@ -169,13 +169,13 @@
 
 ### Taiwan Stock Tool
 
-  - [Link](https://maju-rate.herokuapp.com/#/stock)
+  - [Link](https://maju-express.herokuapp.com/rate/#/stock)
   - Vue2.x, Nodejs, ExpressJs, Bootstrap4
   - created at: 2019-01
 
-### Taiwan Money News
+### Taiwan Rate 匯率
 
-  - [Link](https://maju-rate.herokuapp.com/#/money-news)
+  - [Link](https://maju-express.herokuapp.com/rate/#/rate)
   - Vue2.x, Nodejs, ExpressJs, Bootstrap4
   - created at: 2019-01
 
