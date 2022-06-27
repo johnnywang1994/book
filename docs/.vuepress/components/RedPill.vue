@@ -7,7 +7,7 @@
       <img
         v-for="num in 3"
         :key="`red-pill-virus-${num}`"
-        src="https://johnnywang1994.github.io/assets/myblog/virus.png"
+        src="https://github.com/jwlearn1994/image-uploader/blob/main/others/myblog/virus.png"
       />
     </div>
   </div>

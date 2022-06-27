@@ -25,7 +25,7 @@
 </template>
 
 <script>
-const cdn = (path) => `https://johnnywang1994.github.io/assets/myblog${path}`;
+const cdn = (path) => `https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/others/myblog${path}`;
 
 export default {
   name: 'MyProject',
@@ -34,7 +34,7 @@ export default {
       creations: [{
         "des" : "React WebRTC realtime chatroom",
         "id" : "react-webrtc-chatroom",
-        "image" : cdn("/websites/react-webrtc-chatroom.jpg"),
+        "image" : cdn("/websites/react-webrtc-chatroom.png"),
         "link" : "https://maju-express.herokuapp.com/meet",
         "name" : "React WebRTC Realtime Chatroom",
         "tech" : "React.js18, Typescript, Socket.io, Peer.js"

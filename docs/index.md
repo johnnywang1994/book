@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://johnnywang1994.github.io/assets/myblog/me.jpg
+heroImage: https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/others/myblog/me.jpg
 tagline: Welcome! Here is my personal blog
 actions:
   - text: Lets Go! →
