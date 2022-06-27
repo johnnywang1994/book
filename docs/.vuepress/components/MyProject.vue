@@ -32,6 +32,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "React WebRTC realtime chatroom",
+        "id" : "react-webrtc-chatroom",
+        "image" : cdn("/websites/react-webrtc-chatroom.jpg"),
+        "link" : "https://maju-express.herokuapp.com/meet",
+        "name" : "React WebRTC Realtime Chatroom",
+        "tech" : "React.js18, Typescript, Socket.io, Peer.js"
+      }, {
         "des" : "React Web3Storage Web UI",
         "id" : "react-web3-storage",
         "image" : cdn("/websites/react-web3-storage.jpg"),
