@@ -66,6 +66,7 @@
 
 ### NPM
 - [yarn & npm 指令對照表](https://yarnpkg.com/en/docs/migrating-from-npm)
+- [Renovate - Automated dependency updates](https://docs.renovatebot.com/)
 
 ### Koa2
 - [Koa2 實戰總結教學](https://juejin.cn/post/6952665400890884127)
@@ -83,6 +84,7 @@
 
 ### GraphQL
 - [GraphQL 教學系列](https://ithelp.ithome.com.tw/users/20111997/ironman/1878)
+- [Apollo Client - Supported fetch policies](https://www.apollographql.com/docs/react/data/queries/#supported-fetch-policies)
 
 ### Audio
 - [Libsvm-js vector machine (aka SVM) classification and regression](https://www.npmjs.com/package/libsvm-js)
@@ -161,6 +163,7 @@
 - [為執行細節寫下測試-翻譯](https://medium.com/enjoy-life-enjoy-coding/react-unit-test-%E7%82%BA%E5%9F%B7%E8%A1%8C%E7%B4%B0%E7%AF%80%E5%AF%AB%E4%B8%8B%E6%B8%AC%E8%A9%A6-%E7%BF%BB%E8%AD%AF-7bec3bca4ee1)
 - [React Memo 使用範例](https://codepen.io/fgerschau/pen/WNQrOgZ?editors=1010)
 - [有react fiber，为什么不需要vue fiber](https://juejin.cn/post/7077545184807878692)
+- [React I18n - Trans component 在字串中插入自定義組件](https://react.i18next.com/latest/trans-component)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)

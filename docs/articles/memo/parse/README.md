@@ -45,6 +45,7 @@ $ npm install parse
 - greaterThanOrEqualTo(key, number)
 - lessThan(key, number)
 - lessThanOrEqualTo(key, number)
+- matches(key, RegExp)
 
 #### count 數量
 - limit(number)
@@ -160,6 +161,12 @@ query.equalTo("arrayKey", 2);
 ```js
 query.startsWith("someKey", "match value");
 query.fullText("someKey", "match fullText"); // case insensitive
+```
+
+### Query with RegExp
+```js
+const numbers = [1234, 4321];
+query.matches('someKey', new RegExp(`(${numbers.join('|')})$`)); // will match ~34, ~21
 ```
 
 ### Relational Queries
