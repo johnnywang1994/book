@@ -6,7 +6,9 @@
 
 嗨～歡迎您，我是Johnny，這是我的個人介紹兼紀錄學習點滴的筆記書，內容主要為個人作品展示與學習心得文章。
 
-我是一名擔任前端工程師，Vuejs 重度沈迷使用者。平日興趣是窩在家做些酷酷的小專案，透過實作學習讓我獲得很多成就感 =V=，夢想是希望有一天能進步到 Vuejs 作者尤大大 1/10 強。
+俗話說取之於人，需懂得報恩，從最初開始學習程式設計以來，一直都是靠著網路上的無私分享內容自學，也希望自己能把自己的所學所好分享出去給所有需要的人。
+
+我是一名全端工程師（偏愛前端），過去特別愛 Vuejs，但小朋友才做選擇，現在我 Vuejs, Reactjs 都愛！平日興趣是窩在家做些酷酷的小專案，透過實作學習讓我獲得很多成就感 =V=，夢想是希望有一天能進步到 Vuejs 作者尤大大 1/10 強。
 
 <!-- Maju Welcome -->
 <Maju-App />
@@ -74,9 +76,15 @@
 
 ## 個人小專案
 
+### React Sudoku Game
+
+  - [Link](https://maju-express.herokuapp.com/sudoku/)
+  - React18, Typescript
+  - created at: 2022-07
+
 ### React WebRTC Realtime Chatroom
 
-  - [Link](https://maju-express.herokuapp.com/meet)
+  - [Link](https://maju-express.herokuapp.com/meet/)
   - React18, Typescript, Socket.io, Peer.js
   - created at: 2022-06
 

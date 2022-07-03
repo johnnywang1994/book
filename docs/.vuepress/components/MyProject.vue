@@ -32,6 +32,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "React Sudoku Game",
+        "id" : "react-sudoku",
+        "image" : cdn("/websites/react-sudoku.png"),
+        "link" : "https://maju-express.herokuapp.com/meet",
+        "name" : "React Sudoku Game",
+        "tech" : "React.js18, Typescript"
+      }, {
         "des" : "React WebRTC realtime chatroom",
         "id" : "react-webrtc-chatroom",
         "image" : cdn("/websites/react-webrtc-chatroom.png"),
