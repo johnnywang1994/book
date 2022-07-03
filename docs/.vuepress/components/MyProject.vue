@@ -35,7 +35,7 @@ export default {
         "des" : "React Sudoku Game",
         "id" : "react-sudoku",
         "image" : cdn("/websites/react-sudoku.png"),
-        "link" : "https://maju-express.herokuapp.com/meet",
+        "link" : "https://maju-express.herokuapp.com/sudoku",
         "name" : "React Sudoku Game",
         "tech" : "React.js18, Typescript"
       }, {
