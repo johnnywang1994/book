@@ -85,7 +85,6 @@
 
 ### GraphQL
 - [GraphQL 教學系列](https://ithelp.ithome.com.tw/users/20111997/ironman/1878)
-- [Apollo Client - Supported fetch policies](https://www.apollographql.com/docs/react/data/queries/#supported-fetch-policies)
 
 ### Audio
 - [Libsvm-js vector machine (aka SVM) classification and regression](https://www.npmjs.com/package/libsvm-js)

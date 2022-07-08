@@ -170,7 +170,13 @@ async function run() {
   const handle = await client.start(example, {
     args: ['Temporal'], // 參數傳遞給 example workflow
     taskQueue: 'hello-world', // 加入的 taskQuene 名稱，對應 worker 必須能處理此 workflow
-    workflowId: 'example-workflow-id'
+    workflowId: 'example-workflow-id',
+    // workflow id reuse policy 參考結尾列表
+    workflowIdReusePolicy: WorkflowIdReusePolicy.WORKFLOW_ID_REUSE_POLICY_REJECT_DUPLICATE,
+    // retry policy
+    retry: {
+      maximumAttempts: 20
+    }
   })
   const res = await handle.result()
 }
@@ -433,3 +439,5 @@ const runWorkflow = async () => {
 - [Temporal Docs](https://docs.temporal.io/)
 - [Temporal Typescript Reference](https://typescript.temporal.io/)
 - [What is a Signal](https://docs.temporal.io/concepts/what-is-a-signal/)
+- [WorkflowIdReusePolicy](https://typescript.temporal.io/api/enums/client.WorkflowIdReusePolicy)
+- [RetryPolicy](https://typescript.temporal.io/api/interfaces/client.workflowoptions/#retry)
