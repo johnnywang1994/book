@@ -1,0 +1,1 @@
+import{_ as o,r,o as t,c as n,a}from"./app.76ccb931.js";const c={};function l(s,_){const e=r("BoardGirl");return t(),n("div",null,[a(e,{position:"relative",size:"screen"})])}var d=o(c,[["render",l],["__file","live2d.html.vue"]]);export{d as default};
