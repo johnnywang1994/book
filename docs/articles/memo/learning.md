@@ -151,7 +151,6 @@
 - [React 入門到進階](https://ithelp.ithome.com.tw/users/20116826/ironman/3586)
 - [React VS Vue](https://www.readfog.com/a/1631554664759660544)
 - [React.js 性能快的真正原因](https://www.zhihu.com/question/31809713/answer/54833728)
-- [Next.js Styled-JSX Sass Plugin](https://www.npmjs.com/package/@styled-jsx/plugin-sass)
 - [Import Svg into Next.js](https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f)
 - [「react進階」一文吃透react-hooks原理](https://juejin.cn/post/6944863057000529933)
 - [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
@@ -164,6 +163,12 @@
 - [React Memo 使用範例](https://codepen.io/fgerschau/pen/WNQrOgZ?editors=1010)
 - [有react fiber，为什么不需要vue fiber](https://juejin.cn/post/7077545184807878692)
 - [React I18n - Trans component 在字串中插入自定義組件](https://react.i18next.com/latest/trans-component)
+
+
+## Nextjs
+- [Next.js Styled-JSX Sass Plugin](https://www.npmjs.com/package/@styled-jsx/plugin-sass)
+- [getInitialProps vs. getServerSideProps](https://blog.logrocket.com/getinitialprops-vs-getserversideprops-nextjs/)
+
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)

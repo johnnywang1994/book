@@ -42,6 +42,7 @@ Parse.Cloud.define("averageStars", async (request) => {
 });
 ```
 #### 常見 options
+- [Link](https://docs.parseplatform.org/cloudcode/guide/#implementing-cloud-function-validation)
 - requireMaster
 - requireUser
 - validateMasterKey
