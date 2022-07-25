@@ -68,14 +68,14 @@ class NameBlocks {
       });
 
       if (isAlphabet) {
-        setTimeout(() => Body.setStatic(child, true), 400);
+        setTimeout(() => Body.setStatic(child, true), 250);
       } else {
         setTimeout(
           () => Body.setVelocity(child, {
             x: Common.random(-3, 3),
             y: Common.random(-5, -10),
           }),
-          500,
+          350,
         );
       }
 

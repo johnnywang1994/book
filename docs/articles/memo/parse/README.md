@@ -146,10 +146,38 @@ const Monster = Parse.Object.extend("Monster", {
     return monster;
   }
 });
+
+const monster = Monster.spawn(200);
+alert(monster.get('strength'));  // Displays 200.
+alert(monster.sound); // Displays Rawr.
 ```
-subclass create 出的 instance 使用 Query 搜尋 className 時並不會是 `SubClass`，Parse 預設還是用原本的 object 進行 query，若需要返回 subclass必須註冊進入 Parse 當中
+
+透過 `Parse.Object.extend` 製作的 Subclass 可以直接調用相關方法，返回的 instance 也會自動套用延伸功能。
+
+`v1.6.0` 後也可透過 ES6 Class 對 `Parse.Object` 進行 `extends` 創建 Subclass，但必須在註冊後透過 `registerSubclass` 才能在 query 後返回繼續使用 Subclass 中的屬性、方法。
+
 ```js
-Parse.Object.registerSubclass('Monster', Monster);
+class MyMonster extends Parse.Object {
+  constructor() {
+    // 繼承原 Monster Class
+    super('Monster');
+    // All other initialization
+    this.sound = 'Rawr';
+  }
+
+  hasSuperHumanStrength() {
+    return this.get('strength') > 18;
+  }
+
+  static spawn(strength) {
+    const monster = new MyMonster();
+    monster.set('strength', strength);
+    return monster;
+  }
+}
+
+// 對原 Monster 註冊其 Subclass "MyMonster"
+Parse.Object.registerSubclass('Monster', MyMonster);
 ```
 
 ### Query on Array
@@ -258,4 +286,15 @@ const pipeline = [
 const pipeline = [
   { match: { name: 'BBQ' } }
 ];
+```
+
+
+### Passing context on save
+- [Link](https://github.com/parse-community/parse-server/issues/6459)
+```js
+object.save(null, { context: { myArg: true } });
+
+Parse.Cloud.beforeSave('MyClass', req => {
+  let myArg = req.context.myArg;
+});
 ```

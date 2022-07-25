@@ -130,6 +130,9 @@
 ## Django
 - [django 學習指南](https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/content/)
 
+## GO
+- [30 天導入 Golang](https://ithelp.ithome.com.tw/users/20092379/ironman/2062)
+
 
 ## Nginx
 - [Nginx 入門到實踐](https://juejin.cn/post/6844904144235413512)

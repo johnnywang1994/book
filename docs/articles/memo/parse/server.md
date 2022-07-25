@@ -45,14 +45,25 @@ volumes:
 
 ```js
 import express from 'express'
-import ParseServer from 'parse-server'
+import ParseServer, { RedisCacheAdapter } from 'parse-server';
+import { ReadPreference } from 'mongodb';
 
 const app = express()
 
 const parseServerOptions = {
-  databaseURI: 'mongodb://localhost:27017/parse',
   appId: 'test-app-id',
   masterKey: 'test-master-key',
+  cacheAdapter: new RedisCacheAdapter({ url: 'redis://127.0.0.1:6379' }),
+  databaseURI: 'mongodb://localhost:27017/parse',
+  // if production environment has implemented Replication feature
+  // we can set the readPreference of mongodb to speed up reading
+  // however, if most of case the local development environment would not support this feature, and should be default setting
+  databaseOptions: isProd
+    ? {
+        enableSchemaHooks: true,
+        readPreference: ReadPreference.SECONDARY_PREFERRED,
+      }
+    : {},
 
   enableAnonymousUsers: false,
   auth: {},

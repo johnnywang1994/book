@@ -50,7 +50,9 @@ mySchema.update().then((result) => {
 需要 `masterKey` 來執行
 ```js
 // field 必須在加入 index 之前就存在
-mySchema.addString('stringField');
+mySchema.addString('stringField', {
+  defaultValue: 'defaultString', // 預設值
+});
 const index = {
   stringField: 1
 };

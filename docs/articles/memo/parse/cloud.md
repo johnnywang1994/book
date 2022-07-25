@@ -40,6 +40,31 @@ Parse.Cloud.define("averageStars", async (request) => {
   fields : ['movie'],
   requireUser: true
 });
+
+Parse.Cloud.define("averageStars", async (request) => {
+  const query = new Parse.Query("Review");
+  query.equalTo("movie", request.params.movie);
+  const results = await query.find();
+  // ...
+  return sum / results.length;
+},{
+  fields : {
+    movie : {
+      required: true,
+      type: String,
+      options: val => {
+        return val.length < 20;
+      },
+      error: "Movie must be less than 20 characters"
+    }
+  },
+  requireUserKeys: {
+    accType : {
+      options: 'reviewer',
+      error: 'Only reviewers can get average stars'
+    }
+  }
+});
 ```
 #### 常見 options
 - [Link](https://docs.parseplatform.org/cloudcode/guide/#implementing-cloud-function-validation)

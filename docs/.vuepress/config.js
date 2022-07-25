@@ -159,6 +159,7 @@ module.exports = {
               children: [
                 '/articles/memo/graphql/basic.md',
                 '/articles/memo/graphql/advance.md',
+                '/articles/memo/graphql/apollo-client.md',
                 '/articles/memo/graphql/memo.md'
               ]
             },
