@@ -52,6 +52,10 @@
 - [Live2d Widget](https://github.com/stevenjoezhang/live2d-widget)
 - [Live2d Model](https://github.com/Eikanya/Live2d-model)
 
+### Svg
+- [Lottie 使用介紹](https://juejin.cn/post/7101629986427109383)
+- [Lottie Files 開源動畫素材](https://lottiefiles.com/featured)
+
 ### WebComponent
 - [Web Component 監聽屬性變化](https://alligator.io/web-components/attributes-properties/)
 
