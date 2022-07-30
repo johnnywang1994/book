@@ -143,6 +143,12 @@
       background: linear-gradient(to top, #6fa8ea 10%, #008cff 50%, #6fa8ea 90%);
       border-radius: 9999px;
       animation: self-rotate 6s linear infinite;
+      @media (max-width: 576px) {
+        left: calc(50% - 10px);
+        top: -10px;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
   &.jupiter {
@@ -160,6 +166,12 @@
       background: linear-gradient(to top, #ff6f00 10%, #d43100 50%, #ff6f00 90%);
       border-radius: 9999px;
       animation: self-rotate 72s linear infinite;
+      @media (max-width: 576px) {
+        left: calc(50% - 20px);
+        top: -20px;
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }
@@ -176,5 +188,9 @@
   border-radius: 9999px;
   background: #ffc200;
   animation: sun-shine 8s linear infinite;
+  @media (max-width: 576px) {
+    width: 80px;
+    height: 80px;
+  }
 }
 </style>
