@@ -117,6 +117,7 @@ module.exports = {
               text: 'Javascript',
               collapsible: true,
               children: [
+                '/articles/memo/js/es2022.md',
                 '/articles/memo/js/crypto-password.md',
                 '/articles/memo/js/test-implement-details.md',
                 '/articles/memo/js/jest-basic.md',
