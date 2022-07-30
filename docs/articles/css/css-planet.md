@@ -27,7 +27,7 @@ Hi 大家好，今天要來介紹一個很酷炫的特效 - 『星球環繞效�
     <div class="road earth">
       <div class="ball"></div>
     </div>
-    <!-- 地球軌道 -->
+    <!-- 木星軌道 -->
     <div class="road jupiter">
       <div class="ball"></div>
     </div>
