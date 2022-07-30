@@ -179,6 +179,16 @@ const todoItem = gql`
 ### Read/Write Interaction
 - [Link](https://www.apollographql.com/docs/react/caching/cache-interaction)
 
+#### Read All Caches
+```js
+import { useApolloClient } from '@apollo/client';
+
+const client = useApolloClient();
+const serializedState = client.cache.extract();
+console.log(serializedState);
+```
+
+
 #### Read/Write Query Cache
 ```js
 // Fetch the cached to-do item with ID 5

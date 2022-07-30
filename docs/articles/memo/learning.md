@@ -109,6 +109,7 @@
 - [@property 實現漸變背景動畫](https://juejin.cn/post/6951201528543707150)
 - [鴻蒙系統 O 特效實現](https://juejin.cn/post/6979042510400126983)
 - [css scroll snap 滾動斷點](https://stackoverflow.com/questions/53416348/css-scroll-snapping-vertical-not-working)
+- [2022 幾個好用的 CSS 屬性](https://juejin.cn/post/7118892686861402120)
 
 ### SCSS
 - [Sass parent selector](https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/)
@@ -121,6 +122,7 @@
 ## Git
 - [Git 教程](https://git-scm.com/book/zh-tw/v2/)
 - [客製化 Git hooks with Nodejs](https://dev.to/shaharkazaz/writing-custom-git-hooks-with-nodejs-3f8b)
+- [Git Stash 詳細教學](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-use-a-git-stash-name-for-an-easy-pop-or-apply)
 
 
 ## Markdown

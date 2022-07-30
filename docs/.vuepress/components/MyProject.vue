@@ -32,6 +32,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "React Matter Clock",
+        "id" : "react-matter-clock",
+        "image" : cdn("/websites/react-matter-clock.png"),
+        "link" : "https://maju-express.herokuapp.com/matter-clock",
+        "name" : "React Matter Clock",
+        "tech" : "React.js18, Typescript, Matter-js"
+      }, {
         "des" : "React Sudoku Game",
         "id" : "react-sudoku",
         "image" : cdn("/websites/react-sudoku.png"),

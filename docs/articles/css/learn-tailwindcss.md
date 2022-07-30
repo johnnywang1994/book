@@ -416,3 +416,95 @@ module.exports = {
   // ...
 }
 ```
+
+#### Configuration Demo
+
+```js
+const tailwindcssSafeArea = require('tailwindcss-safe-area');
+const tailwindForms = require('@tailwindcss/forms');
+
+module.exports = {
+  mode: 'jit',
+  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    fontFamily: {
+      sans: ['PingFang TC', 'ui-sans-serif', 'system-ui'],
+    },
+    fontSize: {
+      xs: ['0.625rem', '1rem'],
+      'title-xs': ['0.75rem', '1rem'],
+      28: ['1.75rem', '2.25rem'],
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: '#000000',
+      white: '#FFFFFF',
+      primary: '#06C755',
+      positive: '#3CC926',
+      negative: '#FF334B',
+      disabled: '#E4E4E4',
+      warn: '#FF6F37',
+      category: 'var(--category-color)',
+      gray: {
+        100: '#FCFCFC',
+        200: '#EFEFEF',
+        300: '#DFDFDF',
+        350: '#C8C8C8',
+        400: '#B7B7B7',
+        500: '#949494',
+        600: '#777777',
+        700: '#555555',
+        800: '#303030',
+        900: '#111111',
+      },
+    },
+    opacity: {
+      0: '0',
+      50: '.5',
+      100: '1',
+    },
+    borderRadius: {
+      DEFAULT: '3px',
+      100: '3px',
+      200: '5px',
+      300: '7px',
+      circle: '9999px',
+      none: 'none',
+    },
+    boxShadow: {
+      DEFAULT: '0px 1px 6px rgba(0, 0, 0, 0.12)',
+      'on-white-100':
+        '0px 0px 2px rgba(0, 0, 0, 0.07), 0px 1px 2px rgba(0, 0, 0, 0.07)',
+      inner: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
+      none: 'none',
+    },
+    extend: {
+      borderWidth: {
+        0.5: '0.5px',
+        3: '3px',
+      },
+      spacing: {
+        13: '3.25rem',
+        'fixed-offset': 'var(--fixed-offset)',
+        'fixed-offset-top': 'var(--fixed-offset-top)',
+      },
+      colors: {
+        category: 'var(--category-color)',
+        test: {
+          blue: '#3657BB',
+          yellow: '#FFC53D',
+        },
+      },
+      outlineOffset: {
+        '-1': '-1px',
+      },
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [tailwindcssSafeArea, tailwindForms],
+};
+```

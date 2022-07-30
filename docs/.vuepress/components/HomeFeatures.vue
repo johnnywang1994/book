@@ -32,13 +32,15 @@ export default {
         {
           title: 'Frontend Development',
           details: [
-            'Vuejs 4+years(major)',
+            'Vuejs 4+years',
+            'Reactjs 3+years',
             'Nuxtjs 2+years',
-            'Reactjs 2+years',
+            'Nextjs 1+year',
             'JavaScript 4+years',
             'TypeScript 2+years',
             'Webpack 4+years',
             'SCSS 4+years',
+            'StyledComponents 1+year',
           ],
         },
         {
@@ -47,9 +49,10 @@ export default {
             'Expressjs 3+years',
             'Koajs 1+years',
             'Nodejs 3+years',
-            'Docker 1+years',
-            'Django 0.5+years',
-            'MySQL 0.5+years',
+            'Docker 2+years',
+            'MySQL 1+year',
+            'MongoDB 0.5+year',
+            'Django 0.5+year',
           ],
         },
         {
