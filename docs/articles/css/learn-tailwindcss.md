@@ -119,6 +119,18 @@ module.exports = {
 }
 ```
 
+#### Arbitrary Variants (specify element selector)
+- [Link](https://tailwindcss.com/blog/tailwindcss-v3-1#arbitrary-values-but-for-variants)
+
+```html
+<div class="[&>*]:p-4">...</div>
+<div class="[&>p]:mt-0 ">...</div>
+<div class="[&:nth-child(3)]:py-0">
+  <!-- ... -->
+</div>
+```
+
+
 #### Appendix
 - [Quick reference](https://tailwindcss.com/docs/hover-focus-and-other-states#quick-reference)
 

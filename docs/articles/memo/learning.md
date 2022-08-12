@@ -100,7 +100,9 @@
 - [Peer issue - switch from video/audio streaming](https://github.com/peers/peerjs/issues/672)
 - [WebRTC: Add audio later or disable microphone using peerJS](https://stackoverflow.com/questions/22783682/webrtc-add-audio-later-or-disable-microphone-using-peerjs)
 - [WebRTC: How to replace tracks](https://stackoverflow.com/a/52622032)
+- [How to choose device camera](https://www.twilio.com/blog/2018/04/choosing-cameras-javascript-mediadevices-api.html)
 - [OpenRelay Free WebRTC Turn Server](https://www.metered.ca/tools/openrelay/)
+
 
 ## CSS
 - [CSS Trick](https://css-tricks.com/)
@@ -165,6 +167,7 @@
 - [React與Vue狀態更新原理對比](https://juejin.cn/post/6985314580339621901)
 - [React Diff 算法](https://iter01.com/514750.html)
 - [React Life Cycle](https://pjchender.dev/react/react-life-cycle/)
+- [React源碼 commit階段詳解](https://ithelp.ithome.com.tw/articles/10255458)
 - [React useEffect 深入重複調用問題](https://juejin.cn/post/6844904117303934989)
 - [React 18](https://juejin.cn/post/7095185674151821348)
 - [React setState 最新值獲取](https://stackoverflow.com/a/65757628/10300120)
@@ -177,6 +180,7 @@
 ## Nextjs
 - [Next.js Styled-JSX Sass Plugin](https://www.npmjs.com/package/@styled-jsx/plugin-sass)
 - [getInitialProps vs. getServerSideProps](https://blog.logrocket.com/getinitialprops-vs-getserversideprops-nextjs/)
+- [MSW with Nextjs mocking issue](https://github.com/mswjs/msw/discussions/1049)
 
 
 ## Webpack
@@ -195,6 +199,7 @@
 - [密碼學中的三兄弟 — Encode、Encrypt 跟 Hash](https://medium.com/starbugs/what-are-encoding-encrypt-and-hashing-4b03d40e7b0c)
 - [Signal 創始人：開發了兩個 dApps 後，我發現 Web3 可能是偽命題](https://zombit.info/founder-of-signal-i-found-that-web3-may-be-a-false-proposition/)
 - [IPFS 服務與工具](https://github.com/ipfs/awesome-ipfs)
+- [Unix Cron time format](http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html)
 
 ## Leetcode
 - [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
