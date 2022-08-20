@@ -1,0 +1,1 @@
+import{_ as o,r as t,o as n,c as r,a}from"./app.e90a952f.js";const c={};function s(_,l){const e=t("HomeFeatures");return n(),r("div",null,[a(e)])}var d=o(c,[["render",s],["__file","index.html.vue"]]);export{d as default};
