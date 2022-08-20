@@ -72,6 +72,7 @@
 ### NPM
 - [yarn & npm 指令對照表](https://yarnpkg.com/en/docs/migrating-from-npm)
 - [Renovate - Automated dependency updates](https://docs.renovatebot.com/)
+- [Renovate - postupgradetasks 解決 dependency 衝突問題](https://docs.renovatebot.com/configuration-options/#postupgradetasks)
 
 ### Koa2
 - [Koa2 實戰總結教學](https://juejin.cn/post/6952665400890884127)
@@ -140,6 +141,10 @@
 
 ## GO
 - [30 天導入 Golang](https://ithelp.ithome.com.tw/users/20092379/ironman/2062)
+
+
+## MongoDB
+- [Read, Write Stream 分離導致的讀取問題](https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency)
 
 
 ## Nginx

@@ -58,6 +58,9 @@ const parseServerOptions = {
   // if production environment has implemented Replication feature
   // we can set the readPreference of mongodb to speed up reading
   // however, if most of case the local development environment would not support this feature, and should be default setting
+  // and be careful when using this feature may cause read/write consistency issue
+  // mongodb://localhost:27017?authSource=admin&readConcernLevel=majority&w=majority
+  // https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency
   databaseOptions: isProd
     ? {
         enableSchemaHooks: true,

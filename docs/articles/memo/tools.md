@@ -67,6 +67,7 @@
 - [Picsum 測試相片](https://picsum.photos/)
 - [Snippet Generator](https://snippet-generator.app/)
 - [流行技術趨勢圖表](http://sotagtrends.com/)
+- [LINE Flex Message Editor](https://developers.line.biz/flex-simulator/)
 
 ### SEO & Test
 - [CanIUse](https://caniuse.com/)

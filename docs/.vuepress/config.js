@@ -210,6 +210,7 @@ module.exports = {
                 '/articles/git/subtree.md',
               ],
             },
+            '/articles/memo/sonarcube.md',
             '/articles/memo/youtube-data-api.md',
             '/articles/memo/fb-api-basic.md',
             '/articles/memo/vscode-command.md',
