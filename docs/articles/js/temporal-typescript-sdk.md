@@ -331,6 +331,48 @@ queryWorkflow('my-workflow-id', userInfoStatusQuery).then(
 )
 ```
 
+### custom useState function
+- [Link](https://docs.temporal.io/typescript/workflows#signals-and-queries-design-patterns)
+
+```typescript
+import * as wf from '@temporalio/workflow';
+
+function useState<T = any>(name: string, initialValue: T) {
+  const signal = wf.defineSignal<[T]>(name);
+  const query = wf.defineQuery<T>(name);
+  let state: T = initialValue;
+  return {
+    signal,
+    query,
+    get value() {
+      // need to use closure because function doesn't rerun unlike React Hooks
+      return state;
+    },
+    set value(newVal: T) {
+      state = newVal;
+    },
+  };
+}
+
+// usage in Workflow file
+const store = useState('your-store', 10);
+function YourWorkflow() {
+  wf.setHandler(store.signal, (newValue: T) => {
+    // console.log('updating', newValue) // optional but useful for debugging
+    store.value = newValue;
+  });
+  wf.setHandler(store.query, () => store.value);
+  while (true) {
+    console.log('sleeping for ', store.value);
+    wf.sleep(store.value++ * 100); // you can mutate the value as well
+  }
+}
+
+// usage in Client file
+await handle.signal(store.signal, 30);
+const storeState = handle.query<number>(store.query); // 30
+```
+
 
 ## Continue as New
 - [continue-as-new](https://docs.temporal.io/workflows/#continue-as-new)
