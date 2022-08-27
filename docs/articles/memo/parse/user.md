@@ -120,3 +120,6 @@ const api = new ParseServer({
 
 app.use('/parse', api);
 ```
+
+#### query 進行 select authData 的問題
+另外需注意，如果要使用 `select` 取得 `authData` 的話，不能直接 `query.select('authData')`，因為 DB 裡不是存這個欄位名稱，需使用[這裡描述](https://github.com/parse-community/parse-server/pull/2081/files)的 `_auth_data_xxxx`才能拿到，比如 `_auth_data_facebook`
