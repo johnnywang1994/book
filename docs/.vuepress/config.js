@@ -63,6 +63,7 @@ module.exports = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/js/awesome-vite.md',
             '/articles/js/vue-react-usage-compare.md',
             '/articles/js/webrtc-realtime-meeting.md',
             '/articles/js/temporal-typescript-sdk.md',
