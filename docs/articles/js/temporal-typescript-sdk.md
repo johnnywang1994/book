@@ -147,26 +147,36 @@ client 是提供用戶端開發時進行調用 workflow task 的主要途徑，�
 建立新的 temporal workflow client 實例
 ```js
 // client.ts
+import { Workflow } from '@temporalio/workflow';
 import { Connection, WorkflowClient } from '@temporalio/client';
 
-const connection = new Connection({
-  // // Connect to localhost with default ConnectionOptions.
-  // // In production, pass options to the Connection constructor to configure TLS and other settings:
-  // address: 'foo.bar.tmprl.cloud', // as provisioned
-  // tls: {} // as provisioned
-});
-const client = new WorkflowClient(connection.service, {
-  // namespace: 'default', // change if you have a different namespace
-});
+let client: WorkflowClient;
 
-export default client;
+export async function getClient() {
+  if (!client) {
+    const connection = await Connection.connect({
+      // Connect to localhost with default ConnectionOptions.
+      // In production, pass options to the Connection constructor to configure TLS and other settings:
+      // address: 'foo.bar.tmprl.cloud', // as provisioned
+      // tls: {} // as provisioned
+    });
+
+    client = new WorkflowClient({
+      connection,
+      namespace: 'default', // change if you have a different namespace
+    });
+  }
+
+  return client;
+}
 ```
 透過 `client` 物件調用執行 workflow
 ```js
-import client from './client'
+import { getClient } from './client'
 import { example } from './workflows'
 
 async function run() {
+  const client = await getClient();
   const handle = await client.start(example, {
     args: ['Temporal'], // 參數傳遞給 example workflow
     taskQueue: 'hello-world', // 加入的 taskQuene 名稱，對應 worker 必須能處理此 workflow
@@ -471,8 +481,53 @@ const runWorkflow = async () => {
 };
 ```
 
+### 獲取 workflow 狀態
+Temporal 在 workflow handle 物件中有提供以下方法可以獲得當前指定 workflow 的相關資訊狀態
 
-今天就介紹到這拉，感謝收看，下次再見 =V=
+- [Workflow Handle API methods](https://docs.temporal.io/typescript/clients/#workflow-handle-apis)
+- [WorkflowExecutionStatus](https://typescript.temporal.io/api/enums/proto.temporal.api.enums.v1.workflowexecutionstatus/) 使用這個變數會需要先下載 `@temporalio/proto` 這個擴充包喔
+
+下面範例是如何在當前 workflow 中取消自己的範例，例如結束 cronSchedule 的情況，因為 workflow 環境無法使用 client 工具，必須拉出來到 activity 中使用
+
+```ts
+// my-activities.ts
+import { temporal } from '@temporalio/proto';
+import { getClient } from './client';
+
+const { WorkflowExecutionStatus } = temporal.api.enums.v1;
+
+export async function terminateWorkflow(workflowId: string) {
+  const client = await getClient();
+  const wfHandle = client.getHandle(workflowId);
+  // 取得 workflow handle 的當前狀態
+  const { status } = await wfHandle.describe();
+  // 判斷 code 狀態是否處在 running
+  if (status.code === WorkflowExecutionStatus.WORKFLOW_EXECUTION_STATUS_RUNNING) {
+    // 終止 cronSchedule，若使用 cancel 只會停止當前的 workflow
+    // https://docs.temporal.io/concepts/what-is-a-temporal-cron-job/#how-to-stop-a-temporal-cron-job
+    await wfHandle.terminate();
+  }
+}
+```
+
+```ts
+// workflow.ts
+import { proxyActivities, workflowInfo } from '@temporalio/workflow';
+import * as myActivities from './myActivities';
+
+const { terminateWorkflow } = proxyActivities<typeof myActivities>({
+  startToCloseTimeout: '30s',
+});
+
+export async function TestWorkflow() {
+  const { workflowId } = workflowInfo();
+  // ...
+  await terminateWorkflow(workflowId);
+}
+```
+
+
+今天就介紹到這拉，後續如果有其他新的想法也會持續更新紀錄在這，感謝收看，下次再見 =V=
 
 <SocialBlock hashtags="javascript,typescript,temporal,message quene,nodejs" />
 

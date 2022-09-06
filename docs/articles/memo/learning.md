@@ -163,6 +163,7 @@
 - [解析 snabbdom 源碼](https://github.com/creeperyang/blog/issues/33)
 - [Vue Test Utils](https://ithelp.ithome.com.tw/articles/10275591)
 - [Vue Test Hooks](https://github.com/vueuse/vueuse/blob/main/packages/.test/mount.ts)
+- [Awesome Vite - templates](https://github.com/vitejs/awesome-vite#templates)
 
 
 ## React

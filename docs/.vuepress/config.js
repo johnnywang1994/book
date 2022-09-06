@@ -145,6 +145,7 @@ module.exports = {
               text: 'React',
               collapsible: true,
               children: [
+                '/articles/memo/react/next-middleware-cookie.md',
                 '/articles/memo/react/react-styled-components-basic.md',
                 '/articles/memo/react/react-styled-components-advanced.md',
                 '/articles/memo/react/react-unit-test.md',
