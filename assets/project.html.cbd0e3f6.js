@@ -1,0 +1,1 @@
+import{_ as o,o as c,c as r,r as t}from"./app.94e127cc.js";const _={};function n(s,a){const e=t("MyProject");return c(),r(e)}var f=o(_,[["render",n],["__file","project.html.vue"]]);export{f as default};

@@ -1,1 +1,0 @@
-const e={key:"v-378a357d",path:"/articles/daily/front-end-interview.html",title:"Web Interview Preparation",lang:"zh-TW",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1648521821e3,contributors:[{name:"johnnywang1994",email:"johnny29621189@kimo.com",commits:1}]},filePathRelative:"articles/daily/front-end-interview.md"};export{e as data};
