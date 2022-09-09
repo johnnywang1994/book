@@ -1,3 +1,4 @@
+const { viteBundler } = require('@vuepress/bundler-vite');
 const { defaultTheme } = require('vuepress')
 const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
 const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
@@ -27,6 +28,7 @@ module.exports = {
     ['script', { src: '/book/live2d-bundle-v1.0.js' }],
   ],
 
+  bundler: viteBundler({}),
   // theme: '@vuepress/theme-default',
   theme: defaultTheme({
     logo: 'https://vuejs.org/images/logo.png',
