@@ -84,7 +84,15 @@ sonar.analysis.repoLink=path_to_your_repository
 
 ## 設定 drone.yml
 
-以下範例，配置 jest 產生 report，並接著執行 sonar scan
+以下範例，配置 jest 產生 report，並接著執行 sonar scanner
+
+> 需要注意，因為 sonar scanner 會根據傳入的參數判斷是 push 或是 pull_request，如果傳入參數裡有 pull request 相關設定，即使是 null 值，一樣會被判定成 pull_request，這樣會導致實際 merge 進 main branch 時沒有被正確解析，而是被當成 pull_request 處理了，發生這問題時錯誤提示只會顯示
+
+```
+“master” branch has not been analyzed yet and you have multiple branches already
+```
+
+但實際上原因可能是參數會相關設定錯誤導致，可[參考這篇討論串](https://community.sonarsource.com/t/main-branch-does-not-reflect-latest-analyses/63352)
 
 ```yml
 kind: pipeline
@@ -107,7 +115,7 @@ steps:
       SONAR_TOKEN:
         from_secret: sonar_login_token
     commands:
-      - "sonar-scanner -Dsonar.pullrequest.key=$DRONE_PULL_REQUEST -Dsonar.pullrequest.branch=$DRONE_SOURCE_BRANCH -Dsonar.pullrequest.base=$DRONE_TARGET_BRANCH"
+      - "if (echo $DRONE_TARGET_BRANCH$DRONE_PULL_REQUEST | grep -w $DRONE_TARGET_BRANCH); then sonar-scanner; else sonar-scanner -Dsonar.pullrequest.key=$DRONE_PULL_REQUEST -Dsonar.pullrequest.branch=$DRONE_SOURCE_BRANCH -Dsonar.pullrequest.base=$DRONE_TARGET_BRANCH; fi;"
     depends_on:
       - prepare
 ```

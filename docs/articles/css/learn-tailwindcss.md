@@ -434,6 +434,7 @@ module.exports = {
 ```js
 const tailwindcssSafeArea = require('tailwindcss-safe-area');
 const tailwindForms = require('@tailwindcss/forms');
+const tailwindAspectRatio = require('@tailwindcss/aspect-ratio');
 
 module.exports = {
   mode: 'jit',
@@ -517,6 +518,6 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [tailwindcssSafeArea, tailwindForms],
+  plugins: [tailwindcssSafeArea, tailwindForms, tailwindAspectRatio],
 };
 ```
