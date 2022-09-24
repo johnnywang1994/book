@@ -1,0 +1,1 @@
+import{_ as o,o as r,c as t,r as n}from"./app.0ec3568d.js";const c={};function _(s,a){const e=n("HomeFeatures");return r(),t(e)}var f=o(c,[["render",_],["__file","index.html.vue"]]);export{f as default};
