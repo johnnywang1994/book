@@ -26,6 +26,7 @@
 - [正則表達式](https://juejin.cn/post/7021672733213720613)
 - [js 頭號難題之一 this](https://blog.techbridge.cc/2019/02/23/javascript-this/)
 - [用 JavaScript 做數獨](https://www.gushiciku.cn/pl/ghAn/zh-tw)
+- [手寫 call, apply, bind 方法](https://juejin.cn/post/7128233572380442660)
 
 ### Typescript
 - [TypeScript 教程](https://www.tutorialsteacher.com/typescript)

@@ -14,6 +14,8 @@
 - [Windows系統使用docker部署mongo報錯：Operation not permitted](https://www.twblogs.net/a/5d5e9ebfbd9eee5327fdb364)
 - [Mac M1 晶片 Mysql 錯誤 Error:no matching manifest for linux/arm64/v8 in the manifest list entries](https://chilunhuang.github.io/posts/8942/)
 
+## Google GTM Related
+- [GTM Tag not triggered](https://stackoverflow.com/questions/44665284/does-it-matter-if-gtm-is-capturing-a-click-event-as-gtm-click-rather-than-gtm-li)
 
 ## Computed
 - [WSL hostname](https://www.codewrecks.com/post/general/wsl-hostname/)
