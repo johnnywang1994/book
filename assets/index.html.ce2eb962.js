@@ -1,0 +1,1 @@
+const e={key:"v-ba934fd8",path:"/config/",title:"Config",lang:"zh-TW",frontmatter:{sidebar:"auto"},excerpt:"",headers:[{level:2,title:"foo",slug:"foo",children:[]},{level:2,title:"bar",slug:"bar",children:[]}],git:{updatedTime:1664248891e3,contributors:[{name:"JohnnyWang",email:"johnnywang@test.com",commits:1}]},filePathRelative:"config/README.md"};export{e as data};
