@@ -1,1 +1,0 @@
-const t={key:"v-aa952fc8",path:"/articles/js/web-audio-api.html",title:"Web Audio API",lang:"zh-TW",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1664248891e3,contributors:[{name:"JohnnyWang",email:"johnnywang@test.com",commits:1}]},filePathRelative:"articles/js/web-audio-api.md"};export{t as data};
