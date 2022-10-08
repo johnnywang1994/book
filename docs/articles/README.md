@@ -76,6 +76,12 @@
 
 ## 個人小專案
 
+### MajuBook
+
+  - [Link](https://majubook.maju-web.club/)
+  - Nextjs, Typescript, Prisma, Koa.js
+  - created at: 2022-10
+
 ### React Matter Clock
 
   - [Link](https://maju-express.herokuapp.com/matter-clock/)

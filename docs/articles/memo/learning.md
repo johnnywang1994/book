@@ -107,6 +107,8 @@
 - [OpenRelay Free WebRTC Turn Server](https://www.metered.ca/tools/openrelay/)
 - [Switch Media Devices Demo](https://simpl.info/getusermedia/sources/)
 
+### Prisma
+- [Query by a relation exists or not](https://github.com/prisma/prisma/discussions/2772)
 
 ## CSS
 - [CSS Trick](https://css-tricks.com/)
@@ -133,7 +135,7 @@
 - [Git 教程](https://git-scm.com/book/zh-tw/v2/)
 - [客製化 Git hooks with Nodejs](https://dev.to/shaharkazaz/writing-custom-git-hooks-with-nodejs-3f8b)
 - [Git Stash 詳細教學](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-use-a-git-stash-name-for-an-easy-pop-or-apply)
-
+- [.netrc 自動部署 Git 驗證](https://gist.github.com/idhowardgj94/c625feeabb3cb32897e01f937b7dece7)
 
 ## Markdown
 - [CommonMark 教學](https://commonmark.org/help/)

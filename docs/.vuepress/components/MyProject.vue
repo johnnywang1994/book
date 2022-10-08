@@ -32,6 +32,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "A tiny social platform created by Nextjs, Koajs, Prisma",
+        "id" : "koa-next-prisma-majubook",
+        "image" : cdn("/websites/majubook.png"),
+        "link" : "https://majubook.maju-web.club/",
+        "name" : "MajuBook",
+        "tech" : "Next.js, Typescript, Koa.js, Prisma"
+      }, {
         "des" : "React Matter Clock",
         "id" : "react-matter-clock",
         "image" : cdn("/websites/react-matter-clock.png"),

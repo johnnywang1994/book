@@ -6,6 +6,7 @@
 import { defineClientConfig } from '@vuepress/client'
 import VueSocialSharing from 'vue-social-sharing';
 import setGtag from './gtag';
+import DefaultLayout from './layout/DefaultLayout.vue';
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
@@ -15,6 +16,9 @@ export default defineClientConfig({
     if (typeof exports !== 'object') {
       setGtag();
     }
+  },
+  layouts: {
+    DefaultLayout,
   },
   setup() {},
   rootComponents: [],
