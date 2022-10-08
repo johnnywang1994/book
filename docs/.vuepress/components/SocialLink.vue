@@ -13,7 +13,8 @@
 </template>
 
 <script>
-import { ShareNetwork } from 'vue-social-sharing'
+import VueSocialSharing from 'vue-social-sharing'
+const { ShareNetwork } = VueSocialSharing;
 
 export default {
   components: {

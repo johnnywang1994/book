@@ -13,7 +13,7 @@ export default defineClientConfig({
     // ...apply enhancements for the site.
     app.use(VueSocialSharing);
 
-    if (typeof exports !== 'object') {
+    if (typeof window === 'object') {
       setGtag();
     }
   },
