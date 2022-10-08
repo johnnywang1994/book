@@ -1,13 +1,15 @@
-const { viteBundler } = require('@vuepress/bundler-vite');
-const { defaultTheme } = require('vuepress')
-const { backToTopPlugin } = require('@vuepress/plugin-back-to-top')
-const { mediumZoomPlugin } = require('@vuepress/plugin-medium-zoom')
-const { registerComponentsPlugin } = require('@vuepress/plugin-register-components')
-const { searchPlugin } = require('@vuepress/plugin-search')
-const path = require('path')
-const { description } = require('../../package')
+import { defineUserConfig, defaultTheme } from 'vuepress'
 
-module.exports = {
+
+import { viteBundler } from '@vuepress/bundler-vite';
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { searchPlugin } from '@vuepress/plugin-search'
+import path from 'path'
+import { description } from '../../package'
+
+export default defineUserConfig({
   base: '/book/',
   lang: 'zh-TW',
   title: 'Johnny Wang Blog',
@@ -271,4 +273,4 @@ module.exports = {
       isSearchable: (page) => page.path !== '/',
     })
   ]
-}
+})
