@@ -1,8 +1,9 @@
-# 學習資源
+# 全端開發學習資源
 
 ## Blog
 - [阮一峰的個人網站](http://www.ruanyifeng.com/home.html)
   - [TypeScript 使用指南](https://ts.xcatliu.com/)
+- [Will 保哥部落格](https://blog.miniasp.com/)
 - [若川的博客](https://lxchuan12.gitee.io/)
 - [Pjchender Dev](https://pjchender.dev/)
 
@@ -151,6 +152,9 @@
 ## MongoDB
 - [Read, Write Stream 分離導致的讀取問題](https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency)
 
+
+## SQL
+- [50道SQL練習題及答案與詳細分析](https://www.itread01.com/content/1545134226.html)
 
 ## Nginx
 - [Nginx 入門到實踐](https://juejin.cn/post/6844904144235413512)

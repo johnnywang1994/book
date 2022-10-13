@@ -1,0 +1,45 @@
+<script setup>
+import { ref, computed } from 'vue'
+import { useSidebarItems } from '@vuepress/theme-default/client'
+
+const sidebarItems = useSidebarItems()
+const routeItems = computed(() => sidebarItems.value.map((item) => item.children).flat().filter((item) => !item.collapsible))
+
+const newItems = [{
+  text: 'API First 學習筆記',
+  link: '/articles/memo/api-first-learn.html',
+}, {
+  text: 'What is AC - Acceptance Criteria 驗收條件',
+  link: '/articles/memo/what-is-ac.html',
+}, {
+  text: 'Sequelize 筆記',
+  link: '/articles/memo/js/sequelize-learn.html',
+}];
+</script>
+
+<template>
+  <div class="blog-article">
+    <h2>最新文章</h2>
+    <div class="blog-article-list">
+      <div v-for="item in newItems" :key="`art_${item.link}`" class="blog-article-item">
+        <a :href="`/book${item.link}`" target="_blank">{{ item.text }}</a>
+      </div>
+    </div>
+    <h2>所有文章</h2>
+    <div class="blog-article-list">
+      <div v-for="item in routeItems" :key="`art_${item.link}`" class="blog-article-item">
+        <a :href="`/book${item.link}`" target="_blank">{{ item.text }}</a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.blog-article-list {
+  display: flex;
+  flex-direction: column;
+  .blog-article-item {
+    padding: 4px;
+  }
+}
+</style>

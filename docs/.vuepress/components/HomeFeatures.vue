@@ -41,13 +41,14 @@ export default {
             'Webpack 4+years',
             'SCSS 4+years',
             'StyledComponents 1+year',
+            'TailwindCSS 1+year'
           ],
         },
         {
           title: 'Backend Development',
           details: [
             'Expressjs 3+years',
-            'Koajs 1+years',
+            'Koajs 2+years',
             'Nodejs 3+years',
             'Docker 2+years',
             'MySQL 1+year',
