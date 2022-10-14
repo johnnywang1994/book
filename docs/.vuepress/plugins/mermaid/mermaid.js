@@ -35,19 +35,22 @@ const Mermaid = {
 
         watchEffect(() => {
             if (props.graph) {
-                import('mermaid/dist/mermaid.min').then(mermaid => {
+                const handler = (mermaid) => {
                     mermaid.initialize({
                         startOnLoad: true, ...MERMAID_OPTIONS
                     })
 
                     mermaid.render(
-                      props.id,
-                      decodeURIComponent(props.graph),
-                      (svg) => {
-                          state.svg = svg
-                      }
+                        props.id,
+                        decodeURIComponent(props.graph),
+                        (svg) => {
+                            state.svg = svg
+                        }
                     )
-                })
+                }
+                if (typeof window === 'object') {
+                    import('mermaid/dist/mermaid.min.js').then(handler);
+                }
             }
         })
 
