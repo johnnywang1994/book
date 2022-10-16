@@ -6,6 +6,9 @@ const sidebarItems = useSidebarItems()
 const routeItems = computed(() => sidebarItems.value.map((item) => item.children).flat().filter((item) => !item.collapsible))
 
 const newItems = [{
+  text: '身為一位歷史觀察者（文長慎入）',
+  link: '/articles/memo/as-an-observer.html',
+},{
   text: 'API First 學習筆記',
   link: '/articles/memo/api-first-learn.html',
 }, {
