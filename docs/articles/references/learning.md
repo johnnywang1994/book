@@ -189,6 +189,7 @@
 
 ### 實作
 - [Import Svg into Next.js](https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f)
+- [Svgo Configuration](https://github.com/svg/svgo/blob/main/README.md#configuration)
 - [React setState 最新值獲取](https://stackoverflow.com/a/65757628/10300120)
 - [為執行細節寫下測試-翻譯](https://medium.com/enjoy-life-enjoy-coding/react-unit-test-%E7%82%BA%E5%9F%B7%E8%A1%8C%E7%B4%B0%E7%AF%80%E5%AF%AB%E4%B8%8B%E6%B8%AC%E8%A9%A6-%E7%BF%BB%E8%AD%AF-7bec3bca4ee1)
 - [React Memo 使用範例](https://codepen.io/fgerschau/pen/WNQrOgZ?editors=1010)

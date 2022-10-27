@@ -75,6 +75,14 @@ $ npm install parse
 - matchesQuery(key, keyQuery)
 - doesNotMatchQuery(key, keyQuery)
 
+```js
+// 範例：取得未擁有 profile 關聯的 users
+const queryUser = new Parse.Query(Parse.User);
+const queryProfile = new Parse.Query('Profile');
+queryUser.doesNotMatchKeyInQuery('objectId', 'owner.objectId', queryProfile);
+const res = await queryUser.explain().find({ useMasterKey: true });
+console.log(res);
+```
 
 
 ## Relations

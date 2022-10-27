@@ -20,3 +20,5 @@
 ## Computed
 - [WSL hostname](https://www.codewrecks.com/post/general/wsl-hostname/)
 
+## Nextjs
+- [Nextjs Jest with svgr/webpack component issue](https://github.com/gregberge/svgr/issues/83)

@@ -143,6 +143,7 @@ const sidebar = {
             '/articles/memo/docker/basic.md',
             '/articles/memo/docker/dockerfile-demo.md',
             '/articles/memo/docker/docker-compose.md',
+            '/articles/memo/docker/k8s.md'
           ],
         },
         {
