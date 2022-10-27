@@ -1,1 +1,0 @@
-import{_ as o,r,o as t,c as n,a as c}from"./app.b572ef4e.js";const s={};function a(l,_){const e=r("BoardGirl");return t(),n("div",null,[c(e,{position:"relative",size:"screen"})])}const d=o(s,[["render",a],["__file","live2d.html.vue"]]);export{d as default};
