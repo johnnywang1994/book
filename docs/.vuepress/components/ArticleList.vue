@@ -6,6 +6,9 @@ const sidebarItems = useSidebarItems()
 const routeItems = computed(() => sidebarItems.value.map((item) => item.children).flat().filter((item) => !item.collapsible))
 
 const newItems = [{
+  text: '關於我的 Side project - Maju Web Editor',
+  link: '/articles/js/maju-web-ide.html',
+}, {
   text: '身為一位歷史觀察者（文長慎入）',
   link: '/articles/daily/2022/as-an-observer.html',
 },{
@@ -14,9 +17,6 @@ const newItems = [{
 }, {
   text: 'What is AC - Acceptance Criteria 驗收條件',
   link: '/articles/memo/what-is-ac.html',
-}, {
-  text: 'Sequelize 筆記',
-  link: '/articles/memo/js/sequelize-learn.html',
 }];
 </script>
 

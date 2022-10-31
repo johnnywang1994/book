@@ -12,6 +12,8 @@ const sidebar = {
       text: 'Javascript',
       collapsible: true,
       children: [
+        '/articles/js/maju-web-ide.md',
+        '/articles/js/usage-of-create-object-url.md',
         '/articles/js/awesome-vite.md',
         '/articles/js/vue-react-usage-compare.md',
         '/articles/js/webrtc-realtime-meeting.md',
