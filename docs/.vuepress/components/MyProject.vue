@@ -32,6 +32,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "LINE Invoice Production",
+        "id" : "line-invoice",
+        "image" : cdn("/websites/line-invoice.png"),
+        "link" : "https://invoice.line.me/",
+        "name" : "LINE 發票管家",
+        "tech" : "Secret..."
+      }, {
         "des" : "A tiny social platform created by Nextjs, Koajs, Prisma",
         "id" : "koa-next-prisma-majubook",
         "image" : cdn("/websites/majubook.png"),
