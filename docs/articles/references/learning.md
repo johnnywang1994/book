@@ -5,6 +5,7 @@
   - [TypeScript 使用指南](https://ts.xcatliu.com/)
 - [Will 保哥部落格](https://blog.miniasp.com/)
 - [若川的博客](https://lxchuan12.gitee.io/)
+- [烤雞堡的筆記](https://weii.dev/)
 - [Pjchender Dev](https://pjchender.dev/)
 
 

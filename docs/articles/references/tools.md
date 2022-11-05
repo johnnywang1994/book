@@ -114,6 +114,8 @@
 - [線上 Canvas 圖像編輯工具 MiniPaint](https://viliusle.github.io/miniPaint)
 - [思維導圖編輯](https://asciiflow.com/)
 - [Draw.io流程圖編輯工具](https://app.diagrams.net/)
+- [Excalidraw 白板手繪感工具](https://excalidraw.com/)
+- [美化分享程式碼工具](https://carbon.now.sh/)
 - [Tinyjpg 線上壓縮圖](https://tinyjpg.com/)
 - [Remove Img Background](https://www.remove.bg/zh/)
 - [Background Remover](https://baseline.is/tools/background-remover/)

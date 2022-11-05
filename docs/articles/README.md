@@ -82,6 +82,12 @@
 
 ## 個人小專案
 
+### Maju Web IDE
+
+  - [Link](https://www.maju-web.club/plus?cacheId=default)
+  - Nextjs, Typescript, TailwindCSS
+  - created at: 2022-10
+
 ### MajuBook
 
   - [Link](https://majubook.maju-web.club/)

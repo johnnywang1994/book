@@ -46,3 +46,10 @@ spec:
         ports:
         - containerPort: 80
 ```
+
+## image pull secret
+- [Link](https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod)
+```bash
+$ kubectl create secret docker-registry <name> --docker-server=DOCKER_REGISTRY_SERVER --docker-username=DOCKER_USER --docker-password=DOCKER_PASSWORD --docker-email=DOCKER_EMAIL
+```
+> 需注意，secret 的 namespace 跟 deployment 時提供的 namespace 需一致，否則將無法套用 secret，詳情可見 [這個討論串](https://github.com/kubernetes-sigs/kind/issues/817#issuecomment-681976133)
