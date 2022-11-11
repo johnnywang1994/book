@@ -202,7 +202,7 @@
 - [Next.js Styled-JSX Sass Plugin](https://www.npmjs.com/package/@styled-jsx/plugin-sass)
 - [getInitialProps vs. getServerSideProps](https://blog.logrocket.com/getinitialprops-vs-getserversideprops-nextjs/)
 - [MSW with Nextjs mocking issue](https://github.com/mswjs/msw/discussions/1049)
-
+- [Strongly Typed Google Analytics V4 with Next.js](https://andrew-simpson-ross.medium.com/strongly-typed-google-analytics-v4-with-next-js-aad6c6a5e383)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)

@@ -87,6 +87,31 @@ test('calls onClick prop when clicked', () => {
 })
 ```
 
+或是推薦透過 `@testing-library/user-event` 套件來觸發 DOM 事件
+
+> 使用時需注意，若 event 當中有 `setTimeout` 動作，必須在 setup 時加上 `delay: null` option，避免造成 timeout 問題，詳細[討論可見這邊](https://github.com/testing-library/user-event/issues/833)
+
+```js
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import Dummy from './Dummy';
+
+describe('test', () => {
+  jest.useFakeTimers();
+  const user = userEvent.setup({ delay: null });
+
+  it('test event', () => {
+    const onClick = jest.fn();
+    const { getByRole } = render(<Dummy onClick={onClick} />);
+    const button = getByRole('button');
+    // 觸發事件
+    await user.click(button);
+    jest.runOnlyPendingTimers();
+    expect(onClick).toHaveBeenCalledTimes(1);
+  });
+});
+```
+
 ### Async methods
 - [說明](https://testing-library.com/docs/dom-testing-library/api-async)
 
