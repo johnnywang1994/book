@@ -6,6 +6,9 @@
 - [移動端滾動穿透問題](https://github.com/pod4g/tool/wiki/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%BB%9A%E5%8A%A8%E7%A9%BF%E9%80%8F%E9%97%AE%E9%A2%98)
 
 
+## Chrome
+- [Image CORS error in Chrome](https://www.hacksoft.io/blog/handle-images-cors-error-in-chrome)
+
 ## Sonarcube
 - [Main Branch does not reflect latest analyses](https://community.sonarsource.com/t/main-branch-does-not-reflect-latest-analyses/63352)
   可能因為 Github push event 被設定或判定成 pull request 導致 main branch 沒有被正確解析

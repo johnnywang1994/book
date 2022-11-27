@@ -10,6 +10,8 @@
 
 我是一名全端工程師（偏愛前端），過去特別愛 Vuejs，但小朋友才做選擇，現在我 Vuejs, Reactjs 都愛！平日興趣是窩在家做些酷酷的小專案，透過實作學習讓我獲得很多成就感 =V=，夢想是希望有一天能進步到 Vuejs 作者尤大大 1/10 強。
 
+Be Good, be strong, be yourself, never give up. `K`
+
 <!-- Maju Welcome -->
 <Maju-App />
 
