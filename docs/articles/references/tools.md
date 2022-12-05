@@ -103,6 +103,7 @@
 - [Httpbin.org](https://httpbin.org/)
 - [HTTP 狀態碼測試](http://httpstat.us/)
 - [政府開放資料平台](https://opendata.epa.gov.tw/Home/Index)
+- [Free Anime API](https://devdojo.com/fahadislam/best-free-anime-api-resources)
 
 ### Database
 - [nocodb](https://www.nocodb.com/)
@@ -125,6 +126,7 @@
 ## Downloader
 - [Audio Download](https://www.videofk.com/)
 - [Down Git](https://downgit.github.io/)
+- [Opensubtitle 字幕網站](https://www.opensubtitles.org/zh)
 
 
 ## Others
