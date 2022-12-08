@@ -26,6 +26,8 @@ $ echo "${files}_end" # 這裡大括弧是必須的
 declare -r CONST_INT=2 # 只讀變數，同 readonly 命令聲明的變數
 declare -i a_int=3 # 數字類型變數
 declare -x ENV_VAR=value # 環境變數
+declare -a arr=(1 2) # 一般數組
+declare -A map_arr=([a]=1 [b]=2) # 下標為字符串的數組
 ```
 
 ## set/unset
@@ -169,9 +171,10 @@ unset arr[2]
 ### 關聯數組
 使用字符串作為下標，普通數組是`數字: 字符`，關聯數組是`字符: 字符`映射，更通用的 map 結構
 ```bash
-ass_arr=(["white"]="#fff" ["green"]="#0f0") # 或者使用 declare -A 聲明
+declare -A ass_arr=(["white"]="#fff" ["green"]="#0f0")
 echo ${ass_arr["white"]} # #fff
 ```
+> 如果執行時報錯 `declare -A: invalid option`，請透過 `bash --version` 檢查一下 bash 版本，可能需要更新環境的 bash 版本才支援此功能（似乎 4.x 以上才支援）
 
 
 ## References

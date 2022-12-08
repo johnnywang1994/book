@@ -1,4 +1,10 @@
 # Mediator/Middleware Pattern
+
+## 前言
+大家好，我是 Johnny，今天要紀錄分享的是 Patterns 筆記系列的 `Mediator/Middleware Pattern`
+
+
+## 介紹
 Mediator 模式指採用單一核心來取代組件多對多的複雜交互機制
 
 ## 比喻案例

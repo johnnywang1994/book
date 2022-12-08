@@ -162,6 +162,15 @@ EOF
 $ alias echo-hello="bash read-print.sh <<< 'Hello'"
 ```
 
+#### 跳脫 Hero 字串變數名稱字符
+```bash
+# escape some content start with `$` by adding `\` before it
+cat << EOF
+Username is $username...
+Other not bash variable \$password...
+EOF
+```
+
 
 
 ## 獲取幫助
