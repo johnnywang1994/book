@@ -38,7 +38,7 @@
 
 
 ## 參考資料
-- [收集的驚駭資料](https://drive.google.com/drive/folders/14n07YqFc7jB2LbsOpkiQL0fLEwAPxviI?usp=sharing)
+- [TG 群組整理收集的資料](https://t.me/resetworldtruth)
 
 ### 關於疫情你可能不知道的事
 1. 解藥一直都存在，2020年國內外使用羥氯喹(hydroxychloroquine)和伊維菌素(ivermectin)的區域皆可穩定控制疫情，但隨後遭WHO和各大藥廠、媒體強烈打壓
