@@ -9,14 +9,14 @@ const newItems = [{
   text: '關於我的 Side project - Maju Web Editor',
   link: '/articles/js/maju-web-ide.html',
 }, {
+  text: '什麼是真相，真相是什麼',
+  link: '/articles/daily/2022/the-truth.html',
+}, {
   text: '身為一位歷史觀察者（文長慎入）',
   link: '/articles/daily/2022/as-an-observer.html',
 },{
   text: 'API First 學習筆記',
   link: '/articles/memo/api-first-learn.html',
-}, {
-  text: 'What is AC - Acceptance Criteria 驗收條件',
-  link: '/articles/memo/what-is-ac.html',
 }];
 </script>
 

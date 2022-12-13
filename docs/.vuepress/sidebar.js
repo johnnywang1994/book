@@ -202,6 +202,7 @@ const sidebar = {
       text: 'Daily',
       collapsible: true,
       children: [
+        '/articles/daily/2022/the-truth.md',
         '/articles/daily/2022/as-an-observer.md',
         '/articles/daily/2022/leisure-memo.md',
         '/articles/daily/2022/life-in-garena.md',

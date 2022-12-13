@@ -1,13 +1,13 @@
 <template>
   <div class="red-pill-roller">
-    <a href="http://jw-mashu.ezyro.com/red-pill.html" target="_blank">
+    <a href="/book/articles/daily/2022/the-truth.html" target="_blank">
       <div class="deep-truth">TRUTH</div>
     </a>
     <div class="virus">
       <img
         v-for="num in 3"
         :key="`red-pill-virus-${num}`"
-        src="https://github.com/jwlearn1994/image-uploader/blob/main/others/myblog/virus.png"
+        src="https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/others/myblog/virus.png"
       />
     </div>
   </div>

@@ -12,10 +12,6 @@
 * [個人網站](https://www.djhxiaoming.com/)
 * [陰謀的敗落](https://www.djhxiaoming.com/newbeecontent/2019-highlights-now-available-on-youtube-sa7fd-xrlj4)
 
-#### 豬妹
-* [個人網站](https://pigpiggirl.com/)
-* [陰謀的敗落](https://pigpiggirl.com/q/)
-
 ### 影片
 * [莫德納在 2015/11 月就開始投入研發冠狀病毒疫苗](https://drive.google.com/file/d/1UginbYP0i3wEViT_ZbrDA7tx_oXPE8Dz/view?usp=drivesdk)
 * [陳俊旭醫師說明疫苗抗體壓制先天免疫系統](https://drive.google.com/file/d/11HoPyuJloVfbvXP-n7CPOvudIcJWg8Mj/view?usp=drivesdk)

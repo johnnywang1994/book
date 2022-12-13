@@ -126,6 +126,11 @@
 - [css scroll snap 滾動斷點](https://stackoverflow.com/questions/53416348/css-scroll-snapping-vertical-not-working)
 - [2022 幾個好用的 CSS 屬性](https://juejin.cn/post/7118892686861402120)
 
+### TailwindCSS
+- [Huli - 淺談 Atomic CSS 的發展背景與 Tailwind CSS](https://blog.huli.tw/2022/05/23/atomic-css-and-tailwind-css/)
+- [Atomic CSS-in-JS](https://sebastienlorber.com/atomic-css-in-js)
+- [Patching Vite HMR with Tailwind-JIT(old explain of touching files in Vite)](https://mohd.dev/blog/2021/12/patching-vite-hmr-to-work-with-tailwind-jit.html)
+
 ### SCSS
 - [Sass parent selector](https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/)
 - [sass functions 解說](https://yungshenglu.github.io/2017/12/23/SassNotes5/)
