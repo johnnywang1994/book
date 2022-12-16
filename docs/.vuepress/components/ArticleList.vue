@@ -6,6 +6,9 @@ const sidebarItems = useSidebarItems()
 const routeItems = computed(() => sidebarItems.value.map((item) => item.children).flat().filter((item) => !item.collapsible))
 
 const newItems = [{
+  text: '開發 Email EDM 你可以更輕鬆',
+  link: '/articles/js/edm-generator.html',
+}, {
   text: '關於我的 Side project - Maju Web Editor',
   link: '/articles/js/maju-web-ide.html',
 }, {

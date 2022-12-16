@@ -12,6 +12,7 @@ const sidebar = {
       text: 'Javascript',
       collapsible: true,
       children: [
+        '/articles/js/edm-generator.md',
         '/articles/js/maju-web-ide.md',
         '/articles/js/usage-of-create-object-url.md',
         '/articles/js/awesome-vite.md',

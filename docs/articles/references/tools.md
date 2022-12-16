@@ -68,9 +68,11 @@
 - [Snippet Generator](https://snippet-generator.app/)
 - [流行技術趨勢圖表](http://sotagtrends.com/)
 - [LINE Flex Message Editor](https://developers.line.biz/flex-simulator/)
+- [Premailer - Email CSS 自動前置處理](https://premailer.dialect.ca/)
 
 ### SEO & Test
 - [CanIUse](https://caniuse.com/)
+- [CanIEmail](https://www.caniemail.com/)
 - [Google 行動裝置相容性測試](https://search.google.com/test/mobile-friendly)
 - [Google 結構化測試工具](https://search.google.com/structured-data/testing-tool?hl=zh-tw)
 - [Metatags 在各大平台上預覽效果](https://metatags.io/)
