@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-aa952fc8","path":"/articles/js/web-audio-api.html","title":"Web Audio API","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1671461017000,"contributors":[{"name":"johnnywang1994","email":"johnny29621189@kimo.com","commits":1}]},"filePathRelative":"articles/js/web-audio-api.md"}');export{a as data};
