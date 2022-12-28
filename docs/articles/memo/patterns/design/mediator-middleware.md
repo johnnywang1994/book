@@ -75,7 +75,8 @@ chris.send('When is meeting?', johnny);
 ```
 
 ## Middleware 範例
-- [middleware demo](https://gist.github.com/darrenscerri/5c3b3dcbe4d370435cfa)
+- [middleware demo](https://gist.github.com/darrenscerri/5c3b3dcbe4d370435cfa)  
+與 Mediator Pattern 非常類似，但 Middleware 通過單一入口強化了應用程式的組件連貫動作，可以讓相關組件、動作組成管道 pipeline 依序執行，並最大程度加強了組件間彼此共用的能力，管道中的組件不需要擔心某些前提事件是否已經被執行過，比如權限驗證功能
 ```js
 class Middleware {
   constructor() {
