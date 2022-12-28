@@ -127,7 +127,7 @@
 
 
 ## 全自動化 EDM 生產環境
-如果你對於還需要把 HTML 複製貼上去網頁上轉換還是不滿的話，那歡迎試試我製作的 [edm-generator](https://github.com/johnnywang1994/edm-generator)，只需要透過 `git clone` 或是 ZIP 下載到本機中，就可以快速無痛使用 Pug 或是 HTML + Premailer 快速在本地開發摟～，打包時會自動通過 API 呼叫把你的內容傳給 premailer 編譯再放回來，也就不需要另外開啟網頁手動複製貼上了。
+如果你對於還需要把 HTML 複製貼上去網頁上轉換還是不滿的話，那歡迎試試我製作的 [edm-generator](https://github.com/johnnywang1994/edm-generator)，只需要透過 `git clone` 或是 ZIP 下載到本機中，就可以快速無痛使用 Pug 或是 HTML + SCSS + TailwindCSS + Juice or Premailer 快速在本地開發摟～，打包時會自動幫你把 id, class 樣式變成 inline，或是通過 API 呼叫把你的內容傳給 premailer 編譯再放回來，也就不需要另外開啟網頁手動複製貼上了。
 
 
 <SocialBlock hashtags="javascript,typescript,email,edm,premailer,gulp" />

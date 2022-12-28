@@ -130,6 +130,7 @@
 - [Huli - 淺談 Atomic CSS 的發展背景與 Tailwind CSS](https://blog.huli.tw/2022/05/23/atomic-css-and-tailwind-css/)
 - [Atomic CSS-in-JS](https://sebastienlorber.com/atomic-css-in-js)
 - [Patching Vite HMR with Tailwind-JIT(old explain of touching files in Vite)](https://mohd.dev/blog/2021/12/patching-vite-hmr-to-work-with-tailwind-jit.html)
+- [Gulp with tailwindcss](https://github.com/lazymozek/gulp-with-tailwindcss/blob/main/gulpfile.js)
 
 ### SCSS
 - [Sass parent selector](https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/)
@@ -216,6 +217,7 @@
 
 ## Github
 - [github page 靜態部署教學](https://ithelp.ithome.com.tw/articles/10209553)
+- [Probot - deploy Github APP with Nodejs](https://github.com/probot/probot)
 
 
 ## Computer
@@ -243,6 +245,11 @@
 - [Command line tool 教學（zsh）](https://medium.com/statementdog-engineering/prettify-your-zsh-command-line-prompt-3ca2acc967f)
 - [Windows & ZSH](https://www.wongwonggoods.com/linux/windows-fluent-terminal/)
 
+
+## Deploy
+- [Ngrok](https://ngrok.com/)
+- [Render](https://render.com/)
+- [Cyclic](https://www.cyclic.sh/)
 
 ## Vscode
 - [Code Snippet](https://pjchender.blogspot.com/2017/04/vs-code-snippet.html)

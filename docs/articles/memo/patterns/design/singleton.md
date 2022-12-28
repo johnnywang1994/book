@@ -1,5 +1,7 @@
 # Singleton Pattern
 
+<SocialBlock hashtags="design,pattern,singleton" />
+
 ## 前言
 大家好，我是 Johnny，今天要紀錄分享的是 Patterns 筆記系列的 `Singleton Pattern`
 
@@ -168,6 +170,7 @@ const singletonCounter = Object.freeze((() => {
 })());
 ```
 
+<SocialBlock hashtags="design,pattern,singleton" />
 
 ## 結論
 總結 Singleton Patterns 具有以下優點

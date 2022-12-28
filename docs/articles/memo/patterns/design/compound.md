@@ -1,5 +1,7 @@
 # Compound Pattern
 
+<SocialBlock hashtags="design,pattern,compound" />
+
 ## 前言
 大家好，我是 Johnny，今天要紀錄分享的是 Patterns 筆記系列的 `Compound Pattern`
 
@@ -138,6 +140,7 @@ const App = () => {
 };
 ```
 
+<SocialBlock hashtags="design,pattern,compound" />
 
 ## 結論
 總結 Compound Pattern 有下列優點

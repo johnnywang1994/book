@@ -180,6 +180,23 @@ const sidebar = {
             '/articles/memo/bash/07command-param.md',
           ],
         },
+        {
+          text: 'Patterns',
+          collapsible: true,
+          children: [
+            {
+              text: 'Design Patterns',
+              collapsible: true,
+              children: [
+                '/articles/memo/patterns/design/singleton.md',
+                '/articles/memo/patterns/design/compound.md',
+                '/articles/memo/patterns/design/proxy.md',
+                '/articles/memo/patterns/design/hooks.md',
+                '/articles/memo/patterns/design/mediator-middleware.md',
+              ]
+            }
+          ],
+        },
         '/articles/memo/api-first-learn.md',
         '/articles/memo/what-is-ac.md',
         '/articles/memo/learn-mermaid.md',
