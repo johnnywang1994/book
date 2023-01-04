@@ -131,6 +131,7 @@
 - [Atomic CSS-in-JS](https://sebastienlorber.com/atomic-css-in-js)
 - [Patching Vite HMR with Tailwind-JIT(old explain of touching files in Vite)](https://mohd.dev/blog/2021/12/patching-vite-hmr-to-work-with-tailwind-jit.html)
 - [Gulp with tailwindcss](https://github.com/lazymozek/gulp-with-tailwindcss/blob/main/gulpfile.js)
+- [Disable preflight feature for React Antd](https://dev.to/fabiobiondi/react-antd-and-tailwind-fix-css-conflicts-5542)
 
 ### SCSS
 - [Sass parent selector](https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/)
@@ -194,6 +195,7 @@
 - [React源碼 commit階段詳解](https://ithelp.ithome.com.tw/articles/10255458)
 - [React useEffect 深入重複調用問題](https://juejin.cn/post/6844904117303934989)
 - [有react fiber，为什么不需要vue fiber](https://juejin.cn/post/7077545184807878692)
+- [React18 — useSyncExternalStore](https://milkmidi.medium.com/react-18-usesyncexternalstore-a427bf82c198)
 
 ### 實作
 - [Import Svg into Next.js](https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f)
