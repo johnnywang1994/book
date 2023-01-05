@@ -184,6 +184,7 @@ const sidebar = {
           text: 'Patterns',
           collapsible: true,
           children: [
+            '/articles/memo/patterns/index.md',
             {
               text: 'Design Patterns',
               collapsible: true,
