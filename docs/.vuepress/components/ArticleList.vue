@@ -6,6 +6,9 @@ const sidebarItems = useSidebarItems()
 const routeItems = computed(() => sidebarItems.value.map((item) => item.children).flat().filter((item) => !item.collapsible))
 
 const newItems = [{
+  text: '用 tsup 快速建立 Typescript 開發環境',
+  link: '/articles/js/tsup-tutorial.html',
+}, {
   text: '開發 Email EDM 你可以更輕鬆',
   link: '/articles/js/edm-generator.html',
 }, {
@@ -17,9 +20,6 @@ const newItems = [{
 }, {
   text: '身為一位歷史觀察者（文長慎入）',
   link: '/articles/daily/2022/as-an-observer.html',
-},{
-  text: 'API First 學習筆記',
-  link: '/articles/memo/api-first-learn.html',
 }];
 </script>
 
