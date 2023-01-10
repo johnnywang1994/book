@@ -193,6 +193,7 @@ const sidebar = {
                 '/articles/memo/patterns/design/compound.md',
                 '/articles/memo/patterns/design/proxy.md',
                 '/articles/memo/patterns/design/hooks.md',
+                '/articles/memo/patterns/design/observer.md',
                 '/articles/memo/patterns/design/mediator-middleware.md',
               ]
             }
