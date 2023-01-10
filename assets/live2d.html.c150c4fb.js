@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-e9f472bc","path":"/live2d.html","title":"","lang":"zh-TW","frontmatter":{"layout":"DefaultLayout"},"excerpt":"","headers":[],"git":{"updatedTime":1673076118000,"contributors":[{"name":"johnnywang1994","email":"johnny29621189@kimo.com","commits":1}]},"filePathRelative":"live2d.md"}');export{t as data};
