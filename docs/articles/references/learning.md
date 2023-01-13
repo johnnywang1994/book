@@ -168,6 +168,7 @@
 
 ## Nginx
 - [Nginx 入門到實踐](https://juejin.cn/post/6844904144235413512)
+- [Nginx returning 500 for POST FormData Request](https://stackoverflow.com/questions/57340193/nginx-returning-500-for-post-image-request-with-django-rest-framework)
 
 
 ## Vue
