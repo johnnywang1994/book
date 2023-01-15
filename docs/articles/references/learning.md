@@ -56,6 +56,7 @@
 - [Live2d Helper](https://github.com/kooritea/live2d-helper)
 - [Live2d Widget](https://github.com/stevenjoezhang/live2d-widget)
 - [Live2d Model](https://github.com/Eikanya/Live2d-model)
+- [MarioHtml5](https://github.com/robertkleffner/mariohtml5)
 
 ### Svg
 - [Lottie 使用介紹](https://juejin.cn/post/7101629986427109383)
