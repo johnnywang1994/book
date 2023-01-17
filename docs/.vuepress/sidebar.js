@@ -196,6 +196,8 @@ const sidebar = {
                 '/articles/memo/patterns/design/hooks.md',
                 '/articles/memo/patterns/design/observer.md',
                 '/articles/memo/patterns/design/mediator-middleware.md',
+                '/articles/memo/patterns/design/hoc.md',
+                '/articles/memo/patterns/design/flyweight.md'
               ]
             }
           ],
