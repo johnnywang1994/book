@@ -46,6 +46,7 @@
 ### DOM
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
 - [Viewport width and height](https://harttle.land/2016/04/24/client-height-width.html)
+- [HTML 原生 Dialog 彈窗元素](https://juejin.cn/post/7194262004125679675)
 
 ### Canvas
 - [Canvas 庫大全 awesome-canvas](https://github.com/chinaBerg/awesome-canvas)
