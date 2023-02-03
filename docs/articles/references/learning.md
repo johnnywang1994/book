@@ -220,6 +220,9 @@
 - [getInitialProps vs. getServerSideProps](https://blog.logrocket.com/getinitialprops-vs-getserversideprops-nextjs/)
 - [MSW with Nextjs mocking issue](https://github.com/mswjs/msw/discussions/1049)
 - [Strongly Typed Google Analytics V4 with Next.js](https://andrew-simpson-ross.medium.com/strongly-typed-google-analytics-v4-with-next-js-aad6c6a5e383)
+- [Next.js Automatic Static Optimization 自動靜態壓縮處理](https://nextjs.org/docs/advanced-features/automatic-static-optimization)
+  - 此行為預設讓頁面以 static 方式壓縮，提升效能，但會無法在 client side 拿到 `publicRuntimeConfig`
+
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
