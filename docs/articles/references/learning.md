@@ -42,6 +42,7 @@
 ### Web API
 - [matchMedia 瀏覽器相容](https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent)
 - [Preload Prefetch Preconnect 效能優化手段](https://shubo.io/preload-prefetch-preconnect/)
+- [Chrome 用 js set Cookie，只能包含 name, value, expires](https://stackoverflow.com/a/19860331)
 
 ### DOM
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
