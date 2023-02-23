@@ -41,30 +41,33 @@ const createIphone = (version, memory, isbn) => {
 通常情況下這麼做確實可以避免重複創建相同的實例，但對於 iphone 的 `version`, `memory` 等屬性，我們還是會不斷重複創建相同的內容在不同的實例上，也就會導致記憶體持續被佔用，為了避免這種 `共用屬性的重複創建` 狀況，我們可以改寫如下
 
 ```js
-class IphoneFlyweight {
+// Flyweight object
+class IphoneType {
   constructor(version, memory) {
     this.version = version;
     this.memory = memory;
   }
 }
 
-const iphoneFlyweightFactory = (() => {
+// Flyweight factory
+const iphoneTypeFactory = (() => {
   const caches = new Map();
 
   return {
     get(version, memory) {
       const key = `${version}-${memory}`;
       if (!caches.has(key)) {
-        caches.set(key, new IphoneFlyweight(version, memory));
+        caches.set(key, new IphoneType(version, memory));
       }
       return caches.get(key);
     },
   };
 })();
 
+// Unshared object
 class IPhone {
   constructor(version, memory, isbn) {
-    this.type = iphoneFlyweightFactory.get(version, memory);
+    this.type = iphoneTypeFactory.get(version, memory);
     this.isbn = isbn;
   }
 }
