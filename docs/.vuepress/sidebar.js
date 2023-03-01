@@ -199,7 +199,8 @@ const sidebar = {
                 '/articles/memo/patterns/design/hoc.md',
                 '/articles/memo/patterns/design/factory.md',
                 '/articles/memo/patterns/design/render-props.md',
-                '/articles/memo/patterns/design/flyweight.md'
+                '/articles/memo/patterns/design/flyweight.md',
+                '/articles/memo/patterns/design/container.md',
               ]
             }
           ],
