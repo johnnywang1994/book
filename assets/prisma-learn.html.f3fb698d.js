@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-609e4998","path":"/articles/memo/js/prisma-learn.html","title":"Prisma \u5B78\u7FD2\u7B46\u8A18","lang":"zh-TW","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1677936566000,"contributors":[{"name":"johnnywang","email":"johnnywang@test.com","commits":1}]},"filePathRelative":"articles/memo/js/prisma-learn.md"}');export{e as data};

@@ -1,1 +1,0 @@
-import{_ as o,r as t,o as n,c,a as r}from"./app.f59ddb72.js";const s={};function a(_,l){const e=t("HomeFeatures");return n(),c("div",null,[r(e)])}const d=o(s,[["render",a],["__file","index.html.vue"]]);export{d as default};
