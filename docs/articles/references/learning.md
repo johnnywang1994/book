@@ -178,6 +178,15 @@
 - [Nginx returning 500 for POST FormData Request](https://stackoverflow.com/questions/57340193/nginx-returning-500-for-post-image-request-with-django-rest-framework)
 
 
+## Traefik
+- [基礎理論](https://doc.traefik.io/traefik/getting-started/concepts/)
+- [Docker 範例](https://doc.traefik.io/traefik/getting-started/quick-start/)
+- [配置介紹](https://doc.traefik.io/traefik/getting-started/configuration-overview/)
+- [Routing 介紹](https://doc.traefik.io/traefik/routing/overview/)
+- [HTTPS & TLS](https://doc.traefik.io/traefik/https/tls/)
+- [Dashboard](https://doc.traefik.io/traefik/operations/dashboard/)
+
+
 ## Vue
 - [Vuejs MVVM 原理實作解析](https://github.com/DMQ/mvvm)
 - [Vue2 作者講解](https://www.bilibili.com/video/BV1d4411v7UX/)
@@ -264,6 +273,16 @@
 - [Ngrok](https://ngrok.com/)
 - [Render](https://render.com/)
 - [Cyclic](https://www.cyclic.sh/)
+
+
+## Code tracing, security
+- [Opentelemetry](https://opentelemetry.io/)
+- [Sonarcube](https://www.sonarsource.com/products/sonarqube/)
+- [LighthouseCI](https://github.com/GoogleChrome/lighthouse-ci)
+- [Sentry](https://develop.sentry.dev/self-hosted/)
+- [Grafana](https://grafana.com/)
+- [Grafana - Faro Web SDK](https://github.com/grafana/faro-web-sdk)
+
 
 ## Vscode
 - [Code Snippet](https://pjchender.blogspot.com/2017/04/vs-code-snippet.html)

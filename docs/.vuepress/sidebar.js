@@ -206,6 +206,7 @@ const sidebar = {
             }
           ],
         },
+        '/articles/memo/traefik-basic.md',
         '/articles/memo/api-first-learn.md',
         '/articles/memo/what-is-ac.md',
         '/articles/memo/learn-mermaid.md',
