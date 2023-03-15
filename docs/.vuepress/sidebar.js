@@ -202,6 +202,8 @@ const sidebar = {
                 '/articles/memo/patterns/design/render-props.md',
                 '/articles/memo/patterns/design/flyweight.md',
                 '/articles/memo/patterns/design/container.md',
+                '/articles/memo/patterns/design/prototype.md',
+                '/articles/memo/patterns/design/mixin.md',
               ]
             }
           ],
