@@ -208,7 +208,7 @@ const sidebar = {
             }
           ],
         },
-        '/articles/memo/traefik-basic.md',
+        '/articles/memo/traefik.md',
         '/articles/memo/api-first-learn.md',
         '/articles/memo/what-is-ac.md',
         '/articles/memo/learn-mermaid.md',
@@ -232,6 +232,60 @@ const sidebar = {
       text: 'Daily',
       collapsible: true,
       children: [
+        {
+          text: '中醫學習',
+          collapsible: true,
+          children: [
+            '/articles/daily/中醫/README.md',
+            {
+              text: '基礎理論',
+              collapsible: true,
+              children: [
+                '/articles/daily/中醫/基礎理論/01中醫起源.md',
+                '/articles/daily/中醫/基礎理論/02中藥產地與採收.md',
+                '/articles/daily/中醫/基礎理論/03陰陽五行.md',
+                '/articles/daily/中醫/基礎理論/04精氣血津液.md',
+                '/articles/daily/中醫/基礎理論/05整體觀與臟象.md',
+                '/articles/daily/中醫/基礎理論/06病因病機.md',
+                '/articles/daily/中醫/基礎理論/07辨證論治.md',
+                '/articles/daily/中醫/基礎理論/08四診八綱.md',
+                '/articles/daily/中醫/基礎理論/09經絡.md',
+              ],
+            },
+            {
+              text: '診斷學',
+              collapsible: true,
+              children: [
+                '/articles/daily/中醫/診斷學/辯證.md',
+                '/articles/daily/中醫/診斷學/望診.md',
+                '/articles/daily/中醫/診斷學/聞診.md',
+                '/articles/daily/中醫/診斷學/問診.md',
+                '/articles/daily/中醫/診斷學/脈診簡史.md',
+                '/articles/daily/中醫/診斷學/切診.md',
+                '/articles/daily/中醫/診斷學/常見脈象與臨床意義.md',
+              ],
+            },
+            {
+              text: '中藥學',
+              collapsible: true,
+              children: [
+                '/articles/daily/中醫/中藥學/01中藥基礎理論.md',
+                '/articles/daily/中醫/中藥學/02常見中藥材.md',
+                '/articles/daily/中醫/中藥學/03解表藥.md',
+                '/articles/daily/中醫/中藥學/04清熱藥.md',
+                '/articles/daily/中醫/中藥學/05瀉下藥.md',
+                '/articles/daily/中醫/中藥學/06利水滲濕藥.md',
+              ],
+            },
+            {
+              text: '針灸學',
+              collapsible: true,
+              children: [
+                '/articles/daily/中醫/針灸學/特定穴.md',
+              ],
+            },
+          ],
+        },
         '/articles/daily/2022/the-truth.md',
         '/articles/daily/2022/as-an-observer.md',
         '/articles/daily/2022/leisure-memo.md',

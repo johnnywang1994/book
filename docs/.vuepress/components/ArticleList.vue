@@ -1,9 +1,22 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import { useSidebarItems } from '@vuepress/theme-default/client'
 
 const sidebarItems = useSidebarItems()
-const routeItems = computed(() => sidebarItems.value.map((item) => item.children).flat().filter((item) => !item.collapsible))
+
+const flatChildren = (arr) => {
+  const result = [];
+  for (let item of arr) {
+    if (!!item.children?.length) {
+      result.push(...flatChildren(item.children));
+      continue;
+    }
+    result.push(item);
+  }
+  return result;
+};
+
+const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
   text: '用 tsup 快速建立 Typescript 開發環境',
