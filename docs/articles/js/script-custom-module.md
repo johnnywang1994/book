@@ -54,7 +54,7 @@ createRoot(document.getElementById('app')).render(<App />);
 
 
 ### Vue
-Vue 也是一樣方式，只是把 entry 稍微修改下
+Vue 也是一樣方式，只是把 entry 稍微修改下，並把 `mode` 改為 `vue`
 ```html
 <!-- index.html -->
 <head>
@@ -123,7 +123,7 @@ import { createApp } from 'vue';
 import VueApp from 'src/App.vue';
 
 createRoot(document.getElementById('react-app')).render(<ReactApp />);
-createApp(App).mount('#vue-app');
+createApp(VueApp).mount('#vue-app');
 ```
 
 <SocialBlock hashtags="javascript,babel,react,vue,typescript" />
