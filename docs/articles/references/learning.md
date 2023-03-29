@@ -255,6 +255,7 @@
 - [Unix Cron time format](http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html)
 - [lightweight DNS server - dnsmasq](https://stackoverflow.com/questions/7473939/iphone-add-entry-to-etc-hosts-without-jailbreaking)
 - [LIFF local 測試方法](https://hammerhead-peach-ea9.notion.site/LIFF-Local-82c929680b324c2fa124fac035340f90)
+- [Useful Linux Commands](https://www.cntofu.com/book/46/shared_libraries/useful_linux_commands.md)
 
 ## Leetcode
 - [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)

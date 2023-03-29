@@ -204,6 +204,8 @@ const sidebar = {
                 '/articles/memo/patterns/design/container.md',
                 '/articles/memo/patterns/design/prototype.md',
                 '/articles/memo/patterns/design/mixin.md',
+                '/articles/memo/patterns/design/provider.md',
+                '/articles/memo/patterns/design/command.md',
               ]
             }
           ],
