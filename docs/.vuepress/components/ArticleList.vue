@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '關鍵溝通表達力 - 課程學習筆記',
+  link: '/articles/memo/communicate.html',
+}, {
   text: '用 tsup 快速建立 Typescript 開發環境',
   link: '/articles/js/tsup-tutorial.html',
 }, {
