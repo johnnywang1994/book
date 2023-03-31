@@ -129,6 +129,7 @@
 - [CSS 樣式架構方案](https://juejin.cn/post/7193514569552101432)
 
 ### Animation
+- [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
 - [CSS 曲線動畫製作教學解釋](https://tobiasahlin.com/blog/curved-path-animations-in-css/)
 - [CSS 骰子](用CSS實現擲骰子效果)
 - [@property 實現漸變背景動畫](https://juejin.cn/post/6951201528543707150)
@@ -243,6 +244,10 @@
 - [Probot - deploy Github APP with Nodejs](https://github.com/probot/probot)
 - [Github Action - Publish Packages](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images)
 - [Act - Run your GitHub Actions locally](https://github.com/nektos/act)
+
+
+## Browser
+- [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
 
 ## Computer
 - [作業系統考題](https://iter01.com/578045.html)
