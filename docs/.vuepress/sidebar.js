@@ -206,6 +206,7 @@ const sidebar = {
                 '/articles/memo/patterns/design/mixin.md',
                 '/articles/memo/patterns/design/provider.md',
                 '/articles/memo/patterns/design/command.md',
+                '/articles/memo/patterns/design/module.md',
               ]
             }
           ],
