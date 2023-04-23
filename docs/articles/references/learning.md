@@ -2,7 +2,7 @@
 
 ## Blog
 - [阮一峰的個人網站](http://www.ruanyifeng.com/home.html)
-  - [TypeScript 使用指南](https://ts.xcatliu.com/)
+- [TypeScript 使用指南](https://ts.xcatliu.com/)
 - [Will 保哥部落格](https://blog.miniasp.com/)
 - [若川的博客](https://lxchuan12.gitee.io/)
 - [烤雞堡的筆記](https://weii.dev/)
@@ -48,6 +48,9 @@
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
 - [Viewport width and height](https://harttle.land/2016/04/24/client-height-width.html)
 - [HTML 原生 Dialog 彈窗元素](https://juejin.cn/post/7194262004125679675)
+- [Disable HTML form/input autocomplete-autofill](https://gist.github.com/niksumeiko/360164708c3b326bd1c8)
+- [Cross Browser Autofill Form — Selected Fields](https://codepen.io/grigs/pen/YqoyWv)
+
 
 ### Canvas
 - [Canvas 庫大全 awesome-canvas](https://github.com/chinaBerg/awesome-canvas)
@@ -129,6 +132,7 @@
 - [CSS 樣式架構方案](https://juejin.cn/post/7193514569552101432)
 
 ### Animation
+- [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
 - [CSS 曲線動畫製作教學解釋](https://tobiasahlin.com/blog/curved-path-animations-in-css/)
 - [CSS 骰子](用CSS實現擲骰子效果)
 - [@property 實現漸變背景動畫](https://juejin.cn/post/6951201528543707150)
@@ -243,6 +247,10 @@
 - [Probot - deploy Github APP with Nodejs](https://github.com/probot/probot)
 - [Github Action - Publish Packages](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images)
 - [Act - Run your GitHub Actions locally](https://github.com/nektos/act)
+
+
+## Browser
+- [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
 
 ## Computer
 - [作業系統考題](https://iter01.com/578045.html)

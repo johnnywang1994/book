@@ -39,12 +39,40 @@ export default {
         "name" : "LINE 發票管家",
         "tech" : "Secret..."
       }, {
+        "des" : "MajuMD is a real-time Markdown Editor created by Reactjs, Koajs, Prisma",
+        "id" : "koa-majumd",
+        "image" : cdn("/websites/majumd.png"),
+        "link" : "https://majumd.maju-web.club",
+        "name" : "MajuMD - Markdown Editor",
+        "tech" : "React.js, Typescript, Koa.js, Socket.io, Prisma, CodeMirror"
+      }, {
         "des" : "A tiny social platform created by Nextjs, Koajs, Prisma",
         "id" : "koa-next-prisma-majubook",
         "image" : cdn("/websites/majubook.png"),
         "link" : "https://majubook.maju-web.club/",
         "name" : "MajuBook",
         "tech" : "Next.js, Typescript, Koa.js, Prisma"
+      }, {
+        "des" : "An client side online editor for frontend prototyping",
+        "id" : "react-esmodule-maju-editor-react",
+        "image" : cdn("/websites/majupen-plus-react.png"),
+        "link" : "https://pen.maju-web.club/plus?cacheId=react&template=react",
+        "name" : "MajuPen Plus - React18",
+        "tech" : "Next.js, Typescript, ScriptCustomModule"
+      }, {
+        "des" : "An client side online editor for frontend prototyping",
+        "id" : "react-esmodule-maju-editor-vue",
+        "image" : cdn("/websites/majupen-plus-vue.png"),
+        "link" : "https://pen.maju-web.club/plus?cacheId=default",
+        "name" : "MajuPen Plus - Vue3",
+        "tech" : "Next.js, Typescript, ScriptCustomModule"
+      }, {
+        "des" : "An client side online editor for frontend prototyping",
+        "id" : "react-maju-pen",
+        "image" : cdn("/websites/majupen.png"),
+        "link" : "https://pen.maju-web.club/local",
+        "name" : "MajuPen",
+        "tech" : "Reactjs, StyledComponent, @reduxjs/toolkit"
       }, {
         "des" : "React Matter Clock",
         "id" : "react-matter-clock",
@@ -88,6 +116,13 @@ export default {
         "name" : "Matter Mario Bro",
         "tech" : "Vue.js3.x, Matterjs"
       }, {
+        "des" : "空閒時做的單頁聊天室窗，暱稱隨便取，開始來聊天八~帳號:public，密碼:0000",
+        "id" : "maju-chatter",
+        "image" : cdn("/websites/nodechatter.jpg"),
+        "link" : "https://maju-chatter.onrender.com/",
+        "name" : "Single Page Chatroom",
+        "tech" : "Node.js, Express.js, Socket.io, BootStrap4"
+      }, {
         "des" : "用 2D 物理引擎 Matterjs+Vue3 製作的小遊戲",
         "id" : "vue-angrybird",
         "image" : cdn("/websites/angry-bird.png"),
@@ -109,7 +144,7 @@ export default {
         "name" : "Garena MBM Preregister Website",
         "tech" : "Nuxt.js, Axios, Swiper, SSR"
       }, {
-        "des" : "魔導少年官網，歡迎各位下載遊戲一起玩喔～",
+        "des" : "魔導少年官網，歡迎各位下載遊戲一起玩喔～(已下線)",
         "id" : "garena-fairy-tail",
         "image" : cdn("/websites/fairy-tail-web.png"),
         "link" : "https://ftm.garena.tw/",
@@ -157,13 +192,6 @@ export default {
         "link" : "https://maju-express.onrender.com/rate/#/rate",
         "name" : "Taiwan Bank Dollar Rate",
         "tech" : "Node.js, Express.js"
-      }, {
-        "des" : "空閒時做的單頁聊天室窗，暱稱隨便取，開始來聊天八~帳號:public，密碼:0000",
-        "id" : "maju-chatter",
-        "image" : cdn("/websites/nodechatter.jpg"),
-        "link" : "https://maju-chatter.onrender.com/",
-        "name" : "Single Page Chatroom",
-        "tech" : "Node.js, Express.js, Socket.io, BootStrap4"
       }, {
         "des" : "台灣股市即時交易資訊爬蟲查詢小工具",
         "id" : "maju-stock",
