@@ -16,7 +16,7 @@ Be Good, be strong, be yourself, never give up.
 <Maju-App />
 
 
-## 專案歷程
+## Main Project List
 
 ### LINE 發票管家 - Line Invoice
 
@@ -24,13 +24,55 @@ Be Good, be strong, be yourself, never give up.
   - secret...
   - onlined at: 2022-10
 
+### MajuMD - Real-Time Markdown Editor
+
+  - [Link](https://majumd.maju-web.club/)
+  - Reactjs, Typescript, Prisma, Koa.js, Socket.io
+  - created at: 2023-04
+  - For safety reason, only registered user can create online note
+
+### MajuBook
+
+  - [Link](https://majubook.maju-web.club/)
+  - Nextjs, Typescript, Prisma, Koa.js
+  - created at: 2022-10
+
+### MajuPen - Plus
+
+  - [Vue Link](https://pen.maju-web.club/plus?cacheId=default)
+  - [React Link](https://pen.maju-web.club/plus?cacheId=react&template=react)
+  - Nextjs, Typescript, TailwindCSS, Script Custom Module
+  - created at: 2022-10
+
+### MajuPen
+
+  - [Link](https://pen.maju-web.club/local)
+  - Reactjs, StyledComponent, @reduxjs/toolkit
+  - created at: 2021-8
+
+### React WebRTC Realtime Chatroom
+
+  - [Link](https://maju-express.onrender.com/meet/)
+  - React18, Typescript, Socket.io, Peer.js
+  - created at: 2022-06
+
+### Single Page Chatroom
+
+  - [Link](https://maju-chatter.onrender.com/)
+  - Nodejs, ExpressJs, Socket.io, Bootstrap4
+  - created at: 2019-01
+  - Public account:
+    - account: public
+    - password: 0000
+    - fastcode: 0000
+
 ### MBM Preregist Website
 
   - [Link](https://mbm.garena.tw/)
   - Nuxtjs, SSR
   - created at: 2021-05
 
-### FairyTail Website
+### FairyTail Website(Offline)
 
   - [Link](https://ftm.garena.tw/)
   - Nuxtjs, SSR
@@ -43,7 +85,7 @@ Be Good, be strong, be yourself, never give up.
   - created at: 2018-12
 
 
-## NPM 工具
+## Open Source
 
 ### jspdf-html2canvas
 
@@ -51,29 +93,17 @@ Be Good, be strong, be yourself, never give up.
   - jspdf, html2canvas
   - created at: 2019-11
 
-### maju-decorators
-
-  - [Link](https://www.npmjs.com/package/maju-decorators)
-  - js decorators utils
-  - created at: 2022-05-11
-
 ### script-custom-module
 
   - [Link](https://www.npmjs.com/package/script-custom-module)
-  - esmodule, loader system in browser
-  - created at: 2022-03
+  - esmodule for using React, Vue, Typescript compiled in browser
+  - created at: 2023-04-01
 
 ### maju-ui
 
   - [Link](https://www.npmjs.com/package/maju-ui)
   - responsive UI class
-  - created at: 2021-06
-
-### node-ftp-cli
-
-  - [Link](https://www.npmjs.com/package/node-ftp-cli)
-  - nodejs, ftp
-  - created at: 2021-10
+  - created at: 2022-06
 
 ### remockjs
 
@@ -81,20 +111,26 @@ Be Good, be strong, be yourself, never give up.
   - ajax mock, mock data generator
   - created at: 2021-03
 
+### TailwindCSS EDM Generator
 
-## 個人小專案
+  - [Link](https://github.com/johnnywang1994/edm-generator)
+  - Gulp, Pug, SCSS, TailwindCSS, Juice
+  - created at: 2023-01
 
-### Maju Web IDE
+### maju-decorators
 
-  - [Link](https://www.maju-web.club/plus?cacheId=default)
-  - Nextjs, Typescript, TailwindCSS
-  - created at: 2022-10
+  - [Link](https://www.npmjs.com/package/maju-decorators)
+  - js decorators utils
+  - created at: 2022-05-11
 
-### MajuBook
+### node-ftp-cli
 
-  - [Link](https://majubook.maju-web.club/)
-  - Nextjs, Typescript, Prisma, Koa.js
-  - created at: 2022-10
+  - [Link](https://www.npmjs.com/package/node-ftp-cli)
+  - nodejs, ftp
+  - created at: 2021-10
+
+
+## Side Project
 
 ### React Matter Clock
 
@@ -107,12 +143,6 @@ Be Good, be strong, be yourself, never give up.
   - [Link](https://maju-express.onrender.com/sudoku/)
   - React18, Typescript
   - created at: 2022-07
-
-### React WebRTC Realtime Chatroom
-
-  - [Link](https://maju-express.onrender.com/meet/)
-  - React18, Typescript, Socket.io, Peer.js
-  - created at: 2022-06
 
 ### React Web3 Storage
 
@@ -148,12 +178,6 @@ Be Good, be strong, be yourself, never give up.
   - [Source Code](https://github.com/johnnywang1994/p5-game/blob/master/src/views/AngryBird.vue)
   - Vue3.x, Matterjs
   - created at: 2021-11
-
-### Vue3 Web Editor
-
-  - [Link](https://nodejs-ide.onrender.com/)
-  - Vue3.x, Iframe
-  - created at: 2021-10
 
 ### Vue3 Game - 2048
 
@@ -196,16 +220,6 @@ Be Good, be strong, be yourself, never give up.
   - [Source Code](https://github.com/johnnywang1994/vue-slide-puzzle/blob/master/src/components/SlidePuzzle.vue)
   - Vue2.x
   - created at: 2020-08
-
-### Single Page Chatroom
-
-  - [Link](https://maju-chatter.onrender.com/)
-  - Nodejs, ExpressJs, Socket.io, Bootstrap4
-  - created at: 2019-01
-  - Public account:
-    - account: public
-    - password: 0000
-    - fastcode: 0000
 
 ### Taiwan Stock Tool
 

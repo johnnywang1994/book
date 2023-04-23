@@ -51,6 +51,7 @@ export default {
             'Koajs 2+years',
             'Nodejs 3+years',
             'Docker 2+years',
+            'Prisma 1+years',
             'MySQL 1+year',
             'MongoDB 0.5+year',
             'Django 0.5+year',
@@ -64,10 +65,6 @@ export default {
               href: 'https://www.npmjs.com/package/jspdf-html2canvas',
             },
             {
-              content: '[NPM] maju-decorators',
-              href: 'https://www.npmjs.com/package/maju-decorators',
-            },
-            {
               content: '[NPM] script-custom-module',
               href: 'https://www.npmjs.com/package/script-custom-module',
             },
@@ -76,12 +73,20 @@ export default {
               href: 'https://www.npmjs.com/package/maju-ui',
             },
             {
-              content: '[NPM] node-ftp-cli',
-              href: 'https://www.npmjs.com/package/node-ftp-cli',
-            },
-            {
               content: '[NPM] remockjs',
               href: 'https://www.npmjs.com/package/remockjs',
+            },
+            {
+              content: 'TailwindCSS EDM Generator',
+              href: 'https://github.com/johnnywang1994/edm-generator',
+            },
+            {
+              content: '[NPM] maju-decorators',
+              href: 'https://www.npmjs.com/package/maju-decorators',
+            },
+            {
+              content: '[NPM] node-ftp-cli',
+              href: 'https://www.npmjs.com/package/node-ftp-cli',
             },
             {
               content: 'Virtual-Dom Implement',

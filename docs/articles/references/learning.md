@@ -2,7 +2,7 @@
 
 ## Blog
 - [阮一峰的個人網站](http://www.ruanyifeng.com/home.html)
-  - [TypeScript 使用指南](https://ts.xcatliu.com/)
+- [TypeScript 使用指南](https://ts.xcatliu.com/)
 - [Will 保哥部落格](https://blog.miniasp.com/)
 - [若川的博客](https://lxchuan12.gitee.io/)
 - [烤雞堡的筆記](https://weii.dev/)
@@ -48,6 +48,9 @@
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
 - [Viewport width and height](https://harttle.land/2016/04/24/client-height-width.html)
 - [HTML 原生 Dialog 彈窗元素](https://juejin.cn/post/7194262004125679675)
+- [Disable HTML form/input autocomplete-autofill](https://gist.github.com/niksumeiko/360164708c3b326bd1c8)
+- [Cross Browser Autofill Form — Selected Fields](https://codepen.io/grigs/pen/YqoyWv)
+
 
 ### Canvas
 - [Canvas 庫大全 awesome-canvas](https://github.com/chinaBerg/awesome-canvas)
