@@ -24,6 +24,13 @@ Be Good, be strong, be yourself, never give up.
   - secret...
   - onlined at: 2022-10
 
+### MajuChatGame - Real-Time 2D ChatGame
+
+  - [Link](https://majuchat.maju-web.club/)
+  - Reactjs, Typescript, Socket.io
+  - created at: 2023-05
+  - For safety reason, only registered user can create online note
+
 ### MajuMD - Real-Time Markdown Editor
 
   - [Link](https://majumd.maju-web.club/)
