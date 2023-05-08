@@ -39,6 +39,13 @@ export default {
         "name" : "LINE 發票管家",
         "tech" : "Secret..."
       }, {
+        "des" : "MajuChatGame is a real-time 2D chat game created by Reactjs, MatterJS",
+        "id" : "majuchatgame",
+        "image" : cdn("/websites/majuchatgame.png"),
+        "link" : "https://majuchat.maju-web.club",
+        "name" : "MajuChatGame - 2D chat game",
+        "tech" : "React.js, Typescript, MatterJS, Socket.io"
+      }, {
         "des" : "MajuMD is a real-time Markdown Editor created by Reactjs, Koajs, Prisma",
         "id" : "koa-majumd",
         "image" : cdn("/websites/majumd.png"),

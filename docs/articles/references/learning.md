@@ -102,6 +102,8 @@
 
 ### GraphQL
 - [GraphQL 教學系列](https://ithelp.ithome.com.tw/users/20111997/ironman/1878)
+- [Apollo Client - non-paginated read functions 預設 cache 全拿](https://www.apollographql.com/docs/react/pagination/core-api/#non-paginated-read-functions)
+- [Apollo Client - cache read functions for paginated fields 只拿部分 cache](https://www.apollographql.com/docs/react/pagination/core-api#read-functions-for-paginated-fields)
 
 ### Audio
 - [Libsvm-js vector machine (aka SVM) classification and regression](https://www.npmjs.com/package/libsvm-js)
@@ -130,6 +132,8 @@
 - [2022 幾個好用的 CSS 屬性](https://juejin.cn/post/7118892686861402120)
 - [CSS 容器查詢](https://blog.51cto.com/palxp/5712505)
 - [CSS 樣式架構方案](https://juejin.cn/post/7193514569552101432)
+- [CSS 100vh in ISO Safari overlapping handling](https://dev-tips.com/css/overlapping-bottom-navigation-bar-despite-100vh-in-ios-safari)
+- [Viewport Units 詳細講解 - lvh, lvw, svh, svw, dvh, dvw](https://web.dev/viewport-units/)
 
 ### Animation
 - [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
@@ -236,7 +240,7 @@
 - [Strongly Typed Google Analytics V4 with Next.js](https://andrew-simpson-ross.medium.com/strongly-typed-google-analytics-v4-with-next-js-aad6c6a5e383)
 - [Next.js Automatic Static Optimization 自動靜態壓縮處理](https://nextjs.org/docs/advanced-features/automatic-static-optimization)
   - 此行為預設讓頁面以 static 方式壓縮，提升效能，但會無法在 client side 拿到 `publicRuntimeConfig`
-
+- [Redirect to another page toaster not come](https://github.com/fkhadra/react-toastify/issues/343)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
