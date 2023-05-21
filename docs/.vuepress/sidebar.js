@@ -280,7 +280,9 @@ const sidebar = {
                 '/articles/daily/中醫/中藥學/04清熱藥.md',
                 '/articles/daily/中醫/中藥學/05瀉下藥.md',
                 '/articles/daily/中醫/中藥學/06利水滲濕藥.md',
-                '/articles/daily/中醫/中藥學/07化痰止咳平喘藥.md'
+                '/articles/daily/中醫/中藥學/07化痰止咳平喘藥.md',
+                '/articles/daily/中醫/中藥學/08止血藥.md',
+                '/articles/daily/中醫/中藥學/09開竅-平肝-安神藥.md'
               ],
             },
             {

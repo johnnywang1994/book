@@ -50,6 +50,8 @@
 - [HTML 原生 Dialog 彈窗元素](https://juejin.cn/post/7194262004125679675)
 - [Disable HTML form/input autocomplete-autofill](https://gist.github.com/niksumeiko/360164708c3b326bd1c8)
 - [Cross Browser Autofill Form — Selected Fields](https://codepen.io/grigs/pen/YqoyWv)
+- [HTML Input 限制手機彈出純數字鍵盤](https://stackoverflow.com/questions/6178556/phone-numeric-keyboard-for-text-input)
+- [Passive event listeners 優化 scroll, touch 事件](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
 
 
 ### Canvas
@@ -241,6 +243,7 @@
 - [Next.js Automatic Static Optimization 自動靜態壓縮處理](https://nextjs.org/docs/advanced-features/automatic-static-optimization)
   - 此行為預設讓頁面以 static 方式壓縮，提升效能，但會無法在 client side 拿到 `publicRuntimeConfig`
 - [Redirect to another page toaster not come](https://github.com/fkhadra/react-toastify/issues/343)
+- [Environment variables are in-lined to next.config.js at build time](https://github.com/vercel/next.js/issues/21888)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
