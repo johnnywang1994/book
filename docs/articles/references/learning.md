@@ -52,6 +52,7 @@
 - [Cross Browser Autofill Form — Selected Fields](https://codepen.io/grigs/pen/YqoyWv)
 - [HTML Input 限制手機彈出純數字鍵盤](https://stackoverflow.com/questions/6178556/phone-numeric-keyboard-for-text-input)
 - [Passive event listeners 優化 scroll, touch 事件](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
+- [Viewport does not resize on iOS when showing keyboard](https://github.com/vector-im/hydrogen-web/issues/181#issuecomment-797012793)
 
 
 ### Canvas
@@ -233,6 +234,7 @@
 - [React Memo 使用範例](https://codepen.io/fgerschau/pen/WNQrOgZ?editors=1010)
 - [React I18n - Trans component 在字串中插入自定義組件](https://react.i18next.com/latest/trans-component)
 - [useImperativeHandle 與子組件互動](https://z3388638.medium.com/react-hooks-%E4%BD%BF%E7%94%A8-useimperativehandle-%E4%BE%86%E8%B7%9F%E5%AD%90%E5%85%83%E4%BB%B6%E4%BA%92%E5%8B%95-2b543bec3e8a)
+- [Framer-Motion 動態元素高度動畫](https://github.com/framer/motion/discussions/1884)
 
 
 ## Nextjs
