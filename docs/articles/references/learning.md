@@ -246,6 +246,7 @@
   - 此行為預設讓頁面以 static 方式壓縮，提升效能，但會無法在 client side 拿到 `publicRuntimeConfig`
 - [Redirect to another page toaster not come](https://github.com/fkhadra/react-toastify/issues/343)
 - [Environment variables are in-lined to next.config.js at build time](https://github.com/vercel/next.js/issues/21888)
+- [Fun With Next.js 13 Server Components](https://dev.to/zenstack/fun-with-nextjs-13-server-components-o37)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)

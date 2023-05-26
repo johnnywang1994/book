@@ -12,6 +12,7 @@ const sidebar = {
       text: 'Javascript',
       collapsible: true,
       children: [
+        '/articles/js/next13-intro-approuter.md',
         '/articles/js/maju-chat-game.md',
         '/articles/js/script-custom-module.md',
         '/articles/js/tsup-tutorial.md',
