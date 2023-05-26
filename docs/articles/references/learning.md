@@ -50,6 +50,9 @@
 - [HTML 原生 Dialog 彈窗元素](https://juejin.cn/post/7194262004125679675)
 - [Disable HTML form/input autocomplete-autofill](https://gist.github.com/niksumeiko/360164708c3b326bd1c8)
 - [Cross Browser Autofill Form — Selected Fields](https://codepen.io/grigs/pen/YqoyWv)
+- [HTML Input 限制手機彈出純數字鍵盤](https://stackoverflow.com/questions/6178556/phone-numeric-keyboard-for-text-input)
+- [Passive event listeners 優化 scroll, touch 事件](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
+- [Viewport does not resize on iOS when showing keyboard](https://github.com/vector-im/hydrogen-web/issues/181#issuecomment-797012793)
 
 
 ### Canvas
@@ -231,6 +234,7 @@
 - [React Memo 使用範例](https://codepen.io/fgerschau/pen/WNQrOgZ?editors=1010)
 - [React I18n - Trans component 在字串中插入自定義組件](https://react.i18next.com/latest/trans-component)
 - [useImperativeHandle 與子組件互動](https://z3388638.medium.com/react-hooks-%E4%BD%BF%E7%94%A8-useimperativehandle-%E4%BE%86%E8%B7%9F%E5%AD%90%E5%85%83%E4%BB%B6%E4%BA%92%E5%8B%95-2b543bec3e8a)
+- [Framer-Motion 動態元素高度動畫](https://github.com/framer/motion/discussions/1884)
 
 
 ## Nextjs
@@ -241,6 +245,8 @@
 - [Next.js Automatic Static Optimization 自動靜態壓縮處理](https://nextjs.org/docs/advanced-features/automatic-static-optimization)
   - 此行為預設讓頁面以 static 方式壓縮，提升效能，但會無法在 client side 拿到 `publicRuntimeConfig`
 - [Redirect to another page toaster not come](https://github.com/fkhadra/react-toastify/issues/343)
+- [Environment variables are in-lined to next.config.js at build time](https://github.com/vercel/next.js/issues/21888)
+- [Fun With Next.js 13 Server Components](https://dev.to/zenstack/fun-with-nextjs-13-server-components-o37)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
