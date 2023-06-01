@@ -250,7 +250,7 @@
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
-
+- [Can't import the named export from non EcmaScript module (only default export is available)](https://github.com/vuejs/pinia/issues/675#issuecomment-919544784)
 
 ## Github
 - [github page 靜態部署教學](https://ithelp.ithome.com.tw/articles/10209553)
