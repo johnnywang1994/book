@@ -151,7 +151,8 @@ const sidebar = {
             '/articles/memo/docker/dockerfile-demo.md',
             '/articles/memo/docker/docker-compose.md',
             '/articles/memo/docker/k8s.md',
-            '/articles/memo/docker/argocd.md'
+            '/articles/memo/docker/argocd.md',
+            '/articles/memo/docker/podman.md'
           ],
         },
         {
@@ -283,7 +284,11 @@ const sidebar = {
                 '/articles/daily/中醫/中藥學/06利水滲濕藥.md',
                 '/articles/daily/中醫/中藥學/07化痰止咳平喘藥.md',
                 '/articles/daily/中醫/中藥學/08止血藥.md',
-                '/articles/daily/中醫/中藥學/09開竅-平肝-安神藥.md'
+                '/articles/daily/中醫/中藥學/09開竅-平肝-安神藥.md',
+                '/articles/daily/中醫/中藥學/10化濕藥.md',
+                '/articles/daily/中醫/中藥學/11祛風濕藥.md',
+                '/articles/daily/中醫/中藥學/12理氣藥.md',
+                '/articles/daily/中醫/中藥學/13活血祛瘀藥.md'
               ],
             },
             {
