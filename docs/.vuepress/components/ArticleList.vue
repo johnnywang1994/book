@@ -19,6 +19,12 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '快速上手 NextJS v13 - 基礎觀念 AppRouter 篇',
+  link: '/articles/js/next13-intro-approuter.html',
+}, {
+  text: '用 Socket.io 搭配 Matterjs 製作一款 Real-Time Canvas 聊天室（文長慎入）',
+  link: '/articles/js/maju-chat-game.html',
+}, {
   text: '關鍵溝通表達力 - 課程學習筆記',
   link: '/articles/memo/communicate.html',
 }, {
@@ -30,12 +36,6 @@ const newItems = [{
 }, {
   text: '關於我的 Side project - Maju Web Editor',
   link: '/articles/js/maju-web-ide.html',
-}, {
-  text: '什麼是真相，真相是什麼',
-  link: '/articles/daily/2022/the-truth.html',
-}, {
-  text: '身為一位歷史觀察者（文長慎入）',
-  link: '/articles/daily/2022/as-an-observer.html',
 }];
 </script>
 
