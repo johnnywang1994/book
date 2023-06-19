@@ -65,6 +65,7 @@
 - [Live2d Widget](https://github.com/stevenjoezhang/live2d-widget)
 - [Live2d Model](https://github.com/Eikanya/Live2d-model)
 - [MarioHtml5](https://github.com/robertkleffner/mariohtml5)
+- [Canvas 圖片 Hover 粒子動畫](https://www.youtube.com/watch?v=W78MY7_q_6A)
 
 ### Svg
 - [Lottie 使用介紹](https://juejin.cn/post/7101629986427109383)
