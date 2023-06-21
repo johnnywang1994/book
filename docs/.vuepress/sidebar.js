@@ -211,6 +211,13 @@ const sidebar = {
                 '/articles/memo/patterns/design/command.md',
                 '/articles/memo/patterns/design/module.md',
               ]
+            },
+            {
+              text: 'Render Patterns',
+              collapsible: true,
+              children: [
+                '/articles/memo/patterns/render/introduction.md',
+              ]
             }
           ],
         },

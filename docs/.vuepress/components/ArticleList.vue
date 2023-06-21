@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: 'Rendering Patterns 渲染模式介紹',
+  link: '/articles/memo/patterns/render/introduction.html',
+}, {
   text: '快速上手 NextJS v13 - 基礎觀念 AppRouter 篇',
   link: '/articles/js/next13-intro-approuter.html',
 }, {
