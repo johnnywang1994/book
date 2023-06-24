@@ -76,6 +76,7 @@ const sidebar = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/memo/js/ts-v5-decorators.md',
             '/articles/memo/js/sequelize-learn.md',
             '/articles/memo/js/es2022.md',
             '/articles/memo/js/crypto-password.md',
