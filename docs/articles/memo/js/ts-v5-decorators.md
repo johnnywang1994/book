@@ -26,7 +26,44 @@ type Decorator =
 
 
 ## 1. Class decorators
+類型
+```ts
+type ClassDecorator = (
+  value: Function,
+  context: {
+    kind: 'class';
+    name: string | undefined;
+    addInitializer(initializer: () => void): void;
+  }
+) => Function | void;
+```
+範例
+```ts
+class InstanceCollector {
+  instances = new Set();
+  install = (value, {kind}) => {
+    if (kind === 'class') {
+      const _this = this;
+      return function (...args) { // (A)
+        const inst = new value(...args); // (B)
+        _this.instances.add(inst);
+        return inst;
+      };
+    }
+  };
+}
 
+const collector = new InstanceCollector();
+
+@collector.install
+class MyClass {}
+
+const inst1 = new MyClass();
+const inst2 = new MyClass();
+const inst3 = new MyClass();
+
+console.log(collector.instances);
+```
 
 ## 2. Class method decorators
 類型
