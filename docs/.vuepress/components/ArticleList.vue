@@ -19,6 +19,12 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: "擺脫 Node modules 地獄，擁抱 Yarn Plug'n'Play(PnP)",
+  link: '/articles/js/yarn-pnp.html',
+}, {
+  text: 'Rendering Patterns 渲染模式介紹',
+  link: '/articles/memo/patterns/render/introduction.html',
+}, {
   text: '快速上手 NextJS v13 - 基礎觀念 AppRouter 篇',
   link: '/articles/js/next13-intro-approuter.html',
 }, {

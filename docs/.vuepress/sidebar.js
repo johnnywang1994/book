@@ -12,6 +12,7 @@ const sidebar = {
       text: 'Javascript',
       collapsible: true,
       children: [
+        '/articles/js/yarn-pnp.md',
         '/articles/js/next13-intro-approuter.md',
         '/articles/js/maju-chat-game.md',
         '/articles/js/script-custom-module.md',
@@ -76,6 +77,7 @@ const sidebar = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/memo/js/ts-v5-decorators.md',
             '/articles/memo/js/sequelize-learn.md',
             '/articles/memo/js/es2022.md',
             '/articles/memo/js/crypto-password.md',
@@ -210,6 +212,13 @@ const sidebar = {
                 '/articles/memo/patterns/design/provider.md',
                 '/articles/memo/patterns/design/command.md',
                 '/articles/memo/patterns/design/module.md',
+              ]
+            },
+            {
+              text: 'Render Patterns',
+              collapsible: true,
+              children: [
+                '/articles/memo/patterns/render/introduction.md',
               ]
             }
           ],

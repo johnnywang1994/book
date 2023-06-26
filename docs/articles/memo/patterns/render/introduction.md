@@ -83,8 +83,88 @@ Chrome 團隊推薦開發者使用靜態或伺服器端渲染模式，而非 [`f
 
 但對於某些場景，靜態渲染並不是最佳選擇，例如對於每個用戶都不同的高度動態、個性化的頁面
 
-
-## Server Side Rendering - 伺服器端渲染
 ![](https://www.patterns.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddxwdqwkr%2Fimage%2Fupload%2Ff_auto%2Fv1658990025%2Fpatterns.dev%2F27.png&w=3840&q=75)
 
-...to be continue
+
+
+## Server Side Rendering - 伺服器端渲染
+![](https://www.patterns.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddxwdqwkr%2Fimage%2Fupload%2Ff_auto%2Fv1658990025%2Fpatterns.dev%2F28.png&w=3840&q=75)
+
+伺服氣器端渲染，會為每個請求生成 HTML，適合包含高度客制化資料的頁面，例如基於用戶cookie或用戶請求來獲得的任何資料，另外也適合用於需要阻擋某些頁面的場合，比如「身份驗證」等。
+
+個性化儀表板是高度動態內容的一個很好的例子，內如根據 cookie 中關於用戶的身份資訊獲取對應的動態內容，也能較好的實現某些敏感資訊的安全需求（無法被其他人看到），比如 Next.js 允許我們使用 `getServerSideProps` 方法在伺服器端渲染頁面。該方法針對每個請求在伺服器上運行，最終將返回的內容傳遞到頁面以生成 HTML
+
+每當用戶請求頁面時，`getServerSideProps` 運行，返回用於生成頁面的資料，接著在前端頁面上呈現 HTML 內容，並可能接著再去請求 js 動態內容並根據返回內容進行比對調整，生成的 HTML 內容對於每個請求都是唯一的，不應由 CDN 緩存。
+![](https://www.patterns.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddxwdqwkr%2Fimage%2Fupload%2Ff_auto%2Fv1658990025%2Fpatterns.dev%2F31.png&w=3840&q=75)
+
+對於靜態和服務器端渲染非常相似。FCP 幾乎等於 LCP，輕鬆避免佈局變化，因為初始頁面加載後沒有動態內容加載，只是服務器渲染頁面的 TTFB 明顯長於靜態渲染，因為頁面是在每次請求時從頭開始生成。評價如下：
+![](https://www.patterns.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddxwdqwkr%2Fimage%2Fupload%2Ff_auto%2Fv1658990025%2Fpatterns.dev%2F32.png&w=3840&q=75)
+
+雖然伺服器端渲染可以更好的做到客製化動態頁面，但為了獲得良好的用戶體驗並降低服務器成本，以下是一些在使用 SSR 時需要注意的地方：
+1. getServerSideProps 的執行時間  
+頁面必須在 getServerSideProps 中的資料可用之後才會開始生成。因此，我們必須確保 getServerSideProps 方法不會運行太長時間
+2. 將 Database 部署在與 serverless 功能相同的區域中  
+傳統部署可能會讓前端從公共外網請求 API，但這種方式必須經過一連串的 DNS 查詢、cluster、load balancer 查詢等等，響應速度非常緩慢，透過把相關的服務部署在一起（同個 cluster），藉此提升動態內容獲取的速度，常見的方式是透過 cluster 內的網絡進行連線，可以大幅提升資料獲取速度
+3. 將 `Cache-control` header 添加到 response 中
+4. 升級 Server 硬體規格
+
+### Edge SSR + HTTP Streaming
+- 使用 serverless 功能，我們在服務器端生成整個頁面，並等待整個包在客戶端上加載和解析，然後才能開始水合作用。
+- 使用 Edge SSR，我們可以在準備就緒後立即流式傳輸文檔的各個部分，並細粒度地混合這些組件，先加載完的先渲染，減少了用戶的等待時間
+![](https://www.patterns.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddxwdqwkr%2Fimage%2Fupload%2Ff_auto%2Fv1658990025%2Fpatterns.dev%2F40.png&w=3840&q=75)
+
+Streaming SSR 還支持 React 服務器組件。 Edge SSR 與 React Server Components 的結合可以讓我們在靜態和服務器渲染之間有一個漂亮的混合體，React Server Components 允許採取「部分」內容伺服器端渲染，假如需要顯示個人化的資訊列表區塊，就可以選擇僅在服務器端渲染列表組件​​，而在客戶端渲染其餘部分，而不必在服務器上渲染整個頁面，同時獲得了靜態渲染、伺服器渲染的優勢。
+
+![](https://www.patterns.dev/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fddxwdqwkr%2Fimage%2Fupload%2Ff_auto%2Fv1658990025%2Fpatterns.dev%2F42.png&w=3840&q=75)
+
+
+## 結論
+雖然 Edge SSR 可以提升整體效能的能力，但對於非常動態的網站，仍然建議使用完全 rehydration（再水化）的 Client Side Rendering (CSR)，在這些網站中，屏幕上的每個組件都可能根據用戶交互而改變
+
+依據實際情況，有些模式可能比其他模式更合適
+
+<table><thead><tr><th></th><th>Portfolio</th>
+<th>Content</th>
+<th>Storefront</th>
+<th>Social Network</th>
+<th>Immersive</th></tr></thead><tbody><tr><th>Holotype</th>
+<td>Personal Blog</td>
+<td>CNN</td>
+<td>Amazon</td>
+<td>Facebook</td>
+<td>Figma</td></tr><tr><th>Interactivity</th>
+<td>Minimal</td>
+<td>Linked Articles</td>
+<td>Purchase</td>
+<td>Multi-Point, Real-time</td>
+<td>Everything</td></tr><tr><th>Session Depth</th>
+<td>Shallow</td>
+<td>Shallow</td>
+<td>Shallow - Medium</td>
+<td>Extended</td>
+<td>Deep</td></tr><tr><th>Values</th>
+<td>Simplicity</td>
+<td>Discover-ability</td>
+<td>Load Performance</td>
+<td>Dynamicism</td>
+<td>Immersiveness</td></tr><tr><th>Routing</th>
+<td>Server</td>
+<td>Server, Hybrid</td>
+<td>Hybrid, Transitional</td>
+<td>Transitional, Client</td>
+<td>Client</td></tr><tr><th>Rendering</th>
+<td>Static</td>
+<td>Static, SSR</td>
+<td>Static, SSR</td>
+<td>SSR</td>
+<td>CSR</td></tr><tr><th>Hydration</th>
+<td>None</td>
+<td>Progressive, Partial</td>
+<td>Partial, Resumable</td>
+<td>Any</td>
+<td>None (CSR)</td></tr><tr><th>Example Framework</th>
+<td>11ty</td>
+<td>Astro, Elder</td>
+<td>Marko, Qwik, Hydrogen</td>
+<td>Next, Remix</td>
+<td>Create React App</td></tr></tbody></table>

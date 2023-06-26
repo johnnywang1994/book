@@ -43,6 +43,7 @@
 - [matchMedia 瀏覽器相容](https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent)
 - [Preload Prefetch Preconnect 效能優化手段](https://shubo.io/preload-prefetch-preconnect/)
 - [Chrome 用 js set Cookie，只能包含 name, value, expires](https://stackoverflow.com/a/19860331)
+- [session、cookie、token、jwt的不同使用場景](https://juejin.cn/post/7247405681636032570)
 
 ### DOM
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
@@ -65,6 +66,7 @@
 - [Live2d Widget](https://github.com/stevenjoezhang/live2d-widget)
 - [Live2d Model](https://github.com/Eikanya/Live2d-model)
 - [MarioHtml5](https://github.com/robertkleffner/mariohtml5)
+- [Canvas 圖片 Hover 粒子動畫](https://www.youtube.com/watch?v=W78MY7_q_6A)
 
 ### Svg
 - [Lottie 使用介紹](https://juejin.cn/post/7101629986427109383)
