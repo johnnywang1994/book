@@ -68,7 +68,7 @@ const ratioRef = ref(1);
 const canvasRectRef = ref();
 
 const DIAMETER = 30;
-const FORCE_RADIUS = window.innerWidth < 576 ? 300 : 200;
+let FORCE_RADIUS;
 const FORCE_SPEED = 10;
 const RETURN_SPEED = 0.1;
 
@@ -221,6 +221,8 @@ onBeforeUnmount(() => {
 });
 
 onMounted(() => {
+  FORCE_RADIUS = window.innerWidth < 576 ? 300 : 200;
+
   const canvas = canvasRef.value;
   if (canvas) {
     ctxRef.value = canvas.getContext('2d');
