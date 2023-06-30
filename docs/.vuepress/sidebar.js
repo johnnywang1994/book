@@ -297,7 +297,9 @@ const sidebar = {
                 '/articles/daily/中醫/中藥學/10化濕藥.md',
                 '/articles/daily/中醫/中藥學/11祛風濕藥.md',
                 '/articles/daily/中醫/中藥學/12理氣藥.md',
-                '/articles/daily/中醫/中藥學/13活血祛瘀藥.md'
+                '/articles/daily/中醫/中藥學/13活血祛瘀藥.md',
+                '/articles/daily/中醫/中藥學/14消食藥.md',
+                '/articles/daily/中醫/中藥學/15驅蟲藥.md'
               ],
             },
             {

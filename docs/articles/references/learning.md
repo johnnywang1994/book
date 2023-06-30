@@ -249,6 +249,7 @@
 - [Redirect to another page toaster not come](https://github.com/fkhadra/react-toastify/issues/343)
 - [Environment variables are in-lined to next.config.js at build time](https://github.com/vercel/next.js/issues/21888)
 - [Fun With Next.js 13 Server Components](https://dev.to/zenstack/fun-with-nextjs-13-server-components-o37)
+- [Next.js Standalone Output with Docker - example](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
