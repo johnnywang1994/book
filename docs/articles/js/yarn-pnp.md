@@ -49,7 +49,7 @@ $ yarn set version stable
 ```
 接著會發現專案資料夾中出現幾個檔案及修改，大致用途如下：
 - 自動建立 `.yarn/releases/yarn-3.6.0.cjs`：存放 yarn 對應版本的 script
-- 自動建立 `.yarnrc.yml`: 紀錄 yarn 對應版本的 script 位置
+- 自動建立 `.yarnrc.yml`: 紀錄 yarn 對應版本的 script 位置，詳細可用設定可參考[官網文件](https://yarnpkg.com/configuration/yarnrc)
 - 修改 `package.json`: 加入一行 `"packageManager": "yarn@3.6.0"` 紀錄包管理器與版本
 
 ### 安裝依賴！
@@ -60,6 +60,32 @@ $ yarn set version stable
 - 自動建立 `.pnp.loader.mjs`: Yarn 順便裝的 experimental ESM loader，暫時不用鳥他
 
 結束收工，會發現我們完全沒有產生 node_modules 拉～
+
+## 關於 ESM loader
+- [參考討論串 1](https://github.com/yarnpkg/berry/issues/638)
+- [參考討論串 2](https://github.com/yarnpkg/berry/discussions/4044)
+
+
+## Typescript 支援
+由於 Yarn PnP 安裝不會產生 node_modules，也因此在與 typescript 一起使用時，雖然可以正常編譯執行，但在編輯器（VSCode）中會顯示找不到對應模組的 error，可以用以下方式進行處理
+
+### 安裝 Yarn Editor SDKs
+- [SDK 相關官方文件](https://yarnpkg.com/getting-started/editor-sdks)
+這邊以 VSCode 舉例，執行以下指令後會做兩件事：
+- 在專案的 `.yarn/sdks` 中產生當前專案 ts 版本對應的一些 scripts
+- 在專案的 `.vscode` 中產生 `settings.json`, `extensions.json`
+```bash
+$ yarn dlx @yarnpkg/sdks vscode
+```
+
+### 將專案以單獨的一個 VSCode 視窗打開
+由於 VSCode 目前對於 `typescript.tsdk` 的設定，仍然限制只能套用到 root workspace，且並不支援存在於 multi root workspace 的設定中，即使用 multi root workspace 打開，仍會看到以下錯誤：
+```
+This setting cannot be applied in this workspace. It will be applied when you open the containing workspace folder directly.
+```
+所以目前必須在執行上述操作後，將該專案單獨以一個視窗開啟才能正確提示 Typescript 的類型，這是目前使用 Yarn PnP 時的一個痛點，不知道之後 VSCode 團隊會不會把這限制進行調整
+
+
 
 ## 結論 - 實際測試
 筆者實際測試使用 `node:18.4.0-slim` 把一個空的 Vite react app 透過 docker build 出來的 image 大小比較如下：
