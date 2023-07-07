@@ -253,6 +253,7 @@ const sidebar = {
           collapsible: true,
           children: [
             '/articles/daily/中醫/README.md',
+            '/articles/daily/中醫/黃帝內經-素問.md',
             {
               text: '基礎理論',
               collapsible: true,
