@@ -128,6 +128,11 @@ module.exports = {
 <div class="[&:nth-child(3)]:py-0">
   <!-- ... -->
 </div>
+
+<!-- reset html input[type=number] style -->
+<input type="number" class="focus:outline-none focus:ring-0 border-0 [appearance:none] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
+
+<input type="text" className="[&::placeholder]:text-red-500" />
 ```
 
 
