@@ -6,7 +6,12 @@ actions:
   - text: Lets Go! →
     link: /articles/
     type: primary
-footer: Made by johnnywang with ❤️
+footerHtml: true
+footer:
+    Made by johnnywang with ❤️
+    <br>
+    <span>Contact Me:</span>
+    <a href="mailto:wangjohnny1994@gmail.com">wangjohnny1994@gmail.com</a>
 ---
 
 <HomeFeatures />
