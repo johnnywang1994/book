@@ -314,6 +314,7 @@ const sidebar = {
             },
           ],
         },
+        '/articles/daily/2023/think-is-important.md',
         '/articles/daily/2022/the-truth.md',
         '/articles/daily/2022/as-an-observer.md',
         '/articles/daily/2022/leisure-memo.md',
