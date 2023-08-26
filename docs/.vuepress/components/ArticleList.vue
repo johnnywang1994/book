@@ -19,8 +19,8 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
-  text: '生活在現代社會，維持高品質思考的重要性',
-  link: '/articles/daily/2023/think-is-important.html',
+  text: '快速上手 NextJS v13 - Data Fetching, Caching, Revalidating 篇',
+  link: '/articles/js/next13-intro-datafetching.html',
 }, {
   text: "擺脫 Node modules 地獄，擁抱 Yarn Plug'n'Play(PnP)",
   link: '/articles/js/yarn-pnp.html',

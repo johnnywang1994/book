@@ -139,6 +139,12 @@ Be Good, be strong, be yourself, never give up.
 
 ## Side Project
 
+### Browser Image Compressor
+
+  - [Link](https://nodejs-koa-proxy.onrender.com/image-compress.html)
+  - heic2any, browser-image-compression, jszip, FileSaver, Vue.js
+  - created at: 2023-02
+
 ### React Matter Clock
 
   - [Link](https://maju-express.onrender.com/matter-clock/)

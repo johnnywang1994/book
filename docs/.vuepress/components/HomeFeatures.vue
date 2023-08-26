@@ -37,11 +37,12 @@ export default {
             'Nuxtjs 2+years',
             'Nextjs 1+year',
             'JavaScript 4+years',
-            'TypeScript 2+years',
+            'TypeScript 3+years',
             'Webpack 4+years',
+            'Vite 2+years',
             'SCSS 4+years',
             'StyledComponents 1+year',
-            'TailwindCSS 1+year'
+            'TailwindCSS 2+year'
           ],
         },
         {
@@ -50,11 +51,14 @@ export default {
             'Expressjs 3+years',
             'Koajs 2+years',
             'Nodejs 3+years',
+            'ApolloGraphQL 1+year',
+            'ParseServer 1+year',
             'Docker 2+years',
             'Prisma 1+years',
             'MySQL 1+year',
             'MongoDB 0.5+year',
             'Django 0.5+year',
+            'Temporal 1+year',
           ],
         },
         {

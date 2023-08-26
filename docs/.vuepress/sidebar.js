@@ -14,6 +14,7 @@ const sidebar = {
       children: [
         '/articles/js/yarn-pnp.md',
         '/articles/js/next13-intro-approuter.md',
+        '/articles/js/next13-intro-datafetching.md',
         '/articles/js/maju-chat-game.md',
         '/articles/js/script-custom-module.md',
         '/articles/js/tsup-tutorial.md',

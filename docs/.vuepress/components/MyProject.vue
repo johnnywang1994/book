@@ -81,6 +81,13 @@ export default {
         "name" : "MajuPen",
         "tech" : "Reactjs, StyledComponent, @reduxjs/toolkit"
       }, {
+        "des" : "Client Side 圖片壓縮器，純客戶端壓縮，無需上傳至 Server，自動 HEIC 轉 JPG，支援整包資料夾壓縮",
+        "id" : "image-compress",
+        "image" : cdn("/websites/browser-image-compress.png"),
+        "link" : "https://nodejs-koa-proxy.onrender.com/image-compress.html",
+        "name" : "Browser Image Compressor",
+        "tech" : "heic2any, browser-image-compression, jszip, FileSaver, Vue.js"
+      }, {
         "des" : "React Matter Clock",
         "id" : "react-matter-clock",
         "image" : cdn("/websites/react-matter-clock.png"),

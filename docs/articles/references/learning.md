@@ -111,6 +111,9 @@
 - [GraphQL 教學系列](https://ithelp.ithome.com.tw/users/20111997/ironman/1878)
 - [Apollo Client - non-paginated read functions 預設 cache 全拿](https://www.apollographql.com/docs/react/pagination/core-api/#non-paginated-read-functions)
 - [Apollo Client - cache read functions for paginated fields 只拿部分 cache](https://www.apollographql.com/docs/react/pagination/core-api#read-functions-for-paginated-fields)
+- [Apollo Client - remove cache with "cache.evict"](https://stackoverflow.com/a/66713628)
+- [Apollo Client - remove cache with "cache.modify"](https://stackoverflow.com/a/63514349)
+- [Apollo Client - useReactiveVar not rerender UI](https://github.com/apollographql/apollo-client/issues/7896#issuecomment-813061250)
 
 ### Audio
 - [Libsvm-js vector machine (aka SVM) classification and regression](https://www.npmjs.com/package/libsvm-js)
@@ -252,6 +255,7 @@
 - [Environment variables are in-lined to next.config.js at build time](https://github.com/vercel/next.js/issues/21888)
 - [Fun With Next.js 13 Server Components](https://dev.to/zenstack/fun-with-nextjs-13-server-components-o37)
 - [Next.js Standalone Output with Docker - example](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
+- [Next.js with Echartjs unexpect token export](https://github.com/hustcc/echarts-for-react/issues/425)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
@@ -261,6 +265,7 @@
 - [github page 靜態部署教學](https://ithelp.ithome.com.tw/articles/10209553)
 - [Probot - deploy Github APP with Nodejs](https://github.com/probot/probot)
 - [Github Action - Publish Packages](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images)
+- [Github Action - Output(Environment Files)](https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/)
 - [Act - Run your GitHub Actions locally](https://github.com/nektos/act)
 
 

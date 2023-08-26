@@ -1,6 +1,6 @@
 # 快速上手 NextJS v13 - 基礎觀念 AppRouter 篇
 
-<SocialBlock hashtags="javascript,webpack,vue,react,module-federation" />
+<SocialBlock hashtags="javascript,react,Next.js,AppRouter" />
 
 ## 前言
 Hi 大家好，我是 Johnny，這陣子公司同事開始接觸到 Next13 相關的開發，覺得我也是時候來研究下，索性花了幾個小時快速體驗了一下，並將一些我覺得比較重要的特點記錄下來，這篇是我速讀 Next13 官方文件後整理的一個隨性筆記！主要包含 `基礎觀念`, `AppRouter` 的規則等等，`Data Fetching` 會再出一篇介紹，本篇主要專注在 Next13 的新功能、觀念上面。
@@ -31,7 +31,7 @@ module.exports = nextConfig
 ## Server Component VS Client Component
 預設為 `Server Component`，可透過在檔案最上方定義 `use client`, `use server` 明確設定
 ```tsx
-// 預設其實就是...，除了 error handling component
+// 預設其實就是 use server，除了 error handling component
 'use server';
 
 import Image from 'next/image'
@@ -55,6 +55,23 @@ import Image from 'next/image';
 
 // 下面就是 Pages Router 方式的原本寫法，這裡省略 =V=
 ```
+
+### When to use Server and Client Components?
+具體何時該使用 server component, client component 可參考[官方網站](https://nextjs.org/docs/app/building-your-application/rendering/composition-patterns#when-to-use-server-and-client-components)
+
+底下是一個根據官網資訊製作的簡單對照表格，僅供參考
+
+|What do you need to do?|Server Component|Client Component|
+|--|--|--|
+|Fetch data|✅|❌|
+|Access backend resources (directly)|✅|❌|
+|Keep sensitive information on the server (access tokens, API keys, etc)|✅|❌|
+|Keep large dependencies on the server / Reduce client-side JavaScript|✅|❌|
+|Add interactivity and event listeners (onClick(), onChange(), etc)|❌|✅|
+|Use State and Lifecycle Effects (useState(), useReducer(), useEffect(), etc)|❌|✅|
+|Use browser-only APIs|❌|✅|
+|Use custom hooks that depend on state, effects, or browser-only APIs|❌|✅|
+|Use React Class components|❌|✅|
 
 
 ## 什麼是 App Router？
@@ -141,6 +158,8 @@ export default function DashboardLayout({
 - 必須在其中包含 `<html> and <body>` tag，因為 NextJS 並沒有為用戶定義
 - 透過 [`Route Groups`](https://nextjs.org/docs/app/building-your-application/routing/route-groups) 可以建立 `multiple root layout`
 
+> Route(Page, Layout, Route Handler) 可以設定 [Route Segment Config Option](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config) 對路由進行設定調整
+
 
 ## Head（頭?）去哪了？
 過去我們常用 `<Head>` component 幫助我們在頁面中客製化 SEO meta，現在我們可以直接透過 [`metadata object`](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#the-metadata-object) 或 [`generateMetadata function`](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#generatemetadata-function) 定義
@@ -209,6 +228,48 @@ export default function Page() {
 export default function Loading() {
   // You can add any UI inside Loading, including a Skeleton.
   return <LoadingSkeleton />;
+}
+```
+
+
+## Not Found 畫面
+`not-found.tsx` 的簡單範例如下：
+```tsx
+/* app/blog/not-found.tsx */
+import Link from 'next/link'
+
+export default function NotFound() {
+  return (
+    <div>
+      <h2>Not Found</h2>
+      <p>Could not find requested resource</p>
+      <Link href="/">Return Home</Link>
+    </div>
+  )
+}
+```
+
+> 注意點：root 的 `not-found.tsx` (`app/not-found.tsx`) 除了處理已知的 notFound error之外，也會一併匹配處理所有未知路徑錯誤
+
+`not-found` 作為一個 server component 同樣能進行 data fetching
+
+```tsx
+import Link from 'next/link'
+import { headers } from 'next/headers'
+
+export default async function NotFound() {
+  const headersList = headers()
+  const domain = headersList.get('host')
+  const data = await getSiteData(domain)
+  return (
+    <div>
+      <h2>Not Found: {data.name}</h2>
+      <p>Could not find requested resource</p>
+      <p>
+        View <Link href="/blog">all posts</Link>
+      </p>
+    </div>
+  )
 }
 ```
 
@@ -313,7 +374,7 @@ export async function GET(request: Request) {
 }
 ```
 
-<SocialBlock hashtags="javascript,webpack,vue,react,module-federation" />
+<SocialBlock hashtags="javascript,react,Next.js,AppRouter" />
 
 
 ## 結論
