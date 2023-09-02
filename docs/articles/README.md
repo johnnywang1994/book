@@ -17,12 +17,27 @@ Be Good, be strong, be yourself, never give up.
 
 
 ## Main Project List
+詳細專案圖文介紹請[前往這邊瀏覽](/book/project.html)
 
 ### LINE 發票管家 - Line Invoice
 
   - [Link](https://invoice.line.me/)
   - secret...
   - onlined at: 2022-10
+
+### Vue3 Matter Mario Bro
+
+  - [Link](https://johnnywang1994.github.io/p5-game/#/matter-mario)
+  - [Source Code](https://github.com/johnnywang1994/matter-mario)
+  - Vue3.x, Matterjs
+  - created at: 2022-01
+
+### React Eat Snake Game - 復古小遊戲 貪吃蛇
+
+  - [Link](https://maju-express.onrender.com/eat-snake)
+  - Reactjs, Typescript, Canvas
+  - created at: 2023-09
+  - For safety reason, only registered user can create online note
 
 ### MajuChatGame - Real-Time 2D ChatGame
 
@@ -177,13 +192,6 @@ Be Good, be strong, be yourself, never give up.
   - [Source Code](https://github.com/johnnywang1994/vue-pokemon-game)
   - Vue3.x, Javascript, Tiled Map Editor
   - created at: 2022-03
-
-### Vue3 Matter Mario Bro
-
-  - [Link](https://johnnywang1994.github.io/p5-game/#/matter-mario)
-  - [Source Code](https://github.com/johnnywang1994/matter-mario)
-  - Vue3.x, Matterjs
-  - created at: 2022-01
 
 ### Vue3 Angry Bird
 
