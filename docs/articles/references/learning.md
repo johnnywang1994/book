@@ -182,6 +182,7 @@
 
 ## GO
 - [30 天導入 Golang](https://ithelp.ithome.com.tw/users/20092379/ironman/2062)
+- [go 的 [] rune 和 [] byte 區別](https://learnku.com/articles/23411/the-difference-between-rune-and-byte-of-go)
 
 
 ## MongoDB

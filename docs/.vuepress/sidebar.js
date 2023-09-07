@@ -233,6 +233,7 @@ const sidebar = {
         '/articles/memo/youtube-data-api.md',
         '/articles/memo/fb-api-basic.md',
         '/articles/memo/vscode-command.md',
+        '/articles/memo/test-on-simulator.md',
         '/articles/memo/issues.md'
       ],
     },
