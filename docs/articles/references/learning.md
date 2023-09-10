@@ -257,6 +257,8 @@
 - [Fun With Next.js 13 Server Components](https://dev.to/zenstack/fun-with-nextjs-13-server-components-o37)
 - [Next.js Standalone Output with Docker - example](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
 - [Next.js with Echartjs unexpect token export](https://github.com/hustcc/echarts-for-react/issues/425)
+- [Next13 with Apollo Client](https://www.apollographql.com/blog/apollo-client/next-js/how-to-use-apollo-client-with-next-js-13/)
+
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
@@ -305,6 +307,7 @@
 - [Render](https://render.com/)
 - [Cyclic](https://www.cyclic.sh/)
 - [GCP - cloud run cloud SQL demo](https://github.com/GoogleCloudPlatform/serverless-expeditions/tree/main/cloud-run-cloud-sql)
+- [Terraform 自動化的基礎架構介紹](https://medium.com/@chihsuan/terraform-%E8%87%AA%E5%8B%95%E5%8C%96%E7%9A%84%E5%9F%BA%E7%A4%8E%E6%9E%B6%E6%A7%8B%E4%BB%8B%E7%B4%B9-f827e8975e98)
 
 
 ## Code tracing, security
