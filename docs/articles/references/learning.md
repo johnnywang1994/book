@@ -32,7 +32,8 @@
 - [用 JavaScript 做數獨](https://www.gushiciku.cn/pl/ghAn/zh-tw)
 - [手寫 call, apply, bind 方法](https://juejin.cn/post/7128233572380442660)
 - [在 Browser 下載檔案並壓縮為 Zip](https://huynvk.dev/blog/download-files-and-zip-them-in-your-browsers-using-javascript)
-
+- [ES2016 - ES2023](https://juejin.cn/post/7206302271079989308)
+- [What, Why and How Static Initialization Blocks](https://dev.to/devsmitra/what-why-and-how-javascript-static-initialization-blocks-4n41)
 
 ### Typescript
 - [TypeScript 教程](https://www.tutorialsteacher.com/typescript)
@@ -46,6 +47,7 @@
 - [Preload Prefetch Preconnect 效能優化手段](https://shubo.io/preload-prefetch-preconnect/)
 - [Chrome 用 js set Cookie，只能包含 name, value, expires](https://stackoverflow.com/a/19860331)
 - [session、cookie、token、jwt的不同使用場景](https://juejin.cn/post/7247405681636032570)
+- [Native Web Share Files](https://web.dev/patterns/files/share-files/)
 
 ### DOM
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
@@ -144,6 +146,7 @@
 - [CSS 樣式架構方案](https://juejin.cn/post/7193514569552101432)
 - [CSS 100vh in ISO Safari overlapping handling](https://dev-tips.com/css/overlapping-bottom-navigation-bar-despite-100vh-in-ios-safari)
 - [Viewport Units 詳細講解 - lvh, lvw, svh, svw, dvh, dvw](https://web.dev/viewport-units/)
+- [支援在 JS 中獲取 Android, IOS 裝置瀏覽器 safe area](https://benfrain.com/how-to-get-the-value-of-phone-notches-environment-variables-env-in-javascript-from-css/)
 
 ### Animation
 - [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
@@ -233,6 +236,7 @@
 - [React useEffect 深入重複調用問題](https://juejin.cn/post/6844904117303934989)
 - [有react fiber，为什么不需要vue fiber](https://juejin.cn/post/7077545184807878692)
 - [React18 — useSyncExternalStore](https://milkmidi.medium.com/react-18-usesyncexternalstore-a427bf82c198)
+- [React Suspense 運作原理](https://cloud.tencent.com/developer/article/2190722)
 
 ### 實作
 - [Import Svg into Next.js](https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f)
@@ -258,6 +262,8 @@
 - [Next.js Standalone Output with Docker - example](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
 - [Next.js with Echartjs unexpect token export](https://github.com/hustcc/echarts-for-react/issues/425)
 - [Next13 with Apollo Client](https://www.apollographql.com/blog/apollo-client/next-js/how-to-use-apollo-client-with-next-js-13/)
+- [Cannot pass objects to <Trans> with React 18 type definitions](https://github.com/i18next/react-i18next/issues/1483#issuecomment-1213024223)
+- [Next13 app dir with I18next](https://locize.com/blog/next-13-app-dir-i18n/)
 
 
 ## Webpack

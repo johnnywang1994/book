@@ -78,6 +78,7 @@ const sidebar = {
           text: 'Javascript',
           collapsible: true,
           children: [
+            '/articles/memo/js/rspack.md',
             '/articles/memo/js/ts-v5-decorators.md',
             '/articles/memo/js/sequelize-learn.md',
             '/articles/memo/js/es2022.md',
@@ -316,6 +317,7 @@ const sidebar = {
             },
           ],
         },
+        '/articles/daily/2023/happiness.md',
         '/articles/daily/2023/think-is-important.md',
         '/articles/daily/2022/the-truth.md',
         '/articles/daily/2022/as-an-observer.md',
