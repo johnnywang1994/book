@@ -41,6 +41,8 @@
 - [Typescript Decorator](https://oldmo860617.medium.com/%E5%8D%81%E5%88%86%E9%90%98%E5%B8%B6%E4%BD%A0%E4%BA%86%E8%A7%A3-typescript-decorator-48c2ae9e246d)
 - [Typescript Decorators Demo](https://gist.github.com/remojansen/16c661a7afd68e22ac6e)
 - [基於Typescript 實現 IoC & DI](https://mp.weixin.qq.com/s/C4OQ9VK6Hu3KqpBVz8YrHg)
+- [Linting with Type Information](https://typescript-eslint.io/linting/typed-linting/)
+
 
 ### Web API
 - [matchMedia 瀏覽器相容](https://stackoverflow.com/questions/56466261/matchmedia-addlistener-marked-as-deprecated-addeventlistener-equivalent)
@@ -102,6 +104,9 @@
 - [Express爬蟲](https://www.jianshu.com/p/b915732b7ddb)
 - [Express&Koa2 中間層實踐的差別](https://juejin.cn/post/6844903968041091080)
 - [Parse Server 後端快速開發框架-兼容 GraphQL](https://parseplatform.org/)
+
+### Redis
+- [Redis 常見快取方案](https://juejin.cn/post/7274146202496614458)
 
 ### Babel
 - [Babel 詳細入門解說](https://juejin.im/post/5e477139f265da574c566dda)
@@ -262,9 +267,9 @@
 - [Next.js Standalone Output with Docker - example](https://github.com/vercel/next.js/tree/canary/examples/with-docker)
 - [Next.js with Echartjs unexpect token export](https://github.com/hustcc/echarts-for-react/issues/425)
 - [Next13 with Apollo Client](https://www.apollographql.com/blog/apollo-client/next-js/how-to-use-apollo-client-with-next-js-13/)
-- [Cannot pass objects to <Trans> with React 18 type definitions](https://github.com/i18next/react-i18next/issues/1483#issuecomment-1213024223)
+- [Cannot pass objects to \<Trans\> with React 18 type definitions](https://github.com/i18next/react-i18next/issues/1483#issuecomment-1213024223)
 - [Next13 app dir with I18next](https://locize.com/blog/next-13-app-dir-i18n/)
-
+- [Next13 use @svgr/webpack](https://github.com/vercel/next.js/issues/48177#issuecomment-1557354538)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)

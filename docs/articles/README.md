@@ -16,7 +16,8 @@ Be Good, be strong, be yourself, never give up.
 <Maju-App />
 
 
-## Main Work Project(exclude 30^ SPA event pages)
+## Main Work Project
+另有 25 個以上 SPA 轉蛋動畫活動網頁在此省略
 ### LINE 發票管家 - Line Invoice
 
   - [Link](https://invoice.line.me/)

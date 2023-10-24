@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '從 Mock Service Worker 源碼中學習',
+  link: '/articles/js/learn-from-msw-source-code.html',
+}, {
   text: '快速上手 NextJS v13 - Data Fetching, Caching, Revalidating 篇',
   link: '/articles/js/next13-intro-datafetching.html',
 }, {
