@@ -68,6 +68,12 @@ Be Good, be strong, be yourself, never give up.
   - created at: 2023-05
   - For safety reason, only registered user can create online note
 
+### React WebRTC Realtime Chatroom
+
+  - [Link](https://maju-express.onrender.com/meet/)
+  - React18, Typescript, Socket.io, Peer.js
+  - created at: 2022-06
+
 ### MajuMD - Real-Time Markdown Editor
 
   - [Link](https://majumd.maju-web.club/)
@@ -93,12 +99,6 @@ Be Good, be strong, be yourself, never give up.
   - [Link](https://pen.maju-web.club/local)
   - Reactjs, StyledComponent, @reduxjs/toolkit
   - created at: 2021-8
-
-### React WebRTC Realtime Chatroom
-
-  - [Link](https://maju-express.onrender.com/meet/)
-  - React18, Typescript, Socket.io, Peer.js
-  - created at: 2022-06
 
 ### Single Page Chatroom
 
@@ -163,6 +163,12 @@ Be Good, be strong, be yourself, never give up.
 
 
 ## Side Project
+
+### Web Scan Translator
+
+  - [Link](https://nodejs-koa-proxy.onrender.com/scan-translator)
+  - Tesseract.js, web stream, React.js
+  - created at: 2023-10
 
 ### Browser Image Compressor
 

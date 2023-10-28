@@ -95,6 +95,13 @@ export default {
         "name" : "Browser Image Compressor",
         "tech" : "heic2any, browser-image-compression, jszip, FileSaver, Vue.js"
       }, {
+        "des" : "網頁掃描文字翻譯器，透過 Google Translate 翻譯文字內容",
+        "id" : "react-web-scan-translator",
+        "image" : cdn("/websites/web-scan-translator.png"),
+        "link" : "https://nodejs-koa-proxy.onrender.com/scan-translator",
+        "name" : "Web Scan Translator",
+        "tech" : "React.js18, WebStream, Tesseract.js, Google Translate"
+      }, {
         "des" : "MajuMD is a real-time Markdown Editor created by Reactjs, Koajs, Prisma",
         "id" : "koa-majumd",
         "image" : cdn("/websites/majumd.png"),
