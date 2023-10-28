@@ -377,6 +377,121 @@ export async function GET(request: Request) {
 <SocialBlock hashtags="javascript,react,Next.js,AppRouter" />
 
 
+## Server Action([v14.0.0](https://github.com/vercel/next.js/releases/tag/v14.0.0) 更新為預設支援)
+在 v13 時 `Server Action` 處於 experiment 狀態，到了 v14 後移除了 experiment 開關，可以直接在 v14 中使用了
+
+可以在兩個地方定義 `Server Action`
+1. 在需要使用的 Server Component 中直接定義並使用（無法在 Client Component 中定義）
+2. 在獨立的檔案中定義，並在 Client/Server Component 中引入使用
+
+- Server Component 使用
+定義一個 async function，並在其中標記 `use server`，確保該 function 只在 server 環境被調用
+```js
+// app/page.js
+export default function ServerComponent() {
+  async function myAction() {
+    'use server'
+    // ...
+  }
+}
+```
+
+- Client Component 使用
+在 client 中有 `import`, `props` 兩種方式可以使用
+**Import**
+在獨立檔案開頭定義 `use server`，則在該檔案中 export 的 function 都會被視為 `Server Action`，也因此可以在一個檔案中定義多個 `Server Action`
+```js
+// app/actions.js
+'use server'
+
+export async function myAction() {
+  // ...
+}
+```
+接著在 Client Component 中引入使用即可
+```js
+// app/my-client-component.js
+'use client'
+
+import { myAction } from './actions'
+
+export default function ClientComponent() {
+  return (
+    <form action={myAction}>
+      <button type="submit">Add to Cart</button>
+    </form>
+  )
+}
+```
+
+
+**Props**
+也可以把 `Server Action` 作為 props 傳遞給 client component 使用
+```js
+<ClientComponent updateItem={updateItem} />
+```
+```js
+'use client'
+
+export default function ClientComponent({ myAction }) {
+  return (
+    <form action={myAction}>
+      <input type="text" name="name" />
+      <button type="submit">Update Item</button>
+    </form>
+  )
+}
+```
+
+### Binding Arguments
+可以透過 `bind` 把參數掛到 `Server Action` 上，提升靈活性，Client、Server Component 都可以這樣操作
+
+```js
+'use client'
+
+import { updateUser } from './actions'
+
+export function UserProfile({ userId }) {
+  // 綁定 userId 到 updateUser 參數中
+  const updateUserWithId = updateUser.bind(null, userId)
+  return (
+    <form action={updateUserWithId}>
+      <input type="text" name="name" />
+      <button type="submit">Update User Name</button>
+    </form>
+  )
+}
+```
+這樣在我們的 Server Action 中就可以額外拿到 `userId`
+```js
+'use server'
+
+export async function updateUser(userId, formData) {
+  // ...
+}
+```
+
+### Invocation 調用觸發時機
+可以在以下場景調用 Server Action
+- 使用 form `action`, `formAction`
+- 使用 `startTransition`，這個方式會 disable `Progressive Enhancement`
+
+### Progressive Enhancement
+Server Action 的 `Progressive Enhancement` 機制能夠讓 `<form>` 元素在具備 Javascript 執行環境下依然能夠正常運作
+
+### Size Limit
+預設情況下，Server Action 可傳遞的 request body 為 1MB，如果需要調整可透過如下方式在 `next.config.js` 進行修改
+```js
+module.exports = {
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '2mb',
+    },
+  },
+}
+```
+
+
 ## 結論
 這篇不知不覺又打了有點長，但這次 v13 真的很多新觀念，篇幅上稍微變得很長還請大家諒解，不過其實這樣還沒講完 XD，還有 `Data Fetching` 的部分就留待下一篇紀錄拉～
 
