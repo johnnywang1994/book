@@ -50,6 +50,10 @@
 - [Chrome 用 js set Cookie，只能包含 name, value, expires](https://stackoverflow.com/a/19860331)
 - [session、cookie、token、jwt的不同使用場景](https://juejin.cn/post/7247405681636032570)
 - [Native Web Share Files](https://web.dev/patterns/files/share-files/)
+- [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
+- [MessageChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel)
+- [BroadcastChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
+
 
 ### DOM
 - [DOM 監聽屬性變化](https://stackoverflow.com/questions/41424989/javascript-listen-for-attribute-change)
