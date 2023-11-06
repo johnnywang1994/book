@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _,d as c}from"./app.5636a2db.js";const o={},s=c("p",null,"\u300A\u8109\u7ECF\u300B\u300A\u4F24\u5BD2\u8BBA\u300B\u300A\u795E\u519C\u767E\u8349\u300B\u300A\u533B\u6797\u6539\u9519\u300B",-1),n=[s];function r(a,l){return t(),_("div",null,n)}const f=e(o,[["render",r],["__file","\u5176\u4ED6.html.vue"]]);export{f as default};
