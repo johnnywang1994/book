@@ -428,8 +428,32 @@ function showOut() {
   })
 }
 
+// dynamic import live2d scripts
+function loadLive2d() {
+  return new Promise((resolve) => {
+    const id = 'live2dcubis';
+    if (!!document.getElementById(id)) resolve();
+    const script = document.createElement('script');
+    const script2 = document.createElement('script');
+    script.id = id;
+
+    let count = 0;
+    const load = () => {
+      count++;
+      if (count === 2) resolve();
+    };
+    script.onload = load();
+    script2.onload = load();
+    script.src = '/book/live2dcubismcore.min.js';
+    script2.src = '/book/live2d-bundle-v1.0.js';
+    document.head.appendChild(script);
+    document.head.appendChild(script2);
+  })
+}
+
 async function initFromQuery() {
   const { project, assist } = route.query
+  await loadLive2d();
   if (state.assists[project] && state.assists[project].includes(assist)) {
     state.project = project
     state.assist = assist

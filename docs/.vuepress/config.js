@@ -1,57 +1,73 @@
-import { defineUserConfig, defaultTheme } from 'vuepress'
-import path from 'path'
+import { defineUserConfig, defaultTheme } from "vuepress";
+import path from "path";
 
-import { viteBundler } from '@vuepress/bundler-vite';
-import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
-import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
-import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
-import { searchPlugin } from '@vuepress/plugin-search'
-import MermaidPlugin from './plugins/mermaid'
-import sidebarConfig from './sidebar'
-import { description } from '../../package'
+import { viteBundler } from "@vuepress/bundler-vite";
+import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
+import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
+import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
+import { searchPlugin } from "@vuepress/plugin-search";
+import MermaidPlugin from "./plugins/mermaid";
+import sidebarConfig from "./sidebar";
+import { description } from "../../package";
 
 export default defineUserConfig({
-  base: '/book/',
-  lang: 'zh-TW',
-  title: 'Johnny Wang Blog',
+  base: "/book/",
+  lang: "zh-TW",
+  title: "Johnny Wang Blog",
   description: description,
 
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['meta', { name: 'og:image', content: 'https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/2022/04/learn-to-code.jpeg' }],
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
+    [
+      "meta",
+      {
+        name: "og:image",
+        content:
+          "https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/2022/04/learn-to-code.jpeg",
+      },
+    ],
     // gtag.js
-    ['script', { src: 'https://www.googletagmanager.com/gtag/js?id=G-B1QJSJW3P3' }],
+    // already load with GTM tag
+    // [
+    //   "script",
+    //   { src: "https://www.googletagmanager.com/gtag/js?id=G-B1QJSJW3P3" },
+    // ],
     // google adsense
-    ['script', { src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5050343387449103', crossorigin: 'anonymous' }],
-    // live2d
-    // ['script', { src: 'https://unpkg.com/core-js-bundle@3.6.1/minified.js' }],
-    ['script', { src: '/book/live2dcubismcore.min.js' }],
-    ['script', { src: '/book/live2d-bundle-v1.0.js' }],
+    [
+      "script",
+      {
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5050343387449103",
+        crossorigin: "anonymous",
+      },
+    ],
   ],
 
   bundler: viteBundler({}),
   // theme: '@vuepress/theme-default',
   theme: defaultTheme({
-    logo: 'https://vuejs.org/images/logo.png',
-    home: '/',
-    repo: 'johnnywang1994/book',
-    repoLabel: 'johnnywang/book',
+    logo: "https://vuejs.org/images/logo.png",
+    home: "/",
+    repo: "johnnywang1994/book",
+    repoLabel: "johnnywang/book",
     editLink: false,
     lastUpdated: true,
     navbar: [
       {
-        text: 'Articles',
-        link: '/articles/',
+        text: "Articles",
+        link: "/articles/",
       },
       {
-        text: 'Project',
-        link: '/project/',
+        text: "Project",
+        link: "/project/",
       },
       {
-        text: 'Live2d',
-        link: '/live2d/',
+        text: "Live2d",
+        link: "/live2d/",
       },
     ],
     sidebarDepth: 1,
@@ -67,17 +83,17 @@ export default defineUserConfig({
     backToTopPlugin(),
     mediumZoomPlugin(),
     registerComponentsPlugin({
-      componentsDir: path.resolve(__dirname, './components'),
+      componentsDir: path.resolve(__dirname, "./components"),
     }),
     searchPlugin({
       locales: {
-        '/': {
-          placeholder: 'Search',
+        "/": {
+          placeholder: "Search",
         },
       },
       searchMaxSuggestions: 10,
-      isSearchable: (page) => page.path !== '/',
+      isSearchable: (page) => page.path !== "/",
     }),
     MermaidPlugin(),
-  ]
-})
+  ],
+});
