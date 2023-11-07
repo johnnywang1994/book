@@ -1,9 +1,11 @@
 import { defineUserConfig, defaultTheme } from "vuepress";
 import path from "path";
 
+import react from "@vitejs/plugin-react";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { searchPlugin } from "@vuepress/plugin-search";
+import ReactPlugin from "vuepress-plugin-react";
 import MermaidPlugin from "./plugins/mermaid";
 import sidebarConfig from "./sidebar";
 import { description } from "../../package";
@@ -46,7 +48,9 @@ export default defineUserConfig({
   ],
 
   bundler: viteBundler({
-    viteOptions: {},
+    viteOptions: {
+      plugins: [react()],
+    },
     vuePluginOptions: {},
   }),
   // theme: '@vuepress/theme-default',
@@ -94,5 +98,9 @@ export default defineUserConfig({
       isSearchable: (page) => page.path !== "/",
     }),
     MermaidPlugin(),
+    ReactPlugin({
+      name: "UseReact",
+      componentsDir: path.resolve(__dirname, "./components-react"),
+    }),
   ],
 });

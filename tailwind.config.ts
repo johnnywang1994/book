@@ -16,6 +16,7 @@ const config: Config = {
   },
   content: [
     "./docs/.vuepress/components/**/*.vue",
+    "./docs/.vuepress/components-react/**/*.jsx",
     "./docs/.vuepress/layout/**/*.vue",
     "./docs/.vuepress/styles/**/*.scss",
   ],
