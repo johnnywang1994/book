@@ -14,4 +14,4 @@ footer:
     <a href="mailto:wangjohnny1994@gmail.com">wangjohnny1994@gmail.com</a>
 ---
 
-<HomeFeatures />
+<Home-Features />

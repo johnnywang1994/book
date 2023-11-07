@@ -2,4 +2,4 @@
 layout: DefaultLayout
 ---
 
-<MyProject />
+<Project-MyProject />

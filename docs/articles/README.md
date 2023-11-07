@@ -1,6 +1,6 @@
 # 關於 Johnny
 
-<MatterJohnny />
+<Article-MatterJohnny />
 
 ## 簡介
 
@@ -276,4 +276,4 @@ Be Good, be strong, be yourself, never give up.
   - Vue2.x, Instascan
   - created at: 2018-12
 
-<RedPill />
+<Article-RedPill />

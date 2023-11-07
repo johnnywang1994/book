@@ -1,4 +1,4 @@
 # 文章清單
 
-<HomeBackground />
-<ArticleList />
+<Article-HomeBackground />
+<Article-ArticleList />

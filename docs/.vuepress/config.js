@@ -2,8 +2,6 @@ import { defineUserConfig, defaultTheme } from "vuepress";
 import path from "path";
 
 import { viteBundler } from "@vuepress/bundler-vite";
-import { backToTopPlugin } from "@vuepress/plugin-back-to-top";
-import { mediumZoomPlugin } from "@vuepress/plugin-medium-zoom";
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { searchPlugin } from "@vuepress/plugin-search";
 import MermaidPlugin from "./plugins/mermaid";
@@ -47,7 +45,10 @@ export default defineUserConfig({
     ],
   ],
 
-  bundler: viteBundler({}),
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {},
+  }),
   // theme: '@vuepress/theme-default',
   theme: defaultTheme({
     logo: "https://vuejs.org/images/logo.png",
@@ -77,11 +78,9 @@ export default defineUserConfig({
   /**
    * Apply plugins
    *
-   * Ref：https://v2.vuepress.vuejs.org/reference/plugin/back-to-top.html#install
+   * Ref：https://v2.vuepress.vuejs.org/zh/reference/plugin/register-components.html
    */
   plugins: [
-    backToTopPlugin(),
-    mediumZoomPlugin(),
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, "./components"),
     }),

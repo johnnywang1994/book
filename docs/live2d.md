@@ -2,4 +2,4 @@
 layout: DefaultLayout
 ---
 
-<BoardGirl position="relative" size="screen" />
+<Live2d-BoardGirl position="relative" size="screen" />
