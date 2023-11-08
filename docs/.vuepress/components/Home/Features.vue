@@ -35,14 +35,14 @@ export default {
             'Vuejs 4+years',
             'Reactjs 3+years',
             'Nuxtjs 2+years',
-            'Nextjs 1+year',
-            'JavaScript 4+years',
-            'TypeScript 3+years',
+            'Nextjs 2+year',
+            'JavaScript 5+years',
+            'TypeScript 4+years',
             'Webpack 4+years',
-            'Vite 2+years',
+            'Vite 3+years',
             'SCSS 4+years',
             'StyledComponents 1+year',
-            'TailwindCSS 2+year'
+            'TailwindCSS 3+year'
           ],
         },
         {
@@ -71,6 +71,10 @@ export default {
             {
               content: '[NPM] script-custom-module',
               href: 'https://www.npmjs.com/package/script-custom-module',
+            },
+            {
+              content: '[NPM] vuepress-plugin-react',
+              href: 'https://www.npmjs.com/package/vuepress-plugin-react',
             },
             {
               content: '[NPM] maju-ui',

@@ -125,6 +125,12 @@ Be Good, be strong, be yourself, never give up.
   - esmodule for using React, Vue, Typescript compiled in browser
   - created at: 2023-04-01
 
+### vuepress-plugin-react
+
+  - [Link](https://www.npmjs.com/package/vuepress-plugin-react)
+  - A Vuepress Plugin for rendering React component in Vuepress markdown on top of Vite Bundler, typed with JsDoc.
+  - created at: 2023-11-08
+
 ### mockserver-browser-admin
 
   - [Link](https://github.com/johnnywang1994/mockserver-browser-admin)

@@ -1,19 +1,19 @@
 /**
  * Client app enhancement file.
  *
- * https://v2.vuepress.vuejs.org/advanced/cookbook/usage-of-client-app-enhance.html
+ * https://v2.vuepress.vuejs.org/guide/configuration.html#client-config-file
  */
-import { defineClientConfig } from '@vuepress/client'
-import VueSocialSharing from 'vue-social-sharing';
-import setGtag from './gtag';
-import DefaultLayout from './layout/DefaultLayout.vue';
+import { defineClientConfig } from "@vuepress/client";
+import VueSocialSharing from "vue-social-sharing";
+import setGtag from "./gtag";
+import DefaultLayout from "./layout/DefaultLayout.vue";
 
 export default defineClientConfig({
   enhance({ app, router, siteData }) {
     // ...apply enhancements for the site.
     app.use(VueSocialSharing);
 
-    if (typeof window === 'object') {
+    if (typeof window === "object") {
       setGtag();
     }
   },
@@ -22,7 +22,7 @@ export default defineClientConfig({
   },
   setup() {},
   rootComponents: [],
-})
+});
 
 // export default ({
 //   app, // the version of Vue being used in the VuePress app
