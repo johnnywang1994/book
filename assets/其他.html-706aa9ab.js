@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _,d as c}from"./app-da643460.js";const o={},s=c("p",null,"《脉经》《伤寒论》《神农百草》《医林改错》",-1),n=[s];function r(a,l){return t(),_("div",null,n)}const f=e(o,[["render",r],["__file","其他.html.vue"]]);export{f as default};

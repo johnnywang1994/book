@@ -1,0 +1,1 @@
+import{_ as a,o as r,c as s,d as e,e as t}from"./app-da643460.js";const c={},n=e("h1",{id:"prisma-學習筆記",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#prisma-學習筆記","aria-hidden":"true"},"#"),t(" Prisma 學習筆記")],-1),o=[n];function i(_,d){return r(),s("div",null,o)}const m=a(c,[["render",i],["__file","prisma-learn.html.vue"]]);export{m as default};
