@@ -216,7 +216,7 @@ const sidebar = {
             {
               text: "Render Patterns",
               collapsible: true,
-              children: ["/articles/memo/patterns/render/introduction.md"],
+              children: ["/articles/memo/patterns/render/react.md"],
             },
           ],
         },
