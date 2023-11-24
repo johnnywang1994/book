@@ -9,6 +9,7 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
+        "/articles/js/react-rsc-without-nextjs.md",
         "/articles/js/vuepress-plugin-react.md",
         "/articles/js/learn-from-msw-source-code.md",
         "/articles/js/yarn-pnp.md",

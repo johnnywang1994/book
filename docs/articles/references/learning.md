@@ -246,6 +246,8 @@
 - [有react fiber，为什么不需要vue fiber](https://juejin.cn/post/7077545184807878692)
 - [React18 — useSyncExternalStore](https://milkmidi.medium.com/react-18-usesyncexternalstore-a427bf82c198)
 - [React Suspense 運作原理](https://cloud.tencent.com/developer/article/2190722)
+- [React Server Component - Demo](https://github.com/reactjs/server-components-demo/tree/main)
+- [How React Server Component Work?](https://www.plasmic.app/blog/how-react-server-components-work)
 
 ### 實作
 - [Import Svg into Next.js](https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f)

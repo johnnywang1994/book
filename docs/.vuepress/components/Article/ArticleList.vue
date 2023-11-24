@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: 'Create a React Server Components Project without NextJS - 製作一個不依賴 NextJS 的 React Server Components 專案',
+  link: '/articles/js/react-rsc-without-nextjs.html',
+}, {
   text: '如何在 Vuepress 裡快樂寫 React',
   link: '/articles/js/vuepress-plugin-react.html',
 }, {
