@@ -229,6 +229,7 @@
 - [Vue Test Utils](https://ithelp.ithome.com.tw/articles/10275591)
 - [Vue Test Hooks](https://github.com/vueuse/vueuse/blob/main/packages/.test/mount.ts)
 - [Awesome Vite - templates](https://github.com/vitejs/awesome-vite#templates)
+- [Vue3 directive, nav guard 權限控制範例](https://muki.tw/tech/vue/vue-custom-directive-roles-permission/)
 
 
 ## React
