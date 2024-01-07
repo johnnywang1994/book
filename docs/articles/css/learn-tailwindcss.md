@@ -20,7 +20,7 @@ $ npx tailwindcss init
 module.exports = {
   content: [
     './index.html',
-    './src/**/*.{vue,js,ts,jsx,tsx}',
+    './src/**/*.{vue,js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {},
@@ -441,13 +441,21 @@ const tailwindcssSafeArea = require('tailwindcss-safe-area');
 const tailwindForms = require('@tailwindcss/forms');
 const tailwindAspectRatio = require('@tailwindcss/aspect-ratio');
 
+const defaultFontFamily = [
+  "-apple-system",
+  "BlinkMacSystemFont",
+  "Segoe UI",
+  "Helvetica Neue",
+  "Arial",
+  "sans-serif",
+];
+
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['PingFang TC', 'ui-sans-serif', 'system-ui'],
+      sans: defaultFontFamily,
     },
     fontSize: {
       xs: ['0.625rem', '1rem'],
@@ -524,5 +532,11 @@ module.exports = {
     extend: {},
   },
   plugins: [tailwindcssSafeArea, tailwindForms, tailwindAspectRatio],
+  // //-- if used with 3rd party UI component library
+  // corePlugins: {
+  //   preflight: false,
+  // },
+  // //-- if tailwind is the main custom css system for you in project
+  // important: true,
 };
 ```

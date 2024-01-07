@@ -33,7 +33,7 @@ export default {
           title: 'Frontend Development',
           details: [
             'Vuejs 4+years',
-            'Reactjs 3+years',
+            'Reactjs 4+years',
             'Nuxtjs 2+years',
             'Nextjs 2+year',
             'JavaScript 5+years',
@@ -59,6 +59,7 @@ export default {
             'MongoDB 0.5+year',
             'Django 0.5+year',
             'Temporal 1+year',
+            'ChatGPT API 0.5+year'
           ],
         },
         {
@@ -67,6 +68,10 @@ export default {
             {
               content: '[NPM] jspdf-html2canvas',
               href: 'https://www.npmjs.com/package/jspdf-html2canvas',
+            },
+            {
+              content: 'Maju GPT UI',
+              href: 'https://github.com/johnnywang1994/maju-gpt-ui',
             },
             {
               content: '[NPM] script-custom-module',

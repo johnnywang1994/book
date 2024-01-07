@@ -47,6 +47,12 @@ Be Good, be strong, be yourself, never give up.
 ## Private Project
 詳細專案圖文介紹請[前往這邊瀏覽](/book/project.html)
 
+### Maju GPT UI
+
+  - [Link](https://public-gpt.maju-web.club/)
+  - Nextjs, Typescript, OpenAI api
+  - created at: 2024-01
+
 ### Vue3 Matter Mario Bro
 
   - [Link](https://johnnywang1994.github.io/p5-game/#/matter-mario)
@@ -81,12 +87,6 @@ Be Good, be strong, be yourself, never give up.
   - created at: 2023-04
   - For safety reason, only registered user can create online note
 
-### MajuBook
-
-  - [Link](https://majubook.maju-web.club/)
-  - Nextjs, Typescript, Prisma, Koa.js
-  - created at: 2022-10
-
 ### MajuPen - Plus
 
   - [Vue Link](https://pen.maju-web.club/plus?cacheId=default)
@@ -117,6 +117,12 @@ Be Good, be strong, be yourself, never give up.
 
   - [Link](https://www.npmjs.com/package/jspdf-html2canvas)
   - jspdf, html2canvas
+  - created at: 2019-11
+
+### maju-gpt-ui
+
+  - [Link](https://github.com/johnnywang1994/maju-gpt-ui)
+  - free ChatGPT UI
   - created at: 2019-11
 
 ### script-custom-module

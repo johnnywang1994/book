@@ -53,6 +53,7 @@
 - [WebXR Device API](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 - [MessageChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel)
 - [BroadcastChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
+- [WebAuthn 無密碼驗證-網頁上使用指紋、安全金鑰來認證](https://noob.tw/webauthn/)
 
 
 ### DOM
@@ -100,6 +101,8 @@
 - [yarn & npm 指令對照表](https://yarnpkg.com/en/docs/migrating-from-npm)
 - [Renovate - Automated dependency updates](https://docs.renovatebot.com/)
 - [Renovate - postupgradetasks 解決 dependency 衝突問題](https://docs.renovatebot.com/configuration-options/#postupgradetasks)
+- [pnpm 安裝 vue 時使用 shamefully-hoist，修正 node_modules 安裝依賴找不到 module 的問題](https://pnpm.io/npmrc#shamefully-hoist)
+
 
 ### Koa2
 - [Koa2 實戰總結教學](https://juejin.cn/post/6952665400890884127)
@@ -142,6 +145,7 @@
 
 ### Prisma
 - [Query by a relation exists or not](https://github.com/prisma/prisma/discussions/2772)
+- [SQLite implement "createMany"](https://github.com/prisma/prisma/issues/10710#issuecomment-1198906656)
 
 ## CSS
 - [CSS Trick](https://css-tricks.com/)
@@ -170,6 +174,7 @@
 - [Patching Vite HMR with Tailwind-JIT(old explain of touching files in Vite)](https://mohd.dev/blog/2021/12/patching-vite-hmr-to-work-with-tailwind-jit.html)
 - [Gulp with tailwindcss](https://github.com/lazymozek/gulp-with-tailwindcss/blob/main/gulpfile.js)
 - [Disable preflight feature for React Antd](https://dev.to/fabiobiondi/react-antd-and-tailwind-fix-css-conflicts-5542)
+- [TailwindCSS v3.3.2 fix "too mant open files" issue](https://www.reddit.com/r/nextjs/comments/16bk7xj/error_emfile_too_many_open_files_tailwind/)
 
 ### SCSS
 - [Sass parent selector](https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/)
@@ -249,6 +254,8 @@
 - [React Suspense 運作原理](https://cloud.tencent.com/developer/article/2190722)
 - [React Server Component - Demo](https://github.com/reactjs/server-components-demo/tree/main)
 - [How React Server Component Work?](https://www.plasmic.app/blog/how-react-server-components-work)
+- [React Server Component 實作教學範例](https://github.com/reactwg/server-components/discussions/5)
+
 
 ### 實作
 - [Import Svg into Next.js](https://frontend-digest.com/how-to-import-svgs-into-nextjs-8ec6100e613f)
@@ -259,6 +266,7 @@
 - [React I18n - Trans component 在字串中插入自定義組件](https://react.i18next.com/latest/trans-component)
 - [useImperativeHandle 與子組件互動](https://z3388638.medium.com/react-hooks-%E4%BD%BF%E7%94%A8-useimperativehandle-%E4%BE%86%E8%B7%9F%E5%AD%90%E5%85%83%E4%BB%B6%E4%BA%92%E5%8B%95-2b543bec3e8a)
 - [Framer-Motion 動態元素高度動畫](https://github.com/framer/motion/discussions/1884)
+- [Zustand computed getter 討論](https://github.com/pmndrs/zustand/issues/132)
 
 
 ## Nextjs
@@ -305,6 +313,7 @@
 - [lightweight DNS server - dnsmasq](https://stackoverflow.com/questions/7473939/iphone-add-entry-to-etc-hosts-without-jailbreaking)
 - [LIFF local 測試方法](https://hammerhead-peach-ea9.notion.site/LIFF-Local-82c929680b324c2fa124fac035340f90)
 - [Useful Linux Commands](https://www.cntofu.com/book/46/shared_libraries/useful_linux_commands.md)
+- [Linux Ubuntu環境(docker : Ubuntu 18.04)報錯libc.so.6：version GLIBC_2.28 not found](https://zhuanlan.zhihu.com/p/627165977)
 
 ## Leetcode
 - [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
@@ -349,3 +358,6 @@
 ## Drawing
 - [二次元Q版人物動作姿勢大全](https://kknews.cc/other/3vy63zg.html)
 - [24种萌萌的Q版人物动态画法](https://www.xiaohongshu.com/discovery/item/5f8c2163000000000101f629?xhsshare=CopyLink&appuid=5d320620000000001202a5d4&apptime=1603295228)
+
+## ChatGPT
+- [frequency-vs-presence-penalty](https://medium.com/@KTAsim/frequency-vs-presence-penalty-whats-the-difference-openai-api-51b0c4a7229e)

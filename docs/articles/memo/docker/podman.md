@@ -7,7 +7,7 @@
 Hi 大家好，我是 Johnny，這篇是一個快速學習 podman 的個人筆記～，喜歡的話歡迎收藏分享摟
 
 ## 介紹
-- Podman 是 `daemonless` 的 container 引擎，可以以 root 或是非 root 的模式來執行
+- Podman 是 `daemonless` 的 container 引擎，可以以 root 或是非 root 的模式來執行，預設使用的是 rootless
 - Podman 能`直接與 Image registry, containers 及 images 溝通`，並允許以非 root 的使用者權限來運行 containers，因為提供了跟 docker 相容的指令，讓習慣使用 docker 的開發這也能無痛改用 Podman
 
 ![](https://darumatic.com/media/blog_pics/2020_01/Docker_vs_Podman.png)
@@ -26,6 +26,12 @@ $ podman machine init
 - 當 FCOS 被下載完成後，還會再寫兩個檔案:
   1. machine description: 用來描述即將建立的 VM 的屬性，是 JSON 格式，而且是被寫入 host 的 filesystem 中。
   2. ignition file: 用來客製 FCOS 作業系統的，也會被寫入 host filesystem 中。
+
+### 開啟 rootful 模式
+預設會是 rootless，如果需要給予 VM root 權限，可以在 machine 停止的狀態下設定如下
+```bash
+$ podman machine set --rootful
+```
 
 ### 啟動 VM
 ```bash
@@ -96,12 +102,12 @@ The system helper service is not installed; the default Docker API socket
 address can't be used by podman. If you would like to install it run the
 following commands:
 
-        sudo /opt/homebrew/Cellar/podman/4.1.1/bin/podman-mac-helper install
+        sudo podman-mac-helper install
         podman machine stop; podman machine start
 ```
-執行 podman 提供的指令如下，我的 podman 版本是 `4.1.1`，根據你自己的版本修改喔
+執行 podman 提供的指令如下，我的 podman 版本是 `4.8.3`，根據你自己的版本修改喔
 ```bash
-$ sudo /opt/homebrew/Cellar/podman/4.1.1/bin/podman-mac-helper install
+$ sudo podman-mac-helper install
 ```
 修改完後，接著 stop machine，然後再次 start，就不會看到這個提示摟，而在安裝這套件後，我們就可以像下面這樣直接透過 docker 指令來操作拉～～images 的顯示方式都按照 docker 的方式呈現了
 ```bash
@@ -111,3 +117,16 @@ nginx                 latest        c42efe0b5438   2 weeks ago     140MB
 node                  18.4.0-slim   82f78068089f   11 months ago   248MB
 ```
 
+
+## Issues
+
+### 無法 connect to Podman 問題
+這個問題可以試試把當前 podman machine 刪除並重新建立一個新的
+```
+Cannot connect to Podman. Please verify your connection to the Linux system using
+```
+```bash
+$ podman machine stop
+$ podman machine rm -f
+$ podman machine init --now
+```

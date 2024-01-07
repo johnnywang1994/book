@@ -27,6 +27,15 @@
 <script>
 const cdn = (path) => `https://raw.githubusercontent.com/jwlearn1994/image-uploader/main/others/myblog${path}`;
 
+// {
+//   "des" : "A tiny social platform created by Nextjs, Koajs, Prisma",
+//   "id" : "koa-next-prisma-majubook",
+//   "image" : cdn("/websites/majubook.png"),
+//   "link" : "https://majubook.maju-web.club/",
+//   "name" : "MajuBook",
+//   "tech" : "Next.js, Typescript, Koa.js, Prisma"
+// }
+
 export default {
   name: 'MyProject',
   data() {
@@ -38,6 +47,13 @@ export default {
         "link" : "https://invoice.line.me/",
         "name" : "LINE 發票管家",
         "tech" : "Secret..."
+      }, {
+        "des" : "Maju-GPT-UI is a simple ChatGPT UI",
+        "id" : "majugptui",
+        "image" : cdn("/websites/maju-gpt-ui.png"),
+        "link" : "https://public-gpt.maju-web.club",
+        "name" : "Maju GPT UI",
+        "tech" : "React.js, Typescript, ChatGPT API"
       }, {
         "des" : "MajuChatGame is a real-time 2D chat game created by Reactjs, MatterJS",
         "id" : "majuchatgame",
@@ -108,13 +124,6 @@ export default {
         "link" : "https://majumd.maju-web.club",
         "name" : "MajuMD - Markdown Editor",
         "tech" : "React.js, Typescript, Koa.js, Socket.io, Prisma, CodeMirror"
-      }, {
-        "des" : "A tiny social platform created by Nextjs, Koajs, Prisma",
-        "id" : "koa-next-prisma-majubook",
-        "image" : cdn("/websites/majubook.png"),
-        "link" : "https://majubook.maju-web.club/",
-        "name" : "MajuBook",
-        "tech" : "Next.js, Typescript, Koa.js, Prisma"
       }, {
         "des" : "React Matter Clock",
         "id" : "react-matter-clock",

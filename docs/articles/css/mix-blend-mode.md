@@ -11,7 +11,7 @@
 
 主要使用的是 CSS 的 `mix-blend-mode` 屬性，它能夠對圖層進行混合處理，而此一特性，正好可用來將 gif 的黑色背景去除，從而達到類似 png 的透明效果。
 
-```htmlmixed=
+```html
 <div class="bg">
   <img src="XX.gif" />
 </div>

@@ -9,6 +9,7 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
+        '/articles/js/create-own-chatgpt-ui.md',
         "/articles/js/react-rsc-without-nextjs.md",
         "/articles/js/vuepress-plugin-react.md",
         "/articles/js/learn-from-msw-source-code.md",
@@ -78,6 +79,8 @@ const sidebar = {
           text: "Javascript",
           collapsible: true,
           children: [
+            "/articles/memo/js/astro-learn.md",
+            "/articles/memo/js/astro-theme-flash-issue.md",
             "/articles/memo/js/rspack.md",
             "/articles/memo/js/ts-v5-decorators.md",
             "/articles/memo/js/sequelize-learn.md",
