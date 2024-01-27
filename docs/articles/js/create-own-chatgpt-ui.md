@@ -17,10 +17,10 @@ ChatGPT 目前不會自動儲存你跟 AI 的對話，每次發送 api 時，必
 
 ### frequency_penalty vs presence_penalty
 - frequency_penalty: 頻率懲罰
-數值介於 -2 ~ 2，正的數值會讓 chatgpt 在每次使用同一個 token 時，進行懲罰，假設數值是 1，那原本 token 分數是 100，前面回答過2次 apple，那在後續回答時，再次出現 apple 的分數會是 100 - 2*2，也就是 96
+數值介於 -2 ~ 2，正的數值會讓 chatgpt 在每次使用同一個 token 時，進行懲罰，假設數值是 1，那原本 token 分數是 100，前面回答過2次 apple，那在後續回答時，再次出現 apple 的分數會是 100 - 2*1，也就是 98
 
 - presence_penalty: 存在懲罰
-數值介於 -2 ~ 2，正的數值會讓 chatgpt 在使用一個 token 時後進行懲罰，但只懲罰一次，假設數值是 1，apple 出現過 1次，那後續這個詞的分數都會是 100 - 1，也就是 99
+數值介於 -2 ~ 2，正的數值會讓 chatgpt 在使用一個 token 時後進行懲罰，但只懲罰一次，假設數值是 1，apple 出現過 1次，那後續這個詞的分數都會是 100 - 1，也就是 99，不管 apple 出現幾次都是一樣
 
 ### max_tokens 最大回覆 token
 這個參數只設定回覆的長度，並不包含用戶提出的問題內容長度，所以最終 api 呈現的使用 total_tokens 可能會大於這數字，並不是 ChatGPT 偷吃 token 喔！（所以如果你不限制傳送的 messages 歷史紀錄長度，總是把所有垃圾都一起送給 GPT，那你的 token 就會超級快速消失，除非你就是要 AI 記得你們之間的所有對話點點滴滴）
