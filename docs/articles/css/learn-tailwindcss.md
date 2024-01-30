@@ -396,7 +396,7 @@ module.exports = {
 
 ```scss
 @mixin rwd($size) {
-  @media (min-width: theme('screens.#{$size}')) {
+  @media (min-width: theme("screens.#{$size}")) {
     @content;
   }
 }

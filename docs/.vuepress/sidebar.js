@@ -268,7 +268,8 @@ const sidebar = {
                 "/articles/daily/中醫/基礎理論/06病因病機.md",
                 "/articles/daily/中醫/基礎理論/07辨證論治.md",
                 "/articles/daily/中醫/基礎理論/08四診八綱.md",
-                "/articles/daily/中醫/基礎理論/09經絡.md",
+                "/articles/daily/中醫/基礎理論/09五運六氣.md",
+                "/articles/daily/中醫/基礎理論/10經絡.md",
               ],
             },
             {
@@ -305,6 +306,17 @@ const sidebar = {
                 "/articles/daily/中醫/中藥學/15驅蟲藥.md",
                 "/articles/daily/中醫/中藥學/16祛寒藥.md",
                 "/articles/daily/中醫/中藥學/17補虛藥.md",
+                "/articles/daily/中醫/中藥學/18收斂藥.md",
+              ],
+            },
+            {
+              text: "方劑學",
+              collapsible: true,
+              children: [
+                "/articles/daily/中醫/方劑學/01總論.md",
+                "/articles/daily/中醫/方劑學/02解表.md",
+                "/articles/daily/中醫/方劑學/03瀉下.md",
+                "/articles/daily/中醫/方劑學/04清熱.md",
               ],
             },
             {
@@ -312,6 +324,13 @@ const sidebar = {
               collapsible: true,
               children: ["/articles/daily/中醫/針灸學/特定穴.md"],
             },
+          ],
+        },
+        {
+          text: "易經學習",
+          collapsible: true,
+          children: [
+            "/articles/daily/易經/入門.md"
           ],
         },
         {
