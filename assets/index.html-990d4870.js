@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-25b53b0a","path":"/articles/daily/%E4%B8%AD%E9%86%AB/%E5%9F%BA%E7%A4%8E%E7%90%86%E8%AB%96/","title":"中醫基礎概論","lang":"zh-TW","frontmatter":{},"headers":[],"git":{"updatedTime":1706349618000,"contributors":[{"name":"johnnywang","email":"johnnywang@test.com","commits":1}]},"filePathRelative":"articles/daily/中醫/基礎理論/index.md"}');export{t as data};

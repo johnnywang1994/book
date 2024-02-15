@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1c63cad6","path":"/articles/memo/vscode-command.html","title":"VSCode 好用快捷鍵","lang":"zh-TW","frontmatter":{},"headers":[],"git":{"updatedTime":1708012773000,"contributors":[{"name":"johnnywang","email":"johnnywang@test.com","commits":1}]},"filePathRelative":"articles/memo/vscode-command.md"}');export{e as data};
