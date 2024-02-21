@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-3a926be4","path":"/spine/final-gear.html","title":"","lang":"zh-TW","frontmatter":{"layout":"DefaultLayout"},"headers":[],"git":{"updatedTime":1708478491000,"contributors":[{"name":"johnnywang","email":"johnnywang@test.com","commits":1}]},"filePathRelative":"spine/final-gear.md"}');export{a as data};
