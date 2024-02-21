@@ -52,7 +52,7 @@ const route = useRoute()
 
 const BASE_URL = process.env.NODE_ENV === 'production'
   ? 'https://johnnywang1994.github.io/assets/live2d'
-  : '/book/Resources';
+  : '/book/Resources/live2d';
 
 const state = reactive({
   open: false,
