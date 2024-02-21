@@ -4,7 +4,7 @@
       <div v-show="state.open" id="board-girl" :style="{ transform: `scale(${state.scale})` }"></div>
     </div>
 
-    <div class="panel" v-if="!state.open">
+    <!-- <div class="panel" v-if="!state.open">
       <select v-model="state.assist">
         <option
           v-for="assist in state.assists"
@@ -14,6 +14,11 @@
       </select>
       <div class="call-assist" @click="toggleOpen">
         呼叫助理
+      </div>
+    </div> -->
+    <div v-if="!state.open" class="pilot-list">
+      <div v-for="assist in state.assists" class="pilot-item">
+        <img :src="headImg(assist)" @click="toggleOpen(assist)" loading="lazy" />
       </div>
     </div>
     <template v-else>
@@ -46,6 +51,8 @@ const BASE_URL = process.env.NODE_ENV === 'production'
   ? 'https://johnnywang1994.github.io/assets/spine/gear'
   : 'https://johnnywang1994.github.io/assets/spine/gear'
   // : '/book/Resources/spine/gear';
+
+const headImg = (id) => `https://johnnywang1994.github.io/assets/spine/gear/head/${id}.png`;
 
 const state = reactive({
   open: false,
@@ -199,7 +206,10 @@ const state = reactive({
   ],
 });
 
-async function toggleOpen() {
+async function toggleOpen(targetAssist) {
+  if (targetAssist) {
+    state.assist = targetAssist;
+  }
   state.open = !state.open;
   if (state.open) {
     await nextTick()
@@ -299,6 +309,22 @@ onMounted(() => {
       user-select: none;
     }
   }
+
+  .pilot-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 24px;
+    .pilot-item {
+      width: 100px;
+      padding: 4px;
+      > img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+
   .call-assist {
     display: inline-block;
     padding: 8px 25px;

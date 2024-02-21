@@ -130,3 +130,17 @@ $ podman machine stop
 $ podman machine rm -f
 $ podman machine init --now
 ```
+
+
+## Podman Desktop
+安裝前記得先把本地裝的 podman 刪除乾淨
+```bash
+$ podman machine rm
+$ brew uninstall podman qemu
+$ rm -rf ~/.config/containers
+$ rm -rf ~/.local/share/containers
+$ brew install podman-desktop
+```
+
+### podman-compose
+如果本地沒有裝 docker，可以使用 podman 提供的 alternative [podman-compose](https://github.com/containers/podman-compose#installation)

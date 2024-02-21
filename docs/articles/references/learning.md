@@ -297,6 +297,7 @@
 - [Github Action - Publish Packages](https://docs.github.com/en/actions/publishing-packages/publishing-docker-images)
 - [Github Action - Output(Environment Files)](https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/)
 - [Act - Run your GitHub Actions locally](https://github.com/nektos/act)
+- [Github action composite feature](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action)
 
 
 ## Browser

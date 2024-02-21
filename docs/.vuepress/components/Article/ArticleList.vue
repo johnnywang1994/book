@@ -22,14 +22,14 @@ const newItems = [{
   text: '在電腦裡搞一個 RWKV AI 小助手',
   link: '/articles/js/rwkv-intro.html',
 }, {
+  text: '遊戲 App 素材解包學習紀錄',
+  link: '/articles/js/extract-assets-from-app.html'
+}, {
   text: '動手自己做一個 ChatGPT UI 工具吧',
-  link: '/articles/js/create-own-chatgpt-ui.html',
+  link: '/articles/js/create-own-chatgpt-ui.html'
 }, {
   text: 'Create a React Server Components Project without NextJS - 製作一個不依賴 NextJS 的 React Server Components 專案',
   link: '/articles/js/react-rsc-without-nextjs.html',
-}, {
-  text: '如何在 Vuepress 裡快樂寫 React',
-  link: '/articles/js/vuepress-plugin-react.html',
 }, {
   text: '從 Mock Service Worker 源碼中學習',
   link: '/articles/js/learn-from-msw-source-code.html',
