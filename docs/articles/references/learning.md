@@ -75,7 +75,8 @@
 - [Live2D/CubismWebSamples](https://github.com/Live2D/CubismWebSamples)
 - [Live2d Helper](https://github.com/kooritea/live2d-helper)
 - [Live2d Widget](https://github.com/stevenjoezhang/live2d-widget)
-- [Live2d Model](https://github.com/Eikanya/Live2d-model)
+- [Live2d Model 1](https://github.com/Eikanya/Live2d-model)
+- [Live2d Model 2](https://github.com/ezshine/AwesomeLive2D)
 - [MarioHtml5](https://github.com/robertkleffner/mariohtml5)
 - [Canvas 圖片 Hover 粒子動畫](https://www.youtube.com/watch?v=W78MY7_q_6A)
 

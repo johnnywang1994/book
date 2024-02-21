@@ -9,7 +9,8 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
-        '/articles/js/create-own-chatgpt-ui.md',
+        "/articles/js/extract-assets-from-app.md",
+        "/articles/js/create-own-chatgpt-ui.md",
         "/articles/js/react-rsc-without-nextjs.md",
         "/articles/js/vuepress-plugin-react.md",
         "/articles/js/learn-from-msw-source-code.md",

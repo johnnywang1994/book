@@ -1,10 +1,17 @@
 # Rspack - 以 Rust 打造的快速構建工具
 
-Hi 大家好，我是 Johnny，今天要介紹的是一個叫做 Rspack 的構建工具，是以 Rust 搭建的快速構建引擎
+Hi 大家好，我是 Johnny，今天要介紹的是一個叫做 Rspack 的構建工具，是 ByteDance 團隊以 Rust 搭建的快速構建引擎，具備與 webpack 系統交互的能力
 
 ## 特點
 - 快速的 Dev 啟動性能
 - 高效的 Build 性能
+  - mode 為 production 時預設 tree shaking
+  - 預設 SplitChunksPlugin 套用拆分模組
+- 靈活的配置
+  - 支援 dynamic import
+  - 內建 package analyze script `rspack build --analyze`, `rspack build --json stats.json`
+
+> 透過 Rust 的高度並行化架構，大幅提升編譯性能，與其他工具性能比較的[描述在這](https://www.rspack.dev/guide/introduction.html#compared-with-webpack)
 
 ## 使用 Rspack
 - 建立專案
@@ -21,26 +28,70 @@ Rspack 預設在 `rspack.config.js` 中配置打包相關設定
 ### rspack.config.js
 以下為選擇 `react-ts` template 後產生的預設配置
 ```js
+const rspack = require("@rspack/core");
+const refreshPlugin = require("@rspack/plugin-react-refresh");
+const isDev = process.env.NODE_ENV === "development";
+/**
+ * @type {import('@rspack/cli').Configuration}
+ */
 module.exports = {
 	context: __dirname,
 	entry: {
 		main: "./src/main.tsx"
 	},
-	builtins: {
-		html: [
-			{
-				template: "./index.html"
-			}
-		]
+	resolve: {
+		extensions: ["...", ".ts", ".tsx", ".jsx"]
 	},
 	module: {
 		rules: [
 			{
 				test: /\.svg$/,
-				type: "asset"
+				type: "asset" // 內建處理，不需要額外安裝 loader，但仍需定義 rule
+			},
+			{
+				test: /\.(jsx?|tsx?)$/,
+				use: [
+					{
+						loader: "builtin:swc-loader",
+						options: {
+							sourceMap: true,
+							jsc: {
+								parser: {
+									syntax: "typescript",
+									tsx: true
+								},
+								transform: {
+									react: {
+										runtime: "automatic",
+										development: isDev,
+										refresh: isDev
+									}
+								}
+							},
+							env: {
+								targets: [
+									"chrome >= 87",
+									"edge >= 88",
+									"firefox >= 78",
+									"safari >= 14"
+								]
+							}
+						}
+					}
+				]
 			}
 		]
-	}
+	},
+	plugins: [
+		new rspack.DefinePlugin({
+			"process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
+		}),
+		new rspack.ProgressPlugin({}),
+		new rspack.HtmlRspackPlugin({
+			template: "./index.html"
+		}),
+		isDev ? new refreshPlugin() : null
+	].filter(Boolean)
 };
 ```
 
@@ -87,7 +138,7 @@ module.exports = {
             },
           },
         ],
-        type: 'css',
+        type: 'css/auto', // 將 '*.module.css' 視為 css module，否則使用 'css' 即可
       },
       {
         test: /\.less$/,
@@ -152,6 +203,8 @@ module.exports = {
 - `asset`: 根據條件(體積)自動轉為 `inline` or `resource`，預設 `<= 8096 bytes` 會以 inline 處理，反之則為 resource
 - `asset/source`: 轉為字符串輸出（取代 raw-loader）
 
+> 雖然不用安裝 loader，但仍然要記得在 rspack config 中加上對應的處理
+
 ### Web Worker
 Web Worker 是 Rspack 一等公民，不需要任何 loader 就可直接使用
 ```js
@@ -192,7 +245,7 @@ module.exports = {
 ```
 
 ### devServer
-`devServer` 配置可以和 webpack 無縫銜接，預設在 dev 模式啟用 HMR，以下是一個配置範例
+`devServer` 使用的是`@rspack/dev-server`，配置和 webpack 相似，預設在 dev 模式啟用 HMR，以下是一個配置範例
 ```js
 module.exports = {
   devServer: {
@@ -204,6 +257,17 @@ module.exports = {
       overlay: false,
     },
     open: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
+    },
   },
 }
 ```
+
+
+## 跑分比較
+- [Official Benchmark](https://www.rspack.dev/zh/misc/benchmark.html)
+- [farm-fe/performance-compare](https://github.com/farm-fe/performance-compare)
