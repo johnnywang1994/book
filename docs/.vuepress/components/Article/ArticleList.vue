@@ -19,6 +19,12 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '在電腦裡搞一個 RWKV AI 小助手',
+  link: '/articles/js/rwkv-intro.html',
+}, {
+  text: '動手自己做一個 ChatGPT UI 工具吧',
+  link: '/articles/js/create-own-chatgpt-ui.html',
+}, {
   text: 'Create a React Server Components Project without NextJS - 製作一個不依賴 NextJS 的 React Server Components 專案',
   link: '/articles/js/react-rsc-without-nextjs.html',
 }, {

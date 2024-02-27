@@ -50,6 +50,21 @@ Hi 大家好我是 Johnny，今天這篇是我將手機遊戲素材解包的學�
 
 > 這一步上傳的文件需注意 altas 中紀錄的 texture 圖檔尺寸需與上傳的圖檔相同，不然會跑位，可以用線上工具轉換好貼圖的圖檔尺寸之後再一起上傳
 
+- 處理完成得到 json 格式的 skeleton 檔案後，v4 版本以上就可以透過 [SpineWebPlayer](https://zh.esotericsoftware.com/spine-player)，v3 使用 [SpineWidget](https://github.com/EsotericSoftware/spine-runtimes/blob/3.6/spine-ts/widget/example/index.html) 透過網頁載入，需注意載入 atlas 檔案名稱時，會自動被拿去查找同資料夾路徑下，相同檔案名稱的 png 貼圖
+
+> spine widget 沒有提供官方的 CDN url，需要手動去 source code 中下載
+
+```js
+// spine widget 範例
+const getOptions = (id) => ({
+  json: `model/${id}.json`,
+  atlas: `model/${id}.atlas`, // atlas name must match your png name
+  backgroundColor: "#00000000",
+  // scale: 0.2
+});
+new spine.SpineWidget('spine-widget', getOptions('100010'));
+```
+
 ### Spine2D 編輯文件
 如果需要編輯 skeleton 文件，需要使用 `Spine2D 3.8` 破解版（或是你有錢也可以直接買正版ＸＤ），並引入剛剛輸出的 `.json` 檔(`.skel` 檔案應該也行，但我因為文件是 3.6 版本，一直讀取失敗所以先轉 json)，接著解析 altas 貼圖，可[參考這篇](https://www.bilibili.com/read/cv18073492/)
 
