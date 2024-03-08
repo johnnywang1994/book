@@ -54,6 +54,14 @@
 - [MessageChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel)
 - [BroadcastChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
 - [WebAuthn 無密碼驗證-網頁上使用指紋、安全金鑰來認證](https://noob.tw/webauthn/)
+- [原生 Web 任務優先級 schedular](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API)
+- [Screen Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API)
+- [CompressionStream API 壓縮檔案gzip](https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API)
+- [CSS Custom Highlight API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Custom_Highlight_API)
+- [Trusted Types API 客製化編譯規則](https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy)
+- [Web Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using#result)
+- [URL Pattern API](https://developer.mozilla.org/en-US/docs/Web/API/URL_Pattern_API)
+- [Barcode Detection API](https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API)
 
 
 ### DOM

@@ -37,6 +37,16 @@ module.exports = {
     autoprefixer: {},
   },
 }
+
+// use with preprocessor
+module.exports = {
+  plugins: {
+    'postcss-import': {},
+    'tailwindcss/nesting': {},
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
 ```
 
 ### Import
@@ -283,8 +293,12 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   // ...
   plugins: [
-    plugin(function ({ addBase, addComponents, addUtilities, theme }) {
+    plugin(function ({ addBase, addComponents, addUtilities, addVariant, matchVariant, theme }) {
       addBase({
+        html: {
+          'font-family':
+            '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Microsoft JhengHei, Helvetica Neue, Helvetica, Arial, sans-serif'
+        },
         'h1': {
           fontSize: theme('fontSize.2xl'),
         },
@@ -298,13 +312,38 @@ module.exports = {
           borderRadius: theme('borderRadius.lg'),
           padding: theme('spacing.6'),
           boxShadow: theme('boxShadow.xl'),
+          // if you have install "postcss-nested"
+          '&:hover': {
+            boxShadow: '0 10px 15px rgba(0,0,0,0.2)',
+          },
+          '@media (min-width: 500px)': {
+            borderRadius: '.5rem',
+          }
         }
       })
       addUtilities({
         '.content-auto': {
           contentVisibility: 'auto',
+        },
+        '.text-primary': {
+          '@apply text-gray-800': {},
         }
       })
+      addVariant('optional', '&:optional')
+      addVariant('hocus', ['&:hover', '&:focus'])
+      matchVariant(
+        'nth',
+        (value) => {
+          return `&:nth-child(${value})`;
+        },
+        {
+          values: {
+            1: '1',
+            2: '2',
+            3: '3',
+          }
+        }
+      );
     })
   ]
 }

@@ -49,6 +49,11 @@ $ git fetch [remote-name]
 
 實際上 `git pull` 就是同時執行了 fetch 跟 merge。
 
+### 同步遠端的 branch 狀態到本地
+比如遠端已經把 test 分支刪除了，但本地還留著 `origin/test`，此時用 `git branch -D origin/test` 仍無法移除，就需要使用下面的指令把遠端上的分支狀態改動同步到本地
+```bash
+$ git fetch --all --prune
+```
 
 ## 推送到你的遠端
 

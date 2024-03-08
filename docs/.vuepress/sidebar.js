@@ -111,6 +111,7 @@ const sidebar = {
           text: "React",
           collapsible: true,
           children: [
+            "/articles/memo/react/react-forwardRef.md",
             "/articles/memo/react/next-middleware-cookie.md",
             "/articles/memo/react/react-styled-components-basic.md",
             "/articles/memo/react/react-styled-components-advanced.md",
@@ -176,6 +177,7 @@ const sidebar = {
             "/articles/git/tag.md",
             "/articles/git/config.md",
             "/articles/git/diff.md",
+            "/articles/git/rebase.md",
             "/articles/git/subtree.md",
           ],
         },
