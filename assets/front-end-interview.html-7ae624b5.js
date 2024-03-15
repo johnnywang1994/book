@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-378a357d","path":"/articles/daily/front-end-interview.html","title":"Web Interview Preparation","lang":"zh-TW","frontmatter":{},"headers":[],"git":{"updatedTime":1709034187000,"contributors":[{"name":"johnnywang","email":"johnnywang@test.com","commits":1}]},"filePathRelative":"articles/daily/front-end-interview.md"}');export{e as data};
