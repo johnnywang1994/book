@@ -63,6 +63,7 @@ const sidebar = {
       text: "CSS & Sass",
       collapsible: true,
       children: [
+        "/articles/css/starting-style.md",
         "/articles/css/css-planet.md",
         "/articles/css/learn-tailwindcss.md",
         "/articles/css/2021-css-report.md",
@@ -320,6 +321,9 @@ const sidebar = {
                 "/articles/daily/中醫/方劑學/02解表.md",
                 "/articles/daily/中醫/方劑學/03瀉下.md",
                 "/articles/daily/中醫/方劑學/04清熱.md",
+                "/articles/daily/中醫/方劑學/05理血.md",
+                "/articles/daily/中醫/方劑學/06去暑.md",
+                "/articles/daily/中醫/方劑學/07去濕.md",
               ],
             },
             {

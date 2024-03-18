@@ -331,6 +331,7 @@ module.exports = {
       })
       addVariant('optional', '&:optional')
       addVariant('hocus', ['&:hover', '&:focus'])
+      addVariant('starting-style', ['@starting-style'])
       matchVariant(
         'nth',
         (value) => {
@@ -453,6 +454,24 @@ h1 {
 
 
 ## Customization
+
+### Extend Screens
+```js
+import type { Config } from "tailwindcss";
+import { screens } from 'tailwindcss/defaultTheme';
+
+const config: Config = {
+  theme: {
+    screens: {
+      xs: '441px',
+      ...screens
+    }
+  }
+}
+
+export default config;
+```
+
 
 ### Content
 

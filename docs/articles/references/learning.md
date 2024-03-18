@@ -169,6 +169,7 @@
 - [CSS 100vh in ISO Safari overlapping handling](https://dev-tips.com/css/overlapping-bottom-navigation-bar-despite-100vh-in-ios-safari)
 - [Viewport Units 詳細講解 - lvh, lvw, svh, svw, dvh, dvw](https://web.dev/viewport-units/)
 - [支援在 JS 中獲取 Android, IOS 裝置瀏覽器 safe area](https://benfrain.com/how-to-get-the-value-of-phone-notches-environment-variables-env-in-javascript-from-css/)
+- [@starting-style 搭配 transition-behavior: allow-discrete 讓 display: none 支援動畫](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)
 
 ### Animation
 - [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
