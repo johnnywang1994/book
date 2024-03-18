@@ -169,6 +169,7 @@
 - [CSS 100vh in ISO Safari overlapping handling](https://dev-tips.com/css/overlapping-bottom-navigation-bar-despite-100vh-in-ios-safari)
 - [Viewport Units 詳細講解 - lvh, lvw, svh, svw, dvh, dvw](https://web.dev/viewport-units/)
 - [支援在 JS 中獲取 Android, IOS 裝置瀏覽器 safe area](https://benfrain.com/how-to-get-the-value-of-phone-notches-environment-variables-env-in-javascript-from-css/)
+- [@starting-style 搭配 transition-behavior: allow-discrete 讓 display: none 支援動畫](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)
 
 ### Animation
 - [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
@@ -201,6 +202,7 @@
 
 ## Markdown
 - [CommonMark 教學](https://commonmark.org/help/)
+- [Notion 當成 Database](https://yual.in/posts/using-notion-as-database-in-nextjs-14)
 
 
 ## Django
@@ -294,6 +296,7 @@
 - [Cannot pass objects to \<Trans\> with React 18 type definitions](https://github.com/i18next/react-i18next/issues/1483#issuecomment-1213024223)
 - [Next13 app dir with I18next](https://locize.com/blog/next-13-app-dir-i18n/)
 - [Next13 use @svgr/webpack](https://github.com/vercel/next.js/issues/48177#issuecomment-1557354538)
+- [Next getServerSideProps Cache](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props#caching-with-server-side-rendering-ssr)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
@@ -307,6 +310,9 @@
 - [Act - Run your GitHub Actions locally](https://github.com/nektos/act)
 - [Github action composite feature](https://docs.github.com/en/actions/creating-actions/creating-a-composite-action)
 
+
+## LIFF
+- [Liff app redirect flow](https://developers.line.biz/en/docs/liff/opening-liff-app/#redirect-flow)
 
 ## Browser
 - [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
@@ -371,3 +377,6 @@
 
 ## ChatGPT
 - [frequency-vs-presence-penalty](https://medium.com/@KTAsim/frequency-vs-presence-penalty-whats-the-difference-openai-api-51b0c4a7229e)
+
+## The Great Reset
+- [王大師大重置分享會內容](https://rumble.com/v4mmqwk-march-31-2024.html)

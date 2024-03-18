@@ -218,7 +218,7 @@ function reverse(x: number | string): number | string {
 
 ## 類型斷言 - Type Assertion
 
-用以手動指定一值的類型，因在 react 的 tsx(jsx 的 ts 版本)，使用的是以 “值 as 類型” 的方式區隔，故建議都使用這種方式避免混淆
+用以手動指定一值的類型，因在 react 的 tsx(jsx 的 ts 版本)，使用的是以 "值 as 類型" 的方式區隔，故建議都使用這種方式避免混淆
 
   1. 使用聯合類型時，有時必須在還不確定類型時訪問特定類型屬性
     - 使用時必須小心，避免在斷言後直接調用屬性，因編譯時會通過，但運行時會掛
@@ -289,40 +289,159 @@ tomCat.run();
 ```
 
 
-## 聲明文件
+## 滿足類型 - Satisfies
+用以手動指定一值滿足的類型，使用方式為 "值 satisfies 類型"，與前面 `as` 類型斷言不同，`as` 有強制的意思且會造成編譯器錯誤判讀內容，`satisfies` 則更彈性，以下為兩者簡單比較:
+||as|satisfies|
+|--|--|--|
+|類型判斷|手動|自動|
+|檢查強度|強制|靈活|
+|編譯誤判|高|低|
 
-使用第三方庫時，必須引用他的聲明文件，以提供對應的類型檢查
-
-  - [聲明語法清單](https://ts.xcatliu.com/basics/declaration-files.html)
-  - [聲明文件搜尋](https://microsoft.github.io/TypeSearch/)
-
-通常會把聲明語句放入單獨文件中，eg. jQuery.d.ts
-
-  1. `declare var/let/const`
-  2. `declare namespace` 創建命名空間，避免 `interface` 造成全局污染，使用該命名空間下的接口時也要加上該命名名稱
-  3. 詳細不同庫的聲明文件，推薦使用 `@types` 統一管理，直接安裝如 `npm install @types/jquery --save-dev`，透過 `@types` 安裝的聲明文件，若為全局聲明則不用再進行任何配置
-  4. NPM 中的聲明文件必須透過 `export` 和 `import` 才能在模組內使用
-
+接下來是簡單的範例，先提供背景類型
 ```ts
-// 1. 以 jQuery 舉例
-declare const jQuery: (selector: string) => any;
+type Colors = 'red' | 'green' | 'blue';
+type RGB = [red: number, green: number, blue: number];
+```
 
-// 2. 舉例，僅示意
-declare namespace Vue {
-  function component(name: string, data: any): any;
-  function mixin(data: any): void;
+- 類型判斷
+通常在使用聯合類型時，值不確定是某一個類型，因此必須手動判斷，否則會報錯，如下範例，即使你確定 green 就是 `string`，仍然需要手動去檢查，非常麻煩
+```ts
+// 變量類型標註
+const palette: Record<Colors, string | RGB> = {
+  red: [255, 0, 0],
+  green: '#00ff00',
+  blue: [0, 0, 255],
+};
+
+// Property 'toUpperCase' does not exist on type 'string | RGB'
+palette.green.toUpperCase();
+
+// 手動檢查，解決
+if (typeof palette.green === 'string') {
+  palette.green.toUpperCase();
+}
+```
+使用 `as const` 可以解決這問題，但同時會造成其他問題，因為 as const 會將值變為 readonly，且 as const 只會推論類型為其值本身，而非寬域吻合
+```ts
+// as const
+const palette = {
+  red: [255, 0, 0],
+  green: '#00ff00',
+  blue: [0, 0, 255],
+} as const;
+
+// 解決
+palette.green.toUpperCase();
+// Cannot assign to 'green' because it is a read-only property.
+palette.green = '#dddddd';
+```
+使用 `satisfies` 則完美解決上述問題，在維持類型推論正確的情況下，給予最大的靈活彈性
+```ts
+// satisfies
+const palette = {
+  red: [255, 0, 0],
+  green: '#00ff00',
+  blue: [0, 0, 255],
+} satisfies Record<Colors, string | RGB>;
+
+palette.green.toUpperCase();
+```
+
+- 編譯誤判
+```ts
+const palette: Record<Colors, string | RGB> = {
+  red: [255, 0, 0],
+  green: '#00ff00',
+  blue: [0, 0, 255],
+};
+
+// 實際值為 string，此處仍通過編譯，無錯誤
+(palette.green as RGB).join();
+```
+
+總結 satisfies 有以下幾個好處
+- 保證值的類型正確性
+- 使用時，正確推論出值的類型，即使是聯合類型
+- 以值本身為優先，而非類型
+
+### 搭配 as const，宣告值唯讀
+類型標註與 as const 搭配時，as const 會被類型標注覆蓋導致失去作用
+```ts
+interface Result {
+	retCode: 200 | 404 | 500
+}
+
+const responseTableData: Result = {
+	retCode: 200
+} as const;
+
+// 被類型標注覆蓋無作用，不會顯示唯讀錯誤
+responseTableData.retCode = 404;
+```
+如果一定要使用類型標注處理唯讀，可以用 `Readonly`，或是用這邊的 `satisfies` 處理
+```ts
+const responseTableData: Readonly<Result> = {
+	retCode: 200
+} as const;
+// or
+const responseTableData = {
+	retCode: 200
+} as const satisfies Result;
+
+// Cannot assign to 'retCode' because it is a read-only property.
+responseTableData.retCode = 404;
+```
+### 其他常見使用範例
+- 臨時且方便的類型推斷
+```ts
+const student = {
+    name: 'Johnny',
+    age: 30,
+    company: 'line',
+    mail: 'johnny@test.com'
+} satisfies Record<string, string | number>;
+
+student.age.toFixed();
+```
+- 特殊類型檢查唯讀
+```ts
+interface RouteRow {
+	path: string
+	component: any
+  name?: string
+  redirect?: string
+}
+
+const routes = [
+	{
+		path: '/',
+		component: 'main'
+	},
+	{
+		path: '/login',
+		component: 'login'
+	}
+] as const satisfies RouteRow[]
+```
+- 配合 never 進行檢查
+```ts
+type ButtonTypes = 'primary' | 'error';
+
+function getButtonStyle(t: ButtonTypes) {
+  switch (t) {
+    case "primary":
+      console.log(123);
+      break
+    // case "error":
+    //   console.log(123);
+    //   break;
+    default: {
+      // Type 'string' does not satisfy the expected type 'never'
+      t satisfies never;
+    }
+  }
 }
 ```
 
-### 宣告合併
-
-以 jQuery 舉例，他既是一個函式，可以直接被呼叫，又是一個物件，擁有子屬性，那麼我們可以組合多個宣告語句，它們會不衝突的合併起來。
-
-```ts
-declare function jQuery(selector: string): any;
-declare namespace jQuery {
-  function ajax(url: string, settings?: any): void;
-}
-```
 
 <SocialBlock hashtags="typescript,basic" />

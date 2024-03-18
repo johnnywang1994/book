@@ -9,6 +9,7 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
+        "/articles/js/popover-api.md",
         "/articles/js/rwkv-intro.md",
         "/articles/js/extract-assets-from-app.md",
         "/articles/js/create-own-chatgpt-ui.md",
@@ -63,6 +64,7 @@ const sidebar = {
       text: "CSS & Sass",
       collapsible: true,
       children: [
+        "/articles/css/starting-style.md",
         "/articles/css/css-planet.md",
         "/articles/css/learn-tailwindcss.md",
         "/articles/css/2021-css-report.md",
@@ -320,6 +322,9 @@ const sidebar = {
                 "/articles/daily/中醫/方劑學/02解表.md",
                 "/articles/daily/中醫/方劑學/03瀉下.md",
                 "/articles/daily/中醫/方劑學/04清熱.md",
+                "/articles/daily/中醫/方劑學/05理血.md",
+                "/articles/daily/中醫/方劑學/06去暑.md",
+                "/articles/daily/中醫/方劑學/07去濕.md",
               ],
             },
             {
@@ -389,6 +394,7 @@ const sidebar = {
         "/articles/daily/2022/wedding.md",
         "/articles/daily/2021/review-as-frontend.md",
         "/articles/daily/2021/iterm2-zsh.md",
+        "/articles/daily/good-word.md",
         "/articles/daily/front-end-interview.md",
       ],
     },

@@ -342,6 +342,43 @@ createArray(3, 'x');
 ```
 
 
+## 聲明文件
+
+使用第三方庫時，必須引用他的聲明文件，以提供對應的類型檢查
+
+  - [聲明語法清單](https://ts.xcatliu.com/basics/declaration-files.html)
+  - [聲明文件搜尋](https://microsoft.github.io/TypeSearch/)
+
+通常會把聲明語句放入單獨文件中，eg. jQuery.d.ts
+
+  1. `declare var/let/const`
+  2. `declare namespace` 創建命名空間，避免 `interface` 造成全局污染，使用該命名空間下的接口時也要加上該命名名稱
+  3. 詳細不同庫的聲明文件，推薦使用 `@types` 統一管理，直接安裝如 `npm install @types/jquery --save-dev`，透過 `@types` 安裝的聲明文件，若為全局聲明則不用再進行任何配置
+  4. NPM 中的聲明文件必須透過 `export` 和 `import` 才能在模組內使用
+
+```ts
+// 1. 以 jQuery 舉例
+declare const jQuery: (selector: string) => any;
+
+// 2. 舉例，僅示意
+declare namespace Vue {
+  function component(name: string, data: any): any;
+  function mixin(data: any): void;
+}
+```
+
+### 宣告合併
+
+以 jQuery 舉例，他既是一個函式，可以直接被呼叫，又是一個物件，擁有子屬性，那麼我們可以組合多個宣告語句，它們會不衝突的合併起來。
+
+```ts
+declare function jQuery(selector: string): any;
+declare namespace jQuery {
+  function ajax(url: string, settings?: any): void;
+}
+```
+
+
 ## 常用技巧
 
 ### 提取變數型別

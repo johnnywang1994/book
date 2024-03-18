@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '如何不用 setTimeout 幫 display: none 的 DOM 加動畫',
+  link: '/articles/css/starting-style.html',
+}, {
   text: '在電腦裡搞一個 RWKV AI 小助手',
   link: '/articles/js/rwkv-intro.html',
 }, {
