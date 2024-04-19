@@ -54,6 +54,7 @@
 - [MessageChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel)
 - [BroadcastChannel - MDN](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel)
 - [WebAuthn 無密碼驗證-網頁上使用指紋、安全金鑰來認證](https://noob.tw/webauthn/)
+- [使用 SimpleWebAuthn 實現 Passkeys 無密碼登入](https://fullstackladder.dev/blog/2023/06/11/passkeys-using-simplewebauthn/)
 - [原生 Web 任務優先級 schedular](https://developer.mozilla.org/en-US/docs/Web/API/Prioritized_Task_Scheduling_API)
 - [Screen Wake Lock API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API)
 - [CompressionStream API 壓縮檔案gzip](https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API)
@@ -297,6 +298,7 @@
 - [Next13 app dir with I18next](https://locize.com/blog/next-13-app-dir-i18n/)
 - [Next13 use @svgr/webpack](https://github.com/vercel/next.js/issues/48177#issuecomment-1557354538)
 - [Next getServerSideProps Cache](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props#caching-with-server-side-rendering-ssr)
+- [Next13 Image 組件安全性問題](https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
@@ -316,6 +318,7 @@
 
 ## Browser
 - [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
+- [現代 Browser 已針對 resize event 進行 debounced, 無需再用 requestAnimationFrame 包裹](https://stackoverflow.com/a/56514589)
 
 ## Computer
 - [作業系統考題](https://iter01.com/578045.html)
@@ -330,6 +333,8 @@
 - [LIFF local 測試方法](https://hammerhead-peach-ea9.notion.site/LIFF-Local-82c929680b324c2fa124fac035340f90)
 - [Useful Linux Commands](https://www.cntofu.com/book/46/shared_libraries/useful_linux_commands.md)
 - [Linux Ubuntu環境(docker : Ubuntu 18.04)報錯libc.so.6：version GLIBC_2.28 not found](https://zhuanlan.zhihu.com/p/627165977)
+- [Rewrite previous commit username or email](https://stackoverflow.com/questions/2919878/git-rewrite-previous-commit-usernames-and-emails)
+- [What is ADR(architecture-decision-record)?](https://github.com/joelparkerhenderson/architecture-decision-record)
 
 ## Leetcode
 - [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)

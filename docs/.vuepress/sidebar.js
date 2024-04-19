@@ -67,6 +67,7 @@ const sidebar = {
         "/articles/css/starting-style.md",
         "/articles/css/css-planet.md",
         "/articles/css/learn-tailwindcss.md",
+        "/articles/css/learn-tailwindcss-advanced.md",
         "/articles/css/2021-css-report.md",
         "/articles/css/scss-built-in-modules.md",
         "/articles/css/parent-selector.md",
@@ -181,6 +182,7 @@ const sidebar = {
             "/articles/git/diff.md",
             "/articles/git/rebase.md",
             "/articles/git/subtree.md",
+            "/articles/git/utils.md",
           ],
         },
         {
