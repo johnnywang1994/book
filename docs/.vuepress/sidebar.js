@@ -232,6 +232,7 @@ const sidebar = {
             },
           ],
         },
+        "/articles/memo/github-copilot.md",
         "/articles/memo/traefik.md",
         "/articles/memo/api-first-learn.md",
         "/articles/memo/what-is-ac.md",
