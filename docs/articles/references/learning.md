@@ -365,7 +365,7 @@
 - [Sentry](https://develop.sentry.dev/self-hosted/)
 - [Grafana](https://grafana.com/)
 - [Grafana - Faro Web SDK](https://github.com/grafana/faro-web-sdk)
-
+- [sentry/next cause NextJS productionBrowserSourceMaps: false not work](https://github.com/getsentry/sentry-javascript/issues/6031)
 
 ## Vscode
 - [Code Snippet](https://pjchender.blogspot.com/2017/04/vs-code-snippet.html)
