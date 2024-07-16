@@ -207,4 +207,9 @@ export default {
 </script>
 ```
 
+
+## 特殊情況
+### 三星 Browser 無法長按下載 blob url image
+筆者實際在日常工作開發中遇過一個特殊情況，場景是在三星 Browser 中使用 canvas 的 toBlob 轉為 image blobUrl，並將該 blobUrl 給到 img tag 渲染，目標是讓用戶能夠長按圖片下載，然後實測後發現，blob image url 在長按後的 menu 不會出現 "Save Image" 按鈕，然而 https, base64 等格式都會正常出現，如果是要在這種場景使用 `createObjectURL` 請優先考慮是否要兼容三星 Browser！！
+
 <SocialBlock hashtags="javascript,typescript,createObjectURL" />

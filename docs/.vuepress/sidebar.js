@@ -101,16 +101,6 @@ const sidebar = {
           ],
         },
         {
-          text: "Vue",
-          collapsible: true,
-          children: [
-            "/articles/memo/vue/cypress-vue.md",
-            "/articles/memo/vue/vue-jest-memo.md",
-            "/articles/memo/vue/vuetify-memo.md",
-            "/articles/memo/vue/vuex-basic.md",
-          ],
-        },
-        {
           text: "React",
           collapsible: true,
           children: [
@@ -126,6 +116,16 @@ const sidebar = {
             "/articles/memo/react/useEffect-lifecycle.md",
             "/articles/memo/react/useContext-useReducer.md",
             "/articles/memo/react/react-router-config.md",
+          ],
+        },
+        {
+          text: "Vue",
+          collapsible: true,
+          children: [
+            "/articles/memo/vue/cypress-vue.md",
+            "/articles/memo/vue/vue-jest-memo.md",
+            "/articles/memo/vue/vuetify-memo.md",
+            "/articles/memo/vue/vuex-basic.md",
           ],
         },
         {
@@ -230,6 +230,17 @@ const sidebar = {
               collapsible: true,
               children: ["/articles/memo/patterns/render/react.md"],
             },
+          ],
+        },
+        {
+          text: "FE 性能優化",
+          collapsible: true,
+          children: [
+            "/articles/memo/fe-performance/index.md",
+            "/articles/memo/fe-performance/static.md",
+            "/articles/memo/fe-performance/render.md",
+            "/articles/memo/fe-performance/network.md",
+            "/articles/memo/fe-performance/develop-tracking.md",
           ],
         },
         "/articles/memo/github-copilot.md",

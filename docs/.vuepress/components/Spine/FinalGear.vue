@@ -1,21 +1,9 @@
 <template>
   <div :style="`position: ${position}`" :class="['board-wrapper', position, state.assist]">
     <div class="board-girl-wrapper">
-      <div v-show="state.open" id="board-girl" :style="{ transform: `scale(${state.scale})` }"></div>
+      <div v-show="state.open" id="board-girl" :style="{ transform: `scale(${state.scale}) translate(${state.moveX}%, ${state.moveY}%)` }"></div>
     </div>
 
-    <!-- <div class="panel" v-if="!state.open">
-      <select v-model="state.assist">
-        <option
-          v-for="assist in state.assists"
-          :key="`assist_${assist}`"
-          :value="assist"
-        >{{ assist }}</option>
-      </select>
-      <div class="call-assist" @click="toggleOpen">
-        呼叫助理
-      </div>
-    </div> -->
     <div v-if="!state.open" class="pilot-list">
       <div v-for="assist in state.assists" class="pilot-item">
         <img :src="headImg(assist)" @click="toggleOpen(assist)" loading="lazy" />
@@ -23,8 +11,15 @@
     </div>
     <template v-else>
       <div class="panel">
-        Scale<input type="range" min="0.5" max="3.5" step="0.1" v-model="state.scale" />
-        <br>
+        <div>
+          Scale<input type="range" min="0.5" max="3.5" step="0.1" v-model="state.scale" />
+        </div>
+        <div>
+          Move X<input type="range" min="-50" max="50" step="1" v-model="state.moveX" />
+        </div>
+        <div>
+          Move Y<input type="range" min="-50" max="50" step="1" v-model="state.moveY" />
+        </div>
         <div class="call-assist" @click="onClear">
           Clear
         </div>
@@ -57,6 +52,8 @@ const headImg = (id) => `https://johnnywang1994.github.io/assets/spine/gear/head
 const state = reactive({
   open: false,
   scale: 1,
+  moveX: 0,
+  moveY: 0,
   assist: '',
   assists: [
     "100010",
@@ -274,7 +271,8 @@ onMounted(() => {
   flex-direction: column;
   margin: 60px auto 80px;
   width: 100%;
-  min-height: 500px;
+  max-width: 768px;
+  min-height: 65vh;
   &.fixed {
     right: 0;
     bottom: 0;
@@ -285,7 +283,7 @@ onMounted(() => {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     #board-girl {
       flex-grow: 1;
     }
@@ -299,14 +297,8 @@ onMounted(() => {
     text-align: center;
     min-width: 250px;
     transform: translateY(100%);
-    > select {
-      width: 80px;
-      padding: 6px 0;
-      margin-right: 12px;
-      border-radius: 10px;
-      font-size: 20px;
-      cursor: pointer;
-      user-select: none;
+    > div {
+      margin-top: 12px;
     }
   }
 
