@@ -88,6 +88,7 @@
 - [Live2d Model 2](https://github.com/ezshine/AwesomeLive2D)
 - [MarioHtml5](https://github.com/robertkleffner/mariohtml5)
 - [Canvas 圖片 Hover 粒子動畫](https://www.youtube.com/watch?v=W78MY7_q_6A)
+- [html2canvas gray background issue](https://github.com/niklasvh/html2canvas/issues/2183)
 
 ### Svg
 - [Lottie 使用介紹](https://juejin.cn/post/7101629986427109383)
@@ -247,6 +248,7 @@
 - [Vue Test Hooks](https://github.com/vueuse/vueuse/blob/main/packages/.test/mount.ts)
 - [Awesome Vite - templates](https://github.com/vitejs/awesome-vite#templates)
 - [Vue3 directive, nav guard 權限控制範例](https://muki.tw/tech/vue/vue-custom-directive-roles-permission/)
+- [Making the Virtual DOM. Faster.](https://github.com/jwlearn1994/tiny-vnode.git)
 
 
 ## React
@@ -300,6 +302,9 @@
 - [Next getServerSideProps Cache](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props#caching-with-server-side-rendering-ssr)
 - [Next13 Image 組件安全性問題](https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps)
 
+## Vinxi
+- [Building React metaframework with Vinxi](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)
+
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
 - [Can't import the named export from non EcmaScript module (only default export is available)](https://github.com/vuejs/pinia/issues/675#issuecomment-919544784)
@@ -319,6 +324,8 @@
 ## Browser
 - [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
 - [現代 Browser 已針對 resize event 進行 debounced, 無需再用 requestAnimationFrame 包裹](https://stackoverflow.com/a/56514589)
+- [Samsung Browser Night mode issue](https://www.ctrl.blog/entry/samsung-internet-night-mode.html)
+- Samsung Browser can't long press to save image when url created from "createObjectURL"
 
 ## Computer
 - [作業系統考題](https://iter01.com/578045.html)

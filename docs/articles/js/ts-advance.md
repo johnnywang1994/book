@@ -153,7 +153,7 @@ class Cat extends Animal {
   }
 }
 
-let cat = new Cat('Tom'); 
+let cat = new Cat('Tom');
 // 非抽象類別 'Cat' 未實作從類別 'Animal' 繼承而來的抽象成員 'sayHi'。ts(2515)
 ```
 
@@ -342,6 +342,58 @@ createArray(3, 'x');
 ```
 
 
+## Infer
+用來表示在 `extends` 條件語句中「待推斷的類型」
+
+### 簡單範例
+```ts
+type ParamType<T> = T extends (arg: infer P) => any ? P : T;
+```
+
+### 內建相關
+```ts
+// 函數類型回傳值
+type ReturnType<T> = T extends (...args: any[]) => infer P ? P : any;
+
+// 構造函數參數類型
+type ConstructorParameters<T extends new (...args: any[]) => any> = T extends new (...args: infer P) => any
+  ? P
+  : never;
+
+// 構造函數實例類型
+type InstanceType<T extends new (...args: any[]) => any> = T extends new (...args: any[]) => infer R ? R : any;
+
+// 與數組類型搭配
+type ElementOf<T> = T extends Array<infer E> ? E : never;
+```
+
+### 範例
+```ts
+interface Module {
+  count: number;
+  message: string;
+  asyncMethod<T, U>(input: Promise<T>): Promise<Action<U>>;
+  syncMethod<T, U>(action: Action<T>): Action<U>;
+}
+
+interface Action<T> {
+  payload?: T;
+  type: string;
+}
+
+// Q. 經過 Connect 函數後需要變為 Result，請定義 Connect 函數的類型
+type Result = {
+  asyncMethod<T, U>(input: T): Action<U>;
+  syncMethod<T, U>(action: T): Action<U>;
+}
+
+// A. 答案
+type FuncName<T> = { [P in keyof T]: T[P] extends Function ? P : never }[keyof T];
+
+type Connect = (module: Module) => { [T in FuncName<Module>]: Module[T] };
+```
+
+
 ## 聲明文件
 
 使用第三方庫時，必須引用他的聲明文件，以提供對應的類型檢查
@@ -422,6 +474,23 @@ interface A {
 // in 表示遍歷，子屬性可包含 'a', 'b', 'c'，型別為: string
 type B = {
   [key in 'a' | 'b' | 'c']: string;
+}
+```
+
+### 聯合類型判斷 is
+```ts
+type ObjectA = {
+  a: string;
+};
+
+type ObjectB = {
+  b: string;
+};
+
+type MyObject = ObjectA | ObjectB;
+
+function isObjectA(obj: MyObject): obj is ObjectA {
+  return 'a' in obj;
 }
 ```
 

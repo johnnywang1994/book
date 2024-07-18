@@ -243,6 +243,7 @@ const sidebar = {
             "/articles/memo/fe-performance/develop-tracking.md",
           ],
         },
+        "/articles/memo/flowise-intro.md",
         "/articles/memo/github-copilot.md",
         "/articles/memo/traefik.md",
         "/articles/memo/api-first-learn.md",
