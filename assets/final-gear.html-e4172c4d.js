@@ -1,0 +1,1 @@
+import{_ as n,r as a,o,c as r,a as t}from"./app-6eac6164.js";const c={};function l(_,i){const e=a("Spine-FinalGear");return o(),r("div",null,[t(e,{position:"relative"})])}const f=n(c,[["render",l],["__file","final-gear.html.vue"]]);export{f as default};
