@@ -129,6 +129,17 @@ const sidebar = {
           ],
         },
         {
+          text: "React Native",
+          collapsible: true,
+          children: [
+            "/articles/memo/react-native/basic.md",
+            "/articles/memo/react-native/expo-basic.md",
+            "/articles/memo/react-native/expo-router.md",
+            "/articles/memo/react-native/expo-build.md",
+            "/articles/memo/react-native/issue.md"
+          ],
+        },
+        {
           text: "GraphQL",
           collapsible: true,
           children: [

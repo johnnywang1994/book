@@ -34,6 +34,7 @@
 - [在 Browser 下載檔案並壓縮為 Zip](https://huynvk.dev/blog/download-files-and-zip-them-in-your-browsers-using-javascript)
 - [ES2016 - ES2023](https://juejin.cn/post/7206302271079989308)
 - [What, Why and How Static Initialization Blocks](https://dev.to/devsmitra/what-why-and-how-javascript-static-initialization-blocks-4n41)
+- [簡化大量 import](https://juejin.cn/post/7344571285848768524)
 
 ### Typescript
 - [TypeScript 教程](https://www.tutorialsteacher.com/typescript)
@@ -281,6 +282,7 @@
 - [useImperativeHandle 與子組件互動](https://z3388638.medium.com/react-hooks-%E4%BD%BF%E7%94%A8-useimperativehandle-%E4%BE%86%E8%B7%9F%E5%AD%90%E5%85%83%E4%BB%B6%E4%BA%92%E5%8B%95-2b543bec3e8a)
 - [Framer-Motion 動態元素高度動畫](https://github.com/framer/motion/discussions/1884)
 - [Zustand computed getter 討論](https://github.com/pmndrs/zustand/issues/132)
+- [為什麼 Redux Toolkit 就是今天如何使用 Redux](https://redux.js.org/introduction/why-rtk-is-redux-today)
 
 
 ## Nextjs
@@ -389,6 +391,10 @@
 
 ## ChatGPT
 - [frequency-vs-presence-penalty](https://medium.com/@KTAsim/frequency-vs-presence-penalty-whats-the-difference-openai-api-51b0c4a7229e)
+
+## 職場相關
+- [職場霸凌事前、事後，雇主馬虎不得！律師告訴你處理重點](https://vip.104.com.tw/preLogin/recruiterForum/post/84422)
+- [如何辨識-自戀型人格障礙(NPD)](https://vocus.cc/article/64ec12ebfd89780001d4cee7)
 
 ## The Great Reset
 - [王大師大重置分享會內容](https://rumble.com/v4mmqwk-march-31-2024.html)

@@ -33,3 +33,12 @@ $ git config --global alias.st status
 ```bash
 $ git config --global alias.graph 'log --oneline --graph'
 ```
+
+## 首次推送 push 時錯誤
+`error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400`，主因是專案太久沒提交，導致一次性提交的內容太大，超過預設最大 cache 字節數（預設為 1M），此時可以使用如下指令調整上限：
+```bash
+# 調整上限為 50MB
+$ git config http.postBuffer 524288000
+```
+
+> 當然最好是每天都推送，盡量不要一次提交太多內容

@@ -4,6 +4,8 @@
 
 [FlowiseAI](https://github.com/FlowiseAI/Flowise) 是一款開源 LLM AI 工作流程開發工具，透過簡單的 UI 介面，讓用戶自定義複雜的 AI 工作流程
 
+- [FlowiseAI - API Document](https://docs.flowiseai.com/getting-started)
+
 
 ## 安裝使用
 - 本地 NPM 安裝
@@ -23,7 +25,7 @@ $ docker compose up
 
 
 
-## 模組介紹
+## Chatflows 模組介紹
 
 ### Chains
 #### LLM Chain
@@ -43,6 +45,15 @@ $ docker compose up
   - Memory: 記憶機制模組，常見如 Buffer Memory, Redis-Backed Chat Memory
   - Chat Prompt Template
   - Input Moderation
+
+#### Conversational Retrieval QA Chain
+- 位置：`Chains - Conversational Retrieval QA Chain`
+- 功能：對話鏈，用以定義一個具備 Retrieval 能力的模組鏈，能夠串接以下模組
+  - Chat Model
+  - Vector Store Retriever: 向量儲存檢索器，負責將給定的 Document 轉為向量儲存並進行檢索的模組，比如 In-Memory Vector Store
+  - Memory
+  - Input Moderation
+  - Return Source Document(switch)
 
 
 ### Prompts
@@ -74,6 +85,8 @@ $ docker compose up
   - Memory
   - Input Moderation
 
+> 搭配 Retriever 時，會發生 error `Received tool input did not match expected schema`，此時請改為使用 `Conversational Retrieval QA Chain`
+
 
 ### Tools
 #### Calculator
@@ -83,6 +96,48 @@ $ docker compose up
 #### Google Custom Search
 - 位置：`Tools - Google Custom Search`
 - 功能：提供 agent 具備使用 Google custom search 的 Internet access 能力
+
+#### Chain Tool
+- 位置：`Tools - Chain Tool`
+- 功能：提供 agent 根據 chain description 的提示使用此工具，可串連另一個 LLM Chain 處理特定的用戶輸入
+  - Return Direct: 如果希望 chain tool 將內容直接回傳，而非經過 agent 整理後才返回可勾選此功能
+
+
+### Vector Stores
+#### In-Memory Vector Store
+- 位置：`Vector Stores - In-Memory Vector Store`
+- 功能：提供 Retrieval Chain 向量儲存檢索能力，可串連以下工具
+  - Document(Loader): 提供向量檢索的 Document 來源，比如 PDF Loader, API Loader
+  - Embeddings: 提供向量檢索使用的 Embedding Model，比如 Ollama 的 `nomic-embed-text` model
+
+
+### Embeddings
+#### Ollama Embeddings
+- 位置：`Embeddings - Ollama Embeddings`
+- 功能：提供 Vector Store 檢索能力的核心 model
+> 記得打開 `Use MMap` 選項，避免 [Ollama Embeddings 500 Error](https://github.com/FlowiseAI/Flowise/issues/1940)
+
+
+### Document Loaders
+#### API Loader
+- 位置：`Document Loaders - API Loader`
+- 功能：提供 API 請求獲取 Document 能力，需串連 Text Splitter 使用
+  - Text Splitter: 協助將 Document 文件內容分割的工具，比如 `HtmlToMarkdown Text Splitter`
+
+#### Pdf File
+- 位置：`Document Loaders - Pdf File`
+- 功能：提供上傳 Pdf 文件獲取 Document，需串連 Text Splitter 使用
+  - Text Splitter: 比如 `Recursive Character Text Splitter`
+
+
+### Text Splitter
+#### HtmlToMarkdown Text Splitter
+- 位置：`Text Splitter - HtmlToMarkdown Text Splitter`
+- 功能：協助將 Document HTML 格式轉為 Markdown 方便檢索查詢
+
+#### Recursive Character Text Splitter
+- 位置：`Text Splitter - Recursive Character Text Splitter`
+- 功能：協助處理 `\n` 分割文件，當重複出現時遞回處理
 
 
 ### Output Parsers
