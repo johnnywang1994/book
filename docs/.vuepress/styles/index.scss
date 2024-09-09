@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  // theme-default/lib/client/styles/vars-dark.scss
+  // FIX: code block color issue
+  div[class*=language-] code {
+    color: rgb(235 235 245 / 60%) !important;
+  }
+}

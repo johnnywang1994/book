@@ -1,15 +1,15 @@
 <template>
-  <div class="features">
+  <div class="vp-features">
     <div
       v-for="feature in features"
       :key="`feature-block-${feature.title}`"
-      class="feature"
+      class="vp-feature"
     >
       <h2>{{ feature.title }}</h2>
       <ul>
         <li
           v-for="(detail, i) in feature.details"
-          :key="`feature-defail-${i}`"
+          :key="`vp-feature-defail-${i}`"
         >
           <span v-if="typeof detail === 'string'">
             {{ detail }}

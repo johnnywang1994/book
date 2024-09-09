@@ -41,6 +41,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "分眾＋「AI文案幫手」全新上線 - 體驗前所未有的創意升級！",
+        "id" : "line-oaplus-ai-copywriting",
+        "image" : "https://pic.vcp.tw/upload/mt2699/dynamic_layout_content/pic_1_214.jpg?1715473538",
+        "link" : "https://tw.linebiz.com/column/ai-copywriting/",
+        "name" : "LINE OA Plus - AI 文案幫手",
+        "tech" : "Secret..."
+      }, {
         "des" : "LINE Invoice Production",
         "id" : "line-invoice",
         "image" : cdn("/websites/line-invoice.png"),

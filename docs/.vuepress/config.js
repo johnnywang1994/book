@@ -1,8 +1,9 @@
-import { defineUserConfig, defaultTheme } from "vuepress";
+import { defineUserConfig } from "vuepress";
 import path from "path";
 
 import react from "@vitejs/plugin-react";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { defaultTheme } from '@vuepress/theme-default';
 import { registerComponentsPlugin } from "@vuepress/plugin-register-components";
 import { searchPlugin } from "@vuepress/plugin-search";
 import ReactPlugin from "vuepress-plugin-react";

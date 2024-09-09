@@ -12,6 +12,7 @@
     "url": "git+https://github.com/johnnywang1994/book.git"
   },
   "scripts": {
+    "clean-dev": "vuepress dev docs --clean-cache",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "gh-pages -d docs/.vuepress/dist"
@@ -22,20 +23,22 @@
   "homepage": "https://github.com/johnnywang1994/book#readme",
   "license": "MIT",
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.1.1",
+    "@vitejs/plugin-react": "^4.3.1",
     "@vue/component-compiler-utils": "^3.3.0",
-    "@vuepress/plugin-back-to-top": "^2.0.0-beta.67",
-    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.67",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.67",
-    "@vuepress/plugin-search": "^2.0.0-beta.67",
-    "@vuepress/shared-utils": "^1.9.10",
+    "@vuepress/bundler-vite": "^2.0.0-rc.15",
+    "@vuepress/plugin-back-to-top": "^2.0.0-rc.15",
+    "@vuepress/plugin-medium-zoom": "^2.0.0-rc.15",
+    "@vuepress/plugin-register-components": "^2.0.0-rc.15",
+    "@vuepress/plugin-search": "^2.0.0-rc.15",
+    "@vuepress/theme-default": "^2.0.0-rc.15",
     "autoprefixer": "^10.4.16",
+    "hash-sum": "^2.0.0",
     "lru-cache": "^7.18.3",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.3.5",
-    "vuepress": "^2.0.0-beta.67",
+    "vuepress": "^2.0.0-rc.15",
     "vuepress-plugin-react": "^1.1.1"
   },
   "dependencies": {

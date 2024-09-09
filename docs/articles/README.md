@@ -18,6 +18,12 @@ Be Good, be strong, be yourself, never give up.
 
 ## Main Work Project
 另有 25 個以上 SPA 轉蛋動畫活動網頁在此省略
+
+### LINE OA Plus - AI 文案幫手
+  - [Link](https://tw.linebiz.com/column/ai-copywriting/)
+  - secret...
+  - onlined at: 2024-07
+
 ### LINE 發票管家 - Line Invoice
 
   - [Link](https://invoice.line.me/)
@@ -288,4 +294,4 @@ Be Good, be strong, be yourself, never give up.
   - Vue2.x, Instascan
   - created at: 2018-12
 
-<Article-RedPill />
+<!-- <Article-RedPill /> -->
