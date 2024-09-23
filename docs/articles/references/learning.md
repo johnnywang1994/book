@@ -8,6 +8,7 @@
 - [烤雞堡的筆記](https://weii.dev/)
 - [Pjchender Dev](https://pjchender.dev/)
 - [@tienyulin - hackmd](https://hackmd.io/@tienyulin)
+- [Robotkang 部落格](https://robotkang.cc/#blog)
 
 
 ## Frontend
@@ -35,6 +36,8 @@
 - [ES2016 - ES2023](https://juejin.cn/post/7206302271079989308)
 - [What, Why and How Static Initialization Blocks](https://dev.to/devsmitra/what-why-and-how-javascript-static-initialization-blocks-4n41)
 - [簡化大量 import](https://juejin.cn/post/7344571285848768524)
+- [AbortController 的使用](https://juejin.cn/post/7112699475327615006)
+
 
 ### Typescript
 - [TypeScript 教程](https://www.tutorialsteacher.com/typescript)
@@ -326,8 +329,7 @@
 ## Browser
 - [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
 - [現代 Browser 已針對 resize event 進行 debounced, 無需再用 requestAnimationFrame 包裹](https://stackoverflow.com/a/56514589)
-- [Samsung Browser Night mode issue](https://www.ctrl.blog/entry/samsung-internet-night-mode.html)
-- Samsung Browser can't long press to save image when url created from "createObjectURL"
+
 
 ## Computer
 - [作業系統考題](https://iter01.com/578045.html)

@@ -9,6 +9,13 @@
 ## Chrome
 - [Image CORS error in Chrome](https://www.hacksoft.io/blog/handle-images-cors-error-in-chrome)
 
+
+## Samsung
+- 當圖片的 url 是透過 "createObjectURL" 產生時，Samsung Browser 無法長按下載圖片（選單中沒有下載按鈕），需使用 base64 格式或是 http 協議才可以
+- [Samsung Browser Night mode issue 導致 UI 色彩被強制改變造成異常](https://www.ctrl.blog/entry/samsung-internet-night-mode.html)
+- 預設狀態 Input element 的 keyboard 事件 `event.code` 為空值，需明確指定 `enterKeyHint` 比如 `enterKeyHint="search"`，並透過 `event.key` 判斷按鍵，如果沒有設定 enterKeyHint，則 `event.key` 會是 `Unidentified`
+
+
 ## Sonarcube
 - [Main Branch does not reflect latest analyses](https://community.sonarsource.com/t/main-branch-does-not-reflect-latest-analyses/63352)
   可能因為 Github push event 被設定或判定成 pull request 導致 main branch 沒有被正確解析

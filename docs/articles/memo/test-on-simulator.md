@@ -24,7 +24,8 @@ $ mkcert -CAROOT # /User/xxxx/Library/Application Support/mkcert
 - 進入 `Android SDK` 分頁，點擊 `SDK Tools` 安裝 `Android SDK Platform-Tools`
 - 複製上方 `Android SDK Location` 並添加到你的 PATH 路徑
 ```bash
-
+# .zshrc or .bashrc...
+export ANDROID_HOME="/Users/xxxx/Library/Android/sdk"
 ```
 - 執行 adb reverse 指令即可將 emulator 中的指定 port forward 到 host 本機的 port
 ```bash
