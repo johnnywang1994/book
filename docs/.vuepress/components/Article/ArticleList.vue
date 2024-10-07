@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '用 Web Container 打造自己的線上 NodeJS 開發環境',
+  link: '/articles/js/web-container.html',
+}, {
   text: '如何不用 setTimeout 幫 display: none 的 DOM 加動畫',
   link: '/articles/css/starting-style.html',
 }, {

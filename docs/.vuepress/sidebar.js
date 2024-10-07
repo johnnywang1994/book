@@ -9,6 +9,7 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
+        "/articles/js/web-container.md",
         "/articles/js/popover-api.md",
         "/articles/js/rwkv-intro.md",
         "/articles/js/extract-assets-from-app.md",
