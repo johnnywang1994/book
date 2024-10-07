@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-1eb66dee","path":"/articles/daily/good-word.html","title":"我喜歡的名言佳句","lang":"zh-TW","frontmatter":{},"headers":[],"git":{"updatedTime":1722778839000,"contributors":[{"name":"johnnywang","email":"johnnywang@test.com","commits":1}]},"filePathRelative":"articles/daily/good-word.md"}');export{t as data};
