@@ -1,7 +1,9 @@
 # 用 Web Container 打造自己的線上 NodeJS 開發環境
 
+<SocialBlock hashtags="javascript,webcontainer,indexedDB,Xterm" />
 
-Hi 大家好，好久不見了，我是 Johnny，距離上一篇文章大概已經過了快半年了，作為一個專業的前端救火隊隊長（專案爆炸時在做什麼？有沒有空？可以來拯救嗎？），一直想找機會寫點東西但下班後累到完全不想碰程式相關的東西...
+
+Hi 大家好，好久不見了，我是 Johnny，距離撰寫上一篇文章 「[來試用看看原生 Web Popover API](/book/articles/js/popover-api.html) 」大概已經過了快半年了，作為一個專業的前端救火隊隊長（專案爆炸時在做什麼？有沒有空？可以來拯救嗎？），一直想找機會寫點東西但下班後累到完全不想碰程式相關的東西...
 
 廢話講完了，進入正題，因為最近看到論壇關於 [StackBlitz](stackblitz.com) 與 [CodeSandbox](https://codesandbox.io/) 技術底層比較的討論串，CodeSandbox 不用我說，大家應該都很熟悉，背後就是傳統的虛擬機器執行環境，這次深入瞭解了下 StackBlitz 團隊背後使用的 Magic 技術 [Web Container](https://webcontainers.io/)，正是這個技術讓 StackBlitz 的專案啟動速度如此之快
 
@@ -246,6 +248,8 @@ async function main() {
 
 > 因為 Web Container 官方的授權方式是不可用於商用，為了避免公開源碼後被濫用於商業用途，在此就不公開我的爛爛源碼給大家見笑了，還請大家見諒，覺得這技術很棒的話，不要忘記直接去使用 StackBlitz 支持一下摟
 
+
+<SocialBlock hashtags="javascript,webcontainer,indexedDB,Xterm" />
 
 ## 結論
 這次透過實作把整個 Web Container 工具玩了一遍，覺得技術迭代真的太快了！！想想不到 8年前，前端還在用 RequireJS 動態定義模組化，現在都直接原生支持 ES Module，甚至連執行環境都可以透過 Web Assembly 技術模擬實現了，未來技術會怎麼發展還是讓人非常期待！今天分享就到這拉，覺得文章不錯也歡迎分享給更多人看看摟，下篇文章見～=V=
