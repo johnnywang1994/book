@@ -1,1 +1,0 @@
-import{C as e,D as o}from"./app-D2B6J4VR.js";console.log("imported");const r=()=>{const[t,s]=e.useState(0);return o.jsxs("div",{children:["Count: ",t,o.jsx("button",{onClick:()=>s(t+1),children:"ADD"})]})};export{r as default};
