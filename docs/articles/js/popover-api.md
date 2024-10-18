@@ -102,7 +102,7 @@ const handleToggle = (event) => {
 
 ## 如何替 Popover 加上動畫？
 - [animating_popovers](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using#animating_popovers)
-這部分稍微複雜點，可以參考官方文件說明，簡單講就是透過 `@starting-style` 屬性，讓 `display: none` 能在顯示、隱藏的狀態間進行過渡，具體可參考我的另一篇文章專門說明[如何不用 setTimeout 幫 display: none 的 DOM 加動畫](/articles/css/starting-style.html)
+這部分稍微複雜點，可以參考官方文件說明，簡單講就是透過 `@starting-style` 屬性，讓 `display: none` 能在顯示、隱藏的狀態間進行過渡，具體可參考我的另一篇文章專門說明[如何不用 setTimeout 幫 display: none 的 DOM 加動畫](/book/articles/css/starting-style.html)
 ```css
 #mypopover {
   width: 200px;

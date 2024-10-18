@@ -86,7 +86,7 @@ export default {
         "des" : "React Eat Snake Game 復古小遊戲 貪吃蛇",
         "id" : "react-eat-snake",
         "image" : cdn("/websites/eat-snake-game.png"),
-        "link" : "https://maju-express.onrender.com/eat-snake",
+        "link" : "https://spa.maju-web.club/eat-snake",
         "name" : "React Eat Snake Game",
         "tech" : "React.js18, Typescript, Canvas"
       }, {
@@ -121,14 +121,14 @@ export default {
         "des" : "Client Side 圖片壓縮器，純客戶端壓縮，無需上傳至 Server，自動 HEIC 轉 JPG，支援整包資料夾壓縮",
         "id" : "image-compress",
         "image" : cdn("/websites/browser-image-compress.png"),
-        "link" : "https://nodejs-koa-proxy.onrender.com/image-compress.html",
+        "link" : "https://spa.maju-web.club/image-compress",
         "name" : "Browser Image Compressor",
         "tech" : "heic2any, browser-image-compression, jszip, FileSaver, Vue.js"
       }, {
         "des" : "網頁掃描文字翻譯器，透過 Google Translate 翻譯文字內容",
         "id" : "react-web-scan-translator",
         "image" : cdn("/websites/web-scan-translator.png"),
-        "link" : "https://nodejs-koa-proxy.onrender.com/scan-translator",
+        "link" : "https://spa.maju-web.club/scan-translator",
         "name" : "Web Scan Translator",
         "tech" : "React.js18, WebStream, Tesseract.js, Google Translate"
       }, {
@@ -142,23 +142,24 @@ export default {
         "des" : "React Matter Clock",
         "id" : "react-matter-clock",
         "image" : cdn("/websites/react-matter-clock.png"),
-        "link" : "https://maju-express.onrender.com/matter-clock",
+        "link" : "https://spa.maju-web.club/matter-clock",
         "name" : "React Matter Clock",
         "tech" : "React.js18, Typescript, Matter-js"
       }, {
         "des" : "React Sudoku Game",
         "id" : "react-sudoku",
         "image" : cdn("/websites/react-sudoku.png"),
-        "link" : "https://maju-express.onrender.com/sudoku",
+        "link" : "https://spa.maju-web.club/sudoku",
         "name" : "React Sudoku Game",
         "tech" : "React.js18, Typescript"
-      }, {
-        "des" : "React Web3Storage Web UI",
-        "id" : "react-web3-storage",
-        "image" : cdn("/websites/react-web3-storage.jpg"),
-        "link" : "https://react-web3-storage.onrender.com/",
-        "name" : "React Web3 Storage",
-        "tech" : "React.js18, Javascript, Web3 Storage Client API"
+      // }, {
+      //   // web3.storage api should be upgraded
+      //   "des" : "React Web3Storage Web UI",
+      //   "id" : "react-web3-storage",
+      //   "image" : cdn("/websites/react-web3-storage.jpg"),
+      //   "link" : "https://react-web3-storage.onrender.com/",
+      //   "name" : "React Web3 Storage",
+      //   "tech" : "React.js18, Javascript, Web3 Storage Client API"
       }, {
         "des" : "Javascript 打造 Pokemon Game 原型",
         "id" : "vue-pokemon-game",
