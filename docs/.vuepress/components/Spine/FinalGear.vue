@@ -212,6 +212,7 @@ async function toggleOpen(targetAssist) {
     await nextTick()
     showOut()
     router.replace({
+      path: route.fullPath.split('?')[0],
       query: {
         assist: state.assist
       }
