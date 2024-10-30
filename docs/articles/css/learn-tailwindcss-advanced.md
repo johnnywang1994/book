@@ -202,6 +202,26 @@
 </ul>
 ```
 
+### CSS mask-image
+```jsx
+import StickerBg from '@/assets/sticker_mask.svg';
+
+
+const StickerItem = () => {
+  return (
+    <div className="relative w-[89px] h-[107px]">
+      <StickerBg />
+      <div className="absolute bottom-0 w-full h-[83%] flex items-center justify-center">
+        <img
+          src="/ania.png"
+          className="relative w-full h-full object-contain [mask-image:url('../assets/sticker_mask.svg')] [mask-size:cover]"
+        />
+      </div>
+    </div>
+  );
+}
+```
+
 ### Creating custom modifiers
 ```js
 let plugin = require('tailwindcss/plugin')
