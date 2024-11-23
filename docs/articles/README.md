@@ -53,10 +53,15 @@ Be Good, be strong, be yourself, never give up.
 ## Private Project
 詳細專案圖文介紹請[前往這邊瀏覽](/book/project.html)
 
+### Maju Web Container - Preview Github Repository
 
-### Maju Web Container
+  - [Link](https://pen.maju-web.club/webcontainer/preview)
+  - ReactJS, Typescript, WebContainer
+  - created at: 2024-11
 
-  - [Link](https://pen.maju-web.club/webcontainer)
+### Maju Web Container - IDE
+
+  - [Link](https://pen.maju-web.club/webcontainer/container)
   - ReactJS, Typescript, WebContainer, CodeMirror, Xterm, IndexedDB
   - created at: 2024-10
 

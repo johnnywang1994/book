@@ -44,9 +44,16 @@ export default {
         "des" : "線上 NodeJS 開發編輯器，沒有 VM，不用安裝 NodeJS，直接在瀏覽器內開發編輯 NodeJS 專案",
         "id" : "maju-web-container",
         "image" : cdn("/websites/maju-web-container.png"),
-        "link" : "https://pen.maju-web.club/webcontainer",
-        "name" : "Maju Web Container",
+        "link" : "https://pen.maju-web.club/webcontainer/container",
+        "name" : "Maju Web Container - IDE",
         "tech" : "ReactJS, Typescript, WebContainer, CodeMirror, Xterm, IndexedDB"
+      }, {
+        "des" : "Github Repository Preview 線上即時 Git 專案預覽服務",
+        "id" : "maju-web-container",
+        "image" : cdn("/websites/maju-web-container.png"),
+        "link" : "https://pen.maju-web.club/webcontainer",
+        "name" : "Maju Web Container - Github Repository Preview",
+        "tech" : "ReactJS, Typescript, WebContainer"
       }, {
         "des" : "分眾＋「AI文案幫手」全新上線 - 體驗前所未有的創意升級！",
         "id" : "line-oaplus-ai-copywriting",
