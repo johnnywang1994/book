@@ -51,7 +51,7 @@ export default {
         "des" : "Github Repository Preview 線上即時 Git 專案預覽服務",
         "id" : "maju-web-container",
         "image" : cdn("/websites/maju-web-container.png"),
-        "link" : "https://pen.maju-web.club/webcontainer",
+        "link" : "https://pen.maju-web.club/webcontainer/preview",
         "name" : "Maju Web Container - Github Repository Preview",
         "tech" : "ReactJS, Typescript, WebContainer"
       }, {
