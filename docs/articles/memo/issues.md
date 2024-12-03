@@ -30,5 +30,28 @@
 ## Computed
 - [WSL hostname](https://www.codewrecks.com/post/general/wsl-hostname/)
 
+## Webpack
+- [Can't import the named export from non EcmaScript module (only default export is available)](https://github.com/vuejs/pinia/issues/675#issuecomment-919544784)
+
+
 ## Nextjs
 - [Nextjs Jest with svgr/webpack component issue](https://github.com/gregberge/svgr/issues/83)
+- [Next13 Image 組件安全性問題](https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps)
+- [Next v13.5.1~14.2.9 pageProps json issue](https://github.com/henrycjchen/x-now-route-matches-demo/tree/main)
+  - input `curl -v http://localhost:3000/demo2 -H "x-now-route-matches: 1"`, will starts returning `Cache-Control: s-maxage=1, stale-while-revalidate`.
+  - This json-format html page would got cached mistakenly and cause user info leak to other users. And since the page is still html, the cached page would also hurt SEO for Google.
+  - `?__nextDataReq=1` in Next server url would return pageProps from Nextjs server, make sure you really need SSR, since these may cause some security issue if you did not aware of this.
+
+
+## Vite
+- [Wasmer JS in Vite not being recognized](https://github.com/vitejs/vite/issues/17334#issuecomment-2142804097)
+
+
+## TailwindCSS
+- [TailwindCSS v3.3.2 fix "too mant open files" issue](https://www.reddit.com/r/nextjs/comments/16bk7xj/error_emfile_too_many_open_files_tailwind/)
+
+## MongoDB
+- [Read, Write Stream 分離導致的讀取問題](https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency)
+
+## Nginx
+- [Nginx returning 500 for POST FormData Request](https://stackoverflow.com/questions/57340193/nginx-returning-500-for-post-image-request-with-django-rest-framework)

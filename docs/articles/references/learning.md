@@ -191,7 +191,7 @@
 - [Patching Vite HMR with Tailwind-JIT(old explain of touching files in Vite)](https://mohd.dev/blog/2021/12/patching-vite-hmr-to-work-with-tailwind-jit.html)
 - [Gulp with tailwindcss](https://github.com/lazymozek/gulp-with-tailwindcss/blob/main/gulpfile.js)
 - [Disable preflight feature for React Antd](https://dev.to/fabiobiondi/react-antd-and-tailwind-fix-css-conflicts-5542)
-- [TailwindCSS v3.3.2 fix "too mant open files" issue](https://www.reddit.com/r/nextjs/comments/16bk7xj/error_emfile_too_many_open_files_tailwind/)
+
 
 ### SCSS
 - [Sass parent selector](https://pantaley.com/blog/Add-class-to-the-most-outer-selector-using-Sass-mixin/)
@@ -220,16 +220,11 @@
 - [go 的 [] rune 和 [] byte 區別](https://learnku.com/articles/23411/the-difference-between-rune-and-byte-of-go)
 
 
-## MongoDB
-- [Read, Write Stream 分離導致的讀取問題](https://www.mongodb.com/docs/manual/core/read-isolation-consistency-recency/#causal-consistency)
-
-
 ## SQL
 - [50道SQL練習題及答案與詳細分析](https://www.itread01.com/content/1545134226.html)
 
 ## Nginx
 - [Nginx 入門到實踐](https://juejin.cn/post/6844904144235413512)
-- [Nginx returning 500 for POST FormData Request](https://stackoverflow.com/questions/57340193/nginx-returning-500-for-post-image-request-with-django-rest-framework)
 
 
 ## Traefik
@@ -306,14 +301,13 @@
 - [Next13 app dir with I18next](https://locize.com/blog/next-13-app-dir-i18n/)
 - [Next13 use @svgr/webpack](https://github.com/vercel/next.js/issues/48177#issuecomment-1557354538)
 - [Next getServerSideProps Cache](https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props#caching-with-server-side-rendering-ssr)
-- [Next13 Image 組件安全性問題](https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps)
+
 
 ## Vinxi
 - [Building React metaframework with Vinxi](https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/)
 
 ## Webpack
 - [手寫 Webpack 核心原理](https://juejin.im/post/6854573217336541192)
-- [Can't import the named export from non EcmaScript module (only default export is available)](https://github.com/vuejs/pinia/issues/675#issuecomment-919544784)
 
 ## Github
 - [github page 靜態部署教學](https://ithelp.ithome.com.tw/articles/10209553)
