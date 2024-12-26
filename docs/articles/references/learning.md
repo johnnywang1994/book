@@ -78,6 +78,8 @@
 - [HTML Input 限制手機彈出純數字鍵盤](https://stackoverflow.com/questions/6178556/phone-numeric-keyboard-for-text-input)
 - [Passive event listeners 優化 scroll, touch 事件](https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md)
 - [Viewport does not resize on iOS when showing keyboard](https://github.com/vector-im/hydrogen-web/issues/181#issuecomment-797012793)
+- [MDN - ScrollTimeline](https://developer.mozilla.org/en-US/docs/Web/API/ScrollTimeline)
+- [原生轉場動畫 View Transition](https://github.com/WICG/view-transitions/blob/main/explainer.md)
 
 
 ### Canvas
@@ -226,6 +228,10 @@
 ## Nginx
 - [Nginx 入門到實踐](https://juejin.cn/post/6844904144235413512)
 
+## Web Assembly
+- [StackBlitz Web Container](https://webcontainers.io/)
+- [container to wasm](https://github.com/ktock/container2wasm)
+- [WebAssembly：無需容器就能運行 Docker](https://cloudnative.to/blog/docker-without-containers/)
 
 ## Traefik
 - [基礎理論](https://doc.traefik.io/traefik/getting-started/concepts/)

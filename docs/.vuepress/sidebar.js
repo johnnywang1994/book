@@ -9,6 +9,7 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
+        "/articles/js/view-transition.md",
         "/articles/js/web-container.md",
         "/articles/js/popover-api.md",
         "/articles/js/rwkv-intro.md",
@@ -65,11 +66,12 @@ const sidebar = {
       text: "CSS & Sass",
       collapsible: true,
       children: [
+        "/articles/css/2024-css-report.md",
+        "/articles/css/2021-css-report.md",
         "/articles/css/starting-style.md",
         "/articles/css/css-planet.md",
         "/articles/css/learn-tailwindcss.md",
         "/articles/css/learn-tailwindcss-advanced.md",
-        "/articles/css/2021-css-report.md",
         "/articles/css/scss-built-in-modules.md",
         "/articles/css/parent-selector.md",
         "/articles/css/landscape-fix-scroll.md",
