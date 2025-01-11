@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '2024 CSS 年度報告筆記',
+  link: '/articles/css/2024-css-report.html',
+}, {
   text: '用 Web Container 打造自己的線上 NodeJS 開發環境',
   link: '/articles/js/web-container.html',
 }, {
@@ -36,15 +39,6 @@ const newItems = [{
 }, {
   text: 'Create a React Server Components Project without NextJS - 製作一個不依賴 NextJS 的 React Server Components 專案',
   link: '/articles/js/react-rsc-without-nextjs.html',
-}, {
-  text: '從 Mock Service Worker 源碼中學習',
-  link: '/articles/js/learn-from-msw-source-code.html',
-}, {
-  text: "擺脫 Node modules 地獄，擁抱 Yarn Plug'n'Play(PnP)",
-  link: '/articles/js/yarn-pnp.html',
-}, {
-  text: '用 Socket.io 搭配 Matterjs 製作一款 Real-Time Canvas 聊天室（文長慎入）',
-  link: '/articles/js/maju-chat-game.html',
 }];
 </script>
 

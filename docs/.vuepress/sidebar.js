@@ -87,6 +87,7 @@ const sidebar = {
           text: "Javascript",
           collapsible: true,
           children: [
+            "/articles/memo/js/what-is-csp.md",
             "/articles/memo/js/astro-learn.md",
             "/articles/memo/js/astro-theme-flash-issue.md",
             "/articles/memo/js/rspack.md",

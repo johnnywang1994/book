@@ -288,6 +288,7 @@
 - [Framer-Motion 動態元素高度動畫](https://github.com/framer/motion/discussions/1884)
 - [Zustand computed getter 討論](https://github.com/pmndrs/zustand/issues/132)
 - [為什麼 Redux Toolkit 就是今天如何使用 Redux](https://redux.js.org/introduction/why-rtk-is-redux-today)
+- [用 Vite 打造一個 React component library](https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma)
 
 
 ## Nextjs
