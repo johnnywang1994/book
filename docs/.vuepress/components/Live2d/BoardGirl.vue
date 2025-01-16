@@ -165,6 +165,7 @@ async function toggleOpen() {
     await nextTick()
     showOut()
     router.replace({
+      path: '/live2d/',
       query: {
         project: state.project,
         assist: state.assist
