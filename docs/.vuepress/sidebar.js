@@ -87,6 +87,7 @@ const sidebar = {
           text: "Javascript",
           collapsible: true,
           children: [
+            "/articles/memo/js/read-clipboard.md",
             "/articles/memo/js/what-is-csp.md",
             "/articles/memo/js/astro-learn.md",
             "/articles/memo/js/astro-theme-flash-issue.md",
@@ -197,6 +198,9 @@ const sidebar = {
             "/articles/git/diff.md",
             "/articles/git/rebase.md",
             "/articles/git/subtree.md",
+            "/articles/git/reflog.md",
+            "/articles/git/filter-branch.md",
+            "/articles/git/git-crypt.md",
             "/articles/git/utils.md",
           ],
         },

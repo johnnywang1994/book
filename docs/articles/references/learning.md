@@ -67,6 +67,7 @@
 - [Web Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API/Using#result)
 - [URL Pattern API](https://developer.mozilla.org/en-US/docs/Web/API/URL_Pattern_API)
 - [Barcode Detection API](https://developer.mozilla.org/en-US/docs/Web/API/Barcode_Detection_API)
+- [Read clipboard with ClipboardItem](https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem)
 
 
 ### DOM
@@ -179,6 +180,7 @@
 - [支援在 JS 中獲取 Android, IOS 裝置瀏覽器 safe area](https://benfrain.com/how-to-get-the-value-of-phone-notches-environment-variables-env-in-javascript-from-css/)
 - [@starting-style 搭配 transition-behavior: allow-discrete 讓 display: none 支援動畫](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)
 - [Clipping Masking CSS](https://css-tricks.com/clipping-masking-css/)
+- [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)
 
 ### Animation
 - [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
@@ -331,6 +333,7 @@
 ## Browser
 - [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
 - [現代 Browser 已針對 resize event 進行 debounced, 無需再用 requestAnimationFrame 包裹](https://stackoverflow.com/a/56514589)
+- [URL末尾加不加”/“有什麼差別？](https://juejin.cn/post/7468112128928350242)
 
 
 ## Computer

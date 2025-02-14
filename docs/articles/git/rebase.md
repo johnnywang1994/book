@@ -30,11 +30,13 @@ $ git rebase -Xours main
 > 注意！這邊的 theirs, ours 的邏輯與 git merge 時相反，使用時需要特別注意！！
 
 
-### 合併 commits
+## 整理 commits
 - [參考討論內容](https://stackoverflow.com/a/2568581)
-rebase 除了最基本的合併分支能力外，還可以用來整理當前分支中的 commits，假設今天我們的歷史為 a-b-c，此時我們想把 b, c 兩個 commits 合併，就可以在分支上執行下面的指令
+rebase 除了最基本的合併分支能力外，還可以用來整理當前分支中的 commits，假設今天我們的歷史為 a-b-c，此時我們想把 b, c 兩個 commits 進行整理，就可以在分支上執行下面的指令
 ```bash
 $ git rebase --interactive HEAD~2
+# or
+$ git rebase -i HEAD~2
 ```
 輸入後會跳出一個 commits 整理畫面，類似下面，這邊要注意，與 git log 的順序相反，最新的 commit 在下面
 ```bash
@@ -46,15 +48,30 @@ pick cc1d603 c
 # Commands:
 # ...
 ```
-此時如果我們把 b 的 pick 標記改成 squash，執行後會跳出錯誤 `Cannot 'squash' without a previous commit`，反而此時我們要把 c 改成 squash，保留 b，執行後會再跳出下面的 commit 內容確認
+
+### 合併
+同上指令後，如果我們把 b 的 pick 標記改成 squash，執行後會跳出錯誤 `Cannot 'squash' without a previous commit`，反而此時我們要把 c 改成 squash，保留 b，執行後會再跳出下面的 commit 內容確認
 ```bash
 # This is a combination of 2 commits.
 # The first commit's message is:
-
 b
-
 # This is the 2nd commit message:
-
 c
 ```
 修改成我們要的 commit 訊息後，儲存跳出，就可以看到我們的 b, c commit 被合併成了一個
+
+### 調整順序
+因為預設 rebase 會由上到下疊加串連 commits，只要把上面的原本的順序調整如下，原本紀錄順序 a-b-c 就會變成 a-c-b
+```bash
+pick cc1d603 c
+
+pick c0bcbdc b
+```
+
+### 刪除
+同上，把不要的紀錄前面 pick 標記改成 drop 即可，如果誤刪了，一樣可以透過 `git reset --hard ORIG_HEAD` 強制還原到原本的狀態
+
+### 修改 message
+同上，把要調整 message 的紀錄前面 pick 標記改成 reword 即可，後續會跳出編輯器給你輸入新的 message
+
+> 修改 message 並不是直接改動原本的 commit message，而是建立一個新的 commit 並把指針移動到新 branch 上，同樣也能用 ORIG_HEAD 回去原本的 branch
