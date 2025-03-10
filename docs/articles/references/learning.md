@@ -257,7 +257,7 @@
 - [Awesome Vite - templates](https://github.com/vitejs/awesome-vite#templates)
 - [Vue3 directive, nav guard 權限控制範例](https://muki.tw/tech/vue/vue-custom-directive-roles-permission/)
 - [Making the Virtual DOM. Faster.](https://github.com/jwlearn1994/tiny-vnode.git)
-
+- [Keep alive 的坑](https://juejin.cn/post/6939269149545725982)
 
 ## React
 ### 原理
@@ -351,6 +351,7 @@
 - [Linux Ubuntu環境(docker : Ubuntu 18.04)報錯libc.so.6：version GLIBC_2.28 not found](https://zhuanlan.zhihu.com/p/627165977)
 - [Rewrite previous commit username or email](https://stackoverflow.com/questions/2919878/git-rewrite-previous-commit-usernames-and-emails)
 - [What is ADR(architecture-decision-record)?](https://github.com/joelparkerhenderson/architecture-decision-record)
+- [Web 回流與重繪](https://juejin.cn/post/7106040916862828557)
 
 ## Leetcode
 - [Leetcode 題解](https://github.com/CyC2018/CS-Notes/blob/master/notes/Leetcode%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%95.md)
