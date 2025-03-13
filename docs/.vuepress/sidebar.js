@@ -431,7 +431,6 @@ const sidebar = {
         },
         "/articles/daily/2024/禪修放下執著.md",
         "/articles/daily/2024/不對稱的回報.md",
-        "/articles/daily/2024/不對稱的回報.md",
         "/articles/daily/2024/避免慢性壓力.md",
         "/articles/daily/2023/communicate.md",
         "/articles/daily/2023/happiness.md",
