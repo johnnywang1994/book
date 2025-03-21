@@ -429,6 +429,8 @@ const sidebar = {
             "/articles/daily/英文/008-數字.md",
           ],
         },
+        "/articles/daily/2025/外婆過世.md",
+        "/articles/daily/2025/不掉進說服陷阱.md",
         "/articles/daily/2024/禪修放下執著.md",
         "/articles/daily/2024/不對稱的回報.md",
         "/articles/daily/2024/避免慢性壓力.md",

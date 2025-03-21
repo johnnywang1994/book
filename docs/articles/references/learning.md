@@ -403,6 +403,7 @@
 ## 職場相關
 - [職場霸凌事前、事後，雇主馬虎不得！律師告訴你處理重點](https://vip.104.com.tw/preLogin/recruiterForum/post/84422)
 - [如何辨識-自戀型人格障礙(NPD)](https://vocus.cc/article/64ec12ebfd89780001d4cee7)
+- [非暴力溝通四步驟](https://readingoutpost.com/nonviolent-communication-at-work/)
 
 ## The Great Reset
 - [王大師大重置分享會內容](https://rumble.com/v4mmqwk-march-31-2024.html)
