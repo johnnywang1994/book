@@ -324,6 +324,7 @@ const sidebar = {
                 "/articles/daily/中醫/診斷學/脈診簡史.md",
                 "/articles/daily/中醫/診斷學/切診.md",
                 "/articles/daily/中醫/診斷學/常見脈象與臨床意義.md",
+                "/articles/daily/中醫/診斷學/經脈辨證.md"
               ],
             },
             {
