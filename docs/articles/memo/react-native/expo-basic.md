@@ -10,6 +10,10 @@ $ npx create-expo-app@latest MyProject
 $ npx create-expo-app MyProject --template blank
 ```
 
+### Config in app.json
+This is where expo pick up App related settings for App Store
+
+
 ### Run up
 - run web/mobile
 ```bash
@@ -46,6 +50,14 @@ module.exports = function(api) {
   };
 };
 ```
+
+
+## Learn Path
+- [react-native-practical-guide-code](https://github.com/academind/react-native-practical-guide-code)
+- 基礎：Basics Fundamentals, Dynamic & Adaptive Layouts, Navigation
+- 主要：Redux with React Native, Example App, User Input, Http Request
+- 進階：User authenticate, Native Device Feature(Camera, Location), Push Notification, Publish App
+
 
 
 ## Library
@@ -104,10 +116,12 @@ a screen that is visible before the contents of the app has had a chance to load
 - `app.json`
 ```json
 {
-  "splash": {
-    "image": "./assets/splash.png",
-    "resizeMode": "contain",
-    "backgroundColor": "#25292e"
+  "expo": {
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#25292e"
+    }
   }
 }
 ```

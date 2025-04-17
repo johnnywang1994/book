@@ -1,5 +1,21 @@
 # React Native - basic
 
+## Introduction
+React + React Native => Real Native mobile Apps(IOS, Android)，React Native 提供底層一套組件、以及暴露相關原生 api 比如攝影機鏡頭功能，用以取代原生 DOM，並讓開發者使用後轉為原生 App UI 元素，並協助編譯
+
+### UI 與邏輯處理
+React Native 中的 UI 是透過等價替換的方式協助渲染，而我們撰寫的邏輯部分則不會被替換，是直接透過 React Native 內部提供的一套 Javascript thread 線程上運行，也就是可以將 React Native 視為把 Javascript thread 包裹到 App 中，所以`邏輯部分是直接視為 JS 運行，並透過底層的轉換與 Android, IOS 系統溝通`
+
+因為非瀏覽器，CSS 並不存在，需使用 `inline styles` or `StyleSheet` Object，只是基於 CSS 的語法子集
+
+
+## Get Started
+
+### 兩種建立專案的方式
+- Expo CLI（推薦，工具完整）
+- React Native CLI
+
+
 ## Core Components
 - [Documentation](https://reactnative.dev/docs/components-and-apis)
 
