@@ -324,7 +324,8 @@ const sidebar = {
                 "/articles/daily/中醫/診斷學/脈診簡史.md",
                 "/articles/daily/中醫/診斷學/切診.md",
                 "/articles/daily/中醫/診斷學/常見脈象與臨床意義.md",
-                "/articles/daily/中醫/診斷學/經脈辨證.md"
+                "/articles/daily/中醫/診斷學/經脈辨證.md",
+                "/articles/daily/中醫/診斷學/外邪辨證.md"
               ],
             },
             {
@@ -368,6 +369,16 @@ const sidebar = {
               text: "針灸學",
               collapsible: true,
               children: ["/articles/daily/中醫/針灸學/特定穴.md"],
+            },
+            {
+              text: "其他",
+              collapsible: true,
+              children: [
+                "/articles/daily/中醫/其他/內證觀察筆記-上篇.md",
+                "/articles/daily/中醫/其他/內證觀察筆記-中篇.md",
+                // "/articles/daily/中醫/其他/內證觀察筆記-下篇.md",
+                "/articles/daily/中醫/其他/磁力對生理的影響.md"
+              ],
             },
           ],
         },
