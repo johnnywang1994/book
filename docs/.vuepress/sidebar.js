@@ -376,7 +376,7 @@ const sidebar = {
               children: [
                 "/articles/daily/中醫/其他/內證觀察筆記-上篇.md",
                 "/articles/daily/中醫/其他/內證觀察筆記-中篇.md",
-                // "/articles/daily/中醫/其他/內證觀察筆記-下篇.md",
+                "/articles/daily/中醫/其他/內證觀察筆記-下篇.md",
                 "/articles/daily/中醫/其他/磁力對生理的影響.md"
               ],
             },
@@ -388,6 +388,11 @@ const sidebar = {
           children: [
             "/articles/daily/易經/入門.md"
           ],
+        },
+        {
+          text: "道德經學習",
+          collapsible: true,
+          children: Array(20).fill('').map((_, i) => `/articles/daily/道德經/${(i + 1).toString().padStart(2, '0')}.md`)
         },
         {
           text: "人類真相推廣協會",
