@@ -87,6 +87,7 @@ const sidebar = {
           text: "Javascript",
           collapsible: true,
           children: [
+            "/articles/memo/js/yarn-pnp-vscode.md",
             "/articles/memo/js/read-clipboard.md",
             "/articles/memo/js/what-is-csp.md",
             "/articles/memo/js/astro-learn.md",
