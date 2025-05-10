@@ -396,7 +396,7 @@ const sidebar = {
           collapsible: true,
           children: [
             '/articles/daily/道德經/學習重點.md',
-            ...Array(30).fill('').map((_, i) => `/articles/daily/道德經/${(i + 1).toString().padStart(2, '0')}.md`)
+            ...Array(37).fill('').map((_, i) => `/articles/daily/道德經/${(i + 1).toString().padStart(2, '0')}.md`)
           ]
         },
         {
