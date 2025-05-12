@@ -43,11 +43,11 @@ const router = useRouter()
 const route = useRoute()
 
 const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://johnnywang1994.github.io/assets/spine/gear'
-  : 'https://johnnywang1994.github.io/assets/spine/gear'
+  ? 'https://cdn.statically.io/gh/johnnywang1994/spine-assets/master/gear'
+  : 'https://cdn.statically.io/gh/johnnywang1994/spine-assets/master/gear'
   // : '/book/Resources/spine/gear';
 
-const headImg = (id) => `https://johnnywang1994.github.io/assets/spine/gear/head/${id}.png`;
+const headImg = (id) => `https://cdn.statically.io/gh/johnnywang1994/spine-assets/master/gear/head/${id}.png`;
 
 const state = reactive({
   open: false,
