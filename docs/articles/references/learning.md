@@ -181,6 +181,8 @@
 - [@starting-style 搭配 transition-behavior: allow-discrete 讓 display: none 支援動畫](https://developer.mozilla.org/en-US/docs/Web/CSS/@starting-style)
 - [Clipping Masking CSS](https://css-tricks.com/clipping-masking-css/)
 - [CSS Wrapped 2024](https://chrome.dev/css-wrapped-2024/)
+- [用 Vue 3 打造了一套像素風組件庫，支援自訂 Paint Worklet](https://juejin.cn/post/7503846429081944101)
+- [css-houdini-pixel-box](https://github.com/jerosoler/css-houdini-pixel-box)
 
 ### Animation
 - [visualization-collection 一個專注於前端視覺效果的集合應用，包含CSS動效、Canvas動畫、人工智能應用等上百個案例](https://github.com/hepengwei/visualization-collection)
@@ -272,6 +274,7 @@
 - [React源碼 commit階段詳解](https://ithelp.ithome.com.tw/articles/10255458)
 - [React useEffect 深入重複調用問題](https://juejin.cn/post/6844904117303934989)
 - [有react fiber，为什么不需要vue fiber](https://juejin.cn/post/7077545184807878692)
+- [手寫 React16 原始碼](https://juejin.cn/post/7503847913252503590)
 - [React18 — useSyncExternalStore](https://milkmidi.medium.com/react-18-usesyncexternalstore-a427bf82c198)
 - [React Suspense 運作原理](https://cloud.tencent.com/developer/article/2190722)
 - [React Server Component - Demo](https://github.com/reactjs/server-components-demo/tree/main)

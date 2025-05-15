@@ -1,4 +1,4 @@
-## Yarn Plug'n'Play (PnP) 的 VSCode 設定方式
+# Yarn Plug'n'Play (PnP) 的 VSCode 設定方式
 
 以下兩步驟設定：
 
