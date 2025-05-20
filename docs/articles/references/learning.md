@@ -377,6 +377,7 @@
 - [Cyclic](https://www.cyclic.sh/)
 - [GCP - cloud run cloud SQL demo](https://github.com/GoogleCloudPlatform/serverless-expeditions/tree/main/cloud-run-cloud-sql)
 - [Terraform 自動化的基礎架構介紹](https://medium.com/@chihsuan/terraform-%E8%87%AA%E5%8B%95%E5%8C%96%E7%9A%84%E5%9F%BA%E7%A4%8E%E6%9E%B6%E6%A7%8B%E4%BB%8B%E7%B4%B9-f827e8975e98)
+- [Alpine, Slim, Bullseye, Bookworm, Noble — Differences in Docker Images Explained](https://medium.com/@faruk13/alpine-slim-bullseye-bookworm-noble-differences-in-docker-images-explained-d9aa6efa23ec)
 
 
 ## Code tracing, security
