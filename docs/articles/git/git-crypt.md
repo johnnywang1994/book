@@ -22,6 +22,10 @@ $ git-crypt status
 3. `.gitattributes` 指定加密文件
 ```
 secret.properties filter=git-crypt diff=git-crypt
+**/secret/** filter=git-crypt diff=git-crypt
+*.crt filter=git-crypt diff=git-crypt
+*.key filter=git-crypt diff=git-crypt
+*.pem filter=git-crypt diff=git-crypt
 ```
 
 > 添加到 `.gitattributes` 之前，提交的紀錄中機密檔案並不會被加密，請確保在提交機密內容前添加到 gitattributes 中
@@ -39,7 +43,7 @@ $ git-crypt export-key git-crypt.key
 
 6. 將 `git-crypt.key` 檔案加入 `.gitignore` 中避免誤將 key 上傳
 
-7. 解鎖 clone 下來的專案內容 (從協作者那取得 git-crypt.key)
+7. 解鎖 clone 下來的專案內容 (從協作者那取得 git-crypt.key)，解鎖後，使用的 key 會被複製一份存放在 `.git/git-crypt/keys/default` 中
 ```bash
 $ git-crypt unlock ./git-crypt.key
 ```
