@@ -120,6 +120,7 @@
 - [Renovate - Automated dependency updates](https://docs.renovatebot.com/)
 - [Renovate - postupgradetasks 解決 dependency 衝突問題](https://docs.renovatebot.com/configuration-options/#postupgradetasks)
 - [pnpm 安裝 vue 時使用 shamefully-hoist，修正 node_modules 安裝依賴找不到 module 的問題](https://pnpm.io/npmrc#shamefully-hoist)
+- [Yarn vs Lerna workspaces](https://www.startechup.com/blog/lerna-vs-yarn-workspaces/)
 
 
 ### Koa2
