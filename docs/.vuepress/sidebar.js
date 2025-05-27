@@ -220,6 +220,13 @@ const sidebar = {
           ],
         },
         {
+          text: "Python",
+          collapsible: true,
+          children: [
+            "/articles/memo/python/pyenv.md",
+          ],
+        },
+        {
           text: "Patterns",
           collapsible: true,
           children: [
@@ -298,7 +305,13 @@ const sidebar = {
           collapsible: true,
           children: [
             "/articles/daily/中醫/README.md",
-            "/articles/daily/中醫/黃帝內經-素問.md",
+            {
+              text: "黃帝內經",
+              collapsible: true,
+              children: [
+                "/articles/daily/中醫/黃帝內經/素問.md",
+              ],
+            },
             {
               text: "基礎理論",
               collapsible: true,

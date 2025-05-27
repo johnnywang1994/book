@@ -55,3 +55,6 @@
 
 ## Nginx
 - [Nginx returning 500 for POST FormData Request](https://stackoverflow.com/questions/57340193/nginx-returning-500-for-post-image-request-with-django-rest-framework)
+
+
+## Wsl Pyenv
