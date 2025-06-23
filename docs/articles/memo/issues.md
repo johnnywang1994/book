@@ -41,6 +41,8 @@
   - input `curl -v http://localhost:3000/demo2 -H "x-now-route-matches: 1"`, will starts returning `Cache-Control: s-maxage=1, stale-while-revalidate`.
   - This json-format html page would got cached mistakenly and cause user info leak to other users. And since the page is still html, the cached page would also hurt SEO for Google.
   - `?__nextDataReq=1` in Next server url would return pageProps from Nextjs server, make sure you really need SSR, since these may cause some security issue if you did not aware of this.
+- [Next cache poisoning](https://github.com/advisories/GHSA-gp8f-8m3g-qvj9)
+- [Next with Yarn PnP "sharp" module not found](https://github.com/yarnpkg/berry/discussions/6012)
 
 
 ## Vite
