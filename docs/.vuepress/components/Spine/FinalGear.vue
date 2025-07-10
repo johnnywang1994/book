@@ -287,6 +287,7 @@ onMounted(() => {
     /* overflow: hidden; */
     #board-girl {
       flex-grow: 1;
+      transform-origin: top center;
     }
   }
   .panel {
