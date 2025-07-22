@@ -1,5 +1,17 @@
 <template>
   <div :style="`position: ${position}`" :class="['board-wrapper', position, state.assist]">
+    <div v-if="!state.open" class="assist-list">
+      <div
+        v-for="assist in assistList"
+        :key="`assist_${assist}`"
+        @click="() => {
+          state.assist = assist;
+          toggleOpen();
+        }"
+      >
+        <img :src="getHeadImg(assist)" :alt="assist" />
+      </div>
+    </div>
     <div class="panel" v-if="!state.open">
       <select v-model="state.project">
         <option
@@ -8,16 +20,6 @@
           :value="project"
         >{{ project }}</option>
       </select>
-      <select v-show="state.project" v-model="state.assist">
-        <option
-          v-for="assist in assistList"
-          :key="`assist_${assist}`"
-          :value="assist"
-        >{{ assist }}</option>
-      </select>
-      <div class="call-assist" @click="toggleOpen">
-        呼叫助理
-      </div>
     </div>
     <template v-else>
       <canvas id="board-girl"></canvas>
@@ -52,7 +54,8 @@ const route = useRoute()
 
 const BASE_URL = process.env.NODE_ENV === 'production'
   ? 'https://johnnywang1994.github.io/assets/live2d'
-  : '/book/Resources/live2d';
+  // : '/book/Resources/live2d';
+  : 'https://johnnywang1994.github.io/assets/live2d'
 
 const state = reactive({
   open: false,
@@ -159,6 +162,10 @@ const state = reactive({
 
 const assistList = computed(() => state.project ? state.assists[state.project] : [])
 
+const getHeadImg = (assistId) => {
+  return `${BASE_URL}/${state.project}/head/${assistId}.png`
+}
+
 async function toggleOpen() {
   state.open = !state.open;
   if (state.open) {
@@ -253,6 +260,16 @@ onMounted(() => {
     width: 100%;
     height: 100%;
   }
+  .assist-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 8px;
+    padding: 24px 16px 0px;
+    img {
+      max-width: 100%;
+      cursor: pointer;
+    }
+  }
   .panel {
     position: absolute;
     right: 0;
@@ -261,7 +278,7 @@ onMounted(() => {
     margin: auto;
     text-align: center;
     min-width: 250px;
-    transform: translateY(100%);
+    // transform: translateY(100%);
     > select {
       width: 80px;
       padding: 6px 0;

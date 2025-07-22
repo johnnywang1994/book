@@ -466,6 +466,7 @@ const sidebar = {
             "/articles/daily/英文/008-數字.md",
           ],
         },
+        "/articles/daily/2025/蔡康永的情商課.md",
         "/articles/daily/2025/金剛經-時間不存在？自我是虛擬？",
         "/articles/daily/2025/外婆過世.md",
         "/articles/daily/2025/不掉進說服陷阱.md",

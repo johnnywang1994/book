@@ -339,6 +339,7 @@
 - [Chrome - override user agent](https://developer.chrome.com/docs/devtools/device-mode/override-user-agent/)
 - [現代 Browser 已針對 resize event 進行 debounced, 無需再用 requestAnimationFrame 包裹](https://stackoverflow.com/a/56514589)
 - [URL末尾加不加”/“有什麼差別？](https://juejin.cn/post/7468112128928350242)
+- [Browser MCP完整指南：5分鐘掌握AI瀏覽器自動化新典範（2025）](https://juejin.cn/post/7525660078722859023)
 
 
 ## Computer
