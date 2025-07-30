@@ -85,6 +85,7 @@ const sidebar = {
           text: "Javascript",
           collapsible: true,
           children: [
+            "/articles/memo/js/playwright-mcp-in-wsl.md",
             "/articles/memo/js/yarn-pnp-vscode.md",
             "/articles/memo/js/read-clipboard.md",
             "/articles/memo/js/what-is-csp.md",
@@ -381,7 +382,11 @@ const sidebar = {
             {
               text: "針灸學",
               collapsible: true,
-              children: ["/articles/daily/中醫/針灸學/特定穴.md"],
+              children: [
+                "/articles/daily/中醫/針灸學/第一章 經絡總論.md",
+                "/articles/daily/中醫/針灸學/第二章 腧穴總論.md",
+                "/articles/daily/中醫/針灸學/第三章 經絡腧穴各論.md"
+              ],
             },
             {
               text: "其他",

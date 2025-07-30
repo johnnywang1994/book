@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: 'VSCode 中使用 Playwright MCP 在 WSL 中配置',
+  link: '/articles/memo/js/playwright-mcp-in-wsl.html',
+}, {
   text: '2024 CSS 年度報告筆記',
   link: '/articles/css/2024-css-report.html',
 }, {
@@ -30,9 +33,6 @@ const newItems = [{
 }, {
   text: '在電腦裡搞一個 RWKV AI 小助手',
   link: '/articles/js/rwkv-intro.html',
-}, {
-  text: '遊戲 App 素材解包學習紀錄',
-  link: '/articles/js/extract-assets-from-app.html'
 }, {
   text: '動手自己做一個 ChatGPT UI 工具吧',
   link: '/articles/js/create-own-chatgpt-ui.html'
