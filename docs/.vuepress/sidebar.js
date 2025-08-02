@@ -270,6 +270,7 @@ const sidebar = {
             "/articles/memo/fe-performance/develop-tracking.md",
           ],
         },
+        "/articles/memo/ro-rathena-basic.md",
         "/articles/memo/ollama.md",
         "/articles/memo/nginx-js-module.md",
         "/articles/memo/flowise-intro.md",
