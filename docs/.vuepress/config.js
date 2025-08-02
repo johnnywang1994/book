@@ -71,10 +71,6 @@ export default defineUserConfig({
         text: "Project",
         link: "/project/",
       },
-      {
-        text: "Live2d",
-        link: "/live2d/",
-      },
     ],
     sidebarDepth: 1,
     sidebar: sidebarConfig,

@@ -13,7 +13,6 @@ const sidebar = {
         "/articles/js/web-container.md",
         "/articles/js/popover-api.md",
         "/articles/js/rwkv-intro.md",
-        "/articles/js/extract-assets-from-app.md",
         "/articles/js/create-own-chatgpt-ui.md",
         "/articles/js/react-rsc-without-nextjs.md",
         "/articles/js/vuepress-plugin-react.md",
@@ -35,7 +34,6 @@ const sidebar = {
         "/articles/js/react-use-state.md",
         "/articles/js/babel7-decorator-issue.md",
         "/articles/js/koa-vite-ssr.md",
-        "/articles/js/live2d-demo.md",
         "/articles/js/canvas-draw-video.md",
         "/articles/js/most-easy-webpack-basic-intro.md",
         "/articles/js/importmap-with-blob.md",
@@ -87,6 +85,7 @@ const sidebar = {
           text: "Javascript",
           collapsible: true,
           children: [
+            "/articles/memo/js/playwright-mcp-in-wsl.md",
             "/articles/memo/js/yarn-pnp-vscode.md",
             "/articles/memo/js/read-clipboard.md",
             "/articles/memo/js/what-is-csp.md",
@@ -271,6 +270,7 @@ const sidebar = {
             "/articles/memo/fe-performance/develop-tracking.md",
           ],
         },
+        "/articles/memo/ro-rathena-basic.md",
         "/articles/memo/ollama.md",
         "/articles/memo/nginx-js-module.md",
         "/articles/memo/flowise-intro.md",
@@ -383,7 +383,11 @@ const sidebar = {
             {
               text: "針灸學",
               collapsible: true,
-              children: ["/articles/daily/中醫/針灸學/特定穴.md"],
+              children: [
+                "/articles/daily/中醫/針灸學/第一章 經絡總論.md",
+                "/articles/daily/中醫/針灸學/第二章 腧穴總論.md",
+                "/articles/daily/中醫/針灸學/第三章 經絡腧穴各論.md"
+              ],
             },
             {
               text: "其他",

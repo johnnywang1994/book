@@ -74,7 +74,14 @@ export default {
         "image" : cdn("/websites/maju-gpt-ui.png"),
         "link" : "https://public-gpt.maju-web.club",
         "name" : "Maju GPT UI",
-        "tech" : "React.js, Typescript, ChatGPT API"
+        "tech" : "Next.js, Typescript, ChatGPT API"
+      }, {
+        "des" : "輸入暱稱後，選擇在你附近的人尬聊摟",
+        "id" : "geo-chat",
+        "image" : cdn("/websites/geo-chat.png"),
+        "link" : "https://majuchat.maju-web.club/geo-chat/",
+        "name" : "Chat in Map 地圖聊天",
+        "tech" : "Next.js, Typescript, GoogleMap API, Leaflet.js"
       }, {
         "des" : "MajuChatGame is a real-time 2D chat game created by Reactjs, MatterJS",
         "id" : "majuchatgame",
