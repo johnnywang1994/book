@@ -34,3 +34,10 @@
 - 在下載的 rAthena 版本的資料夾中開啟 `tools/docker`
 - 執行 `docker-compose up`，第一次會自動搭起資料庫及 server，並跳出 exit code 0，關閉後再次執行 `docker-compose up` 即可啟動環境，需要注意 `sql-files` 裡面資料庫初始化的動作只有在第一次執行 up 指令時建立 volumes，第二次就不會再次建立，如果同時在測試多個不同版本的 rAthena 專案需要特別留意，避免資料庫異常導致啟動失敗
 - 與 Hercules 版本最後步驟相同
+
+### Issues
+- Invalid password 問題
+在使用 docker-compose up 啟動服務的過程裡，如果遇到 Invalid password 問題，首先可以檢查配置裡的 `char_athena.conf` or `map_athena.conf` 的 userid, passwd，是否跟 `sql-files/main.sql` login table 後面加入的初始帳號相同，如果相同的情況下還是跳出這個 error，則可能是 rathena 在解析 password decrypt 時發生 bug，這個環節是在 char-server 要連上 login-server 時發生，檢查是否在 `login_athena.conf` 或 `import/login_conf.txt` 中的 `use_MD5_passwords` 被設定成 `yes`，如果是則可能就會發生 decrypt 解密問題，改成 `no` 應該可以解決，此問題比較常出現在舊版上，新版的 rathena 似乎已解決此問題
+
+### 客戶端主程式 endpoint 調整
+找到 server 版本對應的客戶端主程式專案後，找到資料夾內的 `data.grf`，或是打開 `data.ini` 查看裡面相關的 grf 檔案，透過 GRF Editor 打開，打開後找到 `sclientinfo.txt` 或 `clientinfo.txt` 檔案，把對應的 ip 位置替換成你的 login server ip 即可

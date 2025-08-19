@@ -386,7 +386,8 @@ const sidebar = {
               children: [
                 "/articles/daily/中醫/針灸學/第一章 經絡總論.md",
                 "/articles/daily/中醫/針灸學/第二章 腧穴總論.md",
-                "/articles/daily/中醫/針灸學/第三章 經絡腧穴各論.md"
+                "/articles/daily/中醫/針灸學/第三章 經絡腧穴各論.md",
+                "/articles/daily/中醫/針灸學/第六章 常見病證的針灸治療.md",
               ],
             },
             {
