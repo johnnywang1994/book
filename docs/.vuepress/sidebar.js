@@ -371,6 +371,7 @@ const sidebar = {
               text: "方劑學",
               collapsible: true,
               children: [
+                "/articles/daily/中醫/方劑學/經驗學習.md",
                 "/articles/daily/中醫/方劑學/01總論.md",
                 "/articles/daily/中醫/方劑學/02解表.md",
                 "/articles/daily/中醫/方劑學/03瀉下.md",
@@ -386,7 +387,8 @@ const sidebar = {
               children: [
                 "/articles/daily/中醫/針灸學/第一章 經絡總論.md",
                 "/articles/daily/中醫/針灸學/第二章 腧穴總論.md",
-                "/articles/daily/中醫/針灸學/第三章 經絡腧穴各論.md"
+                "/articles/daily/中醫/針灸學/第三章 經絡腧穴各論.md",
+                "/articles/daily/中醫/針灸學/第六章 常見病證的針灸治療.md",
               ],
             },
             {
@@ -396,7 +398,8 @@ const sidebar = {
                 "/articles/daily/中醫/其他/內證觀察筆記-上篇.md",
                 "/articles/daily/中醫/其他/內證觀察筆記-中篇.md",
                 "/articles/daily/中醫/其他/內證觀察筆記-下篇.md",
-                "/articles/daily/中醫/其他/磁力對生理的影響.md"
+                "/articles/daily/中醫/其他/磁力對生理的影響.md",
+                "/articles/daily/中醫/其他/乳癌病因病機.md",
               ],
             },
           ],
@@ -414,6 +417,7 @@ const sidebar = {
           children: [
             '/articles/daily/道德經/學習重點.md',
             '/articles/daily/道德經/概念整理.md',
+            '/articles/daily/道德經/帛書版.md',
             ...Array(81).fill('').map((_, i) => `/articles/daily/道德經/${(i + 1).toString().padStart(2, '0')}.md`)
           ]
         },
