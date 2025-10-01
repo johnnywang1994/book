@@ -19,6 +19,9 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '如何在 NextJS 上收集 Playwright E2E 測試 coverage report?',
+  link: '/articles/js/next-playwright-test-coverage.html',
+}, {
   text: 'VSCode 中使用 Playwright MCP 在 WSL 中配置',
   link: '/articles/memo/js/playwright-mcp-in-wsl.html',
 }, {

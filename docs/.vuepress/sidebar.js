@@ -9,6 +9,7 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
+        "/articles/js/next-playwright-test-coverage.md",
         "/articles/js/view-transition.md",
         "/articles/js/web-container.md",
         "/articles/js/popover-api.md",
@@ -400,6 +401,7 @@ const sidebar = {
                 "/articles/daily/中醫/其他/內證觀察筆記-下篇.md",
                 "/articles/daily/中醫/其他/磁力對生理的影響.md",
                 "/articles/daily/中醫/其他/乳癌病因病機.md",
+                "/articles/daily/中醫/其他/曬太陽的竅門.md",
               ],
             },
           ],
