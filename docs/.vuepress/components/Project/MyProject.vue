@@ -111,6 +111,13 @@ export default {
         "name" : "React WebRTC Realtime Chatroom",
         "tech" : "React.js18, Typescript, Socket.io, Peer.js"
       }, {
+        "des" : "Markdown Slides Online previewer",
+        "id" : "majumarkdown-slides",
+        "image" : cdn("/websites/markdown-slides.png"),
+        "link" : "https://spa.maju-web.club/markdown-slides",
+        "name" : "Markdown Slides Previewer",
+        "tech" : "React.js, Typescript, Reveal.js"
+      }, {
         "des" : "An client side online editor for frontend prototyping",
         "id" : "react-esmodule-maju-editor-react",
         "image" : cdn("/websites/majupen-plus-react.png"),

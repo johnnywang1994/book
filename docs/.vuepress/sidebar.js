@@ -420,6 +420,7 @@ const sidebar = {
             '/articles/daily/道德經/學習重點.md',
             '/articles/daily/道德經/概念整理.md',
             '/articles/daily/道德經/帛書版.md',
+            '/articles/daily/道德經/張至順自傳.md',
             ...Array(81).fill('').map((_, i) => `/articles/daily/道德經/${(i + 1).toString().padStart(2, '0')}.md`)
           ]
         },

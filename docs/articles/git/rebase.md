@@ -75,3 +75,9 @@ pick c0bcbdc b
 同上，把要調整 message 的紀錄前面 pick 標記改成 reword 即可，後續會跳出編輯器給你輸入新的 message
 
 > 修改 message 並不是直接改動原本的 commit message，而是建立一個新的 commit 並把指針移動到新 branch 上，同樣也能用 ORIG_HEAD 回去原本的 branch
+
+
+## 修改 commit 的 author
+```bash
+$ git rebase --exec 'git commit --amend --author="YOUR_EMAIL" --no-edit' HEAD~12
+```
