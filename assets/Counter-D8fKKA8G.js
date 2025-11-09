@@ -1,0 +1,1 @@
+import{C as r,D as o}from"./app-Cv7C_9qK.js";var s=r();console.log("imported");const u=()=>{const[t,e]=s.useState(0);return o.jsxs("div",{children:["Count: ",t,o.jsx("button",{onClick:()=>e(t+1),children:"ADD"})]})};export{u as default};
