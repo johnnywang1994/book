@@ -376,6 +376,7 @@ const sidebar = {
                 "/articles/daily/中醫/方劑學/01總論.md",
                 "/articles/daily/中醫/方劑學/02解表.md",
                 "/articles/daily/中醫/方劑學/03瀉下.md",
+                "/articles/daily/中醫/方劑學/04和解.md",
                 "/articles/daily/中醫/方劑學/04清熱.md",
                 "/articles/daily/中醫/方劑學/05理血.md",
                 "/articles/daily/中醫/方劑學/06去暑.md",
