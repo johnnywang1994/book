@@ -49,9 +49,9 @@ export default {
         "tech" : "ReactJS, Typescript, Rsuite, IndexedDB"
       }, {
         "des" : "中醫快速問診系統，一鍵產出專業的中醫詳細症狀描述，提供給 AI 精準的中醫診斷參考",
-        "id" : "diagnosis-system",
+        "id" : "chinese-medicine-diagnosis",
         "image" : cdn("/websites/chinese-medicine-diagnosis.jpg"),
-        "link" : "https://spa.maju-web.club/diagnosis-system",
+        "link" : "https://spa.maju-web.club/chinese-medicine-diagnosis",
         "name" : "中醫問診系統",
         "tech" : "ReactJS, Typescript, Rsuite"
       }, {
