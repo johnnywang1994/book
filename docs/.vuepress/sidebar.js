@@ -86,6 +86,7 @@ const sidebar = {
           text: "Javascript",
           collapsible: true,
           children: [
+            "/articles/memo/js/safari-indexeddb-blob-clone-issue.md",
             "/articles/memo/js/playwright-mcp-in-wsl.md",
             "/articles/memo/js/yarn-pnp-vscode.md",
             "/articles/memo/js/read-clipboard.md",

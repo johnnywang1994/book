@@ -41,6 +41,20 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "加入主畫面，上傳收藏美甲設計圖案！資料全存於手機裡。支援一鍵備份、還原",
+        "id" : "nail-board",
+        "image" : cdn("/websites/nail-board.jpg"),
+        "link" : "https://spa.maju-web.club/nail-board",
+        "name" : "美甲收藏牆 Nail Board",
+        "tech" : "ReactJS, Typescript, Rsuite, IndexedDB"
+      }, {
+        "des" : "中醫快速問診系統，一鍵產出專業的中醫詳細症狀描述，提供給 AI 精準的中醫診斷參考",
+        "id" : "diagnosis-system",
+        "image" : cdn("/websites/chinese-medicine-diagnosis.jpg"),
+        "link" : "https://spa.maju-web.club/diagnosis-system",
+        "name" : "中醫問診系統",
+        "tech" : "ReactJS, Typescript, Rsuite"
+      }, {
         "des" : "線上 NodeJS 開發編輯器，沒有 VM，不用安裝 NodeJS，直接在瀏覽器內開發編輯 NodeJS 專案",
         "id" : "maju-web-container",
         "image" : cdn("/websites/maju-web-container.png"),
