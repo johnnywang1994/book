@@ -41,6 +41,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "一個將 HTML 轉換為 LINE Flex Message JSON 的工具，方便設計與測試 Flex Message 版型。",
+        "id" : "flex-message-html-simulator",
+        "image" : cdn("/websites/flex-message-html-simulator.jpg"),
+        "link" : "https://spa.maju-web.club/flex-message-html-simulator",
+        "name" : "Flex Message HTML Simulator",
+        "tech" : "Javascript"
+      }, {
         "des" : "加入主畫面，上傳收藏美甲設計圖案！資料全存於手機裡。支援一鍵備份、還原",
         "id" : "nail-board",
         "image" : cdn("/websites/nail-board.jpg"),

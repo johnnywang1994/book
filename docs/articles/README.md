@@ -53,6 +53,25 @@ Be Good, be strong, be yourself, never give up.
 ## Private Project
 詳細專案圖文介紹請[前往這邊瀏覽](/book/project.html)
 
+
+### Flex Message HTML Simulator
+
+  - [Link](https://spa.maju-web.club/flex-message-html-simulator)
+  - Javascript
+  - created at: 2025-12
+
+### 美甲收藏牆 Nail Board
+
+  - [Link](https://spa.maju-web.club/nail-board)
+  - ReactJS, Typescript, Rsuite, IndexedDB
+  - created at: 2025-12
+
+### 中醫問診系統
+
+  - [Link](https://spa.maju-web.club/chinese-medicine-diagnosis)
+  - ReactJS, Typescript, Rsuite
+  - created at: 2025-11
+
 ### Maju Web Container - Preview Github Repository
 
   - [Link](https://pen.maju-web.club/webcontainer/preview)
