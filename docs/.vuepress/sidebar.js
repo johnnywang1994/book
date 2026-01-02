@@ -380,9 +380,10 @@ const sidebar = {
                 "/articles/daily/中醫/方劑學/03瀉下.md",
                 "/articles/daily/中醫/方劑學/04和解.md",
                 "/articles/daily/中醫/方劑學/05清熱.md",
-                "/articles/daily/中醫/方劑學/05理血.md",
                 "/articles/daily/中醫/方劑學/06去暑.md",
-                "/articles/daily/中醫/方劑學/07去濕.md",
+                "/articles/daily/中醫/方劑學/07溫裏.md",
+                "/articles/daily/中醫/方劑學/08補益.md",
+                "/articles/daily/中醫/方劑學/09固澀.md",
               ],
             },
             {
