@@ -388,6 +388,8 @@ const sidebar = {
                 "/articles/daily/中醫/方劑學/10安神.md",
                 "/articles/daily/中醫/方劑學/11開竅.md",
                 "/articles/daily/中醫/方劑學/12理血.md",
+                "/articles/daily/中醫/方劑學/13理氣.md",
+                "/articles/daily/中醫/方劑學/14治風.md",
               ],
             },
             {
