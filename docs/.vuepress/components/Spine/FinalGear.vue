@@ -43,8 +43,8 @@ const router = useRouter()
 const route = useRoute()
 
 const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://cdn.statically.io/gh/jwlearn1994/spine-assets/master/gear'
-  : 'https://cdn.statically.io/gh/jwlearn1994/spine-assets/master/gear'
+  ? 'https://raw.githubusercontent.com/jwlearn1994/spine-assets/master/gear'
+  : 'https://raw.githubusercontent.com/jwlearn1994/spine-assets/master/gear'
   // : '/book/Resources/spine/gear';
 
 const headImg = (id) => `https://cdn.statically.io/gh/jwlearn1994/spine-assets/master/gear/head/${id}.png`;

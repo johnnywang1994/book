@@ -375,6 +375,7 @@ const sidebar = {
               collapsible: true,
               children: [
                 "/articles/daily/中醫/方劑學/經驗學習.md",
+                "/articles/daily/中醫/方劑學/腸胃疾病.md",
                 "/articles/daily/中醫/方劑學/01總論.md",
                 "/articles/daily/中醫/方劑學/02解表.md",
                 "/articles/daily/中醫/方劑學/03瀉下.md",
@@ -384,6 +385,9 @@ const sidebar = {
                 "/articles/daily/中醫/方劑學/07溫裏.md",
                 "/articles/daily/中醫/方劑學/08補益.md",
                 "/articles/daily/中醫/方劑學/09固澀.md",
+                "/articles/daily/中醫/方劑學/10安神.md",
+                "/articles/daily/中醫/方劑學/11開竅.md",
+                "/articles/daily/中醫/方劑學/12理血.md",
               ],
             },
             {

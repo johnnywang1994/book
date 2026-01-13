@@ -44,8 +44,18 @@ $ adb reverse --list
 ```bash
 $ adb root
 ```
+> adb root 請使用 Google APIs image 的模擬器才行，Google Play image 限制比較多（production），會出現 `adbd cannot run as root in production builds` 錯誤訊息
 - 安裝 apk(比如安裝三星瀏覽器)
 ```bash
 $ adb install my-app.apk
 $ adb install -r my-app.apk # 重新安裝
+```
+- 如果要註冊 mkcert rootCA 到 android 模擬器中
+  - 先把 rootCA.pem 從 host 複製到 emulator 中(拖曳進去或用 cli 指令)
+  - 在 emulator 中打開，根據不同 Android 機型，找到 `Security`->`Encryption & credentials`->`Install from device storage` 選擇 rootCA.pem 安裝即可
+- 用指令開啟特定 emulator
+```bash
+$ emulator -list-avds # 列出所有 emulator 名稱
+$ emulator -avd Pixel_9 -writable-system # 開啟指定 emulator
+$ adb reboot # 重新開機 emulator
 ```
