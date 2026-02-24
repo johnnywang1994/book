@@ -115,3 +115,22 @@ $ git commit --amend
 ```bash
 $ git log --color --decorate --oneline --graph
 ```
+
+
+## Commit messages 常用規範
+
+`<type:類型>[optional scope:作用範圍(可省略)]:<description:描述>`
+- Type
+  - build: build 相關系統改動(webpack, vite, gulp, config 設定)
+  - chore: 輔助工具、設定改動
+  - ci
+  - docs: 文件改動
+  - feat: 新增/修改功能
+  - fix: 修補 bug(完整測試、驗證後發佈)
+  - hotfix: 緊急修復、安全性漏洞修補、小範圍快速補丁(快速發佈)
+  - perf: 改善效能、性能、優化
+  - refactor
+  - style: 程式碼本身格式改動，不影響邏輯
+  - test: 測試改動
+- Scope: 通常根據專案內容或軟體開發方法而異
+- Description: en less than 50 characters

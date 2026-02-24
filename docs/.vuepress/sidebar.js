@@ -66,6 +66,7 @@ const sidebar = {
       text: "CSS & Sass",
       collapsible: true,
       children: [
+        "/articles/css/flex-item-truncate.md",
         "/articles/css/2024-css-report.md",
         "/articles/css/2021-css-report.md",
         "/articles/css/starting-style.md",

@@ -19,3 +19,9 @@
 9. shift + cmd + l => 選中所有相同內容（加強版 cmd + d）
 
 10. options + cmd + . => auto-fix
+
+
+## VSCode 常用插件快捷鍵
+1. Console log => ctrl + opt + L
+
+2. Wrap html selected => ctrl + I
