@@ -76,6 +76,13 @@ export default {
         "name" : "Maju Web Container - Github Repository Preview",
         "tech" : "ReactJS, Typescript, WebContainer"
       }, {
+        "des" : "Client Side 圖片壓縮器，純客戶端壓縮，無需上傳至 Server，自動 HEIC 轉 JPG，支援整包資料夾壓縮",
+        "id" : "image-compress",
+        "image" : cdn("/websites/browser-image-compress.png"),
+        "link" : "https://spa.maju-web.club/image-compress",
+        "name" : "Browser Image Compressor",
+        "tech" : "heic2any, browser-image-compression, jszip, FileSaver, Vue.js"
+      }, {
         "des" : "分眾＋「AI文案幫手」全新上線 - 體驗前所未有的創意升級！",
         "id" : "line-oaplus-ai-copywriting",
         "image" : "https://pic.vcp.tw/upload/mt2699/dynamic_layout_content/pic_1_214.jpg?1715473538",
@@ -159,13 +166,6 @@ export default {
         "link" : "https://pen.maju-web.club/local",
         "name" : "MajuPen",
         "tech" : "Reactjs, StyledComponent, @reduxjs/toolkit"
-      }, {
-        "des" : "Client Side 圖片壓縮器，純客戶端壓縮，無需上傳至 Server，自動 HEIC 轉 JPG，支援整包資料夾壓縮",
-        "id" : "image-compress",
-        "image" : cdn("/websites/browser-image-compress.png"),
-        "link" : "https://spa.maju-web.club/image-compress",
-        "name" : "Browser Image Compressor",
-        "tech" : "heic2any, browser-image-compression, jszip, FileSaver, Vue.js"
       }, {
         "des" : "網頁掃描文字翻譯器，透過 Google Translate 翻譯文字內容",
         "id" : "react-web-scan-translator",

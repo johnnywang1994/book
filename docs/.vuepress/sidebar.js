@@ -391,6 +391,8 @@ const sidebar = {
                 "/articles/daily/中醫/方劑學/12理血.md",
                 "/articles/daily/中醫/方劑學/13理氣.md",
                 "/articles/daily/中醫/方劑學/14治風.md",
+                "/articles/daily/中醫/方劑學/15治燥.md",
+                "/articles/daily/中醫/方劑學/16祛濕.md",
               ],
             },
             {
