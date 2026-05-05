@@ -502,6 +502,7 @@ const sidebar = {
         "/articles/daily/黃帝陰符經.md",
         "/articles/daily/金剛經.md",
         "/articles/daily/太乙金華宗旨.md",
+        "/articles/daily/2026/大腦神經學與佛學的對話.md",
         "/articles/daily/2025/蔡康永的情商課.md",
         "/articles/daily/2025/金剛經-時間不存在？自我是虛擬？",
         "/articles/daily/2025/外婆過世.md",

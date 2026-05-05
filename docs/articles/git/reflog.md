@@ -24,3 +24,12 @@ $ git gc --prune=now
 # 查看是否已清空
 $ git fsck
 ```
+
+## 誤刪分支或覆蓋遠端重要資料時
+如果不小心刪除分支或覆蓋遠端重要資料，可以透過 reflog 找回來，以下假設本地 pull 遠端的內容時，因為發生 conflict，導致本地內容覆蓋掉了遠端內容，若此時不小心操作 push force 蓋掉遠端內容，可如下找回 pull 時遠端當下的東西
+```bash
+# 先找到 pull 時遠端當下的東西
+git reflog show origin/master
+# 假設 pull 時遠端當下的東西是 895ed93，則可以透過以下指令找回來
+git reset 895ed93 --hard
+```
