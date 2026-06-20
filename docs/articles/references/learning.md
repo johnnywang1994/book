@@ -405,8 +405,13 @@
 - [二次元Q版人物動作姿勢大全](https://kknews.cc/other/3vy63zg.html)
 - [24种萌萌的Q版人物动态画法](https://www.xiaohongshu.com/discovery/item/5f8c2163000000000101f629?xhsshare=CopyLink&appuid=5d320620000000001202a5d4&apptime=1603295228)
 
-## ChatGPT
+## AI
+### ChatGPT
 - [frequency-vs-presence-penalty](https://medium.com/@KTAsim/frequency-vs-presence-penalty-whats-the-difference-openai-api-51b0c4a7229e)
+
+### 架構
+- [AG-UI protocol](https://docs.ag-ui.com/introduction)
+
 
 ## 職場相關
 - [職場霸凌事前、事後，雇主馬虎不得！律師告訴你處理重點](https://vip.104.com.tw/preLogin/recruiterForum/post/84422)
