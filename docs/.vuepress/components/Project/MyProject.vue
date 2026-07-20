@@ -97,13 +97,6 @@ export default {
         "name" : "LINE 發票管家",
         "tech" : "Secret..."
       }, {
-        "des" : "輸入暱稱後，選擇在你附近的人尬聊摟",
-        "id" : "geo-chat",
-        "image" : cdn("/websites/geo-chat.png"),
-        "link" : "https://majuchat.maju-web.club/geo-chat/",
-        "name" : "Chat in Map 地圖聊天",
-        "tech" : "Next.js, Typescript, GoogleMap API, Leaflet.js"
-      }, {
         "des" : "MajuChatGame is a real-time 2D chat game created by Reactjs, MatterJS",
         "id" : "majuchatgame",
         "image" : cdn("/websites/majuchatgame.png"),
