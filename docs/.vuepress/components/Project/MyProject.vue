@@ -44,7 +44,7 @@ export default {
         "des" : "一個將 HTML 轉換為 LINE Flex Message JSON 的工具，方便設計與測試 Flex Message 版型。",
         "id" : "flex-message-html-simulator",
         "image" : cdn("/websites/flex-message-html-simulator.jpg"),
-        "link" : "https://spa.maju-web.club/flex-message-html-simulator",
+        "link" : "https://flex-html-simulator.maju-web.club/",
         "name" : "Flex Message HTML Simulator",
         "tech" : "Javascript"
       }, {
@@ -65,14 +65,14 @@ export default {
         "des" : "線上 NodeJS 開發編輯器，沒有 VM，不用安裝 NodeJS，直接在瀏覽器內開發編輯 NodeJS 專案",
         "id" : "maju-web-container",
         "image" : cdn("/websites/maju-web-container.png"),
-        "link" : "https://pen.maju-web.club/webcontainer/container",
+        "link" : "https://web-container.maju-web.club/container",
         "name" : "Maju Web Container - IDE",
         "tech" : "ReactJS, Typescript, WebContainer, CodeMirror, Xterm, IndexedDB"
       }, {
         "des" : "Github Repository Preview 線上即時 Git 專案預覽服務",
         "id" : "maju-web-container",
         "image" : cdn("/websites/maju-web-container.png"),
-        "link" : "https://pen.maju-web.club/webcontainer/preview",
+        "link" : "https://web-container.maju-web.club/preview",
         "name" : "Maju Web Container - Github Repository Preview",
         "tech" : "ReactJS, Typescript, WebContainer"
       }, {
@@ -96,13 +96,6 @@ export default {
         "link" : "https://invoice.line.me/",
         "name" : "LINE 發票管家",
         "tech" : "Secret..."
-      }, {
-        "des" : "Maju-GPT-UI is a simple ChatGPT UI",
-        "id" : "majugptui",
-        "image" : cdn("/websites/maju-gpt-ui.png"),
-        "link" : "https://public-gpt.maju-web.club",
-        "name" : "Maju GPT UI",
-        "tech" : "Next.js, Typescript, ChatGPT API"
       }, {
         "des" : "輸入暱稱後，選擇在你附近的人尬聊摟",
         "id" : "geo-chat",
@@ -146,40 +139,12 @@ export default {
         "name" : "Markdown Slides Previewer",
         "tech" : "React.js, Typescript, Reveal.js"
       }, {
-        "des" : "An client side online editor for frontend prototyping",
-        "id" : "react-esmodule-maju-editor-react",
-        "image" : cdn("/websites/majupen-plus-react.png"),
-        "link" : "https://pen.maju-web.club/plus?cacheId=react&template=react",
-        "name" : "MajuPen Plus - React18",
-        "tech" : "Next.js, Typescript, ScriptCustomModule"
-      }, {
-        "des" : "An client side online editor for frontend prototyping",
-        "id" : "react-esmodule-maju-editor-vue",
-        "image" : cdn("/websites/majupen-plus-vue.png"),
-        "link" : "https://pen.maju-web.club/plus?cacheId=default",
-        "name" : "MajuPen Plus - Vue3",
-        "tech" : "Next.js, Typescript, ScriptCustomModule"
-      }, {
-        "des" : "An client side online editor for frontend prototyping",
-        "id" : "react-maju-pen",
-        "image" : cdn("/websites/majupen.png"),
-        "link" : "https://pen.maju-web.club/local",
-        "name" : "MajuPen",
-        "tech" : "Reactjs, StyledComponent, @reduxjs/toolkit"
-      }, {
         "des" : "網頁掃描文字翻譯器，透過 Google Translate 翻譯文字內容",
         "id" : "react-web-scan-translator",
         "image" : cdn("/websites/web-scan-translator.png"),
         "link" : "https://spa.maju-web.club/scan-translator",
         "name" : "Web Scan Translator",
         "tech" : "React.js18, WebStream, Tesseract.js, Google Translate"
-      }, {
-        "des" : "MajuMD is a real-time Markdown Editor created by Reactjs, Koajs, Prisma",
-        "id" : "koa-majumd",
-        "image" : cdn("/websites/majumd.png"),
-        "link" : "https://majumd.maju-web.club",
-        "name" : "MajuMD - Markdown Editor",
-        "tech" : "React.js, Typescript, Koa.js, Socket.io, Prisma, CodeMirror"
       }, {
         "des" : "React Matter Clock",
         "id" : "react-matter-clock",
@@ -194,14 +159,6 @@ export default {
         "link" : "https://spa.maju-web.club/sudoku",
         "name" : "React Sudoku Game",
         "tech" : "React.js18, Typescript"
-      // }, {
-      //   // web3.storage api should be upgraded
-      //   "des" : "React Web3Storage Web UI",
-      //   "id" : "react-web3-storage",
-      //   "image" : cdn("/websites/react-web3-storage.jpg"),
-      //   "link" : "https://react-web3-storage.onrender.com/",
-      //   "name" : "React Web3 Storage",
-      //   "tech" : "React.js18, Javascript, Web3 Storage Client API"
       }, {
         "des" : "Javascript 打造 Pokemon Game 原型",
         "id" : "vue-pokemon-game",

@@ -56,7 +56,7 @@ Be Good, be strong, be yourself, never give up.
 
 ### Flex Message HTML Simulator
 
-  - [Link](https://spa.maju-web.club/flex-message-html-simulator)
+  - [Link](https://flex-html-simulator.maju-web.club/)
   - Javascript
   - created at: 2025-12
 
@@ -74,21 +74,15 @@ Be Good, be strong, be yourself, never give up.
 
 ### Maju Web Container - Preview Github Repository
 
-  - [Link](https://pen.maju-web.club/webcontainer/preview)
+  - [Link](https://web-container.maju-web.club/preview/)
   - ReactJS, Typescript, WebContainer
   - created at: 2024-11
 
 ### Maju Web Container - IDE
 
-  - [Link](https://pen.maju-web.club/webcontainer/container)
+  - [Link](https://web-container.maju-web.club/container)
   - ReactJS, Typescript, WebContainer, CodeMirror, Xterm, IndexedDB
   - created at: 2024-10
-
-### Maju GPT UI
-
-  - [Link](https://public-gpt.maju-web.club/)
-  - Nextjs, Typescript, OpenAI api
-  - created at: 2024-01
 
 ### Vue3 Matter Mario Bro
 
@@ -116,26 +110,6 @@ Be Good, be strong, be yourself, never give up.
   - [Link](https://maju-express.onrender.com/meet/)
   - React18, Typescript, Socket.io, Peer.js
   - created at: 2022-06
-
-### MajuMD - Real-Time Markdown Editor
-
-  - [Link](https://majumd.maju-web.club/)
-  - Reactjs, Typescript, Prisma, Koa.js, Socket.io
-  - created at: 2023-04
-  - For safety reason, only registered user can create online note
-
-### MajuPen - Plus
-
-  - [Vue Link](https://pen.maju-web.club/plus?cacheId=default)
-  - [React Link](https://pen.maju-web.club/plus?cacheId=react&template=react)
-  - Nextjs, Typescript, TailwindCSS, Script Custom Module
-  - created at: 2022-10
-
-### MajuPen
-
-  - [Link](https://pen.maju-web.club/local)
-  - Reactjs, StyledComponent, @reduxjs/toolkit
-  - created at: 2021-8
 
 ### Single Page Chatroom
 
@@ -236,13 +210,6 @@ Be Good, be strong, be yourself, never give up.
   - [Link](https://spa.maju-web.club/sudoku/)
   - React18, Typescript
   - created at: 2022-07
-
-<!-- ### React Web3 Storage
-
-  - [Link](https://react-web3-storage.onrender.com/)
-  - [Source Code](https://github.com/johnnywang1994/react-web3-storage.git)
-  - React18, Javascript, Web3 Storage Client API
-  - created at: 2022-06 -->
 
 ### Fabric Image Composer
 
