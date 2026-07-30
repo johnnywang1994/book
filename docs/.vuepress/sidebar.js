@@ -9,6 +9,7 @@ const sidebar = {
       text: "Javascript",
       collapsible: true,
       children: [
+        "/articles/js/cli-memory.md",
         "/articles/js/flex-message-html-simulator.md",
         "/articles/js/next-playwright-test-coverage.md",
         "/articles/js/view-transition.md",

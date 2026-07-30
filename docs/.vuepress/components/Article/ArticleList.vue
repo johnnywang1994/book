@@ -19,23 +19,20 @@ const flatChildren = (arr) => {
 const routeItems = computed(() => flatChildren(sidebarItems.value));
 
 const newItems = [{
+  text: '打破 Agent 健忘症！打造 Local-First 的 AI Agent 長期記憶庫：cli-memory 實戰指南',
+  link: '/articles/js/cli-memory.html',
+}, {
   text: '如何在 NextJS 上收集 Playwright E2E 測試 coverage report?',
   link: '/articles/js/next-playwright-test-coverage.html',
 }, {
   text: 'VSCode 中使用 Playwright MCP 在 WSL 中配置',
   link: '/articles/memo/js/playwright-mcp-in-wsl.html',
 }, {
-  text: '2024 CSS 年度報告筆記',
-  link: '/articles/css/2024-css-report.html',
-}, {
   text: '用 Web Container 打造自己的線上 NodeJS 開發環境',
   link: '/articles/js/web-container.html',
 }, {
   text: '如何不用 setTimeout 幫 display: none 的 DOM 加動畫',
   link: '/articles/css/starting-style.html',
-}, {
-  text: '在電腦裡搞一個 RWKV AI 小助手',
-  link: '/articles/js/rwkv-intro.html',
 }, {
   text: '動手自己做一個 ChatGPT UI 工具吧',
   link: '/articles/js/create-own-chatgpt-ui.html'
