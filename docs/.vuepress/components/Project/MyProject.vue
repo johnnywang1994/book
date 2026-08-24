@@ -55,6 +55,13 @@ export default {
         "name" : "美甲收藏牆 Nail Board",
         "tech" : "ReactJS, Typescript, Rsuite, IndexedDB"
       }, {
+        "des" : "快速製作客製化手機條碼桌布工具",
+        "id" : "carrier-editor",
+        "image" : cdn("/websites/carrier-editor.png"),
+        "link" : "https://spa.maju-web.club/carrier-editor",
+        "name" : "發票載具手機桌布製作器",
+        "tech" : "ReactJS, Typescript"
+      }, {
         "des" : "中醫快速問診系統，一鍵產出專業的中醫詳細症狀描述，提供給 AI 精準的中醫診斷參考",
         "id" : "chinese-medicine-diagnosis",
         "image" : cdn("/websites/chinese-medicine-diagnosis.jpg"),

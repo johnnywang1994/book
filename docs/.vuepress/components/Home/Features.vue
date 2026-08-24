@@ -33,13 +33,13 @@ export default {
           title: 'Frontend Development',
           details: [
             'Vuejs 4+years',
-            'Reactjs 4+years',
+            'Reactjs 5+years',
             'Nuxtjs 2+years',
-            'Nextjs 2+year',
-            'JavaScript 5+years',
-            'TypeScript 4+years',
-            'Webpack 4+years',
-            'Vite 3+years',
+            'Nextjs 4+years',
+            'JavaScript 7+years',
+            'TypeScript 6+years',
+            'Webpack 6+years',
+            'Vite 6+years',
             'SCSS 4+years',
             'StyledComponents 1+year',
             'TailwindCSS 3+year'
@@ -50,16 +50,12 @@ export default {
           details: [
             'Expressjs 3+years',
             'Koajs 2+years',
-            'Nodejs 3+years',
-            'ApolloGraphQL 1+year',
-            'ParseServer 1+year',
-            'Docker 2+years',
-            'Prisma 1+years',
-            'MySQL 1+year',
-            'MongoDB 0.5+year',
-            'Django 0.5+year',
-            'Temporal 1+year',
-            'ChatGPT API 0.5+year'
+            'Nodejs 6+years',
+            'ApolloGraphQL 4+year',
+            'ParseServer 2+year',
+            'Docker 4+years',
+            'Prisma 2+years',
+            'Temporal 1+year'
           ],
         },
         {
@@ -70,8 +66,8 @@ export default {
               href: 'https://www.npmjs.com/package/jspdf-html2canvas',
             },
             {
-              content: 'Maju GPT UI',
-              href: 'https://github.com/johnnywang1994/maju-gpt-ui',
+              content: '[NPM] cli-memory',
+              href: 'https://www.npmjs.com/package/cli-memory',
             },
             {
               content: '[NPM] script-custom-module',
@@ -88,14 +84,6 @@ export default {
             {
               content: '[NPM] remockjs',
               href: 'https://www.npmjs.com/package/remockjs',
-            },
-            {
-              content: 'TailwindCSS EDM Generator',
-              href: 'https://github.com/johnnywang1994/edm-generator',
-            },
-            {
-              content: '[NPM] maju-decorators',
-              href: 'https://www.npmjs.com/package/maju-decorators',
             },
             {
               content: '[NPM] node-ftp-cli',

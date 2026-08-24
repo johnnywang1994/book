@@ -53,6 +53,11 @@ Be Good, be strong, be yourself, never give up.
 ## Private Project
 詳細專案圖文介紹請[前往這邊瀏覽](/book/project.html)
 
+### 發票載具手機桌布製作器
+
+  - [Link](https://spa.maju-web.club/carrier-editor)
+  - Reactjs, Typescript, Canvas
+  - created at: 2026-03
 
 ### Flex Message HTML Simulator
 
@@ -130,17 +135,24 @@ Be Good, be strong, be yourself, never give up.
   - jspdf, html2canvas
   - created at: 2019-11
 
-### maju-gpt-ui
+### cli-memory
 
-  - [Link](https://github.com/johnnywang1994/maju-gpt-ui)
-  - free ChatGPT UI
-  - created at: 2019-11
+  - [Link](https://www.npmjs.com/package/cli-memory)
+  - Local-First command line tool for AI Agent memory
+  - Typescript, Langchain, Ollama, LanceDB
+  - created at: 2026-08
 
 ### script-custom-module
 
   - [Link](https://www.npmjs.com/package/script-custom-module)
   - esmodule for using React, Vue, Typescript compiled in browser
   - created at: 2023-04-01
+
+### maju-gpt-ui
+
+  - [Link](https://github.com/johnnywang1994/maju-gpt-ui)
+  - free ChatGPT UI
+  - created at: 2019-11
 
 ### vuepress-plugin-react
 
@@ -187,17 +199,17 @@ Be Good, be strong, be yourself, never give up.
 
 ## Side Project
 
-### Web Scan Translator
-
-  - [Link](https://spa.maju-web.club/scan-translator)
-  - Tesseract.js, web stream, React.js
-  - created at: 2023-10
-
 ### Browser Image Compressor
 
   - [Link](https://spa.maju-web.club/image-compress)
   - heic2any, browser-image-compression, jszip, FileSaver, Vue.js
   - created at: 2023-02
+
+### Web Scan Translator
+
+  - [Link](https://spa.maju-web.club/scan-translator)
+  - Tesseract.js, web stream, React.js
+  - created at: 2023-10
 
 ### React Matter Clock
 
