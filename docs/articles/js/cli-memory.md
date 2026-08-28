@@ -1,169 +1,154 @@
 # 打破 Agent 健忘症！打造 Local-First 的 AI Agent 長期記憶庫：cli-memory 實戰指南
 
+<SocialBlock hashtags="javascript,ai,agent,memory,rag" />
+
 ## 前言
-Hi 大家好，我是現在在當 Agent 魔法後端工程師的前端工程師 Johnny，好久沒寫文章了，最近一直在學習 AI 相關的工具和使用，Agent 讓我從前端直接變成了全端，這次要分享的是我最近自己開發來用的 NPM `cli-memory` 工具，幫助 AI Agent 擁有跨 Session 的長期記憶能力，不然每次和 agent 聊天後，都要自己手動告訴 agent 幫我記錄在某某 markdown 或是讓我複製自己貼到筆記本裡，有了這工具後只要一個 prompt 就能讓 agent 記住你想要的資訊，並且在下次對話時自動幫你回想起來
-
-
-在做之前我看了下市面上大部分的 memory 工具，不是 mcp 就是雲端的 memory，真的沒有完全吻合我的使用場景的工具 Orz，考慮到效能和隱私的問題，索性我就自己開發了這個工具，完全 Local-First，所有記憶資料都儲存在本機磁碟，並且使用向量檢索和全文檢索混合的方式來確保召回精準度。
+> Hi 大家好，我是 Johnny！好久沒寫文了，這次要開箱我自己開發的 Local-First 長期記憶工具 `cli-memory`。現在它支援開箱即用免設定、Daemon 背景加速與 Supersede 歷史汰換，幫你的 Agent 裝上永不遺忘的超強大腦！
 
 ## 為什麼 AI Agent 需要獨立的長期記憶庫？
+相信大家在玩 OpenCode、Claude Code 或 GitHub Copilot 這些 AI Agent 時，一定都遇到過這些讓人翻白眼的痛點：
+1. **Context Window 限制與成本**：把大把大把的歷史紀錄都塞進對話視窗，不僅 Token 燒得快，Agent 還常常會「注意力不集中」（Lost in the Middle）。
+2. **每次開新對話都變陌生人**：重新開一個對話 Session 後，Agent 就把你的寫碼風格、專案偏好或之前的技術決策忘得一乾二淨。
+3. **雲端隱私疑慮**：如果把個人偏好、私有專案結構或敏感資訊丟到第三方的記憶雲端服務，難免會擔心資安和隱私外洩。
 
-在使用 LLM (Large Language Model) 驅動的 Agent（如 OpenCode、Claude Code、GitHub Copilot 等）時，開發者常遇到以下痛點：
-1. **Context Window 限制與成本**：把所有歷史紀錄都丟進對話視窗，不僅消耗龐大 Token，還容易造成對話品質下降（Context Rot）。
-2. **跨 Session 狀態遺失**：重啟 Agent 或開新對話後，Agent 無法記得使用者的寫碼風格、專案偏好或歷史決策。
-3. **雲端隱私疑慮**：將個人偏好、私有專案架構或敏感資訊上傳至第三方記憶雲端服務，存在資安風險。
-
-有些 Agent 內建記憶機制，比如 Claude，但很多都只是在本地端透過 markdown 保留文本的方式，隨著專案體積變大、歷史迭代以後，這個記憶會變得臃腫不堪，也徒增上下文的成本空間。
-
-`cli-memory` 採用 **Local-First** 理念設計，結合 **LanceDB** 本地向量資料庫與 **Ollama** 本地 Embedding 模型，所有記憶資料完全儲存在本機磁碟，兼具隱私、效能與高檢索精準度。
-
-### 為什麼選擇 CLI / CLI-Skill 架構而非 MCP (Model Context Protocol)？
-
-雖然近期 MCP (Model Context Protocol) 相當流行，但 `cli-memory` 選擇以 **CLI + Agent Skill** 作為主要介面，核心優勢包括：
-1. **跨 Agent 廣泛相容**：並非所有 CLI 終端 Agent 或自訂工具都原生支援 MCP 協定，但**幾乎所有 AI Agent 都具備執行 Shell 指令與讀取 Skill 指引的能力**。
-2. **無須常駐與極低開銷**：MCP 往往需要常駐 Daemon 或維護長連線，若 Server 異常容易導致 Agent 卡死；CLI 指令為隨用即發（Ephemeral）程序，零背景負擔。
-3. **Unix 哲學與彈性串接**：CLI 天然支援 Shell Pipe (`|`)、檔案重導向與自動化腳本。配合 `cli-memory call` 結構化 JSON 介面，不管是人類手動維護或是 Agent 自動化呼叫都非常直覺。
-
-* **名詞解釋**：
-  * **Local-First (在地優先)**：軟體架構設計原則，強調資料優先存放在使用者本機裝置，無須依賴外部雲端伺服器即可正常運作。
-  * **MCP (Model Context Protocol)**：由 Anthropic 推出的開放標準協定，用於連接 AI 模型與外部資料源或工具服務。
-  * **LanceDB**：輕量級、高效能的嵌入式向量資料庫 (Vector Database)，支援高效的向量相似度搜尋與全文檢索。
-  * **Vector Embedding (向量嵌入)**：將文字轉換成高維度數值向量的技術，能讓電腦計算文字之間的「語意相似度」，而非僅比對字面關鍵字。
-* **參考連結**：
-  * [LanceDB 官方文件](https://lancedb.github.io/lancedb/)
-  * [Ollama 官方網站](https://ollama.com/)
-  * [Model Context Protocol (MCP) 官方文件](https://modelcontextprotocol.io/)
+身為一個「Agent 魔法後端工程師」（本質是前端 XD），我一直在找完全符合我使用場景的記憶工具。既然市面上找不到完美的，我就索性自己開發了這個 `cli-memory`！它完全採用 **Local-First**（在地優先）架構，把所有記憶存放在你的本機，安全、省錢又快速！
 
 ---
 
-## 核心架構與混合檢索 (Hybrid Search) 機制
+## 核心架構、混合檢索與全新的二層記憶分級
 
-為了確保 Agent 既能精準召回記憶，又不會被低品質的垃圾訊息淹沒，`cli-memory` 實作了完整的記憶生命週期與檢索機制：
+為了讓 Agent 既能聰明地記住事情，又不會被一堆廢話淹沒，`cli-memory` 在底層設計了很完善的檢索與生命週期機制：
 
 ### 1. 主題隔離 (Topic Partitioning)
-每一個記憶讀寫都必須指定 `topicKey`（例如 `health`、`career`、`project-x`）。不同的主題領域分開儲存，確保檢索時不會產生跨領域的干擾。
+每一個記憶讀寫都必須指定 `topicKey`（例如 `coding`、`health`、`project-x`）。不同的領域分開儲存，這樣搜尋時才不會產生跨主題的「精神分裂」。
 
-### 2. 語意 + 全文混合檢索 (Hybrid Search & Reranking)
-單純的向量搜尋（Vector Search）有時會漏掉精確的專有名詞，而全文檢索（FTS）又缺乏語意理解能力。`cli-memory` 採用混合檢索策略：
-* 先同時進行向量與全文搜尋，並透過 RRF (Reciprocal Rank Fusion) 演算法結合排名。
-* 針對結果進行二次重排 (Reranking)，結合 **Importance (重要度)**、**Confidence (信心度)**、**Recency (新鮮度衰減)** 與 **Access Frequency (存取頻率)** 算出最終的 `hybridScore`。
+### 2. 語意 + 全文混合檢索 (Hybrid Search)
+單純的向量搜尋有時會漏掉精確的專有名詞，而全文檢索（FTS）又缺乏語意理解。所以我實作了混合檢索：
+* 同時跑向量與全文搜尋，再用 **RRF (Reciprocal Rank Fusion)** 演算法把排名融合成一個最完美的結果。
+* 接著針對結果進行二次重排（Reranking），把 **Importance**（重要度）、**Recency**（新鮮度衰減）與 **Access Frequency**（存取頻率）通通算進去，調配出最佳的 `hybridScore`！
 
 ```
 Score = RRF_Score × Importance_Weight × Confidence_Weight × Recency_Weight × Access_Weight
 ```
 
-```markdown
-+------------------+     +--------------------+
-|  Vector Search   |     | Full-Text Search   |
-| (Ollama Embed)   |     |    (LanceDB FTS)   |
-+--------+---------+     +---------+----------+
-         |                         |
-         +------------+------------+
-                      |
-                      v
-      +-------------------------------+
-      | Reciprocal Rank Fusion (RRF)  |
-      +---------------+---------------+
-                      |
-                      v
-      +-------------------------------+
-      |   Multi-Factor Reranking      |
-      | (Importance/Recency/Access)   |
-      +---------------+---------------+
-                      |
-                      v
-      +-------------------------------+
-      |    Ranked Memory Results      |
-      +-------------------------------+
-```
+### 3. 全新推出：二層記憶分級 (Memory Tiers)
+為了解決記憶庫隨著時間變得太臃腫，我們引入了邏輯雙層架構：
+- **Working Memory** (工作記憶，重要度 0-6)：適合記錄臨時上下文、單次對話的次要事實。
+- **Long-term Memory** (長期記憶，重要度 7-10)：只有重要度 7 以上的黃金記憶，才會在搜尋時被優先召回。
+這能幫我們有效過濾雜訊，同時保留歷史檢索的彈性。
 
-### 3. 持久化寫入關卡 (Durable Write Gate)
-為了防止大量一次性的聊天廢話污染記憶庫，`cli-memory` 預設限制只有重要度 `importance >= 7` 的資訊才能寫入持久化資料庫，有效過濾雜訊。
-
-### 4. 智慧生命週期 (Memory Lifecycle)
-提供多種記憶維護工具：
-* **Extract / Capture**：從對話文本中自動拆解出句子級候選記憶，並賦予類型與重要度評分。
-* **Consolidate / Merge**：自動計算相似記憶並進行合併，消除重複內容。
-* **Reflect**：針對特定 Topic 自動提煉與生成摘要總結（Reflection）。
-* **Prune**：自動清除低重要度或過期的舊記憶。
+* **名詞解釋**：
+  * **Local-First (在地優先)**：一種架構原則，強調資料儲存和計算都在使用者本地端完成，不依賴雲端，兼顧隱私與零網路延遲。
+  * **RRF (Reciprocal Rank Fusion)**：一種很酷的檢索排名演算法，能把多個搜尋器（例如向量搜尋與關鍵字搜尋）回傳的排名名單，完美綜合成一個最終排名。
+  * **LanceDB**：輕量級、免架設伺服器的嵌入式向量資料庫，讀寫速度超級快，非常適合本機端應用。
+* **參考連結**：
+  * [LanceDB 官方文件](https://lancedb.github.io/lancedb/)
+  * [維基百科：混合檢索概念](https://en.wikipedia.org/wiki/Hybrid_search)
 
 ---
 
-## 實戰教學：為你的 Agent 裝上長期記憶
+## 全新三大亮點功能解析
 
-### 步驟 1：安裝與環境設定
+這次更新，我特別針對使用體驗、效能和記憶維護開發了三大超強亮點功能，絕對會讓你用得更爽快：
 
-首先確保本機已安裝 Node.js (>= 18) 以及正在運作的 [Ollama](https://ollama.com/) 服務（並已下載 `nomic-embed-text` embedding 模型）：
+### 亮點 1：開箱即用 (Zero-Configuration Out-of-the-Box) 🚀
+以前的版本，大家必須先在本機安裝並啟動 Ollama、還要手動拉取 `nomic-embed-text` 模型，老實說步驟真的有點多。
+現在全新版本**內建了 Transformers 引擎**（使用 `onnx-community/embeddinggemma-300m-ONNX` 模型）。
+**在你第一次執行任何指令時，它就會自動在背景幫你下載並快取好模型，完全免設定、免裝第三方工具！** 實現真正的「一鍵安裝，開箱即用」！
 
+### 亮點 2：歷史保留汰換 (Supersede) 🔄
+當我們以前記錄的偏好或事實改變了，要怎麼辦？如果只是直接 Update（更新），我們會失去歷史軌跡；如果重複儲存，Agent 又會精神分裂。
+於是我設計了全新的 `supersede` 機制：
+* **保留舊記憶**：舊的記憶不會被刪除，而是會被標記為過期（Superseded）。
+* **寫入新記憶**：同時寫入最新、最正確的事實，並將新舊記憶關聯在一起。
+* **精準搜尋**：預設的語意搜尋只會回傳 `active`（當前有效）的記憶，完全不浪費 Context！但如果你想追溯歷史，也可以手動加上 `--status active,superseded`，非常彈性！
+
+### 亮點 3：Daemon 背景加速模式 (Daemon Mode) ⚡
+因為每次呼叫 CLI 都要重新加載 Node.js 執行期跟本地的 ONNX 模型，密集呼叫時難免會有一點啟動延遲。
+現在你可以一鍵啟動背景 Daemon 守護進程：
 ```bash
-# 下載 Embedding 模型
-ollama pull nomic-embed-text
+cli-memory serve --daemon
+```
+這會啟動一個本機常駐服務。後續你的 CLI 或是 Agent 進行 `call` 呼叫時，**會自動偵測並複用這個熱啟動的 Daemon 進行模型推理與檢索**，速度直接起飛！最貼心的是，如果一段時間沒人呼叫，它還會自動釋放記憶體（Idle Unload），完全不佔用你的本機資源。
 
+---
+
+## 實戰教學：三步驟為你的 Agent 裝上大腦
+
+### 步驟 1：安裝與自動初始化
+你只需要有 Node.js 環境，全域安裝後直接呼叫，它就會自動下載模型並儲存第一筆記憶：
+```bash
 # 全域安裝 cli-memory
 npm install -g cli-memory
+
+# 首次測試：儲存一筆偏好
+cli-memory store "使用者偏好採用 TypeScript 搭配 Functional Programming 風格" --topic coding --memory-type Preference --importance 8
 ```
 
 ### 步驟 2：一鍵安裝 Agent Skill
-
-`cli-memory` 內建一鍵 Skill 安裝工具，支援 OpenCode、Claude Code、Codex、GitHub Copilot 等 Agent：
-
+`cli-memory` 提供一鍵安裝 Skill 的懶人腳本，目前原生支援 OpenCode、Claude Code、Codex 與 GitHub Copilot：
 ```bash
 cli-memory skill install opencode
 ```
+這會自動在 Agent 的 Skill 指引裡寫入最佳設定，讓 Agent 在每次對話前主動先搜尋、並在對話結束後自動整理記憶！
 
-安裝後重啟 Agent，Agent 便會自動載入 `cli-memory` Skill 指引，在後續對話中自動進行記憶搜尋與儲存。
-
-### 步驟 3：基本 CLI 操作
-
-你也可以直接透過命令列手動操作記憶：
-
-```bash
-# 儲存一條偏好記憶
-cli-memory store "使用者偏好使用 TypeScript 並採用 Functional Programming 風格" --topic coding --memory-type Preference --importance 8
-
-# 搜尋記憶
-cli-memory search "TypeScript" --topic coding
-
-# 檢索上下文 (Anchor + Follow-up 雙階段檢索)
-cli-memory retrieve-context "程式風格偏好" --topic coding
-
-# 啟動 Web 管理介面與 REST API
-cli-memory serve
-```
-
-執行 `cli-memory serve` 後，瀏覽器開啟 `http://127.0.0.1:3456` 即可使用內建的 React Web Admin Console 視覺化瀏覽、編輯與檢索所有主題記憶。
+### 步驟 3：體驗 Supersede 與 Daemon
+1. **啟動背景 Daemon 加速**：
+   ```bash
+   cli-memory serve --daemon
+   ```
+2. **測試語意搜尋**：
+   ```bash
+   cli-memory search "TypeScript" --topic coding
+   ```
+3. **體驗 Supersede 汰換記憶**（假設原本紀錄的 ID 為 `mem_001`）：
+   ```bash
+   # 汰換舊記憶，寫入新偏好
+   cli-memory supersede mem_001 "使用者現在全面改用 Rust 進行後端開發" --topic coding --importance 9
+   ```
 
 ---
 
 ## Agent 自動化串接：JSON-RPC 工具呼叫
 
-Agent 在背景可透過 `cli-memory call` 執行結構化的 JSON 機器介面：
+對於 AI Agent 來說，它更習慣在背景呼叫結構化的 `cli-memory call` 機器介面來跟記憶庫對話：
 
 ```bash
-# Agent 儲存記憶範例
-cli-memory call store-memory '{"topicKey":"coding","content":"專案採用 Vitest 作為單元測試框架","memoryType":"Fact","importance":8}'
+# Agent 在背景自動寫入並標記汰換
+cli-memory call supersede-memory '{
+  "topicKey": "coding",
+  "oldId": "mem_001",
+  "content": "使用者現在全面改用 Rust 進行後端開發",
+  "memoryType": "Preference",
+  "importance": 9
+}'
 
-# Agent 查詢記憶範例
-cli-memory call search-memories '{"topicKey":"coding","query":"測試框架","limit":5}'
+# Agent 進行語意檢索
+cli-memory call search-memories '{
+  "topicKey": "coding",
+  "query": "開發語言偏好",
+  "limit": 3
+}'
 ```
-
-這種結構化的介面能讓 Agent 在回答使用者問題前，自動先召回相關領域的歷史偏好與決策，達成真正的跨 Session 無縫銜接。
 
 ---
 
 ## 總結
 
-這次 cli-memory 本身也是我業餘使用 opencode agent 打造的，從需求分析、架構設計、程式開發到測試與部署，都是透過 agent 與我協作完成的。透過這個實戰案例，也學到了許多 agent 與 LLM 的應用開發技巧，並且實際解決了跨 Session 記憶的痛點。也歡迎有興趣試用的讀者們玩玩看摟～馬上體驗一毛錢不花的極致隱私 agent long term 記憶體驗 XD(廣告)
-
 * **優缺點分析**：
-  * **優點**：100% Local-First 保障個人資料與隱私；採用 Vector + FTS 混合檢索搭配多因子重排，召回精準度高；具備寫入過濾關卡與自動整合機制，記憶庫不易膨脹腐敗；提供一鍵 Agent Skill 安裝與視覺化 Web 控制台。
-  * **缺點**：依賴本機執行 Ollama 與 Embedding 模型，需佔用少量本機運算資源與磁碟空間；預設不支援多裝置間的雲端即時同步（但支援 JSON 匯出與匯入）。
+  * **優點**：100% Local-First，隱私滿分、資料安全；內建 ONNX 引擎實現了真正的「零設定開箱即用」；全新的 `supersede` 機制完美搞定記憶時序衝突；`serve --daemon` 背景模式大幅提升了密集的 CLI 回應速度。
+  * **缺點**：首次執行需要下載大約 300MB 的 ONNX 模型文件；本機向量計算會短暫佔用 CPU（不過 Daemon 有閒置自動卸載機制，所以不用太擔心）。
 * **注意事項**：
-  * 首次使用前必須先啟動 Ollama 並完成 `ollama pull nomic-embed-text`。
-  * 建議依據不同的專案或生活領域劃分明確的 `topicKey`，維持記憶庫的組織性。
+  * 如果你在寫一些自動化指令或頻繁讓 Agent 寫入記憶，強烈建議一定要開 `serve --daemon` 模式，不然每次重新載入進程會多花幾秒。
+  * 使用 `supersede` 時記得給對 `oldId`，這樣記憶的歷史時序鏈結才會是完整的。
+
+最後，這款 `cli-memory` 本身也是我業餘時間跟 OpenCode Agent 共同開發出來的產物。如果你也想擺脫每次開新對話都要重教 AI 的困擾，歡迎試用看看、甚至來 GitHub 留顆 Star 喔！XD
+
+
+<SocialBlock hashtags="javascript,ai,agent,memory,rag" />
 
 ## 參考資料來源
 - [cli-memory GitHub 專案庫](https://github.com/johnnywang1994/cli-memory)
 - [LanceDB 官方文件](https://lancedb.github.io/lancedb/)
-- [Ollama 官方網站](https://ollama.com/)
-- [nomic-embed-text Embedding 模型](https://ollama.com/library/nomic-embed-text)
+- [ONNX Runtime 官方網站](https://onnxruntime.ai/)
+- [Hugging Face Transformers.js 說明](https://huggingface.co/docs/transformers.js/)
