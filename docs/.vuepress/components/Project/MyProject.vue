@@ -41,6 +41,13 @@ export default {
   data() {
     return {
       creations: [{
+        "des" : "使用 AI Agent 結合 WebContainer 直接在瀏覽器網頁端 Vibe coding!!",
+        "id" : "maju-public-studio",
+        "image" : cdn("/websites/maju-public-studio.png"),
+        "link" : "https://gpt.maju-web.club/public-studio",
+        "name" : "Maju Public Studio",
+        "tech" : "NextJS, WebContainer, AI Agent"
+      }, {
         "des" : "一個將 HTML 轉換為 LINE Flex Message JSON 的工具，方便設計與測試 Flex Message 版型。",
         "id" : "flex-message-html-simulator",
         "image" : cdn("/websites/flex-message-html-simulator.jpg"),

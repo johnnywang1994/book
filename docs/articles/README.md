@@ -53,6 +53,12 @@ Be Good, be strong, be yourself, never give up.
 ## Private Project
 詳細專案圖文介紹請[前往這邊瀏覽](/book/project.html)
 
+### Maju Public Studio - AI Sandbox (純前端)
+
+  - [Link](https://gpt.maju-web.club/public-studio)
+  - Reactjs, Typescript, WebContainer, CodeMirror, Xterm, IndexedDB
+  - created at: 2026-10
+
 ### 發票載具手機桌布製作器
 
   - [Link](https://spa.maju-web.club/carrier-editor)
