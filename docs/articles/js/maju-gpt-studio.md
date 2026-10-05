@@ -3,7 +3,7 @@
 <SocialBlock hashtags="javascript,webcontainer,ai,sandbox,frontend,indexeddb" />
 
 ## 前言
-Hi! 大家好，我是 Johnny! 最近在重構舊版 maju-gpt 時，我偶然想到一個好玩的點子：何不將 AI Agent 與 WebContainer 結合，打造一個完全跑在瀏覽器裡、零伺服器運算成本的在線 IDE？於是 Public Studio 就誕生了！
+Hi! 大家好，我是 Johnny! 最近在重構舊版 maju-gpt 時，我偶然想到一個好玩的點子：何不將 AI Agent 與 WebContainer 結合，打造一個完全跑在瀏覽器裡、零伺服器運算成本的在線 IDE？於是 [Maju Public Studio](https://gpt.maju-web.club/public-studio) 就誕生了！
 
 ## 為什麼想做純前端的 AI Studio？
 過去我們在做 AI Coding Assistant 或 Sandbox（沙盒預覽）時，傳統架構通常是這樣的：
@@ -140,4 +140,3 @@ WebContainer 畢竟運行在 WASM 之上，**無法執行包含原生 C/C++ 編�
 - [MDN 官方文件：Cross-Origin-Embedder-Policy (COEP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
 - [MDN 官方文件：IndexedDB API 指南](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
 - [idb - NPM 官方套件介紹](https://www.npmjs.com/package/idb)
-- [maju-gpt-ui GitHub 開源儲存庫](https://github.com/johnnywang1994/maju-gpt-ui)
