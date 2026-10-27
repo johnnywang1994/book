@@ -288,6 +288,7 @@ const sidebar = {
             "/articles/memo/ai/ollama.md",
           ],
         },
+        "/articles/memo/3d-video-convert.md",
         "/articles/memo/ro-rathena-basic.md",
         "/articles/memo/nginx-js-module.md",
         "/articles/memo/traefik.md",
