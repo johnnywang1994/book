@@ -505,6 +505,8 @@ const sidebar = {
         "/articles/daily/黃帝陰符經.md",
         "/articles/daily/金剛經.md",
         "/articles/daily/太乙金華宗旨.md",
+        "/articles/daily/2026/現代生物物理學與中醫經絡學的交會筆記.md",
+        "/articles/daily/2026/美國可以如何甩鍋美債.md",
         "/articles/daily/2026/人生的某個階段結束了.md",
         "/articles/daily/2026/大腦神經學與佛學的對話.md",
         "/articles/daily/2025/蔡康永的情商課.md",
